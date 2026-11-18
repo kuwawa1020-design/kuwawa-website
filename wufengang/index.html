@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>五分港溪｜成為一條河</title>
+<meta name="description" content="為一條被遺忘的舊河道，補上遲來的命名。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="五分港溪｜成為一條河">
+<meta property="og:description" content="為一條被遺忘的舊河道，補上遲來的命名。">
+<meta property="og:url" content="https://kuwawa1020-design.github.io/kuwawa-website/wufengang/">
+<meta property="og:image" content="https://kuwawa1020-design.github.io/kuwawa-website/river/img/IMG_7291.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#2f5d5a">
+<link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="作品集">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1d2b2a;
+    --river:#2f5d5a;
+    --river-deep:#163634;
+    --rice:#6f8f2f;
+    --dusk:#d9893b;
+    --paper:#f6f2e9;
+    --paper-2:#ece5d6;
+    --muted:#6b6a62;
+    --line:rgba(29,43,42,.15);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Serif TC",serif;font-size:18px;line-height:2;letter-spacing:.04em;
+    -webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  .sans{font-family:"Noto Sans TC",sans-serif}
+
+  /* hero */
+  .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;
+    color:#fff;overflow:hidden}
+  .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+  .hero::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(10,20,20,.05) 30%,rgba(10,24,22,.75) 100%)}
+  .hero-inner{position:relative;z-index:1;padding:0 6vw 10vh;max-width:1100px}
+  .hero .kicker{font-family:"Noto Sans TC",sans-serif;font-size:14px;letter-spacing:.4em;opacity:.85;margin:0 0 1rem}
+  .hero h1{font-weight:900;font-size:clamp(56px,11vw,128px);line-height:1.1;margin:0;letter-spacing:.12em}
+  .hero .sub{font-size:clamp(18px,2.4vw,26px);margin:1.2rem 0 0;letter-spacing:.2em}
+  .scroll-cue{position:absolute;z-index:1;right:6vw;bottom:10vh;writing-mode:vertical-rl;
+    font-family:"Noto Sans TC",sans-serif;font-size:13px;letter-spacing:.5em;opacity:.8}
+
+  /* sections */
+  section{padding:120px 6vw}
+  .wrap{max-width:760px;margin:0 auto}
+  .wide{max-width:1180px;margin:0 auto}
+  .label{font-family:"Noto Sans TC",sans-serif;font-size:13px;letter-spacing:.35em;color:var(--river);
+    margin:0 0 18px;display:flex;align-items:center;gap:14px}
+  .label::before{content:"";width:36px;height:1px;background:currentColor}
+  h2{font-size:clamp(30px,4.2vw,46px);font-weight:900;line-height:1.4;margin:0 0 36px;letter-spacing:.08em}
+  p{margin:0 0 1.4em}
+  .lead{font-size:21px;line-height:2.1}
+  em.key{font-style:normal;background:linear-gradient(transparent 62%,rgba(217,137,59,.32) 62%)}
+
+  /* prologue */
+  .prologue{background:var(--paper)}
+  .prologue .wrap{max-width:620px}
+  .prologue p{font-size:20px;line-height:2.3}
+  .prologue p:first-of-type{font-size:30px;font-weight:600;margin-bottom:1.2em}
+  .prologue .ellipsis{color:var(--muted);letter-spacing:.6em}
+
+  /* figure */
+  figure{margin:0}
+  figcaption{font-family:"Noto Sans TC",sans-serif;font-size:13px;color:var(--muted);margin-top:12px;letter-spacing:.12em;line-height:1.7}
+  .full-photo{padding:0}
+  .full-photo img{width:100%;height:78vh;object-fit:cover}
+  .full-photo figcaption{padding:0 6vw}
+  .zoom{cursor:zoom-in}
+
+  /* split */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+  .split img{width:100%;aspect-ratio:3/4;object-fit:cover}
+  .split.landscape img{aspect-ratio:4/3}
+
+  /* quote */
+  .makino{margin:48px 0;padding:36px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
+  .makino blockquote{margin:0;font-size:clamp(26px,3.4vw,36px);font-weight:900;letter-spacing:.18em;color:var(--river-deep)}
+  .makino cite{display:block;margin-top:10px;font-style:normal;font-family:"Noto Sans TC",sans-serif;font-size:14px;color:var(--muted);letter-spacing:.2em}
+
+  /* facts */
+  .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:48px 0 0;border-top:1px solid var(--line)}
+  .facts div{padding:22px 18px 6px 0}
+  .facts b{display:block;font-size:30px;font-weight:900;color:var(--river);line-height:1.3}
+  .facts span{font-family:"Noto Sans TC",sans-serif;font-size:14px;color:var(--muted);letter-spacing:.1em}
+
+  /* journey */
+  .journey{background:var(--river-deep);color:#e9efe9}
+  .journey .label{color:#9fc4b6}
+  .journey h2{color:#fff}
+  .route{position:relative;margin:56px 0 0;padding-left:46px}
+  .route::before{content:"";position:absolute;left:11px;top:10px;bottom:10px;width:3px;border-radius:3px;
+    background:linear-gradient(#bfe3d6,#6fa89a 45%,#8a7a4e 100%)}
+  .stop{position:relative;padding:0 0 44px}
+  .stop:last-child{padding-bottom:0}
+  .stop::before{content:"";position:absolute;left:-42px;top:12px;width:17px;height:17px;border-radius:50%;
+    background:var(--river-deep);border:3px solid #bfe3d6}
+  .stop h3{margin:0;font-size:24px;font-weight:600;letter-spacing:.1em;color:#fff}
+  .stop .where{font-family:"Noto Sans TC",sans-serif;font-size:13px;letter-spacing:.2em;color:#9fc4b6}
+  .stop p{margin:.4em 0 0;color:#cfdcd6;font-size:17px}
+  .journey-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:start}
+  .journey figure{position:sticky;top:60px}
+  .journey figure img{width:100%;aspect-ratio:3/4;object-fit:cover}
+  .journey figcaption{color:#9fc4b6}
+  .poem{font-size:19px;line-height:2;color:#fff;margin-top:18px;letter-spacing:.12em}
+  .plants{margin-top:56px;padding:26px 28px;border:1px solid rgba(191,227,214,.25);font-size:16px;color:#cfdcd6}
+  .plants b{color:#fff;font-weight:600}
+
+  /* chapters */
+  .chapters{background:var(--paper)}
+  .ch-list{list-style:none;margin:56px 0 0;padding:0;counter-reset:ch}
+  .ch{display:grid;grid-template-columns:120px 1fr;gap:28px;padding:34px 0;border-top:1px solid var(--line)}
+  .ch:last-child{border-bottom:1px solid var(--line)}
+  .ch-no{font-size:15px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.3em;color:var(--river);padding-top:8px}
+  .ch h3{margin:0 0 6px;font-size:25px;font-weight:600;letter-spacing:.08em;line-height:1.6}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 12px}
+  .tags span{font-family:"Noto Sans TC",sans-serif;font-size:13px;letter-spacing:.1em;padding:2px 12px;border-radius:999px;
+    background:var(--paper-2);color:var(--river-deep)}
+  .ch p{margin:0;font-size:17px;color:#3c4744}
+  .ch-photos{list-style:none;padding:28px 0;border-top:1px solid var(--line);display:grid;gap:14px}
+  .ch-photos.four{grid-template-columns:1fr 1fr}
+  .ch-photos.four img{width:100%;aspect-ratio:4/3;object-fit:cover}
+  .ch-photos.two{grid-template-columns:1fr 1fr}
+  .ch-photos.two img{width:100%;aspect-ratio:3/4;object-fit:cover}
+  .ch-photos figure{min-height:0}
+  .ch-photos .ph{overflow:hidden;height:100%}
+  .night{background:#0c1211;padding:18px}
+  .night figcaption{color:#9aa49f}
+
+  /* four rivers */
+  .rivers{background:var(--paper-2)}
+  .river-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:56px}
+  .rv{background:var(--paper);padding:30px 26px 32px;position:relative;border-top:4px solid var(--river)}
+  .rv:nth-child(2){border-color:#8b6f47}
+  .rv:nth-child(3){border-color:var(--rice)}
+  .rv:nth-child(4){border-color:#3b5f86}
+  .rv .n{font-family:"Noto Sans TC",sans-serif;font-size:13px;letter-spacing:.3em;color:var(--muted)}
+  .rv h3{font-size:30px;font-weight:900;margin:6px 0 4px;letter-spacing:.12em}
+  .rv .lesson{font-size:17px;font-weight:600;color:var(--river-deep);line-height:1.7;margin:0 0 16px}
+  .rv p{font-size:15.5px;line-height:1.95;color:#3c4744;margin:0 0 .9em}
+  .rv p:last-child{margin:0}
+
+  /* walk */
+  .walk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:48px}
+  .walk-grid figure:first-child{grid-column:span 2}
+  .walk-grid img{width:100%;aspect-ratio:4/3;object-fit:cover}
+  .walk-grid figure:first-child img{aspect-ratio:16/8}
+
+  /* ending */
+  .ending{position:relative;color:#fff;min-height:90vh;display:flex;align-items:center;overflow:hidden}
+  .ending img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .ending::after{content:"";position:absolute;inset:0;background:rgba(12,28,27,.62)}
+  .ending .wrap{position:relative;z-index:1}
+  .ending .label{color:#f2c58f}
+  .ending blockquote{margin:0;font-size:clamp(21px,2.5vw,27px);line-height:2.2;letter-spacing:.1em}
+  .ending blockquote strong{display:block;margin-top:1.2em;font-weight:900;font-size:1.08em;color:#ffe2bb}
+  .ending .free{margin-top:48px;font-size:17px;color:#d8e2de;border-left:2px solid #f2c58f;padding-left:20px}
+
+  footer{background:var(--river-deep);color:#9fc4b6;text-align:center;padding:56px 6vw;
+    font-family:"Noto Sans TC",sans-serif;font-size:13px;letter-spacing:.3em;line-height:2}
+  footer b{display:block;color:#fff;font-family:"Noto Serif TC",serif;font-size:22px;letter-spacing:.3em;font-weight:600}
+  footer .credit{display:block;margin-top:18px;font-size:12px;letter-spacing:.08em;line-height:1.8;color:#9fc4b6}
+  footer .credit a{color:#cfe6dd}
+
+  /* background music */
+  .bgm{position:fixed;right:16px;bottom:16px;z-index:40;display:inline-flex;align-items:center;gap:10px;
+    min-height:44px;padding:8px 18px 8px 10px;border:0;border-radius:999px;cursor:pointer;
+    background:rgba(22,54,52,.92);color:#fff;font:500 14px/1 "Noto Sans TC",sans-serif;letter-spacing:.12em;
+    box-shadow:0 6px 18px rgba(10,24,22,.28);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+  .bgm:hover{background:var(--river)}
+  .bgm:focus-visible{outline:2px solid var(--dusk);outline-offset:3px}
+  .bgm .ic{width:28px;height:28px;border-radius:50%;background:var(--dusk);display:grid;place-items:center;flex:none}
+  .bgm .ic svg{width:12px;height:12px;fill:#fff}
+  .bgm .ic .pause{display:none}
+  .bgm[aria-pressed="true"] .ic .play{display:none}
+  .bgm[aria-pressed="true"] .ic .pause{display:block}
+
+  /* lightbox */
+  .lb{position:fixed;inset:0;background:rgba(8,14,13,.94);display:none;align-items:center;justify-content:center;z-index:50;padding:4vh 4vw;cursor:zoom-out}
+  .lb.on{display:flex}
+  .lb img{max-width:100%;max-height:86vh;object-fit:contain}
+  .lb p{position:absolute;left:0;right:0;bottom:2.5vh;text-align:center;color:#cfdcd6;font-family:"Noto Sans TC",sans-serif;font-size:14px;letter-spacing:.15em;margin:0}
+
+  /* reveal */
+  .rv-in{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+  .rv-in.seen{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.rv-in{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+  @media (max-width:900px){
+    body{font-size:17px}
+    section{padding:84px 6vw}
+    .split,.journey-grid{grid-template-columns:1fr;gap:40px}
+    .journey figure{position:static}
+    .river-grid{grid-template-columns:1fr 1fr}
+    .ch{grid-template-columns:1fr;gap:4px}
+    .full-photo img{height:56vh}
+  }
+  @media (max-width:560px){
+    .river-grid{grid-template-columns:1fr}
+    .facts{grid-template-columns:1fr}
+    .walk-grid{grid-template-columns:1fr}
+    .walk-grid figure:first-child{grid-column:auto}
+    .walk-grid figure:first-child img{aspect-ratio:4/3}
+    .hero h1{letter-spacing:.06em}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img src="../river/img/IMG_7291.jpg" alt="洲美平原的稻田與晚霞">
+  <div class="hero-inner">
+    <p class="kicker">成為一條河</p>
+    <h1>五分<br>港溪</h1>
+    <p class="sub">為一條被遺忘的舊河道，補上遲來的命名</p>
+  </div>
+  <div class="scroll-cue">順流而下</div>
+</header>
+
+<section class="prologue">
+  <div class="wrap rv-in">
+    <p class="label">序</p>
+    <p>我記得那個人。</p>
+    <p>我和弟弟放學到吃飯之間，是一段游手好閒的時間，父母完全知道的內容，大半都是我們編出來的情節。</p>
+    <p>我們有時會找鄰居小朋友來家裏玩，有時找不到他們，就會去三角公園賣賣自己畫的東西，然後會到河邊玩玩水，東逛逛西逛逛。</p>
+    <p>有一個人我們常常看到他。</p>
+    <p class="ellipsis">⋯⋯</p>
+  </div>
+</section>
+
+<section>
+  <div class="wide split">
+    <figure class="rv-in">
+      <img class="zoom" src="../river/img/IMG_7287.jpg" alt="五分港溪靜水與兩岸樹林" data-cap="五分港溪：靜止的水面，倒映著兩岸的樹">
+      <figcaption>靜止的水面，倒映著兩岸的樹</figcaption>
+    </figure>
+    <div class="rv-in">
+      <p class="label">緣起</p>
+      <h2>一份遲來的命名</h2>
+      <p class="lead">五分港溪在現代地圖上，常被當成排水溝，或者乾脆沒有名字。</p>
+      <p>這本書從植物學家牧野富太郎開始。他一生替無數植物命名，也留下一句話，成為全書的起點：</p>
+      <div class="makino">
+        <blockquote>世上沒有雜草</blockquote>
+        <cite>— 牧野富太郎</cite>
+      </div>
+      <p>若沒有一株草是雜草，那麼也沒有一條河是「雜河」。以牧野的植物哲學為經，以五分港溪的蜿蜒身世為緯，這部散文想做的，不只是一條溪流的導覽，而是一場關於<em class="key">邊緣、命名與主體性</em>的辯證——讓那些被標記為「雜」的生命與河流，在文字中重新獲得尊嚴。</p>
+    </div>
+  </div>
+</section>
+
+<figure class="full-photo rv-in">
+  <img class="zoom" src="../river/img/IMG_7318.jpg" alt="五分港溪河道，遠方是城市建築" data-cap="舊河道的水岸，一邊是野生的樹，一邊是城市的樓">
+  <figcaption>舊河道的水岸，一邊是野生的樹，一邊是城市的樓</figcaption>
+</figure>
+
+<section>
+  <div class="wrap rv-in">
+    <p class="label">身世</p>
+    <h2>從主流，到遺留</h2>
+    <p>五分港溪曾是雙溪河的自然主河道，蜿蜒流過洲美平原，是這片土地的主動脈。</p>
+    <p>1990 年代，城市防洪計畫為雙溪截彎取直。主流改道之後，這段舊河道被切割、拋棄，成了一截<em class="key">「斷掉的盲腸」</em>——主流的孤兒，一段失去流動目標的廢河道。五分港溪的名字，便是從這場「手術」之後才開始的。</p>
+    <p>它被截斷、被污染、被忽視，但它依然是一條河。</p>
+    <div class="facts sans">
+      <div><b>雙溪</b><span>原本的主河道</span></div>
+      <div><b>1990s</b><span>截彎取直，成為舊河道</span></div>
+      <div><b>&lt; 2 公里</b><span>流至基隆河匯流口</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="journey">
+  <div class="wide journey-grid">
+    <div class="rv-in">
+      <p class="label">溯源</p>
+      <h2>一滴水的旅程：<br>從聖境，降落到凡塵</h2>
+      <p>把內雙溪古道的源頭，與五分港溪這段殘存的廢河道連在一起，便看見一滴水的一生：從陽明山森林的純淨出發，歷經人類文明的洗禮、截斷與遺忘，最後在都市邊緣掙扎求生。</p>
+      <div class="route">
+        <div class="stop">
+          <span class="where">擎天崗南側</span>
+          <h3>內雙溪古道・源頭秘境</h3>
+          <p>高聳的闊葉林、細膩的苔蘚。水在這裡清澈、未受干擾，還只是山林間的低語。</p>
+        </div>
+        <div class="stop">
+          <span class="where">平等里・至善路</span>
+          <h3>落入凡塵</h3>
+          <p>水流下山，經過梯田與聚落，開始被人類截留、灌溉。野生的森林，換成了栽種的作物。</p>
+        </div>
+        <div class="stop">
+          <span class="where">洲美平原</span>
+          <h3>緩慢的抵抗</h3>
+          <p>台北不斷加速，這裡卻保留了最後的稻浪與農耕節奏，像一段被凍結的時間。</p>
+        </div>
+        <div class="stop">
+          <span class="where">科教館・北投士林科技園區</span>
+          <h3>科技的背影</h3>
+          <p>一邊是簇新的玻璃帷幕，一邊是雜草叢生的廢河道。關於「看見」與「忽視」。</p>
+        </div>
+        <div class="stop">
+          <span class="where">屈原宮・基隆河</span>
+          <h3>入海的告別</h3>
+          <p>源頭的清冽，在此與沉濁的水相接，終將匯入大河。</p>
+        </div>
+      </div>
+      <div class="plants">
+        <b>植物的更迭，就是河流的命運。</b>源頭是台灣山蘇、筆筒樹；到了中下游，是水蠟燭、大萍。
+      </div>
+    </div>
+    <figure class="rv-in">
+      <img class="zoom" src="../river/img/IMG_7283.jpg" alt="林蔭下的木棧道" data-cap="林蔭下的木棧道——而我的眼底，你說是旭日，那第一道曙光迎向的，是初識的旅人，還是出發的起點？">
+      <p class="poem">而我的眼底，你說是旭日，<br>那第一道曙光迎向的，<br>是初識的旅人，還是出發的起點？</p>
+    </figure>
+  </div>
+</section>
+
+<section class="chapters">
+  <div class="wrap">
+    <div class="rv-in">
+      <p class="label">篇章</p>
+      <h2>十章，一條河的生命圖譜</h2>
+      <p>每一章，是這條溪的一個段落，也是一種看待生命的角度。</p>
+    </div>
+
+    <ol class="ch-list">
+      <li class="ch rv-in">
+        <div class="ch-no">第一章</div>
+        <div>
+          <h3>無名者的洗禮——從牧野富太郎開始</h3>
+          <div class="tags"><span>命名</span><span>定義</span><span>植物學家的眼光</span></div>
+          <p>反思「雜草」與「雜河」的標籤。打破五分港溪被視為排水溝、無名支流的階級感：每一種流動都有其神聖性。</p>
+        </div>
+      </li>
+      <li class="ch rv-in">
+        <div class="ch-no">第二章</div>
+        <div>
+          <h3>身世的褶皺：從主流到廢河道</h3>
+          <div class="tags"><span>雙溪河</span><span>截彎取直</span><span>歷史的餘溫</span></div>
+          <p>考據這條河如何從「主流」變成「遺留」，以及被體制切割之後，依然自成一格的孤獨。</p>
+        </div>
+      </li>
+      <li class="ch rv-in">
+        <div class="ch-no">第三章</div>
+        <div>
+          <h3>水泥縫隙裡的野生：河岸植物誌</h3>
+          <div class="tags"><span>構樹</span><span>苦楝</span><span>大花咸豐草</span><span>生命韌性</span></div>
+          <p>以牧野式的細膩觀察，寫那些不被邀請的「雜草」，寫水蠟燭與風車草如何抓緊崩落的土堤——一種野生的反擊。</p>
+        </div>
+      </li>
+      <li class="ch rv-in">
+        <div class="ch-no">第四章</div>
+        <div>
+          <h3>緩慢的抵抗：洲美平原的時差</h3>
+          <div class="tags"><span>洲美社區</span><span>稻浪</span><span>被凍結的時間</span></div>
+          <p>溪水灌溉著台北最後的農耕地。那是一種與都市節奏格格不入、緩慢的流動。</p>
+        </div>
+      </li>
+      <li class="ch-photos four rv-in">
+        <figure><div class="ph"><img class="zoom" src="../river/img/IMG_7294.jpg" alt="洲美平原稻穗" data-cap="洲美平原，結穗的稻"></div></figure>
+        <figure><div class="ph"><img class="zoom" src="../river/img/IMG_7296.jpg" alt="稻田邊的白色風車裝置，遠方是大屯山" data-cap="稻田邊的風車，遠方的山"></div></figure>
+        <figure><div class="ph"><img class="zoom" src="../river/img/IMG_7307.jpg" alt="稻田與木欄步道" data-cap="稻浪與田邊的木欄"></div></figure>
+        <figure><div class="ph"><img class="zoom" src="../river/img/IMG_7304.jpg" alt="黃昏時走在田埂上的人" data-cap="黃昏，走在田埂上"></div></figure>
+      </li>
+      <li class="ch rv-in">
+        <div class="ch-no">第五章</div>
+        <div>
+          <h3>水邊的人類學：那些被遺忘的棲居者</h3>
+          <div class="tags"><span>釣客</span><span>老農</span><span>洗衣的人</span><span>臨時搭蓋</span></div>
+          <p>在溪邊活動的人，和這條溪的關係是「非正式」的，就像野草一樣與體制保持距離——人與自然最原始、最不加修飾的連結。</p>
+        </div>
+      </li>
+      <li class="ch rv-in">
+        <div class="ch-no">第六章</div>
+        <div>
+          <h3>困局中的清澈：水質與自癒</h3>
+          <div class="tags"><span>濁度</span><span>優養化</span><span>微觀世界</span></div>
+          <p>直面溪水的氣味、顏色，與其中掙扎的吳郭魚。一條不被呵護的河，如何用自己的速度進行微弱的自淨。</p>
+        </div>
+      </li>
+      <li class="ch rv-in">
+        <div class="ch-no">第七章</div>
+        <div>
+          <h3>科教館的背影：科技與自然的斷層</h3>
+          <div class="tags"><span>北投士林科技園區</span><span>鋼筋</span><span>人工景觀</span></div>
+          <p>玻璃帷幕與廢河道並置的視覺突兀：人類文明在擴張時，如何對身邊的自然視而不見。</p>
+        </div>
+      </li>
+      <li class="ch rv-in">
+        <div class="ch-no">第八章</div>
+        <div>
+          <h3>夜行者的密語：隱形的生態</h3>
+          <div class="tags"><span>夜鷺</span><span>螢火蟲</span><span>聲景</span></div>
+          <p>當視覺隱去，聲音成為主角。蟲鳴、水鳥的驚起，那些只在黑暗中現形的生命，讓溪流成為一條隱形的生物廊道。</p>
+        </div>
+      </li>
+      <li class="ch-photos two night rv-in">
+        <figure><img class="zoom" src="../river/img/IMG_7319.jpg" alt="夜裡水邊綻放的粉紅色穗狀花" data-cap="夜裡，水邊垂掛綻放的花穗"></figure>
+        <figure><img class="zoom" src="../river/img/IMG_7322.jpg" alt="夜裡垂落的花串" data-cap="夜色裡，垂落水面的花串"></figure>
+      </li>
+      <li class="ch rv-in">
+        <div class="ch-no">第九章</div>
+        <div>
+          <h3>流動的練習：關於「成為一條河」</h3>
+          <div class="tags"><span>阻礙</span><span>轉彎</span><span>匯流</span></div>
+          <p>斷點與死胡同，是人生困境的隱喻。一條河即便被截斷，依然會尋找地勢、滲入地底，或在暴雨時溢出——不論如何，都要流動下去。</p>
+        </div>
+      </li>
+      <li class="ch rv-in">
+        <div class="ch-no">第十章</div>
+        <div>
+          <h3>入海的告別：終將匯入大河</h3>
+          <div class="tags"><span>屈原宮</span><span>基隆河</span><span>回歸</span><span>永恆</span></div>
+          <p>回望這段不到兩公里的旅程。因為看見了每一株草，所以看見了森林；因為看見了這段殘存的溪流，所以讀懂了整座城市的靈魂。</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="rivers">
+  <div class="wide">
+    <div class="wrap rv-in" style="margin:0">
+      <p class="label">哲學</p>
+      <h2>四條河，四種心靈的修煉</h2>
+      <p>從童年的新店溪、花蓮的馬太鞍溪、五分港溪，到最後的淡水河。四條河，昇華為四個層次。</p>
+    </div>
+    <div class="river-grid">
+      <article class="rv rv-in">
+        <div class="n">一</div>
+        <h3>新店溪</h3>
+        <p class="lesson">流動，是不與巨石爭辯</p>
+        <p>童年的新店溪遭遇峽谷與險灘，激起無數水花。河流從不與擋路的巨石硬碰硬，它總是順應地形，繞道而行。</p>
+        <p>成為一條河，是學會「柔軟的堅持」。挫折不是終點，而是改變流向、激發創見的契機。</p>
+      </article>
+      <article class="rv rv-in">
+        <div class="n">二</div>
+        <h3>馬太鞍溪</h3>
+        <p class="lesson">生命，是歷史與他者的交織</p>
+        <p>馬太鞍溪不是個人的孤島，它連結了《光復鄉誌》、部落記憶與土地紋理。</p>
+        <p>唯有將自己投入更大的歷史與社群洪流，生命才有了厚度。我們不只是一滴水，我們就是眾人與土地共同匯聚成的那條河。</p>
+      </article>
+      <article class="rv rv-in">
+        <div class="n">三</div>
+        <h3>五分港溪</h3>
+        <p class="lesson">眾生平等，沒有一滴水是多餘的</p>
+        <p>一條舊河道、一道細流，卻與心靈深深相通。世上沒有雜草，河流也沒有清淤之分。</p>
+        <p>澎湃的大江與被遺忘的舊河道，各自滋養一方生態。看見自己的微小，同時肯定自己獨一無二的日常價值。</p>
+      </article>
+      <article class="rv rv-in">
+        <div class="n">四</div>
+        <h3>淡水河</h3>
+        <p class="lesson">包容與復歸</p>
+        <p><b>泥沙俱下的慈悲。</b>眾流匯聚，夾雜泥沙、繁華、污染與傷痕，卻以最平靜的姿態流向台灣海峽。真正的成熟不是絕對的純潔，而是看盡繁華、吞下污濁，仍將它們沉澱為滋養海岸的養分。</p>
+        <p><b>失去名字的自由。</b>河水湧入大海，便不再叫新店溪或淡水河；失去「河流」的名字，卻獲得了海洋的無邊無際。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wide">
+    <div class="wrap rv-in" style="margin:0">
+      <p class="label">走讀</p>
+      <h2>黃昏，走進稻浪裡</h2>
+      <p>晴天、雨天、黃昏，都要親自走一趟。這一次是黃昏：一群人站進洲美平原的稻田，背後是大屯山，天邊正在燒。</p>
+    </div>
+    <div class="walk-grid">
+      <figure class="rv-in"><img class="zoom" src="../river/img/walk_1.jpg" alt="六人站在稻田中，背後是大屯山與晚霞" data-cap="稻田、山稜與晚霞"></figure>
+      <figure class="rv-in"><img class="zoom" src="../river/img/walk_2.jpg" alt="六人在稻田中揮手" data-cap="站進稻浪裡"></figure>
+      <figure class="rv-in"><img class="zoom" src="../river/img/walk_3.jpg" alt="六人站在稻田中" data-cap="天色慢慢暗下來"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="ending">
+  <img src="../river/img/walk_4.jpg" alt="一行人沿著稻田小徑走在晚霞下">
+  <div class="wrap rv-in">
+    <p class="label">結語</p>
+    <blockquote>
+      我曾以為寫河是為了記錄風景，最後才明白，那是靈魂的內省。生命的最高境界不是抵達某個終點，而是認清自己就是那條奔流不息的河——
+      <strong>無論身處急流還是舊河道，我們都在流動；<br>而只要還在流動，生命就永遠清澈。</strong>
+    </blockquote>
+    <p class="free">一條河即便沒有大海作為終點，它流過的每一秒，都有意義。</p>
+  </div>
+</section>
+
+<footer>
+  <b>五分港溪</b>
+  成為一條河
+  <span class="credit">背景音樂：史麥塔納〈莫爾道河〉（交響詩《我的祖國》選段）<br>演奏 Musopen Symphony・公有領域・來源 <a href="https://commons.wikimedia.org/wiki/File:Smetana_-_M%C3%A1_Vlast_-_Vltava_(Musopen_Symphony).flac">Wikimedia Commons</a></span>
+</footer>
+
+<button class="bgm" type="button" id="bgm" aria-pressed="false" aria-label="播放背景音樂：史麥塔納〈莫爾道河〉">
+  <span class="ic" aria-hidden="true">
+    <svg class="play" viewBox="0 0 12 12"><path d="M3 1.5v9l7.5-4.5z"/></svg>
+    <svg class="pause" viewBox="0 0 12 12"><path d="M2.5 1.5h2.5v9H2.5zM7 1.5h2.5v9H7z"/></svg>
+  </span>
+  <span class="lbl">背景音樂</span>
+</button>
+<audio id="bgm-audio" src="../river/audio/vltava.mp3" loop preload="none"></audio>
+
+<div class="lb" id="lb" role="dialog" aria-label="照片"><img alt=""><p></p></div>
+
+<script>
+  (function(){
+    var io = 'IntersectionObserver' in window ? new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('seen'); io.unobserve(e.target); } });
+    },{threshold:.12}) : null;
+    document.querySelectorAll('.rv-in').forEach(function(el){ io ? io.observe(el) : el.classList.add('seen'); });
+
+    var lb = document.getElementById('lb'), li = lb.querySelector('img'), lp = lb.querySelector('p');
+    document.querySelectorAll('img.zoom').forEach(function(img){
+      img.addEventListener('click', function(){
+        li.src = img.src; li.alt = img.alt; lp.textContent = img.dataset.cap || '';
+        lb.classList.add('on');
+      });
+    });
+    lb.addEventListener('click', function(){ lb.classList.remove('on'); });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape') lb.classList.remove('on'); });
+
+    var bgm = document.getElementById('bgm'), au = document.getElementById('bgm-audio');
+    au.volume = 0.6;
+    bgm.addEventListener('click', function(){ au.paused ? au.play() : au.pause(); });
+    au.addEventListener('play', function(){ bgm.setAttribute('aria-pressed','true'); bgm.setAttribute('aria-label','暫停背景音樂'); });
+    au.addEventListener('pause', function(){ bgm.setAttribute('aria-pressed','false'); bgm.setAttribute('aria-label','播放背景音樂：史麥塔納〈莫爾道河〉'); });
+  })();
+</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js',{scope:'../'}).catch(function(){});});}</script>
+</body>
+</html>
