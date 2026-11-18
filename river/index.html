@@ -158,6 +158,21 @@
   footer{background:var(--river-deep);color:#9fc4b6;text-align:center;padding:56px 6vw;
     font-family:"Noto Sans TC",sans-serif;font-size:13px;letter-spacing:.3em;line-height:2}
   footer b{display:block;color:#fff;font-family:"Noto Serif TC",serif;font-size:22px;letter-spacing:.3em;font-weight:600}
+  footer .credit{display:block;margin-top:18px;font-size:12px;letter-spacing:.08em;line-height:1.8;color:#9fc4b6}
+  footer .credit a{color:#cfe6dd}
+
+  /* background music */
+  .bgm{position:fixed;right:16px;bottom:16px;z-index:40;display:inline-flex;align-items:center;gap:10px;
+    min-height:44px;padding:8px 18px 8px 10px;border:0;border-radius:999px;cursor:pointer;
+    background:rgba(22,54,52,.92);color:#fff;font:500 14px/1 "Noto Sans TC",sans-serif;letter-spacing:.12em;
+    box-shadow:0 6px 18px rgba(10,24,22,.28);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+  .bgm:hover{background:var(--river)}
+  .bgm:focus-visible{outline:2px solid var(--dusk);outline-offset:3px}
+  .bgm .ic{width:28px;height:28px;border-radius:50%;background:var(--dusk);display:grid;place-items:center;flex:none}
+  .bgm .ic svg{width:12px;height:12px;fill:#fff}
+  .bgm .ic .pause{display:none}
+  .bgm[aria-pressed="true"] .ic .play{display:none}
+  .bgm[aria-pressed="true"] .ic .pause{display:block}
 
   /* lightbox */
   .lb{position:fixed;inset:0;background:rgba(8,14,13,.94);display:none;align-items:center;justify-content:center;z-index:50;padding:4vh 4vw;cursor:zoom-out}
@@ -469,7 +484,17 @@
 <footer>
   <b>成為一條河</b>
   五分港溪的生命圖譜
+  <span class="credit">背景音樂：史麥塔納〈莫爾道河〉（交響詩《我的祖國》選段）<br>演奏 Musopen Symphony・公有領域・來源 <a href="https://commons.wikimedia.org/wiki/File:Smetana_-_M%C3%A1_Vlast_-_Vltava_(Musopen_Symphony).flac">Wikimedia Commons</a></span>
 </footer>
+
+<button class="bgm" type="button" id="bgm" aria-pressed="false" aria-label="播放背景音樂：史麥塔納〈莫爾道河〉">
+  <span class="ic" aria-hidden="true">
+    <svg class="play" viewBox="0 0 12 12"><path d="M3 1.5v9l7.5-4.5z"/></svg>
+    <svg class="pause" viewBox="0 0 12 12"><path d="M2.5 1.5h2.5v9H2.5zM7 1.5h2.5v9H7z"/></svg>
+  </span>
+  <span class="lbl">背景音樂</span>
+</button>
+<audio id="bgm-audio" src="audio/vltava.mp3" loop preload="none"></audio>
 
 <div class="lb" id="lb" role="dialog" aria-label="照片"><img alt=""><p></p></div>
 
@@ -489,6 +514,12 @@
     });
     lb.addEventListener('click', function(){ lb.classList.remove('on'); });
     document.addEventListener('keydown', function(e){ if(e.key === 'Escape') lb.classList.remove('on'); });
+
+    var bgm = document.getElementById('bgm'), au = document.getElementById('bgm-audio');
+    au.volume = 0.6;
+    bgm.addEventListener('click', function(){ au.paused ? au.play() : au.pause(); });
+    au.addEventListener('play', function(){ bgm.setAttribute('aria-pressed','true'); bgm.setAttribute('aria-label','暫停背景音樂'); });
+    au.addEventListener('pause', function(){ bgm.setAttribute('aria-pressed','false'); bgm.setAttribute('aria-label','播放背景音樂：史麥塔納〈莫爾道河〉'); });
   })();
 </script>
 </body>

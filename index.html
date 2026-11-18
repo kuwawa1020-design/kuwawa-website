@@ -6,22 +6,47 @@
 <title>作品集</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;900&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root{--paper:#f6f2e9;--ink:#1d2b2a;--muted:#5f5e57;--line:rgba(29,43,42,.15);--accent:#2f5d5a}
+  :root{--paper:#f6f2e9;--ink:#1d2b2a;--muted:#5f5e57;--line:rgba(29,43,42,.15);--accent:#2f5d5a;--warm:#d9893b}
   *{box-sizing:border-box}
   body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC",sans-serif;line-height:1.8}
   main{max-width:760px;margin:0 auto;padding:96px 16px 72px}
-  h1{font-family:"Noto Serif TC",serif;font-weight:900;font-size:clamp(36px,7vw,56px);letter-spacing:.1em;margin:0 0 48px}
+  h1{font-family:"Noto Serif TC",serif;font-weight:900;font-size:clamp(36px,7vw,56px);letter-spacing:.1em;margin:0 0 24px}
   ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
   li{border-bottom:1px solid var(--line)}
-  a{display:block;padding:28px 4px;color:inherit;text-decoration:none}
-  a:hover h2,a:focus-visible h2{color:var(--accent)}
+  li a{display:block;padding:28px 4px;color:inherit;text-decoration:none}
+  li a:hover h2,li a:focus-visible h2{color:var(--accent)}
   h2{font-family:"Noto Serif TC",serif;font-weight:600;font-size:24px;margin:0;letter-spacing:.06em}
-  p{margin:4px 0 0;color:var(--muted);font-size:15px}
+  li p{margin:4px 0 0;color:var(--muted);font-size:15px}
+
+  .music{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:0 0 48px}
+  .bgm{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:8px 18px 8px 8px;border:1px solid var(--line);
+    border-radius:999px;background:#fff;color:var(--ink);font:500 15px/1 "Noto Sans TC",sans-serif;letter-spacing:.08em;cursor:pointer}
+  .bgm:hover{border-color:var(--accent)}
+  .bgm:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  .bgm .ic{width:28px;height:28px;border-radius:50%;background:var(--accent);display:grid;place-items:center;flex:none}
+  .bgm .ic svg{width:12px;height:12px;fill:#fff}
+  .bgm .ic .pause{display:none}
+  .bgm[aria-pressed="true"] .ic{background:var(--warm)}
+  .bgm[aria-pressed="true"] .ic .play{display:none}
+  .bgm[aria-pressed="true"] .ic .pause{display:block}
+  .music small{font-size:13px;color:var(--muted);line-height:1.6}
+  .music small a{color:var(--muted)}
 </style>
 </head>
 <body>
 <main>
   <h1>作品集</h1>
+  <div class="music">
+    <button class="bgm" type="button" id="bgm" aria-pressed="false">
+      <span class="ic" aria-hidden="true">
+        <svg class="play" viewBox="0 0 12 12"><path d="M3 1.5v9l7.5-4.5z"/></svg>
+        <svg class="pause" viewBox="0 0 12 12"><path d="M2.5 1.5h2.5v9H2.5zM7 1.5h2.5v9H7z"/></svg>
+      </span>
+      <span class="lbl">播放背景音樂</span>
+    </button>
+    <small>薩提〈第一號吉諾佩第〉・鋼琴 Robin Alciatore（Musopen）<br>公有領域・來源 <a href="https://commons.wikimedia.org/wiki/File:Erik_Satie_-_gymnopedies_-_la_1_ere._lent_et_douloureux.ogg">Wikimedia Commons</a></small>
+  </div>
+  <audio id="bgm-audio" src="audio/gymnopedie-1.mp3" loop preload="none"></audio>
   <ul>
     <li><a href="river/"><h2>成為一條河</h2><p>五分港溪的生命圖譜</p></a></li>
     <li><a href="movies/"><h2>電影教會我的事</h2><p>三十個故事的人生電影｜顧蕙倩</p></a></li>
@@ -29,5 +54,14 @@
     <li><a href="salamanca/"><h2>Salamanca 遊學＆Barcelona</h2><p>黃金之城的一個月</p></a></li>
   </ul>
 </main>
+<script>
+  (function(){
+    var b = document.getElementById('bgm'), au = document.getElementById('bgm-audio'), lbl = b.querySelector('.lbl');
+    au.volume = 0.6;
+    b.addEventListener('click', function(){ au.paused ? au.play() : au.pause(); });
+    au.addEventListener('play', function(){ b.setAttribute('aria-pressed','true'); lbl.textContent = '暫停背景音樂'; });
+    au.addEventListener('pause', function(){ b.setAttribute('aria-pressed','false'); lbl.textContent = '播放背景音樂'; });
+  })();
+</script>
 </body>
 </html>
