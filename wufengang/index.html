@@ -177,6 +177,15 @@
   footer .credit{display:block;margin-top:18px;font-size:12px;letter-spacing:.08em;line-height:1.8;color:#9fc4b6}
   footer .credit a{color:#cfe6dd}
 
+  /* back to portfolio */
+  .home{position:fixed;left:16px;top:16px;z-index:40;display:inline-flex;align-items:center;gap:8px;
+    min-height:40px;padding:8px 16px 8px 12px;border-radius:999px;text-decoration:none;
+    background:rgba(22,54,52,.82);color:#fff;font:500 14px/1 "Noto Sans TC",sans-serif;letter-spacing:.12em;
+    box-shadow:0 6px 18px rgba(10,24,22,.25);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+  .home:hover{background:var(--river)}
+  .home:focus-visible{outline:2px solid var(--dusk);outline-offset:3px}
+  .home svg{width:14px;height:14px;fill:none;stroke:#fff;stroke-width:2}
+
   /* background music */
   .bgm{position:fixed;right:16px;bottom:16px;z-index:40;display:inline-flex;align-items:center;gap:10px;
     min-height:44px;padding:8px 18px 8px 10px;border:0;border-radius:999px;cursor:pointer;
@@ -221,6 +230,8 @@
 </style>
 </head>
 <body>
+
+<a class="home" href="../"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M9 2 4 7l5 5"/></svg>作品集</a>
 
 <header class="hero">
   <img src="../river/img/IMG_7291.jpg" alt="洲美平原的稻田與晚霞">
@@ -500,6 +511,7 @@
 <footer>
   <b>五分港溪</b>
   成為一條河
+  <a class="credit" href="../" style="margin-top:14px">← 回作品集首頁</a>
   <span class="credit">背景音樂：史麥塔納〈莫爾道河〉（交響詩《我的祖國》選段）<br>演奏 Musopen Symphony・公有領域・來源 <a href="https://commons.wikimedia.org/wiki/File:Smetana_-_M%C3%A1_Vlast_-_Vltava_(Musopen_Symphony).flac">Wikimedia Commons</a></span>
 </footer>
 
