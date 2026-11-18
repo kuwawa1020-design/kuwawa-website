@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>電影教會我的事：三十個故事的人生電影｜顧蕙倩</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@400;500&family=LXGW+WenKai+TC&family=Cormorant+Garamond:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f4ecdd; --card:#fffcf5; --ink:#271e19; --soft:#5c4f45; --mute:#9a8b7b; --rule:#e2d4bd;
+  --a1:#9b3b2f; --a2:#3f6e6b; --a3:#a97a26; --amber:#c8963e; --acc:var(--a1);
+  --serif:"Noto Serif TC",serif; --sans:"Noto Sans TC",sans-serif; --hand:"LXGW WenKai TC","Noto Serif TC",serif; --latin:"Cormorant Garamond",serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.85;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.35;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .28 0 0 0 .18 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(60vw 50vh at 0% 0%,rgba(214,150,70,.16),transparent 70%),radial-gradient(50vw 50vh at 100% 100%,rgba(155,59,47,.10),transparent 70%)}
+main,header,section,nav{position:relative;z-index:1}
+a{color:inherit}
+
+/* ---------- opening: projector light ---------- */
+.opening{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:6vh 18px;overflow:hidden}
+.beam{position:absolute;left:50%;top:-10vh;width:160vmax;height:140vh;transform:translateX(-50%);pointer-events:none;
+  background:conic-gradient(from 180deg at 50% 0%,transparent 0deg 163deg,rgba(255,226,170,.55) 172deg,rgba(255,240,210,.75) 180deg,rgba(255,226,170,.55) 188deg,transparent 197deg 360deg);
+  filter:blur(16px);opacity:.9;animation:flicker 5s infinite steps(1)}
+@keyframes flicker{0%,100%{opacity:.9}12%{opacity:.8}13%{opacity:.95}47%{opacity:.85}70%{opacity:.92}}
+.dust{position:absolute;inset:0;pointer-events:none}
+.dust i{position:absolute;width:3px;height:3px;border-radius:50%;background:rgba(150,110,60,.45);animation:float 14s linear infinite}
+@keyframes float{from{transform:translateY(20px);opacity:0}20%{opacity:1}to{transform:translateY(-160px) translateX(30px);opacity:0}}
+.screen{position:relative;width:min(860px,100%);min-height:min(780px,94vh);padding:92px 0 150px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
+  background:radial-gradient(ellipse at 50% 40%,#fffaf0 0%,#f8efdd 55%,#efe1c6 100%);
+  box-shadow:0 0 0 1px rgba(120,90,50,.15),0 40px 80px -40px rgba(120,80,30,.45),inset 0 0 120px rgba(160,110,50,.18)}
+.screen::before,.screen::after{content:"";position:absolute;left:14px;right:14px;height:9px;opacity:.5;
+  background:repeating-linear-gradient(90deg,transparent 0 9px,rgba(60,40,25,.55) 9px 17px,transparent 17px 22px);border-radius:2px}
+.screen::before{top:12px}.screen::after{bottom:12px}
+.vtitle{writing-mode:vertical-rl;font-family:var(--serif);font-weight:900;font-size:clamp(42px,min(6vw,6.6vh),66px);letter-spacing:.18em;line-height:1;
+  background:linear-gradient(180deg,#2a1c15 0%,#5a2d20 55%,#8a5a2a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  text-shadow:0 0 0 transparent;filter:drop-shadow(0 6px 14px rgba(120,70,30,.18));padding:8px 0}
+.vside{writing-mode:vertical-rl;font-family:var(--hand);font-size:clamp(16px,2vw,20px);color:var(--soft);letter-spacing:.35em;justify-self:center;line-height:2}
+.vside.right{display:flex;gap:30px;align-items:flex-start}
+.vquote{font-family:var(--hand);color:var(--a1);font-size:1.12em;letter-spacing:.3em;line-height:2.1;position:relative;padding-top:8px}
+.vsub{padding-top:10px;border-top:1px solid var(--rule)}
+.vside.left{display:flex;flex-direction:column;align-items:center;gap:18px}
+.seal{writing-mode:vertical-rl;font-family:var(--serif);font-weight:900;font-size:17px;letter-spacing:.15em;color:#fff;background:#a8322a;padding:10px 6px;border-radius:3px;
+  box-shadow:inset 0 0 0 2px #a8322a,inset 0 0 0 4px rgba(255,255,255,.55);transform:rotate(-3deg);opacity:.92}
+.byline{font-family:var(--serif);font-weight:600;font-size:16px;letter-spacing:.4em;color:var(--ink)}
+.cover-top{position:absolute;top:34px;left:0;right:0;text-align:center;font-family:var(--latin);font-style:italic;font-size:15px;letter-spacing:.45em;color:var(--a3)}
+.cover-bot{position:absolute;bottom:32px;left:0;right:0;text-align:center;font-size:12px;letter-spacing:.5em;color:var(--mute)}
+.cover-bot b{color:var(--a1);font-weight:500}
+
+/* ---------- intertitle ---------- */
+.intertitle{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;
+  background:radial-gradient(ellipse 60% 55% at 50% 50%,rgba(255,236,196,.95) 0%,rgba(244,226,190,.6) 45%,transparent 75%)}
+.intertitle .lb{position:absolute;left:0;right:0;height:11vh;background:#241b16;z-index:2}
+.intertitle .lb.top{top:0}.intertitle .lb.bot{bottom:0}
+.intertitle .lb::after{content:"";position:absolute;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,150,62,.6),transparent)}
+.intertitle .lb.top::after{bottom:0}.intertitle .lb.bot::after{top:0}
+.it-inner{text-align:center;padding:14vh 24px;position:relative;z-index:1}
+.it-kicker{font-family:var(--latin);font-style:italic;font-size:15px;letter-spacing:.55em;color:var(--a3);margin-bottom:46px;text-transform:uppercase}
+.it-line{font-family:var(--serif);font-weight:600;font-size:clamp(28px,5vw,54px);line-height:1.75;letter-spacing:.14em;color:var(--ink);
+  opacity:0;filter:blur(8px);transform:translateY(8px)}
+.it-line:nth-of-type(3){color:var(--a1)}
+.it-sign{margin-top:48px;font-family:var(--hand);font-size:clamp(16px,2vw,20px);color:var(--soft);letter-spacing:.2em;opacity:0}
+.intertitle.play .it-line{animation:reveal 1.6s ease forwards;animation-delay:var(--d)}
+.intertitle.play .it-sign{animation:fadein 1.4s ease forwards;animation-delay:var(--d)}
+@keyframes reveal{to{opacity:1;filter:blur(0);transform:none}}
+@keyframes fadein{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.it-line,.it-sign{opacity:1;filter:none;transform:none}}
+
+/* ---------- nav ---------- */
+nav{position:sticky;top:0;z-index:40;background:rgba(247,241,229,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+nav .wrap{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:8px;padding:10px 16px;overflow-x:auto;scrollbar-width:none}
+nav .wrap::-webkit-scrollbar{display:none}
+nav .brand{font-family:var(--serif);font-weight:900;margin-right:10px;white-space:nowrap;font-size:16px}
+nav a{white-space:nowrap;text-decoration:none;font-size:14px;color:var(--soft);padding:6px 14px;border:1.5px solid var(--rule);border-radius:999px;background:var(--card);transition:.2s}
+nav a:hover,nav a.on{color:#fff;border-color:var(--ink);background:var(--ink)}
+
+/* ---------- music ---------- */
+.cover-play{position:absolute;left:50%;bottom:62px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:2px;
+  font-family:var(--serif);font-weight:600;font-size:16px;letter-spacing:.3em;color:#fff8ea;background:#5a2d20;border:none;border-radius:999px;padding:10px 26px 9px;cursor:pointer;
+  box-shadow:0 8px 22px -10px rgba(90,45,32,.7),0 0 0 4px rgba(200,150,62,.18);transition:.2s}
+.cover-play small{font-family:var(--hand);font-weight:400;font-size:12px;letter-spacing:.15em;opacity:.8}
+.cover-play:hover{background:var(--a1);box-shadow:0 10px 26px -10px rgba(155,59,47,.8),0 0 0 6px rgba(200,150,62,.25)}
+.player{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;font-family:var(--sans);font-size:14px;color:#6b4e12;background:#fbf0d8;border:1.5px solid #ead7ad;border-radius:999px;padding:6px 14px 6px 8px;cursor:pointer;margin-left:auto}
+.player .pi{width:24px;height:24px;border-radius:50%;background:var(--a3);color:#fff;display:grid;place-items:center;font-size:10px}
+.player .eq{display:none;align-items:flex-end;gap:2px;height:14px}
+.player .eq i{width:3px;background:var(--a3);border-radius:1px;animation:eq 1s ease-in-out infinite}
+.player .eq i:nth-child(2){animation-delay:-.3s}.player .eq i:nth-child(3){animation-delay:-.6s}.player .eq i:nth-child(4){animation-delay:-.15s}
+@keyframes eq{0%,100%{height:3px}50%{height:14px}}
+.player.on .eq{display:inline-flex}
+.player.on{background:#fff6e2;border-color:var(--a3)}
+
+/* ---------- prologue ---------- */
+.prologue{max-width:640px;margin:0 auto;padding:110px 24px 30px;font-family:var(--hand);font-size:20px;color:var(--soft);text-align:center;line-height:2.2}
+.prologue em{font-style:normal;color:var(--ink);background:linear-gradient(transparent 62%,rgba(211,155,42,.35) 62%)}
+
+/* ---------- act ---------- */
+.act{padding:130px 24px 50px;text-align:center;position:relative;overflow:hidden}
+.act::before{content:"";position:absolute;left:50%;top:0;width:900px;height:100%;transform:translateX(-50%);pointer-events:none;
+  background:conic-gradient(from 180deg at 50% 0%,transparent 0 168deg,rgba(255,228,175,.5) 180deg,transparent 192deg 360deg);filter:blur(14px)}
+.act .big{position:relative;font-family:var(--latin);font-weight:600;font-size:clamp(90px,18vw,180px);line-height:.9;color:transparent;-webkit-text-stroke:1.5px var(--acc)}
+.act .no{font-family:var(--latin);font-style:italic;font-size:20px;letter-spacing:.3em;color:var(--soft);margin-top:6px}
+.act h2{position:relative;font-family:var(--serif);font-weight:600;font-size:clamp(32px,6vw,58px);letter-spacing:.1em;margin:14px 0 14px;line-height:1.35}
+.act .range{display:inline-block;font-size:13px;letter-spacing:.35em;color:var(--acc);border:1.5px solid var(--acc);border-radius:999px;padding:4px 16px}
+
+/* ---------- scene card ---------- */
+.scene{max-width:1000px;margin:56px auto;padding:0 16px;opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.scene.in{opacity:1;transform:none}
+.card{background:var(--card);border-radius:6px;padding:52px 48px 44px;position:relative;box-shadow:0 1px 0 var(--rule),0 18px 40px -22px rgba(70,50,30,.35)}
+.tape{position:absolute;top:-14px;left:50%;width:120px;height:28px;transform:translateX(-50%) rotate(-2deg);background:var(--acc);opacity:.55;border-radius:2px}
+.slate{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:8px}
+.slate .num{font-family:var(--latin);font-weight:600;font-size:15px;letter-spacing:.3em;color:#fff;background:var(--acc);padding:3px 12px;border-radius:4px}
+.film-title{font-family:var(--serif);font-weight:600;font-size:clamp(24px,3.6vw,32px);line-height:1.4;margin-top:14px}
+.film-meta{font-family:var(--serif);font-size:clamp(17px,2.2vw,21px);color:var(--soft);margin-top:4px;letter-spacing:.02em}
+.film-meta .en{font-family:var(--latin);font-style:italic;font-size:1.12em;font-weight:500}
+.lesson-title{font-family:var(--serif);font-weight:600;font-size:clamp(28px,4.4vw,42px);line-height:1.4;margin:28px 0 6px;color:var(--ink);letter-spacing:.06em}
+.lesson-title::before{content:"";display:block;width:36px;height:2px;background:var(--acc);margin-bottom:16px}
+
+.head{display:block}
+.strip{display:flex;gap:5px;background:#241b16;padding:15px 7px;border-radius:3px;position:relative;box-shadow:0 12px 26px -16px rgba(40,25,15,.6);margin:28px -48px 0}
+.strip::before,.strip::after{content:"";position:absolute;left:5px;right:5px;height:5px;background:repeating-linear-gradient(90deg,transparent 0 5px,#efe3cc 5px 10px,transparent 10px 13px);opacity:.75;border-radius:1px}
+.strip::before{top:4px}.strip::after{bottom:4px}
+.frame{flex:1;height:96px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;border-radius:1px}
+.frame::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 45%,rgba(0,0,0,.35)),linear-gradient(120deg,rgba(255,200,120,.18),transparent 40%)}
+.frame span{position:relative;z-index:1;font-family:var(--serif);font-weight:600;font-size:17px;letter-spacing:.45em;color:rgba(255,250,238,.92);text-shadow:0 1px 6px rgba(0,0,0,.35);padding-left:.25em}
+.frame em{position:absolute;right:8px;bottom:4px;z-index:1;font-family:var(--latin);font-style:normal;font-size:11px;color:rgba(255,240,210,.65);letter-spacing:.05em}
+.body{display:grid;grid-template-columns:1fr 1.25fr;gap:48px;margin-top:34px}
+.epigraph{font-family:var(--hand);font-size:clamp(20px,2.5vw,25px);line-height:1.85;position:relative;padding-top:34px}
+.epigraph::before{content:"“";position:absolute;top:-22px;left:-6px;font-family:var(--latin);font-size:96px;color:var(--acc);opacity:.45;line-height:1}
+.beat{margin-bottom:20px}
+.beat .lab{display:inline-block;font-size:13px;font-weight:500;letter-spacing:.3em;color:var(--acc);margin-bottom:4px}
+.beat p{font-size:16.5px;color:#3e362f}
+.lesson{margin-top:26px;padding:20px 22px;background:color-mix(in srgb,var(--acc) 10%,#fff);border-left:4px solid var(--acc);border-radius:0 6px 6px 0}
+.lesson .lab{font-size:13px;font-weight:500;letter-spacing:.3em;color:var(--acc);margin-bottom:6px}
+.lesson p{font-family:var(--serif);font-size:18px;line-height:1.9}
+.score{margin-top:26px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:15px;color:var(--soft)}
+.score .note{width:36px;height:36px;border-radius:50%;background:var(--acc);color:#fff;display:grid;place-items:center;flex:none;font-size:17px}
+.score a{font-size:13px;letter-spacing:.12em;color:var(--acc);text-decoration:none;border:1.5px solid var(--acc);border-radius:999px;padding:2px 12px}
+.score a:hover{background:var(--acc);color:#fff}
+
+/* ---------- full text ---------- */
+.full{margin-top:36px;border-top:1.5px dashed var(--rule);padding-top:26px}
+.full summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:10px;font-family:var(--serif);font-weight:600;font-size:17px;color:var(--ink);padding:10px 22px;border:2px solid var(--ink);border-radius:999px;background:var(--card);box-shadow:3px 3px 0 var(--ink);transition:.15s;user-select:none}
+.full summary::-webkit-details-marker{display:none}
+.full summary:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
+.full summary .arr{transition:transform .25s}
+.full[open] summary .arr{transform:rotate(90deg)}
+.full .closed-hint{font-size:13px;color:var(--mute);margin-left:12px}
+.article{max-width:680px;margin:34px auto 6px;font-family:var(--serif);font-size:18px;line-height:2.15;color:#2f2925}
+.article h4{font-family:var(--hand);font-weight:400;font-size:22px;color:var(--acc);margin:38px 0 14px;text-align:center}
+.article h4::before,.article h4::after{content:"—";margin:0 .6em;opacity:.5}
+.article p{text-indent:2em;margin-bottom:1.15em}
+.article .lead{text-indent:0;font-family:var(--hand);font-size:21px;line-height:1.9;padding:18px 22px;background:color-mix(in srgb,var(--acc) 8%,#fff);border-radius:6px;margin-bottom:2em}
+.article .fin-mark{text-align:center;text-indent:0;color:var(--acc);letter-spacing:.6em;margin-top:2em}
+.backup{display:block;margin:10px auto 0;font-size:14px;color:var(--soft);background:none;border:none;cursor:pointer;font-family:var(--sans);text-decoration:underline;text-underline-offset:4px}
+
+/* ---------- credits ---------- */
+.credits{padding:150px 24px 110px;text-align:center}
+.credits h2{font-family:var(--serif);font-weight:900;font-size:clamp(30px,6vw,52px);letter-spacing:.2em}
+.credits .tag{color:var(--mute);letter-spacing:.4em;font-size:13px;margin:8px 0 56px}
+.roll{max-width:640px;margin:0 auto}
+.roll .grp{font-family:var(--latin);font-style:italic;font-size:18px;letter-spacing:.25em;margin:46px 0 16px}
+.roll .row{display:grid;grid-template-columns:1fr 28px 1fr;gap:8px;padding:7px 0;font-size:16px;text-decoration:none}
+.roll .row span:first-child{text-align:right;color:var(--soft)}
+.roll .row span:nth-child(2){color:var(--mute)}
+.roll .row span:last-child{text-align:left;font-family:var(--serif);font-weight:600}
+.roll .row:hover span:last-child{color:var(--a1)}
+.written{margin-top:90px}
+.written small{font-family:var(--latin);font-style:italic;letter-spacing:.3em;color:var(--mute);font-size:16px}
+.written p{font-family:var(--serif);font-weight:900;font-size:28px;letter-spacing:.5em;margin-top:6px}
+.fin{font-family:var(--serif);font-weight:600;font-size:34px;color:var(--a1);margin-top:70px;letter-spacing:.3em}
+.footnote{max-width:640px;margin:46px auto 0;font-size:13px;color:var(--mute);line-height:2}
+
+@media (max-width:760px){
+  .it-kicker{letter-spacing:.3em;font-size:12px}
+  .cover-play{bottom:56px;font-size:14px;padding:9px 20px 8px}
+  .player .pl{display:none}
+  .player{padding:6px 8px}
+  .it-line{letter-spacing:.06em}
+  .card{padding:44px 22px 34px}
+  .body{grid-template-columns:1fr;gap:28px;margin-top:32px}
+  .head{grid-template-columns:1fr;gap:18px}
+  .strip{margin:22px -22px 0;gap:3px;padding:12px 5px}
+  .frame{height:70px}
+  .frame span{font-size:13px}
+  .screen{aspect-ratio:auto;min-height:78vh;grid-template-columns:1fr auto 1fr;padding:70px 6px}
+  .vside{font-size:13px;letter-spacing:.2em}
+  .vside.right{gap:12px}
+  .vtitle{font-size:clamp(40px,11vw,56px)}
+  .article{font-size:17px}
+}
+@media (prefers-reduced-motion:reduce){.scene{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<header class="opening" id="top">
+  <div class="beam"></div>
+  <div class="dust"><i style="left:42%;top:60%;animation-delay:-1s;animation-duration:13s"></i><i style="left:55%;top:45%;animation-delay:-5s;animation-duration:16s"></i><i style="left:48%;top:72%;animation-delay:-9s;animation-duration:12s"></i><i style="left:60%;top:66%;animation-delay:-3s;animation-duration:18s"></i><i style="left:38%;top:40%;animation-delay:-7s;animation-duration:15s"></i><i style="left:52%;top:30%;animation-delay:-11s;animation-duration:14s"></i><i style="left:46%;top:52%;animation-delay:-2s;animation-duration:17s"></i><i style="left:58%;top:58%;animation-delay:-6s;animation-duration:11s"></i></div>
+  <div class="screen">
+    <div class="cover-top">A Life in Thirty Films</div>
+    <div class="vside left"><span class="byline">顧蕙倩 著</span><span class="seal">顧蕙倩</span></div>
+    <h1 class="vtitle">電影教會我的事</h1>
+    <div class="vside">一部用三十部電影<br>拍成的人生故事</div>
+    <button class="cover-play" type="button" data-play-start>▶　開燈放映<small>原創配樂〈光影之間〉</small></button>
+    <div class="cover-bot">三幕 <b>·</b> 三十個場景 <b>·</b> 三十段人生</div>
+  </div>
+</header>
+
+<section class="intertitle" id="prelude">
+  <div class="lb top"></div><div class="lb bot"></div>
+  <div class="it-inner">
+    <div class="it-kicker">Feature Presentation</div>
+    <p class="it-line" style="--d:0s">「我們都是平凡人，</p>
+    <p class="it-line" style="--d:1.1s">卻都想要通透</p>
+    <p class="it-line" style="--d:2.2s">人生是怎麼一回事。」</p>
+    <div class="it-sign" style="--d:3.4s">— 顧蕙倩《電影教會我的事》</div>
+  </div>
+</section>
+
+<nav><div class="wrap">
+  <span class="brand">電影教會我的事</span>
+  <a href="#act-1">第一幕 · 除了愛</a>
+  <a href="#act-2">第二幕 · 經歷四季</a>
+  <a href="#act-3">第三幕 · 遇見幸福</a>
+  <a href="#credits">片尾名單</a>
+  <button class="player" type="button" data-play-toggle aria-label="播放原創配樂〈光影之間〉"><span class="pi">▶</span><span class="eq"><i></i><i></i><i></i><i></i></span><span class="pl">原創配樂〈光影之間〉</span></button>
+</div></nav>
+<audio id="score" loop preload="none"><source src="score.mp3" type="audio/mpeg"><source src="score.webm" type="audio/webm"></audio>
+
+<section class="prologue">
+  燈暗了。<br>
+  這不是影評，而是三十段真實的人生——<br>
+  學生、朋友、家人，與年輕時的自己。<br>
+  每一個故事，都在某一部電影裡找到了回聲。<br><br>
+  <em>電影只有兩小時，人生卻是一輩子。</em>
+</section>
+
+<main id="film"></main>
+
+<section class="credits" id="credits">
+  <h2>片尾名單</h2>
+  <p class="tag">IN ORDER OF APPEARANCE</p>
+  <div class="roll" id="roll"></div>
+  <div class="written"><small>Written by</small><p>顧蕙倩</p></div>
+  <p class="fin">— 劇終 —</p>
+  <p class="footnote">
+    拍立得畫面為依各片意象設計的原創插畫，未使用電影劇照。<br>
+    「配樂」列出各片作曲者或代表曲目，點「聆聽」可前往 YouTube 搜尋收聽。<br>全頁背景音樂〈光影之間〉為本網頁原創配樂。<br>
+    全文收錄自顧蕙倩《故事教會我的事：三十部不能不看的經典電影》。
+  </p>
+</section>
+
+<script>
+const ACTS = [
+  {id:1, no:"Act I", title:"除了愛，什麼也不能給你"},
+  {id:2, no:"Act II", title:"經歷四季，走入風景"},
+  {id:3, no:"Act III", title:"在這裡，遇見幸福"}
+];
+
+const S = [
+/* ---------- ACT I ---------- */
+{act:1, lesson:"除了愛，什麼也不能給你", zh:"派特的幸福劇本", en:"Silver Linings Playbook", year:2012, dir:"大衛·歐·羅素",
+ epi:"我該偷偷下去找幾個人，若無其事地把你拉進人群裡嗎？",
+ story:"那個總是一個人的學生，畢業舞會沒有舞伴，卻在舞台前專心地隨音樂搖擺。老師在三樓走廊遠遠望著，終究沒有下樓打擾。",
+ film:"派特相信「每朵烏雲都有銀色的鑲邊」，在眾人眼中他是危險人物；直到遇見頻率同樣特別的蒂芬妮，兩人在憂鬱與愛裡彼此療癒。",
+ take:"頻率獨特的鯨魚，依然能自在地擺動尾鰭，悠游在藍色的深海裡。我為什麼要擔心你的獨特呢？",
+ music:"Danny Elfman 原創配樂", q:"Silver Linings Playbook soundtrack Danny Elfman",
+ pal:["#16233f","#8a96a8","#d8dde4"], frames:["舞池","銀邊","鯨魚"]},
+{act:1, lesson:"為愛奔赴前程", zh:"安娜卡列妮娜", en:"Anna Karenina", year:2012, dir:"喬·懷特",
+ epi:"愛可以被原諒嗎？如果不愛一個人，可以因為對方的高尚情操而獲得愛的理由嗎？",
+ story:"托爾斯泰讓一個為愛出走的女子，死在火車輪下。她的死，是作者對道德的效忠，還是對天下背德者的救贖？",
+ film:"喬·懷特以舞台劇換幕的形式擠壓時空，安娜像花蝴蝶般不停走位；浮光掠影的愛或不愛，情慾像火車一樣到站、離站。",
+ take:"感情的開始先是觸電，繼而驚豔。然後，兩個人的相處，才是故事的高潮。",
+ music:"Dario Marianelli 原創配樂", q:"Anna Karenina 2012 soundtrack Dario Marianelli",
+ pal:["#3a0d12","#9b2a2a","#d9b56a"], frames:["蒸氣","舞台","原野"]},
+{act:1, lesson:"愛可以再回來嗎？", zh:"愛在遙遠的附近", en:"The Painted Veil", year:2006, dir:"約翰·柯倫",
+ epi:"依然在你身邊，心已離你遠。",
+ story:"從十八歲開始全心全意愛了近十年，她卻決定分手。你在原地，而她，已經創造了另一個星球——兩人成了平行線。",
+ film:"華特與凱蒂從一段沒有愛的婚姻出發，來到霍亂肆虐的中國鄉間；在共同的目標裡，一層層撥開面紗，第一次走近對方。",
+ take:"愛情稍縱即逝，需要攜手共創。當愛來敲第二次門時，我們都要好好把握。",
+ music:"Alexandre Desplat 原創配樂", q:"The Painted Veil soundtrack Alexandre Desplat",
+ pal:["#1d3330","#5f8476","#c9d6c4"], frames:["面紗","山水","霍亂"]},
+{act:1, lesson:"幸福，在哪裡？", zh:"約他去看絕世雪景", en:"Matterhorn", year:2013, dir:"迪德里克·艾賓格",
+ epi:"請告訴我，我可不可以和一般人一樣，和所愛的人創造幸福家庭呢？",
+ story:"鋼琴師 Andy 為父母催婚所苦，每天練滿四小時巴哈，背誦《十二平均律》，養一隻貓，等待一個他給不起的答案。",
+ film:"習慣紀律生活的 Fred，遇見闖入小鎮的 Theo。兩個受過傷的靈魂相互陪伴，一起走到夢寐以求的 Matterhorn 雪景前。",
+ take:"婚姻不過是創造幸福的選項之一，任誰都不能用自己的道德標準，來規範他人的幸福定義。",
+ music:"巴哈《平均律 C 大調前奏曲 BWV 846》", q:"Bach Prelude in C major BWV 846",
+ pal:["#203450","#7f9bb8","#eef3f7"], frames:["平均律","貓","雪峰"]},
+{act:1, lesson:"你也期待準備充分的完美時刻？", zh:"超急情聖", en:"Don Jon", year:2013, dir:"喬瑟夫·高登-李維",
+ epi:"愛要浪漫，告白要準備……到頭來，人生不就和好萊塢片一樣，以票房和掌聲取勝嗎？",
+ story:"Jimmy 的畢業舞會告白劇本，寫好了荷花池；女孩卻只想跳舞。兩個小時繞著操場，他一直聽，直到曲終人散。",
+ film:"一個沉迷 A 片，一個看了太多好萊塢愛情電影——兩個人都被腦海裡的畫面導演了愛情，因期待一次次落空而分手。",
+ take:"電影只有兩小時，人生卻是一輩子。沒有荷花池，也可以步步都是蓮花呀。",
+ music:"Nathan Johnson 原創配樂", q:"Don Jon soundtrack Nathan Johnson",
+ pal:["#2a0f2e","#b0396b","#f1a7c1"], frames:["燈光","荷花池","劇本"]},
+{act:1, lesson:"在如常中練習愛", zh:"築巢人", en:"A Rolling Stone", year:2012, dir:"沈可尚",
+ epi:"愛人的本領豈是天生就會的呢？再偉大的人也有需要喘息的時候。",
+ story:"事業成功的 Mandy 辭職陪伴孩子。她看著咖啡店裡擦不完的玻璃問：這樣周而復始的付出，到底有什麼價值？",
+ film:"陳爸爸日復一日照顧自閉症的兒子立夫，像神話裡推著巨石上山的薛西佛斯；鏡頭安靜地凝視一個家如常的生活。",
+ take:"承認自己是個無法一直推石頭上山的凡人，不必掩飾地喘氣、深呼吸——繼續面對明天的勇氣，才會順勢竄出。",
+ music:"紀錄片，無主題配樂——請聆聽生活本身的聲音", q:"",
+ pal:["#26241f","#6b655a","#b8b0a0"], frames:["玻璃","巨石","山路"]},
+{act:1, lesson:"看見鏡頭前後的自己", zh:"一千次晚安", en:"A Thousand Times Good Night", year:2013, dir:"艾瑞克·波佩",
+ epi:"不公不義的世界給了她完成自我的機會，但是，她的家人呢？她能將他們留給誰？",
+ story:"曾在街頭抗議時被警察抬走也毫無懼色的 Jessica，在孩子遭同學霸凌的那天，看著他入睡，害怕到發抖。",
+ film:"戰地攝影師雷貝卡在阿富汗受傷，平安歸來，迎接她的卻是丈夫的崩潰：「孩子們老是得擔心，他們的媽媽隨時會死！」",
+ take:"相機給我們冷眼的工具，但終究重要的還是一顆心——先用純真的靈魂，護持那個鏡頭前後的自己。",
+ music:"Armand Amar 原創配樂", q:"A Thousand Times Good Night soundtrack Armand Amar",
+ pal:["#2b2416","#8c7a52","#d9c9a3"], frames:["快門","晚安","問號"]},
+{act:1, lesson:"完整的愛，深深的傷害", zh:"愛的神奇符號", en:"An Invisible Sign", year:2010, dir:"瑪麗蓮·阿格雷羅",
+ epi:"只要不再欺騙自己的情感，給自己一點點希望，全新的愛情與未來就會在我們面前展開。",
+ story:"一則令人無法入眠的床邊故事：為了永遠在一起，一家人各自割去身體的一部分，從此再也不敢出門。",
+ film:"熱愛數學的莫娜，在父親病後封閉自己，以為放棄自己的一部分，就能換回完整的父親；直到她成為小學老師，重新學會去愛。",
+ take:"以為犧牲自己最重要的一部分來成全整體，這是美德，還是愚蠢呢？",
+ music:"", q:"",
+ pal:["#17302a","#4f7d6c","#e6e2c8"], frames:["數字","床邊故事","奔跑"]},
+{act:1, lesson:"永不老衰的鑰匙", zh:"千年女優", en:"Millennium Actress", year:2001, dir:"今敏",
+ epi:"終其一生，到底在追尋什麼？是這個罷，是這個一直在路上前進著的自己吧！",
+ story:"三十年前排了九個小時的隊買影展票。人生像一場密室逃脫：一關關破解，打開門的那一刻，還不知道終點寫著什麼。",
+ film:"千代子為了「那個人會看到我演的電影」，脖子上掛著一把鑰匙，戲裡戲外不停奔跑，從青絲一路追到白髮。",
+ take:"「我喜歡的，是不斷在追尋他的自己。」——這個女人，是永不可能老去衰敗的。",
+ music:"平沢進〈Rotate〉", q:"千年女優 平沢進 Rotate",
+ pal:["#3b2414","#a8552f","#e9cf9f"], frames:["鑰匙","雪國","奔跑"]},
+{act:1, lesson:"愛的特寫鏡頭", zh:"隔著圍牆說愛你", en:"Liebe Mauer（Beloved Berlin Wall）", year:2009, dir:"彼得·蒂姆",
+ epi:"有些感情可以互相陪伴、互相傾心，卻不一定就要擁有彼此的愛情。",
+ story:"畢業的學生深夜敲來臉書：「老師，我告白被打槍了！我還能和她聯絡嗎？她是我最重要的朋友。」",
+ film:"東德衛兵沙夏與西柏林女孩法蘭西，隔著柏林圍牆，用望遠鏡和寫滿字的白紙相愛；1989 年 11 月 9 日，牆終於倒下。",
+ take:"一段感情和一堵圍牆，哪一個比較堅固？當然是感情。再頑強的圍牆，也會被真誠坦率一一擊破。",
+ music:"", q:"",
+ pal:["#2a2a2c","#6e6a66","#d8a06a"], frames:["圍牆","望遠鏡","1989"]},
+
+/* ---------- ACT II ---------- */
+{act:2, lesson:"如果悲傷一直都在", zh:"日日是好日", en:"Every Day a Good Day", year:2018, dir:"大森立嗣",
+ epi:"好心的妳告訴我，如何才能夠忘掉悲傷？如何才能重拾歡笑呢？",
+ story:"一直是大家開心果的 W，因前女友遇害而陷入自責，瘦成了另一個人：「我覺得我才是那個加害人！」",
+ film:"典子二十歲走進武田老師的茶室，習茶二十五年；學業、事業、婚姻與喪親，都在二十四節氣如常的遞嬗間發生。",
+ take:"如果悲傷一直都在，就品嘗心頭當下瞬間的悲傷罷。既然來了，就當它是此刻誕生在生命裡的細胞。",
+ music:"", q:"",
+ pal:["#1f2a17","#6d8248","#dfe3c3"], frames:["茶筅","雨滴","節氣"]},
+{act:2, lesson:"走入風景，經歷四季", zh:"愛在午夜希臘時", en:"Before Midnight", year:2013, dir:"李察·林克雷特",
+ epi:"開啟故事的第一章非常簡單，不過就是因為教室靠窗的風景特別迷人。",
+ story:"Jenny 與 Jack 在山腰校園度過四個四季，兩盞相鄰的桌燈；畢業後只在雲端相見，直到 Jack 提出見面。",
+ film:"從維也納、巴黎到希臘，十八年的錯過、思念與相遇；兩人終究要面對：如何在現實裡維繫生命的交集。",
+ take:"是永遠停留在俯瞰一切的靠窗位置呢？還是走入風景，經歷四季？",
+ music:"Graham Reynolds 原創配樂", q:"Before Midnight soundtrack Graham Reynolds",
+ pal:["#0f2c45","#3f86a8","#f0dfb8"], frames:["窗景","桌燈","愛琴海"]},
+{act:2, lesson:"不愛，就回到自己身邊", zh:"失戀33天", en:"Love Is Not Blind", year:2011, dir:"滕華濤",
+ epi:"想吃什麼呢？想去哪裡呢？為了討她歡欣，自己喜歡什麼變得一點都不重要了！",
+ story:"額頭還縫著針的少年問：失戀後要過多久，才能走出感情的傷痛？老師順口答了一個數字：33 天。",
+ film:"黃小仙在七年戀情崩塌後，展開 33 天的後失戀時期；毒舌的王小賤，不著痕跡地陪她走過人生低潮。",
+ take:"用 33 天和真實的自己相處，你會發現，時間一直都在陪著你，用愛和希望療癒傷口。",
+ music:"", q:"",
+ pal:["#1a1430","#6c4fa3","#f4c66b"], frames:["33","Faith","圖書館"]},
+{act:2, lesson:"一顆堅定生活的信心", zh:"里斯本夜車", en:"Night Train to Lisbon", year:2013, dir:"比利·奧古斯特",
+ epi:"坐上這班里斯本夜車，在追索一個陌生人的生命旅途裡，逐漸找回自己最真實的內心。",
+ story:"剛升官、剛新婚的竹科工程師 Eric，辭去工作，遠赴墨爾本打工度假一年。",
+ film:"一位紅衣女子、一本書、一張車票，讓老教授拋下一切，前往里斯本追尋作家普拉多的一生，也換上了一副新眼鏡。",
+ take:"生命的意義不在於如何生活，而在於如何設想生活。",
+ music:"Annette Focks 原創配樂", q:"Night Train to Lisbon soundtrack Annette Focks",
+ pal:["#0d2027","#2f5d66","#c2453a"], frames:["夜車","紅大衣","新眼鏡"]},
+{act:2, lesson:"與不完美和平共存", zh:"驚悚大師希區考克：重返驚魂記", en:"Hitchcock", year:2012, dir:"薩夏·吉瓦西",
+ epi:"他只想一輩子做一個螻蟻，因為他也只配做這種低等生物，一輩子養活自己就好。",
+ story:"人人眼中正向可靠的 K，背負著年少時的一段陰影；當一個女孩真心愛他，他反而害怕自己不配被愛。",
+ film:"大導演的窺視、妒火、暗戀與疑心——這些不堪，到後來都成了他創作電影的源頭。",
+ take:"何不正視鏡子，與那個不完美的自己、不完美的世界和平共存？如此才能勇敢去愛人與被愛。",
+ music:"Danny Elfman 原創配樂", q:"Hitchcock 2012 soundtrack Danny Elfman",
+ pal:["#0a0a0a","#4a4a4a","#b3262b"], frames:["鏡子","浴簾","剪影"]},
+{act:2, lesson:"想像更美好的可能", zh:"大亨小傳", en:"The Great Gatsby", year:2013, dir:"巴茲·魯曼",
+ epi:"不是因為『最好』所以眷念不已，而是因為永遠失落了，只能用懷念召喚，所以才成為『最好』。",
+ story:"創意無限的 H，走進家門卻是一片荒涼；從小墊底的 B，卻說自己是三人之中「發展得最好」的一個。",
+ film:"蓋茲比活在自己撒下的金粉幻象裡，一如以往地快樂，直到生命的最後一刻。",
+ take:"如果你們都是我撒出來的金粉幻象，我們一起走過的酸甜苦辣又算什麼？哀樂中年的此刻，還能欣賞身邊的美好時光。",
+ music:"Craig Armstrong 配樂；Lana Del Rey〈Young and Beautiful〉", q:"Young and Beautiful Lana Del Rey",
+ pal:["#0f2418","#2f7a4c","#e3c46a"], frames:["綠光","金粉","派對"]},
+{act:2, lesson:"看見最美麗的風景", zh:"郵差", en:"Il Postino", year:1994, dir:"麥可·瑞福",
+ epi:"這是父母的人生，不是我的。難道走在同一條路上，就算安全地找到了適合我的人生嗎？",
+ story:"R 三年來每月第一個星期六，偷偷搭火車回花蓮山區母校教小提琴；車禍躺在病床上，她仍不後悔。",
+ film:"漁夫之子馬立歐為詩人聶魯達送信，從此學會用一雙詩人的眼睛，讚嘆海、天空、雲與雨。",
+ take:"不是天賦引領他認識詩，而是他對這世界最純粹的讚嘆。",
+ music:"Luis Bacalov 原創配樂", q:"Il Postino soundtrack Luis Bacalov",
+ pal:["#123047","#3d7fa6","#f2d9a0"], frames:["信件","海","小提琴"]},
+{act:2, lesson:"背叛之後", zh:"愛在血淚交織時", en:"In the Land of Blood and Honey", year:2011, dir:"安潔莉娜·裘莉",
+ epi:"傷害一個陌生人算什麼，完成自己的野心，滿足一己的慾望，比什麼狗屁道德都重要。",
+ story:"M 一向以長兄如父自許，傾家產、連父母的養老金都給了弟弟去大陸創業；弟弟從此人間蒸發。",
+ film:"波士尼亞內戰中，一段跨越族群與宗教的愛情，在仇恨的戰火下接受人性最嚴苛的考驗。",
+ take:"經歷了背叛之後，眼前的迷霧全然散去。接下來要看清什麼、選擇繼續相信什麼，只有自己知道。",
+ music:"Gabriel Yared 原創配樂", q:"In the Land of Blood and Honey soundtrack Gabriel Yared",
+ pal:["#1c1414","#5a2a26","#a89a8a"], frames:["烽火","斗室","迷霧"]},
+{act:2, lesson:"卻道天涼好個秋", zh:"無須多言", en:"Enough Said", year:2013, dir:"妮可·哈洛芬瑟",
+ epi:"無須話語的修飾，簡單幾句話，情感可以如此簡單清晰地了然於心。",
+ story:"當年的風雲人物「高帥」，如今在朋友面前只說「是呀、好的、謝謝」；他和老婆私下，卻有聊不完的話題。",
+ film:"中年的 Eva 與 Albert 一見投緣。「I'm tired of being funny.」「Me too.」——直到旁人的千言萬語讓愛猶豫。",
+ take:"隨著年紀，將最重要的話，留給最親愛的家人。",
+ music:"Marcelo Zarvos 原創配樂", q:"Enough Said soundtrack Marcelo Zarvos",
+ pal:["#2e1a0e","#a5582a","#efc98c"], frames:["秋葉","對白","沉默"]},
+{act:2, lesson:"熱情看待世界", zh:"雲端情人", en:"Her", year:2013, dir:"史派克·瓊斯",
+ epi:"有沒有在分手前明確告訴他分手的原因呢？——事到如今，還需要什麼溝通！",
+ story:"Sophie 想要一個不必說出口就懂她的人；男友一句「是怎麼了嗎？」，她便斷然分手。",
+ film:"西奧多愛上作業系統莎曼珊：「身邊有個熱情看待世界的人很棒，我有點忘記那種熱情。」",
+ take:"熱情地看待這個世界，也包含了——願意熱情地與伴侶溝通。",
+ music:"Arcade Fire 配樂；〈The Moon Song〉", q:"Her soundtrack The Moon Song",
+ pal:["#3a1410","#d0563f","#f6d2b8"], frames:["耳機","雲端","熱情"]},
+
+/* ---------- ACT III ---------- */
+{act:3, lesson:"願記憶你美好的一面", zh:"孟買日記", en:"Dhobi Ghat", year:2010, dir:"基蘭·拉奧",
+ epi:"但那像嗎啡，一旦沉迷，便耽溺在快樂的假象，活在渾然忘我的夢境裡。",
+ story:"寫一本台北日記，只寫街角咖啡店與林蔭大道，略過暗巷、無薪假與公園裡思鄉的移工。",
+ film:"洗衣工、攝影千金、新嫁娘與畫家，四個不同階層的人，在時晴時雨的孟買交錯出獨一無二的城市情懷。",
+ take:"不曾親眼看見的真實，難道就真的不存在嗎？",
+ music:"Gustavo Santaolalla 原創配樂", q:"Dhobi Ghat soundtrack Gustavo Santaolalla",
+ pal:["#2b1d0c","#b36b1f","#e9d8b4"], frames:["洗衣場","雨季","日記"]},
+{act:3, lesson:"我們才是真實，他們只是夢境", zh:"終點之城", en:"The City of Your Final Destination", year:2009, dir:"詹姆斯·艾佛利",
+ epi:"不要讓文學作品詮釋你的生命，而是要讓自己的生命重新詮釋文學作品。",
+ story:"小時候走到東園街的復興戲院看電影。燈一關，便走進電影裡；戲散了，人生又偷偷多了一種可能。",
+ film:"歐瑪遠赴烏拉圭，求取已故作家的傳記授權；他擾亂了莊園裡每個人的平靜，也改寫了自己的命運。",
+ take:"電影揭示了人生的某種面相，卻無法代替真實人生的主角，完成接下來的劇情。",
+ music:"Jorge Drexler 原創配樂", q:"The City of Your Final Destination soundtrack Jorge Drexler",
+ pal:["#2a0e18","#7a2a3d","#d8b48a"], frames:["戲院","手稿","莊園"]},
+{act:3, lesson:"人生的奇幻漂流", zh:"少年Pi的奇幻漂流", en:"Life of Pi", year:2012, dir:"李安",
+ epi:"我們都是平凡人，卻都想要通透人生是怎麼一回事。",
+ story:"桌前一張孩提時去動物園的黑白照片，笑容清晰明朗；昨天的心情，卻已無法靠近。",
+ film:"Pi 與孟加拉虎同船，在太平洋上撐過 227 天；上岸那一刻，老虎頭也不回地走進森林。",
+ take:"從出生到死亡，我們仍是孤獨的一艘小船，陪伴著自己，航向下一個旅程。",
+ music:"Mychael Danna 原創配樂", q:"Life of Pi soundtrack Mychael Danna",
+ pal:["#06182e","#1b5f7a","#f0a347"], frames:["小船","老虎","星空"]},
+{act:3, lesson:"當宅女遇見珍·奧斯汀", zh:"珍愛來臨", en:"Becoming Jane", year:2007, dir:"朱利安·賈洛",
+ epi:"淡淡優雅，適度的拘謹，微妙的現實與感性——這樣的英式涼蔭風，挺適合一個人宅宅地享受。",
+ story:"38 度的盛夏，躲在家裡一口氣看完六部珍·奧斯汀電影，當作消暑良方。",
+ film:"珍在愛情與貧窮之間，終究放棄了私奔；多年後重逢，她為勒佛里那名叫「珍」的女兒，朗讀一段《傲慢與偏見》。",
+ take:"美好出現了，就該珍惜當下，否則只會眼睜睜看著生命如雪花冰消融在眼前。",
+ music:"Adrian Johnston 原創配樂", q:"Becoming Jane soundtrack Adrian Johnston",
+ pal:["#1f2a1c","#6f8f5e","#efe6cf"], frames:["洋傘","書信","馬車"]},
+{act:3, lesson:"我這麼讀張愛玲", zh:"傾城之戀", en:"Love in a Fallen City", year:1984, dir:"許鞍華",
+ epi:"看電影的我們都有詮釋故事的權利。",
+ story:"學生收到一封分手信，信裡說：無法一起看月亮的每個晚上，讓她心慌。他讀了好幾遍，還是看不懂。",
+ film:"范柳原在電話那端問：「流蘇，你的窗子裡看得見月亮麼？」一座城的傾覆，成全了兩個精刮的人。",
+ take:"這兩個人能讓我們懂得什麼，我們的生命經驗就學到什麼。",
+ music:"", q:"",
+ pal:["#10141f","#3a4766","#e8e0c4"], frames:["月光","淺水灣","電話"]},
+{act:3, lesson:"從世界末日前開始", zh:"瓦力", en:"WALL·E", year:2008, dir:"安德魯·史丹頓",
+ epi:"在他的愛情地球裡，他相信自己的選擇和經驗值，這個生存法則不會造成他和愛人滅絕。",
+ story:"2012 年 12 月 21 日，傳說中的世界末日；那天，Cliff 的女友離開台灣，出國念書三年。",
+ film:"地球毀滅後，瓦力與伊芙兩個機器人，靠著廢棄的零件修復彼此，永不放棄對彼此的疼惜。",
+ take:"與其焦慮，不如一起找到尚堪使用的零件，重新打造一個足以面對未來的身軀。",
+ music:"Thomas Newman 原創配樂", q:"WALL-E soundtrack Thomas Newman",
+ pal:["#2b1a0c","#a8662a","#7fd0d8"], frames:["零件","幼苗","星空"]},
+{act:3, lesson:"當我終於明瞭", zh:"童年往事", en:"A Time to Live, A Time to Die", year:1985, dir:"侯孝賢",
+ epi:"湮滅了一切，那將不會是記憶的淨空，那會是一個洞，一個心靈掏空的荒蕪。",
+ story:"W 童年的「春安商店」老厝即將都更拆除。這裡曾是他炫耀的百貨商城，也是送走父親與母親的家。",
+ film:"眷村的日式平房裡，父親、母親、阿婆一一逝去；濕漉漉的郵票貼在窗玻璃上，時間隨水滴默默滑落。",
+ take:"家的意義，不只是一張 Google 地圖上找得到的門牌號碼；當一切夷為平地，一切的故事也要從這裡啟程。",
+ music:"", q:"",
+ pal:["#221d14","#7a6a4a","#d8cba8"], frames:["拉門","郵票","背影"]},
+{act:3, lesson:"與眾不同真的不好嗎？", zh:"冰雪奇緣", en:"Frozen", year:2013, dir:"克里斯·巴克、珍妮佛·李",
+ epi:"我所看到的，合群、愛朋友、擁有好人個性的她，是真的她嗎？",
+ story:"從小躲在窗邊畫畫的 Michael，四十歲才成為新銳畫家：「我害怕和父親一樣，因為和別人不同而成為箭靶。」",
+ film:"艾莎曾因天賦傷了妹妹，於是封閉自己；直到逃上山頂，築起冰宮——Let it go，她不再恐懼。",
+ take:"「特別」並不等同於「怪異」。若沒有一個又一個獨特的靈魂，又如何成就繽紛多彩的世界呢？",
+ music:"Christophe Beck 配樂；〈Let It Go〉", q:"Frozen Let It Go",
+ pal:["#0c2238","#4f93c4","#e6f4fb"], frames:["窗邊","冰宮","雪花"]},
+{act:3, lesson:"如何治療同學會後遺症", zh:"伴娘我最大", en:"Bridesmaids", year:2011, dir:"保羅·費格",
+ epi:"到底是誰先犯下的錯？是誰未做到警示自己心靈的責任？",
+ story:"S 參加小學同學會，帶回一疊上市公司主管、律師、醫生的名片，從此覺得自己手中只有一把爛牌。",
+ film:"人生觸底的 Annie 只想開一場自憐派對，Megan 卻一語驚醒她：You better learn to fight for your life.",
+ take:"人生畢竟不是同學會，同學會也不會天天舉辦的。",
+ music:"Michael Andrews 原創配樂", q:"Bridesmaids soundtrack Michael Andrews",
+ pal:["#331422","#c25a7c","#f7d6c8"], frames:["名片","車燈","蛋糕"]},
+{act:3, lesson:"一直走一直走", zh:"橫山家之味", en:"Still Walking", year:2008, dir:"是枝裕和",
+ epi:"每個人心中或多或少都有些難言之隱，能對人說得出來，也就暫時自我釋放。",
+ story:"二十歲和戀人在公館「影廬」看《東京物語》，看完相對無語；那時的我們，說不出生活裡細微的瑣事。",
+ film:"長子忌日的兩天一夜。母親若無其事地唱起〈Blue Light Yokohama〉——「歩いても 歩いても」，一直走，一直走。",
+ take:"遺憾是一個好大的窟窿。不去正視它，它永遠都在；正視它、跨越它，才能一直走，一直走下去。",
+ music:"GONTITI 配樂；〈ブルー・ライト・ヨコハマ〉", q:"ブルー・ライト・ヨコハマ いしだあゆみ",
+ pal:["#16241a","#4f7a52","#e8d36a"], frames:["玉米餅","黃蝴蝶","階梯"]}
+];
+
+
+const FULL = {"01": ["> 我該偷偷下去找幾個人，若無其事地把你拉進人群裡嗎？或是默默安排一個女生約你共舞嗎？", "你很安靜，是班上話最少的，除非報告輪到你上台，很少聽你發言。不知道是不是你的選擇，你總是獨來獨往，不愛主動找人搭訕，大家也不習慣找你說話，我其實一直很擔心，擔心你如此特殊的沈默。", "不敢告訴你，我其實一直安排不同的人輪值，試圖若無其事的靠近你，有時是體育課主動找你打球，有時是分組報告主動邀你同組，我一直想這應該是對你最好的處理方式吧！一個人在群體裡落單，那種冷落與孤獨應該是非常難熬的吧！", "然而，我安排的小天使幾乎鎩羽而歸！", "「老師，他根本不甩我，怎麼辦？」同學Ａ無奈的說。「老師，我不管他了啦，他真的很悶很悶，說十句話，他每一句話回答的都是：『嗯』，偶而終於不一樣，結果是：『嗯嗯』！」，「老師，你找別人吧！我看他一個人獨來獨往的挺自在的呀！不要替他擔心啦！」同學Ｂ和Ｃ聯袂一起來要求辭去「小天使」的任務。你真的不要緊嗎？真的若無其事，表裡如一嗎？其實我依然是擔心的，我問自己為什麼擔心？可以不要擔心嗎？為什麼「一個人」這個單位成為群體生活危險的數字？", "難道是因為你讓我找不著任何可以放心的明顯線索嗎？因為一般人總是成群結隊呼朋引伴嗎？因為一個人容易做傻事嗎？而你，並沒有任何主動擔訕或是取暖的社會行為，這表示，我無法判斷你是否適合群體生活嗎？還是，我無法找到讓自己安心的線索？", "有時會找你到操場走走，那是你的母親偷偷打電話告訴我，你放學回家後依然很少說話。如果主動說話，那都會是對社會或學校的不滿，「非常激烈的憤怒！」你的母親在電話裡幾乎是哭訴着說。我找你說話，會選擇週一交周記，或是交作文後，「讓彼此有個話題吧，」我心裡依然是擔心的多！我想知道，你的憤怒是因為沒有一個談心的朋友嗎？還是，你內心有過於沈重的「定見」，以至於無人能走進你的世界。而你，會不會反而習慣一個人的世界呢？", "看起來學校的群體生活對你從來不是問題，你依然獨來獨往，分組的問題依然不是問題，如果老師規定一定要分組，你總是能找到組；如果老師不要求，你一個人也能獨立完成老師的作業要求。這樣的你，也許是因為你喜愛的「象棋」讓你找到對話的窗口，也許，是你的早熟，讓你無法融入群體的吵鬧、妥協甚至是幼稚，你一直維持你的節奏，好像早早就知道自己是一輛火車，沿著駕馭自己的鐵軌就對了，其他輔助工具能免則免。就這樣，認識你將近三年，我們依然不時地到操場散步，而你，從未說過你要放棄或是離開這個學習環境。", "同學們也欣然尊重你的生命形態。星球有自轉的有公轉，身為一顆星球，他看起來轉得很自在。", "可是畢業舞會是成雙成對的，你卻說你要參加，沒有舞伴。", "畢業舞會來臨的前幾天，再次確認你要來，而且一個人。我想也許你會因為當天的現實所需，主動邀請女伴成雙入場。夜晚來臨，我站在三樓走廊看著一樓中庭的偌大舞台，眼底盡是黑壓壓的人群，在舞會中翩翩起舞的你們，到底誰牽著誰的手看不清楚。絢麗的七彩燈光照在你們臉上，將微涼的黑夜妝點得魅力四射，你們隨著舞台上盡情熱舞的同學輕踏著略顯生澀的舞步，遠遠地，整個舞池像個大圈圈，這個大圈圈看起來是那麼的單純和美好。", "當大家一起搖擺時，落單的人腳步顯得和大家不一致，特別引起注意。其中，有一個站在舞台前用心聽歌看表演的身影，尤其引起我的注意。大家都擠在一起搖搖擺擺時，落單的人，所以會儘量和大夥兒並肩擠在一起；只有你，絲毫不在意自己與四周的強大差異，專心隨著音樂的節奏搖頭擺臀。", "此時此刻的你是滿足的、自在的，盡情享受一個人的時光。雖然在眾人的眼裡你可能是孤獨的，甚至孤獨得可憐。", "我該偷偷下去找幾個人，若無其事地把你拉進人群裡嗎？或是默默安排一個女生約你共舞嗎？只是因為你一個人，一個人在舞會裡是這麼與眾不同，我就該讓你當下擁有的自在和孤獨受到質疑和破壞嗎？", "終究，我還是遠遠望著你，直到舞會結束。", "我想起了電影《派特的幸福劇本》（Silver Linings Playbook），戲裡的男主角派特住在精神療養院，出院後他仍然是眾人眼中的「危險人物」，而他最想做的事，就是和離異的妻子重修舊好。派特始終相信和妻子的關係仍有挽回的餘地，他試著改變自己，努力讓自己成為妻子心目中理想的對象，努力閱讀妻子上課的教材，每天練習長跑好把體態練得健美，他相信這樣努力樂觀就能走向朝思暮想的快樂結局。", "這一切對他而言是合情合理的，但在一個看似規律正常的世界，就顯得太過天真，而出現怪異、危險的警訊。當他不喜歡海明威《戰地春夢》的悲傷結局，半夜吵醒他的父母還把整本小說丟出去的時候，馬上引來管區警員的關切。派特天真地活在自己世界裡，依然認為：「我沒瘋，我說每朵烏雲都有銀色的鑲邊，為什麼你們就是看不見呢？」", "好友朗尼的小姨子蒂芬妮總在派特練習長跑時突然冒出來跟著他，他們的世界也許和他人的頻率不同，但這兩人因為有了身心共鳴，一起面對憂鬱與愛，為彼此帶來療癒。", "派特在擁抱他的弟弟時說了那句話：「我一無所有，除了愛什麼也不能給你。」", "在頻率相同的深海裡，一群鯨魚可以輕易地找到彼此，但生來頻率就是那麼獨特的鯨魚呢？雖然牠和其他同類這麼地不同，牠依然能自在地搖擺著自己的尾鰭，悠游在藍色豐沛的深海裡，我們為什麼要擔心牠的獨特呢？我為什麼要擔心你的獨特呢？"], "02": ["> 愛可以被原諒嗎？如果不愛一個人，可以因為對方的高尚情操而獲得愛的理由嗎？", "一位作家在一部文學作品裡宣判了一名女子的死刑，她的死代表了什麼價值？或是否定了什麼價值？", "是作者對道德的效忠，還是對天下所有背德者的救贖？作家並沒有說，僅以一名女子的死來結束一個發生於十九世紀的故事。", "但安娜卡列妮娜畢竟是死了，而且死得很慘。", "文學畢竟不是科學，沒有實驗室裡的研究計劃書和paper，更不是法院的一紙宣判，僅以六法全書的某一頁某一條來宣判主角的下場。", "《安娜卡列妮娜》原著文字中是如此描寫著沃倫斯基（Vronsky）的內心震動：「非再看她一眼不可，不是因為她非常美麗，也不是因為她全部姿態上所顯露出來的端麗和溫雅，而是因為在她走過身邊時，那迷人的臉上的表情帶著幾分特別的柔情蜜意。有一股被壓抑的生氣，流露在她臉上……彷彿有一種過剩的生命力洋溢在她的身心，違反她的意志，時而在她眼睛的閃光裡，時而在她的微笑上顯現出來。」", "閱讀文字裡沃倫斯基內心的獨白，才知道安娜卡列妮娜這段背德愛情的開端原來是這般的細膩而直接。如同每一段愛情的開始，那是一種莫名的吸引力，和道德無關，更沒有什麼地位或身分的數算考量。彷彿可以看穿對方心靈的兩個人，那自以為在現實武裝世界裡早已封閉的靈魂，當在陌生世界裡不小心溜出來見人時，一眼就認出彼此，即使從不相識，卻莫名深深的吸引。", "其實這不只是沃倫斯基眼裡的安娜，亦是安娜旁人讀不出來的內心世界。只有沃倫斯基發現了，也只有在不認識的世界裡，安娜才安心的釋放出來，和另一個自己相依為命。", "電影裡的她舉手投足真美，卻隱隱然有一種片段又膚淺的美。", "即使面對心愛的情人，安娜仍有一種看不透的茫然，一幕一幕快速卻唯美的畫面，藉著舞台劇的形式以換幕呈現。彼此沒有心靈式的交談，愛的好膚淺又好肉慾。在家庭裡的她依然十足的斷裂與片面，和先生之間總是以背對著或是側臉的回應。嘴角匆匆滑過一絲優雅的笑容，光鮮亮麗的服飾裝飾著上流社交環境，安娜走在其間，顯得好飄渺好空洞的生命。", "電影裡的安娜為了愛情離家出走，但是看不出來她是不是真的深愛著情人沃倫斯基。丈夫在她病危時決定原諒了沃倫斯基，卻也無法看出她內心真正的反應。愛可以被原諒嗎？如果不愛一個人，可以因為對方的高尚情操而獲得愛的理由嗎？", "當愛情遠離時，不愛的那個人需要獲得依然活在愛裡的人寬恕嗎？", "如果光從一個人生活的零星片段去拼湊一個人的全貌，就像檢察官從命案現場和屍體的死狀判斷一個人的死因一般。那是線索，卻不是所有的真相。", "俄國大文豪托爾斯泰的經典名著《安娜卡列妮娜》，自1877年出版後，至今145年，已被翻拍13次。最近看了這部英國導演喬懷特（Joe Wright）最新詮釋版本《安娜‧卡列妮娜》，網羅《莎翁情史》奧斯卡金獎編劇湯姆史都帕，愛將綺拉奈特莉、裘德洛、亞倫泰勒強森、馬修麥費狄恩、愛密莉華森等眾星領銜主演。", "電影裡的安娜卡列妮娜像隻花蝴蝶般不停的走位，不停的換景，家裡的孩子，遇到的情人，冷漠的丈夫，意外的情人，因為導演以舞台劇的表演方式擠壓了時空，這位電影裡的安娜實在沒空慢慢演出自己真實赤裸的心情。", "浮光掠影的愛或不愛，情慾像火車一樣的到站或離站，沒有深沉的自我對話下的抉擇，難道這就是小說裡安娜注定失敗的原因嗎？", "電影裡的女主角出現在火車蒸氣之間，若有似無的表情只讓人不明瞭安娜究竟是怎樣的一個人。這看似是一段愛情的開端，在車站的兩個人其實只是源於不期而遇。但是允許一段感情的繼續，絕對不僅於此。", "愛情吸引彼此的，並不包含預定座位的號碼。這個安娜知道，沃倫斯基也知道。", "感情的開始先是觸電，既而驚豔。然後，兩個人的相處才是故事的高潮。", "這段情感於是就從彼此擦肩而過開始，安娜回到了自己的家，內心的悸動卻因為沃倫斯基突然出現在社交場合而充新燃起，安娜看起來真是個壞女人，不然托爾斯泰為什麼先讓她因勇敢而嘗到愛情的甜蜜，最終，又讓她就這樣在火車輪子下自我了斷呢？", "一個為愛奔赴前程的女人，當時只是為了哥哥的婚姻，她從聖彼得堡遠赴莫斯科。嫂嫂因為愛，繼續留在婚姻裡，選擇原諒她的哥哥。安娜卻因為愛，離開了原本安定又富裕的世界，追尋屬於自己渴求的愛情，卻逐漸發現徒有肉慾的愛情並不如想像中的美好。她放棄了繼續追尋，更不願回到原來的世界。讓安娜的丈夫繼續帶著和她生的兒子和沃倫斯基生的女兒，一起優游在一片陽光燦爛的原野間。", "世間依然在運轉著，安娜決定活下去或是自我了斷，作者顯然是選擇了後者。電影淡淡的陽光彷彿代替托爾斯泰又多了些註解。", "造物主面對著人們的情感與道德，依然無言。"], "03": ["> 「那天她說有一件事要告訴我……她決定要和我分手。」你並不了解從十八歲開始，全心全意地愛她，至今已經快十年了。為什麼會說變就變呢？", "這幾天你輾轉難眠，你的女朋友決定離開你。", "我知道你一直很愛她，你以為這理由就夠一輩子了。但最近你才發現其實並非如此。", "## 依然在你身邊　心已離你遠", "「愛不就是在一起最重要的條件嗎？」你不知道你們之間究竟發生了什麼問題，只是覺得和她在一起有太多的時光空隙是她處在飄忽之中。你是個木訥寡言的人，平常不愛運動，更不喜歡接觸新事物。而她不是，我總聽你說起她不是去聽演講就是參加戶外活動。你不會勉強自己配合她，因為你說自己這樣並不快樂；而她去做一些自己感興趣的事，你很支持，因為她快樂你就快樂。", "剛開始她還會興味盎然地分享活動內容，漸漸地你發現她開始說得少了，也不太喜歡主動說起她的新朋友、新經驗。你畢竟自己本來就沒有興趣，所以也就不特別主動關心她參與的活動。", "「一切就順其自然吧！反正只要有愛就好。」", "就這樣，你的宅男生活和她的戶外活動，逐漸形成兩條平行線。", "她依然會關心你的身體和工作狀態，依然以微笑的眼神聆聽你偶爾興起的時事分析。直到那一天，你才驚覺，她的心其實已經慢慢的遠離了你。你在原地，而她，已經創造另一個星球。", "「那天，她說有一件事要告訴我……她決定要和我分手。」你並不了解從十八歲開始，全心全意地愛她，至今已經快十年了。為什麼會說變就變呢？難道兩個人不是獨立的個體嗎？為什麼不能各自擁有生活目標和人生興趣呢？", "你說，你曾隱約覺得兩個人相處的時光仍然各自忙著各自的工作，真是有點怪異，但是想想一起忙著各自的工作，即使不說話也是愛的表示呀！可是這種感覺，卻正是女朋友決定離開的主要原因！", "## 愛情稍縱即逝　需要攜手共創", "「愛可以再回來嗎？」現在的你終於明瞭她的心情，你希望她從自己的星球回來，一起陪在彼此身邊重新開始。但你也不知道若她真的願意回來之後，兩個人的問題是否依然存在？你也知道真正的問題，其實是她真的願意回來嗎？回來繼續陪你過著宅男無趣的生活嗎？你還是你，你知道，你也不會為了她開始學習喜歡熱鬧歡樂的下午茶，或是追著社區大學課程簡章趕早鳥排隊排熱門課程。你還是喜歡安安靜靜地過著自給自足、與世無爭的生活。", "只是，你說，你也愛她，愛她的活潑、多話，愛她熱熱鬧鬧地訴說着一天有一天充實的生活。只是你不知道自己該參與到什麼程度，該為她犧牲自己多少的生活習慣，才是真正愛她的證明？痛苦地成為她下午茶的傢俱擺設，以博得她的歡心？還是真實地告訴她自己的感受，給她完完全全的個人空間，即使她告訴你，她這樣一個人真的很寂寞，寂寞到懷疑自己為什麼還要和他在一起。", "想到你和她各自生活在寂寞，卻又適合自己生存的生活裡，一加一不等於二的數學公式馬上映入腦海，與其說愛情的開始是兩個人的互相靠近，彼此吸引，不如說那是一層又一層精美的面紗籠罩着彼此，想要剝開，所以靠近；因為剝開，所以看清，所以遠離。我想起了一部電影，想跟你說說這部《愛在遙遠的附近》（The Painted Veil）。", "這部電影真會說故事，也真會道盡現實的無奈與情愛的真相。影片根據英國作家威廉·索默賽特·毛姆的原著《The Painted Veil》改編，講述1920年代英國細菌學家沃特·費恩醫生（Dr. Walter Fane）與妻子基蒂·費恩（Kitty Fane）來到中國的故事。", "Kitty是個熱情活潑的女子，出身上流社會，生活在20年代的倫敦，為了逃避浮華的上流社會，甘願選擇一段沒有愛情的婚姻，與細菌學家Walter結婚並移居上海。後來Kitty因寂寞而與英國外交官發生婚外情，令Walter無法容忍，而決定舉家搬到霍亂肆虐的農鄉，在當地行醫，解決霍亂肆虐的嚴重問題，並作為對她的懲罰，也開始一趟探索彼此心靈與情感的冒險之旅。這是一段起於仇恨的旅程，卻也因為這趟旅程，逐漸瓦解兩人的心防。你認為是什麼原因，讓他們的愛重新再敲一次門呢？", "Walter每天與死亡和絕望面對交戰，Kitty發現先生的投入與付出，發現了可以彼此攜手的嶄新人生，在遙遠的異鄉第一次走近對方，不再成為精美面紗外遙遠的陌生人。即便曾經遙遠，經過努力，盡釋前嫌，仍會有更加親近的機會，Walter以專業醫療知識熱心解決鎮上水源問題，Kitty看見先生的付出，也樂於照顧當地的孤兒。本來是兩兩矛盾，互為平行線的兩個人，當Walter的堅毅沈著和Kitty的善意溫婉，讓兩夫妻之間的關係因共同目標而獲得逆轉。只是，當Walter和Kitty有了自己的孩子，一切已來得太遲……。", "縱然最後夫妻倆雖然天人永隔，但兩人以各自的方式，將對方從遙遠拉回自己身邊，縱使遺憾難免，也終不枉此生了。", "電影呈現得淡雅卻有味，更因中國的山水氤氳，在在顯現了愛情的悲歡真相。愛不是說說承諾就真的可以一輩子，兩個人的世界裡需要創造共同的人生目標，一步步撥開了面紗，認清了彼此的同時，也需要主動向彼此靠近，重新調整生命的方向盤，一起向迷霧更深處挺進。一如電影裡的幾句精彩的對話，「我們都錯了，因為我們嘗試在對方身上尋找不存在的東西」、「我們都錯了，因為我們嘗試在對方身上尋找不存在的東西」，當一一完成時，分享的喜悅、休戚與共的牽繫，讓愛情兩端的個體成為生命共同體。於是當華特和凱蒂一起為傳染病奮鬥，苦難與求生讓他們攜手。", "如果你依然故我，像Walter和Kitty初來疫區時夫妻倆人達到冰點的關係，如何能叫你的愛人不失望呢？看到電影裡Walter每天往病房跑，化驗水質，想辦法減少村民們的感染率，而Kitty卻仍然想念著外遇情人Tomson，想念兩人的美好時光，百般無奈的回到那個沒有愛情沒有語言對話的家中，心裡頓時明瞭，局外人永遠看得清楚真相，卻無法替當事人解決問題。電影裡Kitty大聲地對Walter說，「若是人人都似你一樣有話想講才講，人類很快會失去語言能力。」你也聽到她的吶喊嗎？", "愛可以再回來嗎？當愛來敲第二次門時，我們都要好好把握，因為愛情不但稍縱即逝，而且真的需要「攜手」共創呢！"], "04": ["> 麻煩你可以不要和我玩拖延戰術嗎？請告訴我，我可不可以和一般人一樣，和所愛的人創造幸福家庭呢？", "這幾天我的好朋友兼專業鋼琴師Andy不停地練巴哈，練到臉書上的狀態都是與巴哈相處的狀態。朋友們本來都期待天生浪漫的他會成為蕭邦專家，沒想到此刻居然整個投入巴哈的懷抱！", "Andy其實一直對於父母催婚的事很苦惱，他想也許規律的巴哈可以解救他又煩又亂的心情吧？他無法即刻解決現實問題，打結的思緒讓他無法專心處理工作，於是他每天要求自己一定要練滿四個小時的琴，還要將《十二平均律曲集》全背起來。天呀，這樣要花多久的時間？我問他。他只是笑笑的說，希望背完譜之後，巴哈能解救他的心煩！", "Andy一直很茫然，他很想結婚，但不想和女生結婚，他希望自己是個孝順的兒子，年邁的雙親催他趕快找個女孩結婚的心願讓他極度痛苦。趕快讓他們抱孫子的念頭讓他差點想去假結婚，然後說自己性功能障礙之類的爛理由，以領養代替生育的問題！以上這些遐想其實他都試過，目前還可以暫時和父母玩玩拖延戰術，Andy無奈地說。", "但是自己真正的幸福究竟在哪裡呢？Andy很想對幸福大聲呼喊著：麻煩你可以不要和我玩拖延戰術嗎？請告訴我，我可不可以和一般人一樣，和自己所愛的人創造一個幸福家庭呢？", "Andy害怕自己孤老以終，更不要活了大半輩子卻沒有真正享受被愛的幸福滋味。他愛過人，但是那種無法攤在陽光下的愛意讓他吃盡了苦頭。他還未真正享受被愛的滋味，因為不小心愛上他的全都是女性，他必須以各種理由拒絕她們的好意，最終依然會傷害無辜的她們。每當Andy寂寞時，鋼琴就是他傾訴的對象，在這裡沒有性別的區分，他只管傾訴，只管傾聽。幸福不是就該這樣嗎？只是可以不要是鋼琴嗎？Andy平靜地告訴我。", "我們是可以互相傾聽，也可互相傾訴心事的好朋友，但是我們之間的幸福當然不會是他渴望被愛的答案。他渴望巴哈可以說服他，讓他相信：幸福，其實就是如此簡單而規律的節奏與順服的兩人關係。所以怕寂寞以終的他居然開始練習養貓，每天規律地幫牠換貓砂，餵食並說話，還會在每週三和週六邀請某位談得來的女生到家裡來看ＭＯＤ。女孩很喜歡貓，願意在他出國洽公的日子裡幫他照顧這個家，及一切屬於這個家的生成元素。回國後的他看了很感動，這個家因為有了女主人而溫暖了許多，貓也喜歡這女孩，每當女孩收拾好準備離開這個家之前，貓總是跟前跟後的黏膩著。", "原來，貓也沒有放棄找尋「幸福」這東西，貓愛上這女孩也是因為給了牠值得期待的寵愛，還有被需要的幸福吧！Andy說。", "但是，女孩說再過兩天要告訴Andy一件重要的事！", "Andy害怕這女生過兩天的重大聲明。若是表白，那是要再度傷害她？還是完全讓她引導自己走向一個未知的幸福？可是，他的幸福真的會在婚姻的世界裡等著他嗎？婚姻的制度可以在每天如巴哈的規律節奏中教導他如何去愛一個女性嗎？難道愛真的可以透過被催眠，被感動或是順服社會倫常的規律就可以看得見嗎？", "女孩這兩天都沒出現在他面前，貓顯得焦躁不安，不停地在鋼琴與大門旁邊來回穿梭。Andy繼續和巴哈對話，也把我找來一起吃飯聊天，卻因為害怕手機響起而無法讓自己的思緒平靜。傍晚我們走在不安靜的小巷裡，不時是穿梭其間的單車和人潮，Andy問我他真的可以不會再愛一個男生嗎？現在答應了女孩，是不是代表傷害只是延後了時間而已？", "什麼是愛？什麼又是陪伴呢？婚姻制度真的只是為了相愛的兩個人而設置的嗎？不能是偌大宇宙中有兩個想要互相陪伴以終老的兩個孤獨靈魂所選擇的相處模式嗎？最近看了部荷蘭電影《約他去看絕世雪景》（Matterhorn），片子一開始便選用排列齊整及線條明快的行道樹做序幕，聽覺上選用巴哈的「平均律C大調前奏曲BWV846（Prelude and Fugue No.1 in C major, BWV 846）」，男主角Fred這時板著一張臉走進畫面，齊整的穿著已讓我們瞭解他本是一個習慣過著紀律生活的人。", "若紀律的人生僅僅意味著不知變通或是害怕變通，就只是代表着僵化刻板而缺乏探索自我的生命。巴哈平均律的概念雖是用同一音律系統，以應付所有調號的音階，技巧精熟而能融會貫通的人自然能從規律的節奏中找到屬於自己的靈魂節拍。另一位男主角Theo的出現，他成為一個闖進安靜小鎮的迷途陌生人，呈現的就是一個充滿變異因素的人生。", "Theo穿上Fred過世太太的洋裝，他們一起到神聖的教堂結婚，然後一起前往Fred夢寐以求的絕世雪景Matterhorn前完成了心願。兩個曾經受傷的靈魂因為有了彼此的陪伴，而開始享受着不寂寞的人生，此刻此地不就是婚姻承諾中的「幸福」境界嗎？只是因為他們是擁有相同性別，就不能創造屬於自己的幸福嗎？", "《約他去看絕世雪景》裡一個喜愛巴哈的男人和一個穿著女裝的男人一起，讓生命相約完成彼此的心願，兩人的幸福有了看似規律卻曲調多變的風景。", "再偉大的人，不過都是凡夫俗子，人生也不過就是度過一輩子的經歷，每個凡夫俗子的幸福本來就該有各自的選項，而婚姻制度，不過就是其中創造幸福的選項之一，任誰都不能用自己的道德標準來規範他人的幸福定義，不是嗎？Andy說，他會明明白白地告訴那女孩自己只喜歡和她一起養貓，並不想和她一起建立家庭，然後，帶著自己對幸福的期待，繼續在人生中尋找可以一起欣賞絕世雪景的人。"], "05": ["> 愛要浪漫，告白要準備，連性愛的追求都得朝職業化充分挺進！想想到頭來一場人生不就和好萊塢片一樣，以觀眾的票房和掌聲取勝嗎？", "Jimmy最近在Facebook上一直po文，內容不是「徵女友中」就是「寂寞男告白被打槍」、「花美男期待遇見妳」之類的。當然這樣的Facebook狀態所引起的留言「笑」應絕對是排山倒海般的洶湧，一堆有仇必報的朋友怎麼能輕易放棄「加倍奉還」的絕佳時刻呢？", "眼看女友沒徵到，損友倒是跑來不少，Jimmy為了挽回劣勢，只好心虛地留了一句：「上廁所時電腦未關，不小心被室友留言的啦！」", "這時候留言的人更多了。開始吐槽後面那一句的可信度。所有真正瞭解Jimmy的朋友絕對知道，要他開始向心儀的女生展開告白行動，那得玫瑰鮮花、燭光排字、小提琴手隨時伺候着，還得等天空開始飄下一絲絲浪漫詩意的小雨，這時候Jimmy才會認為自己準備充分，英挺的站在備齊的美好條件裡，深情地看著他心目中的女神，然後帥氣地向她告白。", "對了，當然那女神能夠答應他安排的告白時間，並且準時在良辰吉時出現。", "Jimmy終於等到了這一刻的來臨。", "那是一場盛大的畢業舞會，全校畢業生都會盛裝參加，Jimmy終於鼓起勇氣向她提出邀約，衝著這名校名聞遐邇的畢業盛會，女孩居然爽快地答應了！天呀！Jimmy難掩興奮，卻依然保持他一貫的保守與莫名的矜持，偷偷的告訴我說：「相信我，我準備好了，這次我一定會告白成功的啦！」", "舞會當天這真命天女真的到了，還很大方地挽着Jimmy的手臂隨眾人魚貫進入會場。絢麗的燈光照得每個青春的臉上益發光鮮亮眼，一對對看起來比實際年齡還長十來歲的王子和公主們，正準備參加一場華麗浪漫的人生盛宴。當抒情音樂輕輕撫遍整個舞池，頓時燈光也變得柔和模糊了起來，一對一對交頭接耳輕擁着彼此，我早已看不到Jimmy這個大男孩了。今天他穿得特別紳士，搭配夜晚亮眼的舞台設計，原本就已經算是型男的他接下來應該可以順利的告白成功吧？燈光美氣氛夠佳，絕對不輸高級宴會廳的氣氛！只要開口向她說出心裡的話就好了，這次的舞會安排絕對有加分作用。", "一首首的慢舞穿插着幾隻節奏輕快的爵士樂，一切的安排是那麼的真實動人，彷彿經歷這樣美好的舞會之後，就能夠讓王子公主一路滑進平凡的生活中，輕盈地踏著舞步上學，上班，甚至流淚和流汗。", "再美的燈光仍然依照時序漸漸黯淡了下來，落幕的一刻終於到來。一對對王子公主依依不捨地離開了現場。曲終人散時，我瞥見了Jimmy，他身邊仍然是那女孩。", "隔天他難掩神傷的走進教室，大家都瞪大了眼睛，以為進來的會是一張桃花朵朵或者至少眉開眼笑的臉，「告白被打槍吼？」「今天花美男怎麼臉是歪的呀？」他拗不過大家的質問，告訴我們昨晚發生的事。", "Jimmy其實沒跳幾隻舞，原本就計劃好要挽着公主的手，在荷花池邊向女孩告白，所以就在計劃裡拉著女孩說要一起到校園走走。當時女孩其實不太高興，因為她喜歡跳舞，來舞會不跳舞卻逛校園有點可惜，但是還是禮貌地答應了Jimmy的請求。", "Jimmy就這樣和女孩在校園說了兩個小時的話。", "「你到底告白了沒呀？說了兩個小時廢話嗎？你真的很廢喔！」大家想聽的實在不是這個！這時Jimmy才說他以為自己會像電影劇情般自然深情地對那女孩告白，沒想到那女孩一直和他繞著操場轉圈圈，沒有循着Jimmy劇本的安排來到荷花池，公主說着自己對跳舞的熱愛、對未來人生的規劃，Jimmy一直聽一直聽，直到舞台燈光漸暗，曲終人散。", "Jimmy仍然非常懊惱當天為什麼自己這樣不懂得把握機會，用雙手捂住女生的嘴，把握屬於自己的重要時刻。我想當Jimmy看完這部《超急情聖》（Don Jon）時，應該多少會瞭解當天晚上究竟是出了什麼問題。", "這是一部描述現代人如何對待情人的喜劇，男人與女人沈浸在電子媒體的虛擬不實世界中，不時出現心、腦與眼睛極度錯亂的迷惘。男主角愛看A片，女主角則是看了太多好萊塢式的浪漫愛情電影，兩個人對於異性本來就各自有著莫名的想像與期待，在彼此相遇，擦出火花之後，卻因著一次次期待的落空而起了激烈的爭執，終至分手。", "這些早已深根在我們腦海中的愛情畫面，不論是來自經典電影或是言情小說，不知不覺導演着我們的生活甚至價值觀，是成就着我們真實的人生，或是次次挫折着我們對人生的理想？愛要浪漫，告白要準備，連性愛的追求都得朝職業化充分挺進！想想到頭來一場人生不就和好萊塢片一樣，以觀眾的票房和掌聲取勝嗎？", "其實Jimmy回想起那晚，那女孩真的很想和他好好的在舞池裡跳著舞，她根本不知道還有另一份劇本裡寫著「荷花池告白，讓女孩成為我的女朋友！」Jimmy當時若放棄了劇本裡的告白戲，換得了是對那女孩當下全然的陪伴與分享，不等於也一起共同創造了彼此的美好回憶嗎？那Jimmy在女孩的生命中，其實就已逐漸佔有一席的地位囉！", "超急情聖，可千萬急不得呀！電影只有兩小時，人生卻是一輩子。沒有荷花池，也可以步步都是蓮花呀。"], "06": ["> 愛人的本領豈是天生就會的呢？再偉大的人也有需要喘息的時候。", "Mandy是個事業成功的女性，最近卻突然辭了工作。", "她的眼光總是讓我佩服，一部分是因為她的專業理財能力，還有一股不怕失敗的勇氣。雖然我投資的數目連她日常經手的零頭都不夠，她還是很慎重地為我分析和規畫，「我也是從摸索中開始學的！」Mandy常這麼說。我有時覺得她的溫柔有一種莫名的堅定，讓我絲毫沒有擔心，願意將艱困的思緒交付給她一一解決。", "## 落淚是喘息，而非放棄", "她很了解每一個投資人的心態，尤其對失敗的承受度，所以並不鼓勵每個人都加入金錢的遊戲。她說失敗真的不好受，有的人會因為失敗而更加堅強，有的人就不行了，失敗一次就無法再相信自己還可能成功！", "那天我們約了家咖啡店見面，想談談我最近投資的小嘗試。那是一間裝潢精緻的店，店內採光極佳，落地窗的設計讓人感到視野開闊舒適，但Mandy一直盯著店內一角工作的服務人員。", "「他這樣一直擦玻璃，顧客經過還是會不小心碰觸，一旦有一個小小的指紋就得用力地擦，可是再怎麼維護還是會弄髒，這樣的工作周而復始，對他而言，到底有什麼價值？」Mandy一改平日堅定沉著的口吻，語帶悲傷地看著我。今天的Mandy到底發生了什麼事，眼神份外的渙散，像一條隨時即將潰堤的江河。", "Mandy談起自己辭去工作的原因。「難道沒有辦法兼顧事業和家庭嗎？」我以為她的問題也許只是一時的職業倦怠，衝動之下的決定未必適合她。她又回到原本堅定的眼神，告訴我她必須為了這個孩子犧牲自己的成就，不然，她不知道怎麼面對自己的家庭。", "原來Mandy有一個孩子，今年上小學四年級了，每天都吵著說同學欺負她，老師雖然很有耐性，但已無法應付其他家長的反應了。孩子過於歇斯底里地大叫影響到上課的秩序，老師只好請求Mandy到校陪伴孩子。只要有她陪在身邊，孩子都能安靜地上課。每周赴院定期治療，不只給了孩子學習安頓身心的機會，也讓Mandy相信她的孩子絕對可以成為「正常人」。雖然醫生說這不是嚴重的病，卻可能要依賴家人一輩子，以Mandy職場歷練的豐富經驗，她接受身為母親的責任。但是能了解這狀況的人畢竟很少，當然能接受的一般人就更少了。", "Mandy想了很久，決定辭去工作專心陪伴孩子。「好累！」她說。", "辭去工作之後，Mandy每天就是和孩子綁在一起，早上送孩子上學，提心吊膽地等老師打電話來告狀，傍晚接孩子平安回家，等孩子睡了，她卻睡不著，盯著天花板發呆，腦中一片空白。聽到孩子均勻的呼吸聲，她卻掉下了眼淚。", "## 勇氣在軟弱時竄出", "當我們為生命沈重的負擔一吐苦水時，安靜的服務生已經起身走到另一片落地窗前，繼續手邊單調復單調的工作。看來他並沒有發現我們正在注意着他，依然默默專注對待一片又一片完全不會回應的透明玻璃。其實他氣定神閒的姿態讓我百思不得其解，甚至懷疑這樣的專注是不是正常人應有的反應。此時，我的腦中閃過許多畫面，生活裡諸如此類的週而復始的狀態還真不少，除了工作之外，還有許多看不見明顯成效的無止盡付出，流血流汗換來什麼？終究只是周而復始的繼續流血流汗。", "「可以明確告訴我，什麼時候才能品嚐努力後的成功果實？為什麼不能預估一下投資報酬率呢？」Mandy說，這樣的日子，她不知道自己還能撐多久，雖然她說她知道生活裡並不見得能得到開花結果的必然邏輯，但是，她想下班休息的心，依然緊緊跟隨著已經擔任全職媽媽的她。", "後來我們一起去看了沈可尚導演的紀錄片《築巢人》，英文片名「A Rolling Stone」源自希臘神話裡薛西佛斯日復一日推動巨石，一個徒勞無功的古老故事。", "影片中，陳爸爸是個認真勤奮的旅行社員工，每天西裝筆挺騎著摺疊腳踏車上班，回到家還要照顧兒子立夫的所有事情，假日還會陪伴立夫外出活動，鍛鍊身體。日復一日地付出，三十多歲的立夫長得又高又壯，他的藝術天分也引起了一些人的注意。但是立夫並沒有因此而懂得多照顧自己一點，更不可能關心身邊的人，有時甚至會不期然的攻擊自己的父親，雖然如此，陳爸爸還是默默陪在立夫身邊，而立夫，依然需要父親一輩子無微不至的包容和對待。是父親的一輩子陪伴？還是立夫一輩子的陪伴？父親能離開嗎？如果父親永遠離開，立夫怎麼辦？", "陳先生雖然是個廚藝很好的父親，但是每每煮完一頓豐盛菜肴的他卻無法下嚥。鏡頭裡的他佇立在一旁喘著氣，眼裡是自己罹患自閉症的兒子，陳先生的眼神告訴我們，他正默默的提醒自己不能再失敗不能再倒下。", "導演沈可尚在陳爸爸擁擠的家裡找到屬於他記錄的視角，安靜地觀察這對父子如常生活的相處。這豈只是一個特殊家庭的故事，我們在如常的生活裡，不也時時遇到這樣想逃卻無法逃避的宿命？", "愛人的本領豈是天生就會的呢？再偉大的人也有需要喘息的時候。當我們想要退縮放棄的時候，我們的膽小心靈，本來就異常脆弱，想要躲起來，不也是保護自己的正當反應，像小心呵護着一扇扇的窗玻璃，如果不能面對它的脆弱本質，讓自己有喘息的機會，只怕玉石俱焚，連保護自己的勇氣都喪失了。", "走出電影院，Mandy和我都不發一語，那是片尾給我們的震撼，仿佛說的是我們內心深處的無奈與無力。陳爸爸與立夫一起爬山踏青，陳爸爸和立夫走著走著越離越遠，鏡頭凝視著向黑暗山區走去的父親背影，鏡頭外傳來立夫歇斯底里的吼叫聲。接著鏡頭出現父親真切的聲音，一句句脆弱又堅定地擊中家庭熟悉的倫常關係：「我可能考慮把他送走，我沒有能力啊，我放棄可不可以，讓你繼續選擇你的人生，有種你對付那些人阿，廢物。有時候，一刀給他，一了百了。」", "看完《築巢人》，導演並沒有選擇留給觀眾如何解脫的答案，但想起了Mandy曾經鼓勵我的口頭禪：「再怎麼糟糕，明天又是新的一天呀！」是呀，承認自己是個無法一直推石頭上山的凡人，才能在一天結束時，面對自己的軟弱，然後不必掩飾地喘氣、深呼吸，接受生活本是如此殘酷、殘缺的事實。這時，繼續面對明天的勇氣，才會在對命運的聲聲咒罵中順勢竄出。"], "07": ["> 不公不義的世界給了她完成自我的機會，但是，她的家人呢？她能將他們留給誰？", "同樣身為女性，我和Jessica實在大不同。", "我膽小，不會游泳，不敢看恐怖片，連照個大腸鏡都會臨陣脫逃；Jessica喜歡看恐怖片，是個三鐵好手，身體夠好不必照大腸鏡，在她的臉上很少看到驚懼的神情，彷彿這世界上沒有什麼事情可以讓她感到無法掌握。", "不，只有一次。", "那天我們一起吃飯，她接了手機後臉色驟然沈了下來，飯沒吃完，便匆匆和我道再見。兩天後她打電話來，才知道那天是孩子在學校出事。她請假兩天在家陪伴，安撫情緒，陪他出門看看寵物店的西班牙鬥牛犬。", "她告訴我，兒子很善良但不懂得看時間說話，在35人一班的環境裡，他總是直接提出意見，許多同學都罵他很白目，他問媽媽什麼意思，他只是很老實的說出自己內心的想法，這難道不對嗎？", "Jessica只輕描淡寫的告訴兒子說那是同學不了解他的想法，以後只要當個旁觀者看看就好了，如果想說什麼，回家告訴媽媽就好。沒想到他以為，得更努力讓他人理解自己，所以繼續在教室多說些「行俠仗義」的話。", "這次，同學對待他的方式就不只是白目兩個字了。", "十幾隻拳頭打得他倒地不起。Jessica忍住淚水說，去學校接孩子時，孩子的老師不停道歉，她生氣的質問為什麼容許霸凌在單純的教育環境發生？怎麼出來道歉的不是這些傷人的學生？", "她的孩子當時還拉住她的衣襟叫她不要怪老師。老師低下頭來，她居然沒有力氣再質問老師，只有一個念頭：把孩子抱起來直衝醫院。", "看到孩子安靜入睡，她害怕到發抖。", "我看著Jessica一臉無助的表情，想起她曾經參加街頭抗議運動時，被警察抬走的無懼神情。Jessica有了孩子後，先生勸她不要再參加危險的活動，為了不致造成家人爭執，她答應了，改成按時捐錢贊助。但偶爾在看見不義之事時，熱血沸騰的背著先生加入公民請願運動。隨著孩子漸漸懂事，她覺得自己不能接受孩子是個自私自利的人，所以也會帶著他一起分享一些看待世界的角度，甚至帶他到偏鄉學校進行服務，讓他認識這個不公平的世界。", "隨著孩子步入國小高年級，學校老師不時找她或是先生到校，Jessica知道孩子真的愈來愈像她，心裡卻愈來愈矛盾，先生也對她的教育方式愈來愈不滿，如果她沒有帶著孩子靠近這世界的真實面，培養孩子為公理正義發聲的勇氣，只要單純的教他認真讀書，服膺知識，他是否就不會成為同學口中的「白目」？", "看了茱麗葉畢諾許主演的電影《一千次晚安》，讓我想起Jessica。身為戰地記者的雷貝卡，拿著相機深入危險地帶，只為將真相公諸於世，讓世人在幸福吃早餐的同時，因為閱讀她的報導，而感到一絲絲的震撼，甚至不悅。", "但是雷貝卡在一次阿富汗的採訪任務中，不幸被自殺炸彈客的爆炸波及而受傷。終於平安回到家之後，面對的卻是家人更大的衝擊。她全心投入的工作不但無法得到家人的支持，家庭甚至因此瀕臨破碎。她的先生面對她平安歸來，無奈苦喊著：「孩子們老是得擔心害怕，他們的媽媽隨時會死！」生氣的將無助的她推出家門外，大叫著：「我要妳滾出我們家！」", "面對自己的工作，甚至是根植於心的憤世嫉俗，如何在人格、事業與家庭無法兼顧的情況下，不撕裂自己，為自己與生俱來的天性開另一扇窗呢？如何在有棱有角的精神靈魂之外，留給家人另一個平靜平凡的自己？", "「你會發現自己有多麼無能為力，我的人生從那裡萌芽，卻無法徹底將之拋開！」雷貝卡對自己吶喊著。一個平凡的家庭給了她彌補創傷，平靜面對自己的空間，而不公不義的世界給了她完成自我的機會，還有那無限窺探殘酷世界的權利，拍了照，幸運的話還可以全身而退，留無情的戰場給無辜的人，但是，她的家人呢？她能將他們留給誰？", "向家人說了一千次晚安後，雷貝卡雖然可以義無反顧奔向世界衝突的原點，回到鏡頭前睜開冷靜而職業的眼睛，但是，她真的在完成自己的良心之餘，也挽救了全世界嗎？當她的女兒同樣拿起相機，以同樣嚴厲冷冽的眼神將鏡頭對著自己，以機關槍式的方式激烈不間斷地按下快門時，雷貝卡的心裡是怎麼想的呢？", "電影裡有一幕讓我印象深刻，蕾貝卡在阿富汗一間民宅內，以相機記錄著一場看似平靜莊嚴卻讓人不寒而慄的儀式，一群穆斯林婦女正為一名女子更衣，並將一排厚重的炸藥綑綁在她身上。雷貝卡極力爭取跟著這名女子一同上車，專業而鎮定地握緊相機，執行著她新聞記者的工作，毫不畏懼地拍攝這名女子慷慨犧牲前的最後一段人生。但在車子抵達市區後，她開始流露出不安的神情，要求駕駛讓她提前下車，卻也因此遭到警察注意，炸彈客只好在警察上前盤查時被迫提前引爆。", "於是原本熱鬧的市集遍地無辜死傷者，蕾貝卡也被波及，一陣昏迷中仍不忘拾起掉落的相機，繼續拍攝，直到終於昏迷倒地。", "「這世界怎麼了？」這句話我們也許可以輕易地拋向這個不完美的世界，然後將憤怒與指責如利刃般投擲出去，但是，「我怎麼了？我的孩子怎麼了？」面對真實世界裡的自己與親愛的家人，雷貝卡與我的好友Jessica反而不知所措了。如果公平正義是我們教給孩子的視野，那面對親愛家人的受傷無助，反而是家人最需要我們伸出雙手，放下手上亮眼的利刃，關上冷眼旁觀的相機鏡頭，陪伴家人好好思考如何處理面對。", "故事在雷貝卡低頭跪下時結束，她的形體像個問號，對自己、家人，也對這個世界提出不同的扣問。而我的好友Jessica與孩子依然得繼續面對不太友善的群體，該怎麼教育孩子才是最好的？我們能夠選擇什麼樣的人生，與選擇用怎樣的態度面對世界，在雷貝卡面對鏡頭前後的自己時，也許沒有留給我們任何明確的答案，卻給了我們一些啓示，我們有許多角色在人生中不時地切換着，一如拿著相機的雷貝卡，相機給我們冷眼的工具，但終究重要的還是一顆心，我們得先用純真的靈魂，真正護持著那個鏡頭前後的自己。"], "08": ["> 只要不再欺騙自己的情感，給自己一點點希望，全新的愛情與未來就會在我們面前展開。", "大家都知道床邊故事應該是溫馨美滿的，這樣不愛睡的孩子不會因為故事裡奇怪的人物或是悲傷的結局而更加睡不著，甜甜的故事進入夢鄉後的滋味也會甜甜的。", "這裡有一個床邊故事卻不是這樣。", "從前從前有個國家，這裡的人都不會死，每天快快樂樂的過日子，可是人滿為患到連居住的空間都沒有了，國王只好在擁擠的人群中探出頭來大聲宣布：", "「每個家庭必須找一個人出來受死！好騰出空間來繼續快樂的生活。」", "於是大家只好一家一家的派人出去受死，只有一家人不願意，因為他們太愛彼此實在無法做此決定。所以他們寧願全家人一起去受死！但是國王和子民絕不同意，因為這一家人的麵包糕點做的太好吃了，如果他們都死了那全國人將再也吃不到他們做的食物。", "國王便想了一個方法以解決問題，就是要他們一家四個人各自割去身上的一部份，這樣便算是解決必須一人死亡的問題。於是他們為了抗拒死亡能永遠在一起，只好割去手臂鼻子等，只有妹妹捨不得讓劊子手拿斧頭鋸斷自己的一條腿！可這樣並不能解決死亡的問題！於是在家人的勸說下她終於也失去了一隻腿，從此這一家人雖然再也不分離，但也不敢出門，只能躲在家裡讓顧客用郵購的方式購買他們的食品。", "我的床邊故事說完了，各位看官您覺得接下來進入夢鄉後依然會滿足的隨意的流口水嗎？", "為了彼此能夠永遠在一起，必須犧牲自己的一部分，這個國王的「善意」居然好讓人無奈！", "逼著他們必須永遠失去自己的最愛或是一部分的自己，以滿足愛與快樂的權利，這樣的愛，還算是愛嗎？至少當我聽完這個故事後，我的整個夜晚幾乎是無法入眠的。", "這個故事來自一部悲傷的電影──《愛的神奇符號》（An Invisible Sign）。", "一開始便是這個故事，一個數學家爸爸說給年紀幼小的女兒莫娜格雷聽。莫娜格雷從小熱愛數學，就像她深愛的父親一樣。對她來說，世界是由一連串不可見的神奇符號所組成。父親陪她跑步，也教她認識這個充滿數字的世界，但在父親生了不知名的病之後，便只活在自己圈起來的世界裡，莫娜只能在旁邊一直陪著他，而他卻再也不能夠如以往般愛著莫娜。於是莫娜不再看電影，也不再聽音樂，更不再接觸跑步，逐漸變得封閉沉默、獨來獨往，連大學的數學系都無法畢業，心中希望這樣的失去能夠換回原來完整的父親。", "母親看她無法獨立，便強迫她一定要搬出去住，即使莫娜堅持這樣他們就不再是完整的一家人！母親繼續用不同的方式維持著他們一家人的情感，她獨力照顧著生病的先生，莫娜生日時還是會打電話約她出來一家人吃著早餐，還會偷偷向莫娜小學時的校長推薦莫娜。", "於是她便在這樣的機緣下成為一名小學數學老師。她依然緊張，依然怯於和人相處，心裡對失去父親的結依然牢牢緊箍著她，但重新在跟孩子與同事的互動中，逐漸尋找動人的生命力量。", "莫娜的悲傷來自父親的病，她只有借助那大自然裡看不見的數字來紓解心情。還有那個在小學時崇仰的數學老師（還是她的鄰居！）居然就這麼突地不再教書，轉開了家五金行，也讓莫娜一直感覺到他對莫娜家庭的冷漠，年年在萬聖節時蛋洗他的轎車，以紓解對他的不滿。", "人生中難免會對自己有所質疑，莫娜也是。", "只是莫娜的故事裡還拼拼湊湊的說了「愛」這個字，需要完整的卻不知該如何完整的字。", "學校剛失戀的數學老師很喜歡莫娜，莫娜也漸漸喜歡上他，卻不能面對自己開始喜歡一個人的事實。於是莫娜便選擇欺騙，欺騙自己更欺騙他並不需要這個人，但班上一個剛失去母親的小女孩，以及那看似冷漠的五金行老闆教會了莫娜一件事：只要不再欺騙自己的情感，給自己一點點希望，全新的愛情與未來就會在我們面前展開。", "故事的最後，莫娜一如以往的坐在深愛的父親身邊，對著依然失神的父親說，她無法一直陪伴他身邊了，但是她依然愛他。她開始勇敢追尋自己的人生，不再拼拼湊湊的以失去自己的一部份來成為父親健康的交換。", "以為犧牲自己最重要的一部份來拼湊成全一個整體，這是美德？還是愚蠢呢？", "我想我今晚會睡得很好，依然會流著口水，因為心裡又已經有了另一個床邊故事！"], "09": ["> 終其一生，到底在追尋什麼？是這個罷，是這個一直在路上前進着的自己吧！", "終其一生，我們到底在追尋什麼？那天，Ｑ問了我這個問題。", "我開始回憶起自己。這真的難倒我了，難倒我的不是記憶本身，而是我問自己，「追尋」什麼才是所謂的「追尋」？《神隱少女》裡少女千尋尋找一個名字，那名字曾屬於自己，這算不算追尋？", "「其實很多人終其一生換了許多名字，搞得戶政事務所的人員抓狂的行徑，這樣也算是另一種追尋嗎？」Ｑ神秘地對我笑了笑。", "「除非名字對他來說，只是個身分證字號旁邊的符號。」突然想起什麼，我對Ｑ傻傻地笑了笑，「不然，對千尋來說，追尋自己真正的名字這件事，就是生命中一種難能可貴的追尋。」", "一個名字究竟有多重要？對這世間上擁有語言的民族而言，能夠叫得出名字的萬事萬物，都能夠成為傳情達意的工具，換句話說，如果當你遺忘了自己的名字，或者，你的名字無法從世人的口中喚起，像風中的一片葉，一陣風，無人能憶起，當然也無人能因喚了你的名字而引得你回眸一笑了！", "我想起第一次為了能看到「金馬獎國際影展」，足足排了九個小時的票。那是三十年前的事了，長長的隊伍，沿著大街的騎樓，大家有說有笑，時而坐，時而倚牆而立。早已忘了是為了什麼片子通宵達旦地排隊，卻隱隱然記得當時的自己常常雀躍於一部好電影的震撼，或是完成一首詩的過程。為了斟酌一首詩的句子，可以不在乎原本預定好的約會，只為了那一刻與美好的詩句相遇。「哈哈，那時的你是想要成為一個偉大的詩人嗎？」Ｑ略帶戲謔的推了我一下。", "「是嗎？」我心裡不禁問起三十年前的自己。當時的我根本沒看過幾個詩人，沒讀過幾首好詩，詩人的形象像是北國雪地遙遠前行的身影。排了九小時的隊伍後，終於買到觀賞心儀作品的入場券，為了什麼竟擁有這樣充沛的熱情？「那蒼白雪國地平線彼端的詩人身影，難道妳真看清楚他的模樣？」我又問了問當時的自己。", "回首人生，我告訴Ｑ，不妨列舉一樁樁完成的事，會發現與其說是達到所謂的「目標」，還不如說是完成就一次次的「任務」。就好像我最喜歡設計的「密室逃脫事件」，開啓密室大門的那一刻，我還不知道終點寫的是什麼，走過第一關，拿到了第一關的任務盒，破解，然後接受第二關的挑戰，閃過諸多懷疑自己、放棄前行的念頭，協同隊友的建議與合作，破關再破關，直到解開最後一道密碼，打開禮物盒，任務完成。", "「終其一生，到底在追尋什麼？是這個罷，是這個一直在路上前進着的自己吧！」我看見Ｑ的眼睛裡，正映寫著自己熟悉又陌生的身影。", "當我們為了想要看見下一個關口不一樣的自己，所以一次又一次勉力推進着。日本動畫《千年女優》裡的千代子為了希望「那個人會看到我演的電影」，接演着一齣齣的戲。「天涯海角我都要找到你」，戲裡戲外千代子總是不停地奔跑着，脖子上垂掛的鑰匙如影隨形的相伴著，只為了將它親手還給一個面容模糊的陌生人，如蓮花般純真的千代子從少女一路追尋到白髮，直到闔眼的一刻，方才明白自己「追尋」著的，是那個「不停追尋的自己」。", "只因陌生人說了一句「它能開啓最重要的東西」，千代子就覺得彌足珍貴了。有趣的是，這鑰匙早由打鐵匠賦與它與生俱來的功能，但是到底能開啓什麼「最重要的東西」，握在不同人手裡，在還未開啓前，仍擁有著無限可能。然而，當鑰匙終於找到它唯一的標的物時，一切追尋的謎底終究只剩下一個答案。那不停奔跑的千代子，從青絲一路追到白髮，追尋的難道僅止於彼此的約定嗎？真的遇到了彼此，其實記都記不得的身影，真的還能指認得出彼此嗎？", "『Ｑ，你問我終其一生，我們到底在追尋什麼？不也是和千代子一樣嗎？我們怎麼確定追到的就是我們曾經設下的標的物？遠方都不曾到達過，我們怎知那一條是真正的地平線？』", "一直不停地在千代子記憶裡出現的女巫，誘引着千代子吃下「千年長壽菜」，口裡不停的詛咒着千代子「又恨又愛，永不能脫離這樣的輪迴！」定睛一看，這女巫的臉龐擁有着和千代子一樣的眼角痣，那個追尋着要和陌生人「一起到北國去看雪」的女孩，恨自己也愛著這樣的自己，「我喜歡的是，不斷在追尋他的自己」，直到闔眼那一刻，千代子終於看見了一次次破關後的禮物。", "Ｑ還是不放棄的追問着我，我告訴Ｑ，我是一直在追尋，是一個從失敗中破涕為笑的自己，或是一個在陌生國度裡迷路遇到陌生的自己。那期待在生命裡擁有嶄新體悟的追尋，一直是北國雪地裡那位遙不可及的詩人。「不要回頭讓我看到你清楚的模樣！」我告訴Ｑ，我一直是這麼和那個詩人對話着。", "Ｑ說，訂立計劃，指向目標，不就是勵志人士的勵志宣言嗎？像是三個月瘦個十公斤、一生一定要環遊世界，或是三十歲之前存第一桶金之類的，但這些都是「最重要的事」嗎？既然女巫給的是「千年長壽菜」，那千代子只會窮其一生走在追尋的路上，一如電影裡立花在重逢千代子之前的斷言：「這個女人，是永不可能老去衰敗的！」，我們覺得有趣的人生不也是如此嗎？"], "10": ["> 她其實已經在動態時報上告訴你有些感情是可以互相陪伴互相傾心，但卻不一定就要擁有彼此的愛情。那種關係無法單純界定為友誼、家人或是知己，它甚至可以什麼都是。", "其實自從畢業後就很少和你聊天了，你所念的學校必須住校，管得又嚴格，偶而回來你總是聽我說話比較多。本來你就是一個不愛說話的男孩，在班上總是安靜的念著書，即使我上課講著無厘頭的笑話逗大家的瞌睡蟲死了一地時，你仍然是挺背挺胸的一派沉靜含蓄。", "那天已經很晚了，我正準備關了臉書，你敲了我一下。", "「老師，我告白被打槍了！」你的表情符號哭了我一整張桌子。", "「喔喔！你很難過囉！知道結果也很好呀，舊的不去新的不來囉。」我的表情符號居然是一個幸災樂禍的邪惡笑臉，想讓你在深夜開心一下。", "沒想到這被拒絕的故事結局其實並不是重點。", "重點是：「我還能和她聯絡嗎？老師，她是我最重要的朋友。我不想失去她這個朋友！」於是，我們就在電腦上聊了開來。", "成長的每段歷程你一直不容易找到談得來的朋友，情感纖細溫和的你總是扮演傾聽者的角色，卻很少有人真的順利進到你心底。她的出現讓你的人生開始亮麗了起來，你變得不只是當一個聽眾，還能安心地宣洩內心壓抑的感受，因為你知道她聽得懂也願意聽，所以你也願意在她面前坦露自己，那種心靈的歸屬感，你愈來愈珍惜，因為你發現生命的殘缺因為她的慧心而得以完整。", "漸漸的你也發現，不能一天沒有她。激動的你必須告訴她這件事，不但想做她一輩子的朋友，還想和她天長地久。鼓起勇氣的你終於站在她面前，她很驚訝內斂的你居然衝動地想改變這一切，因為她其實只想和你維持目前的友誼關係。", "就這樣，你說已經兩個禮拜沒有再打電話給她了，有時上臉書看看她的近況，知道她動態時報上貼出的話語多少是針對你，「她說，為什麼程又青一定會愛上李大仁呢？難道他們不能永遠是無話不談的哥兒們嗎？老師，我還能和她聯絡嗎？我怕我自己還理不清對她的愛，萬一又表錯情那不是又糗大了嗎？」（你的表情符號居然出現一個羞愧的小女孩！）", "你知道嗎？其實你真是個細膩善感的人。你想好好理清和她的關係的同時，她其實已經在動態時報上告訴你有些感情是可以互相陪伴互相傾心，但卻不一定就要擁有彼此的愛情。那種關係無法單純界定為友誼、家人或是知己，它甚至可以什麼都是。", "是情人還是朋友真的很傷腦筋，然而當兩個人真誠的坦白彼此，雖然心在痛，但也更加了解了彼此的情感，不也是另一種關懷與守護的開始嗎？想繼續這份友誼嗎？如果答案千真萬確的「是」，那何必失去一個這麼談得來的朋友呢？", "所以，我問你個問題：一段感情和一堵圍牆哪一個比較堅固呢？", "你毫不猶豫的回答，「當然是感情囉。」", "恭喜你，你的人生依然會經歷一段堅定不移的感情，並不會因為和某人關係的改變而失去信心。至少目前為止還沒有什麼衝撞意外讓這段感情崩毀，堅定的矗立在人生的旅途中，那其實是一條道路，不是一堵牆，牽繫你們兩個有情人之間，當然不會斷裂。", "如果當時成就彼此的是一堵牆，而且是一堵堅固耐久的柏林圍牆，即使從鐵絲網升級為155公里長，約3至4公尺高的磚牆，終究因為人性具有穿牆而過的好奇心，再高的牆垣終究有崩毀的一天。", "1989年11月9日，屹立了28年的柏林圍牆結束封鎖，1990年兩德重歸統一。", "德國首都柏林在第二次世界大戰以後被分割為東柏林與西柏林，東德為了隔絕東德人民投向西德，於是沿著邊界在己方的領土上建立圍牆，將西柏林整個包圍起來。柏林圍牆的建立是二戰以後德國分裂和冷戰的重要標誌性建築。", "被封鎖在自由之外的東德人在歷史上已經成為統一之後的德國人，不過卻因適應上的問題而產生了「東德情結」（Ostalgie），此語來自德語中Ost（東）和Nostalgie（懷念）兩詞。", "想當然爾，東德人最初對1990年冷戰結束德國統一應該表示欣喜，但長期生活習慣、社會制度與價值觀念的差異，許多東德人逐漸由激情返回現實，發現一些西德人認為東德人其實是失敗者，而西德才是統一的勝利者。這導致了部分東德人對西德人莫名的優越感極為不滿。另外在統一後數年東德的情況並不樂觀，許多東德教授到西德尋找工作使失業率激增。這些現象促使許多東德人重新思考自己的角色並加強了他們對東德人這一身份的認同。這也導致了一些原東德居民懷念東德時期的部分事物。", "以上是非常嚴肅而複雜的歷史課題，也是一部電影給我的功課，《隔著圍牆說愛你》其實不過就是敘述兩個年輕人因緣分相愛，不過不巧的是一個是東德人，一個卻是西德人。", "這在柏林圍牆的兩端發生的事，所以他們兩個發展的一切自然和這堵牆有關，但是情感的本質是輕盈而美好的，兩個專注在愛情世界裡的人不管外面的世界有多少面牆，依然不能阻攔想見到彼此的決心。", "電影裡冰冷的柏林圍牆，不只分裂兩德，也暫時阻隔了一段熱烈開展的愛。", "沙夏是柏林圍牆以東的鐵幕衛兵，法蘭西則是圍牆以西的自由女孩，每天她打開高高的窗戶，面對的正好沙夏的哨點。單純的兩人雖然不能自由進出柏林圍牆，但是卻不能停止他們日久生情的事實。沙夏隔著圍牆用望遠鏡思念法蘭西，法蘭西用書寫的白紙表達情意，縱使兩德政權針鋒相對，兩人的感情卻日漸火熱。", "為了能有更多機會相見，他們不畏政府威脅，不惜為愛千方百計只為和愛人相聚。直至東窗事發，沙夏和法蘭西遭到拘捕。與此同時，推倒柏林圍牆的遊行示威聲浪日漸高漲，德國史上最難忘懷的1989年11月9日，東德居民終於衝破柏林圍牆，歷史在他們被拘禁的同時發生了劇變，愛情的輕盈美好不問世事，此時得一起和歷史的大舞台成了歷史性的寓言。", "此時此刻，牆終究傾覆，唯一屹立不倒的，只有這段不受阻隔，堅定自由的真愛。", "輕鬆的小品故事，愛情的世界裡一切的政治血腥和鎮壓都是遠距離的紀錄，兩個人的擁抱成了鏡頭的特寫，女主角的深情眼神不只貫串男主角的心，更深植因愛自由的靈魂深處。今天拿起兩德統一前後的冗長歷史細細閱讀，悲情已過，大敘述的遠距離歷史終究不敵匹夫匹婦的小情小愛。你和她的感情也是，雖然她並沒有如你預期般的回應，但是透過彼此深厚的友誼與互信，再尷尬頑強的圍牆，也會被你的真誠坦率一一擊破的。"], "11": ["> 好心的妳告訴我，如何才能夠忘掉悲傷？如何才能重拾歡笑呢？事實就是事實，她已經走了，我怎麼面對自己這個無情的兇手？", "「如果悲傷一直都在，我要怎麼讓自己好一點呢？」", "許久不見的W傳簡訊，說要見見面。", "他一直是我們這群朋友的開心果，每次誰有什麼不愉快的事，都喜歡找他抬槓閒聊，他總是能發揮個人創意，為大家觸及新鮮的笑點，從來也沒聽他說什麼煩惱的事，好像他一直都是這麼的可愛又正向。", "所以如果我們這群朋友好久沒約Ｗ了，就代表大家都過得不錯，能夠順利通過每天的考驗，不需要倚賴W強大的正向力量。大家似乎從沒想過這樣的人也需要call out，尤其是一直被他療癒的我們。", "走進餐廳，看到W，瑟縮角落的他瘦了好多，我從來沒想到他的臉可以變成尖下巴，那種美男子的外型，彷彿變了一個人。我試圖推了推他，「整得挺成功哦，快教一教吧！」看到他一臉愁容，伸出的手更用力的推向他，想喚那個過去的他。", "W終於抬起頭來，厚厚的鏡片起了一層霧，在我還沒來之前他應該哭了，沒刮的鬍髭顯得他更清瘦了些。", "原來，日前社會版面上的情殺案竟和他有關。", "受害者是他那已許久沒聯絡的前女友，她很善良，只因個性不合，相戀六年的他倆還是決定分手。W本以為她一定會找到比他更適合的人，從此當個快樂幸福的公主，沒想到，卻是在社會新聞版看到她的名字。", "「我覺得我才是那個加害人！如果我不主動提出分手，如果我對自己更有信心一點，如果我能一直守在她的身邊，她就不會永遠離開這個世界呀！」W懊悔不已，我只能陪在他身邊，什麼話都說不出口。這突然天人永隔的打擊已經成為無法改變事實了，W的悲傷有一部分來自於他的自責，他將另一個人命運的關鍵承擔在自己身上，我們有時不也會如此嗎？「如果當初我……，那這件事是不是就可以……呢？」時間是永不可逆的前行者，我們都在猝然不可及的情況下，被迫接受已經發生的事實，那無法改變的無奈與無助，為悲傷的心構築愈來愈堅固的地基，「好心的妳告訴我，如何才能夠忘掉悲傷？如何才能重拾歡笑呢？事實就是事實，她已經走了，我怎麼面對自己這個無情的兇手？」W的雙手將頭壓得更低了。", "我也隨著W整理自己的思緒，想到自己也一直都喜歡W是個正向樂觀的人，要求自己也一直要如此。從來的成功經驗都是教我們要忘記過去，忘記悲傷，放眼未來。「悲傷」其實是一種真實的感覺，就好像腳踩到碎玻璃，怎麼不會痛呢？大聲哭出來是因為當下真的好痛，「不哭不能哭，是勇敢的表現！」大人會這樣教育孩提時的我們。於是，我們就逐漸成為一個不習慣表達痛苦的大人。", "然後，看似成熟而內斂的面對自己，其實，只不過假裝很開心，對於當下的踩到碎玻璃的自己竟然都沒有好好善待。", "大森立嗣執導的《日日是好日》改編自森下典子的散文集《日日好日：茶道教我的幸福15味》，初看「日日是好日」這句話，只覺真是熟透的老生常談，完全沒有被驚醒過來的感覺，更沒有突然被醍醐灌頂的透徹領悟。這不過就是一句名言吧，我想！據說出自晚唐禪僧雲門文偃的禪語。莫非這部電影也是令人簡單到乏味嗎？一如電影一開始二十歲的典子與表姊來到武田老師家裡學習茶道，看到牆上一幅字寫著「日日是好日」，兩個女孩輕聲細語的交談著，「是什麼意思啊？」「每天都是好日子吧！」「這麼簡單嗎？」「應該是這麼簡單吧！」", "我告訴Ｗ，昨天不是大家都放了一天颱風假嗎？哪兒都不能去的我，只好抓了網路上的這部電影看看。初看時，窗外的風雨淅瀝淅瀝的打在擋雨板上，耳朵和心情不免更煩躁了起來，但是看到樹木希林穿著和服，一頭灰白髮色，閒靜的詮釋著茶道老師的角色，一種莫名的力量將紛亂的思緒都一一沈澱下來。", "「那是一種安心吧。樹木希林和茶道，一舉手一投足繁複的習茶手法及茶室禮儀，看起來都不好馬上理解，但是，她們都擅長將謎底交給時間，值得我們慢慢地在時間裡領悟。」我試圖整理那一刻的感覺告訴Ｗ，突然覺得Ｗ的悲傷多像電影裡典子遠望著站立海中的父親，那永遠無法跨越的生死之海，無法不去凝視它，因為它正承載着已逝親人的記憶，只能與它共存，並且習慣着它的存在。", "電影以二十四節氣串連女主角典子每一段的生命故事，不管發生什麼大事小事，都在四季如常的遞嬗間一一發生。習茶二十五年的典子，隨年月過去，經歷學業、事業、家庭、婚姻上的轉變，同時也經歷着學習茶道的身心感悟。武田老師曾對典子說：立即理解的事物，經歷一次即可；無法立即理解的事物，就需要時間慢慢地體會了。這也說出了日本茶道在乎感悟，而不說理的精神，說理的事，用腦子思考，邏輯通了腦子就通透了，知道應該怎麼做，但是「感悟」就不同了，「面對悲傷，感覺它的痛，然後隨著時間，習慣這悲傷吧。」我想起武田老師對典子說的話，看著Ｗ，我想他會懂得慢慢如何運用全身感官，面對當下瞬間的痛。", "用腦子理解明瞭的事物，如果Ｗ真能輕易做到，他不會傳簡訊向我求救的！", "就像我們總習慣問着自己，也問着他人，『然後呢？』、『就這樣？』好像重要的事都因為足以影響未來，有值得期待的事即將發生。即使「悲傷」，也要快快逃離，認真忘記，「就這樣吧！」我推了推Ｗ，「如果悲傷一直都在，就品嘗着心頭當下瞬間的悲傷罷！它不會平白無故地消失，即使理智告訴你要快樂，要忘卻，你的心已經有了細微的轉變了，何不面對它？既然來了，就當它是此刻誕生在生命裡的細胞。」", "Ｗ並沒有回應我什麼，但是他的沈默卻讓我心安。我想起這部電影的畫面非常簡潔，許多僅是茶道教室以及框起來的庭園景色，卻異常讓人心境沈澱。最美的是日常四季裡雨滴、落葉、陽光、白雪，木杓舀水的聲音與水池的水花光影。原來季節的輪迴，有陽光處，必有無法躲避陰暗的樹影。"], "12": ["> 開啟Jenny和Jack故事的第一章非常簡單，不過就是因為教室靠窗的風景特別迷人，而他們同時選擇了可以俯瞰一切的位置。", "從一開始他們倆的相遇就不是照著劇本走的。", "Jenny從台北來，Jack從台中來，一個是為了暫時逃避工作的瓶頸，一個則是一圓中年深造的夢想。於是兩個人就在單純的校園裡不期而遇。", "Jenny和Jack的學校座落在山腰上，離開塵囂的校園風景，自然也將現實的塵埃暫時拋諸腦後。許多偶像劇的情節總喜歡開始於女主角的回眸一笑或是男主角溫情凝視的雙眼，但開啟Jenny和Jack故事的第一章非常簡單，不過就是因為教室靠窗的風景特別迷人，而他們同時選擇了可以俯瞰一切的位置。", "他們一起經歷了求學時期的四個四季。", "傍晚學校的圖書館總是沒什麼學生，一天上完的課剛好趁回家前的僅存時光細細回味一番。恰巧一起坐在靠窗的角落，一盞桌燈比鄰着另一盞桌燈，本來只是為了喬一喬燈光的位置，誰也沒想到居然兩個人喬的目的都是為了不讓對方接收到刺眼的強光。兩個不熟悉的同班同學簡單而禮貌地點點頭，無意間瞄到彼此眼角漫生的魚尾線條。裡面除了無法掩飾的歲月痕跡，還有些許歲月裡的秘密情懷。", "於是，每當圖書館熄燈後，兩個人便一起走向停車場，雖然研究的不是同一主題，Jenny和Jack也可以從學校的圖書館甚至是天上的星星聊起，夜晚的校園顯得格外冷清，但是他們倆總是有聊不完的話題。話題裡談的，無非都是他們急於關切卻無從向他人處得到回應，那些以為永遠得不到答案的問題。", "不過，現實總是壓得人喘不過氣來，既然逃到這座位於山腰的校園，他們倆的話題總是很有默契的不談各自的工作，或是家庭生活之類的情事。此刻的他們都愛談着年輕時最喜歡的夢想：寫作、冒險與旅行。", "他們也知道現實總是如影隨行，不是躲在山裡就能夠不惹塵埃，既然拋不掉自己，他們知道珍惜彼此遠離現實的時刻，每一刻都無需關乎現實的身份，好像兩個精靈，在森林裡揀拾彼此的羽毛，帶回家收藏，或是慢慢綴補自己的傷口。", "遇到彼此以前，Jenny和Jack其實就是照着命運的劇本認命的走著，以為這樣可以活得更簡單，也可以更理直氣壯的認命與快活著。殊不知當自己的心靈一直沒有被好好照顧時，其實那些缺口只會加速擴大潰爛的面積，那些發呆看向天空和低頭看書的時間只會愈來愈長。直到終於想找個出口暫時讓心靈離開現實，奔跑在自由的原野時，兩個靈魂相近的人就一定會在莫名的時刻相遇。", "而這些都不在劇本的範圍裡。", "Jenny和Jack的靈魂就這樣相遇，彼此的靈魂超越劇本的線索，啓動了舞台落幕後的對話機制。", "經歷了四個四季的輪迴，Jenny和Jack畢業了，意思就是他們倆得各自回到各自的世界繼續上演著現實的劇本。當兩個人不能回到校園分享彼此生命，相約繼續聊天的管道就是雲端通訊，說好這一切的發展繼續沿襲著當初看窗的劇本，意思就是：沒有劇本。", "他們依然很有默契的不留對方電話，不安排見面，深怕這兩個從現實裡創造出來的超現實靈魂會禁不起現世情感的思念與折磨。兩個人繼續默默護守信念，漫無目的地在雲端分享着彼此的心靈。", "直到有一天，Jack忽然提出了見面的要求。", "Jenny其實並不期待這一天的到來，但卻又答應了Jack的邀請。她向我分享他們四年前相遇的過程，在即將見面的前夕，她問起了這個劇本外的劇本該怎麼繼續寫下去？", "「我在期待什麼嗎？我還在期待他成為現實的一部分，還是，他其實已經改變我的現實，而我卻不願面對？」Jenny反而苦惱着自己沒有劇本的混亂無助。", "《愛在午夜希臘時》（Before Midnight）是我2013年最愛的一部電影，從1995年《愛在黎明破曉時》（Before Sunrise）的巧遇，到2004年《愛在日落巴黎時》（Before Sunset）的意外重逢，這一次《愛在午夜希臘時》男女主角要分享的是歷經歲月催磨下的愛情真義。當彼此的關係從兩條平行線逐漸互相吸引，逐漸靠近，到逐漸希望變成長長久久的關係時，那心靈契合的兩人終究必須面對，如何在現實的困境中維繫生命的交集。1995年，當初的相遇，男女主角並不知道對方是何方神聖，也因此，必得歷經十八年的錯過、思念與相遇，不停地在現實拔河與維繫彼此關係間掙扎，才會真正看懂當初的巧遇，絕對不只有偶然。", "歷經時光的淘洗，如果跨越不了現實層面的維繫，兩個人的光譜終究只能各自照耀前行的路，當時的巧遇，只不過是一段暫時互放的光芒。Jenny說，她原來以為這些校園裡的四個四季，只會在畢業典禮完畢的一刻還諸天地，沒想到，天地如此遼闊，人生還有許多四季將繼續輪轉，她和Jack的生命依然繼續輪轉，依然在雲端以靈魂彼此召喚着。", "我聽著Jenny的分享，身為老朋友的我，當然知道她渴望聆聽與訴說的生命本質。雖然，他們兩個人開始的人生新階段已然必須與現實層面接軌，真實人生中不可逃避的，終究還是如何去維繫兩個雲端靈魂的現世情感。一如三部曲裡的男女主角，除非他們僅僅是發生在愛情童話裡的兩個角色，當他們離開了第一部曲的維也納或第二部曲的巴黎之後，其實大可以永遠離開彼此的生命，不再聯絡。", "一如諸多與我們擦肩而過的朋友。", "Jenny說，她只是不想再錯過彼此的生命。即使兩人依然必須面對現實世界裡可能的怨懟和肉身的老去，他們決定兩個人的相處不再只是雲端載體的無重力狀態。既然是重聚，就應該繼續走入彼此的風景，繼續經歷人生四季。", "於是，在Jenny和Jack的重逢裡，人生的嶄新關係就繼續維繫了下去。", "是永遠停留在俯瞰一切風景的靠窗位置呢？還是走入風景經歷四季？Jenny和Jack的關係如何維繫下去，就看他們如何繼續彼此聊不完的mur mur話題。"], "13": ["> 之前和她在一起，總是百般順從着她，想吃什麼呢？想去哪裡呢？想買什麼生日禮物？為了討她歡欣，自己喜歡什麼變得一點都不重要了！", "你問我：究竟失戀後要過多久，才能走出感情的傷痛？", "上禮拜三放學才看到你幸福洋溢地和隔壁班女生手牽手走進圖書館，怎麼今天你就問了我這麼一個這麼跳tone的問題。看著你急於期待着從我口裡得到解脫，我還是不疾不徐的問你，前天你在球場被人蓋了個大火鍋，那摔了跤縫了好幾針的傷口現在難道完全沒感覺嗎？你摸了摸額頭，紗布還微滲着紅藥水，「沒辦法，才第三天，還是好痛！」", "你說，真的好痛，才第二天，怎麼會不痛呢？昨天女朋友傳來一封簡訊，你說，寫得好像「分手」只是一件向下屬交待的工作，「我完全成了聽命行事的角色，不需理由，沒有質疑，只有接受的份。老師，這公平嗎？」你說，你實在不知道問題發生在哪裡，打電話給她，傳簡訊給她，她都一概不回應。你想當面問個明白，但又怕自己成了朋友眼中的恐怖情人，「她躲我沒關係，只要給我一個理由，我絕不會為難她的！畢竟感情是兩個人的事，不管是兩情相悅還是不合分手，不都是站在雙方平等的地位嗎？」前天在球場受了傷，送你到醫院的路上，我還聽你說起最近為了升學的壓力，你都盡量不打電話給她，沒想到，她主動傳簡訊的內容居然是一聲分手的命令！", "看著你失神的模樣，我希望你瞭解尊重對方的決定是必要的，但是能夠尊重自己的想法，希望能真正理解對方為何選擇結束這段感情，絕對也是必要的。這也是對自己，對情感的尊重，畢竟，感情告一段落，需要暫時休息，或是整理行囊重新出發，這也是理解痛苦所在，對症下藥的好方法。至於對方一直逃避回應，不願說清楚，「我們可以尊重她，但可以告訴她，這樣的處理方式真的並不恰當。談戀愛需要時間認識彼此，陪伴也是，分手，練習成為朋友，也是一樣需要時間說給對方聽，讓彼此認識關鍵所在，不是嗎？」", "我想起前些日子才看過的一部電影。", "我順口回答了一個數字：33天，給她33天，也給自己33天，讓她不急著現在馬上回答，而你也是，給自己33天，慢慢走回與自己單獨相處的時光，一個人去圖書館，或是約另一個朋友聊聊天。33天後，若你還是需要一個她口中的分手理由，再請問她。33天，也許她也慢慢釐清如何對你坦誠，也看明白自己為何選擇結束這段感情。", "你一臉不解地瞪大眼睛，33，多麼奇怪又肯定的數字，你說，不知道為什麼，這個數字的節奏感聽起來特別具有安撫人心的力量。剛好我最近看了一部電影就叫做《失戀33天》。", "你說，奇怪，現在只剩下自己，面對自己，反而最相信自己的感覺了，之前和她在一起，總是百般順從着她，想吃什麼呢？想去哪裡呢？想買什麼生日禮物？為了討她歡欣，自己喜歡什麼變得一點都不重要了！", "記憶裡的自己似乎從來不曾嘗過失戀的滋味，當發現自己在愛情裡已經開始不再關懷對方不再期待電話的時候，漸行漸遠而後消失無蹤便是自以為離開愛情的最好方式。雖然剛開始總有患得患失的心理狀態，但因為是自己在有心理準備的狀態下分手，也就不會那麼難過失意。然而難免失落的心裡，總想找些事情做做來，好填補那個生活的洞窟。我想，那被告知的對方呢，應該是需要更多的時間重新調整自己吧。（也許他也大大的喘了一口氣吧！）", "你問我這33天應該做些什麼才會不再想起那個女生呢？你說，以前都是有她在身邊，從不在意這個世界，現在又被迫回到這個世界了，卻發現這個世界似乎也不要自己了。", "我想告訴你那個叫黃小仙的女孩失戀的33天都在做什麼。", "黃小仙，一個27歲上班女孩，在北京的婚禮企劃公司上班；與男友長達七年的戀愛長跑，在準備結婚的前夕，意外撞見了男友和自己姐妹淘玩親親。於是黃小仙為時33天的後失戀時期，就此展開。", "究竟她的失戀警報何時才能解除呢？看似那個堅強自信的她，面對昔日說好的美好承諾和回憶全一幕幕不聽使喚地來到跟前，連再平常不過的隱形眼鏡盒似乎都在和她做對，裡面寫的甜蜜話語提醒她，原來當初的相愛至今看來全都是在嘲笑她，僅剩的一點自尊就像隱形眼鏡用了就丟沒啥價值。徬徨的黃小仙站在失戀的當下，希望找出自己的人生和愛情的正確道路。然而，當下的處境並不會因為同情她而一片祥和樂觀，工作上依然困難重重，但是她開始有時間參加同事們下班後的聚會，也會說出內心的問題以尋求援手。黃小仙口中的王小賤，這個同事平常既冷酷又毒舌，性向不明，看似對她的失戀一路冷眼旁觀，但卻又不著痕跡，一路陪她走過人生低潮。", "第33天，辦公室對面的霓虹看板終於活了起來，倚立窗前的黃小仙看到王小賤在閃著「Faith」的燈光下向她揮手，耳邊傳來手機裡他對她的鼓勵話語：一路有他，不會遠離。", "這超過一個月的時間裡黃小仙並沒有將自己鎖起來與世隔絕，也沒有因為失戀而否定自己，套一句電影的話：「如果分一次手要一個月才能不再陣痛，不再時時都想求他回頭，想到他名字時不再心慌手顫，那我已經成功的走過了三分之一的路段。」希望你放學後繼續背著書包到圖書館讀書，雖然身邊不再有她，雖然想到她時總難免會有些心酸，但用33天來和真實的自己相處，也看看那些你原本忽略的同學家人們，相信你會發現時間一直都在陪著你用愛和希望療癒傷口，只要相信這世界仍然在運轉，相信經過療癒後的自己一定會更好。"], "14": ["> 戈列格里斯坐在這班里斯本夜車，「前往」追索一個陌生人的生命旅途裡，逐漸找回自己最真實的內心。", "要離開自己原已習慣的生活軌道，這究竟需要多大的勇氣呢？", "才新婚不久的Eric，蜜月的同時也辭去了工作，暫時揮別心愛的嬌妻，遠赴澳洲墨爾本開始為期一年的「假期打工」（Working Holiday）計畫。從研究所一畢業，Eric馬上進入職場，多少人羨慕Eric有一份穩定的工作。剛升了官，大夥兒才幫他舉杯慶祝時，他馬上即時丟給大家一個紅色炸彈，原來他就要和青梅竹馬的小學同學成立小家庭。大家還在為Eric工作的順遂驚嘆時，他已經著手開始下一段人生計劃了。", "其實，Eric的順遂人生一點都不讓人意外，仿佛他的計劃都是照著成功人生的版本一步步地實踐着，而他也一直真的很努力，從沒見他憤世嫉俗的批評社會，或是懷疑成功的人生背後是不是有一雙無情命運的眼睛，正虎視眈眈地盯著他，隨時準備一把將他推入深淵。Eric總是這樣讓人不失望，也走在安全富裕的坡道上隨時升高自己的生命境界。沒想到，一個事業剛起步的黃金竹科工程師卻毅然決然地辭去了工作越渡重洋「打工」。", "身處這個氣氛低迷的大環境裡，結個婚需要多大的勇氣，找到工作又需要多少的努力和運氣，但當Eric下了決定並付出行動時，大家才發現，原來當這些人生寶藏到了手，卻能看似瀟灑的暫時放下時，需要的卻是更大的勇氣，以及更大的智慧和信心。", "離開台灣前我們大家又聚了一聚，Eric比上一次見面胖了些，但也開朗得多，在座的同學調侃Eric居然沒帶結婚戒指，出國裝清純真是把妹一流功，Eric詭異的笑了笑，說自己其實是怕婚戒丟在異鄉打工的豬糞裡。看來去澳洲的工作鐵定是比竹科的冷氣房要辛苦多了吧，但我更相信未來辛苦的日子就是Eric自己的選擇，選擇離開舒適圈走向未知的自己，是想要期待一個更豐沛更遠大的自己吧。", "我並沒有問起Eric未來的計畫，想想一年真的很短，也實在可以很長，甫新婚的嬌妻怎麼能釋懷呢？一年回來找工作不是要重起爐灶從零開始嗎？一連串的問題像一顆顆落下的石頭朝Eric而來，除非放棄前行，不然Eric得一一面對，不是嗎？Eric說，這些問題他都有仔仔細細地想過一遍，每一遍的答案都不一樣，想到後來自己都想打退堂鼓了！後來，Eric告訴自己，先出去吧，先辭職吧，先請自己的愛妻諒解自己的堅持吧，如果連自己都猶豫不決，那他人又何必無條件地支持自己呢？", "我想起最近看的這部小說改編的電影《里斯本夜車》（Night Train to Lisbon），Eric的人生不也正在上演屬於自己的「墨爾本夜車」嗎？", "如果他人的人生再怎麼看都是比自己平凡無奇的人生精彩豐富，那是因為他人走過的人生，也正是自己還無法經歷的陌生歲月，我們受到吸引，多少是因為那也是我們還未曾經歷的人生，走出自己習以為常的生活。開始另一段的嶄新未知，也許不見得真過得比以前好，但仿佛是神秘時空的驅使，常使得我們放棄本來的模樣，換上一付新的眼鏡，仿佛脫胎換骨，期待與陌生的自己相遇。劇中的男主角戈列格里斯就是受到一位陌生的紅衣女郎以及一本書的吸引，好奇的驅使讓這位老教授踏上了一班開往里斯本的夜車。", "戈列格里斯在前往大學授課的途中，與這名神祕女子巧遇，當她在橋上不告而別之後，戈列格里斯發現在她遺留的紅色大衣裡，有一本葡萄牙作家普拉多的札記《文字煉金師》，與一張開往里斯本的車票。隨著受到書中一段文字的吸引：「如果我們只能依賴內心一小部分生活，剩餘的該如何處置？」，他開始依循有關紅衣女子留下來的種種線索與脈絡，讓他決定搭上前往里斯本的火車，追尋有關葡萄牙作家普拉多的生平。", "戈列格里斯丟下所有既定的生活行程，孤身抵達里斯本之後，他開始一一查訪普拉多的親友，只為逐漸重建這名亦為醫生的作家。戈列格里斯逐漸發現普拉多抵抗葡萄牙獨裁政權的生命面貌，也發現他為了履行一位醫生的救人使命，他竟然成為頭號獨裁者的救命恩人。在里斯本，戈列格里斯換了一副眼鏡，從極度的不習慣到逐漸接受了一個全然嶄新的視野，彷彿他來到異鄉，透過與一個陌生人的生命交會，真有可能突破既定生活的牢籠。戈列格里斯坐在這班里斯本夜車，「前往」追索一個陌生人的生命旅途裡，逐漸找回自己最真實的內心。也在這個本不屬於他的習慣時空裡，逐漸檢視自己過往的生命，望見自己曾經在生命的十字路口那個最真實的自己。", "車子開往哪裡並不是他人生原來的劇本，但是坐上它卻是出自他的決定。他決心要尋找書中的作者普拉多，即便是作者只擁有短暫的生命，它的精采度卻讓他深深著迷。", "然而，了解另一個陌生的生命，對認識自己又有何幫助呢？", "或許讀一本書或來一趟旅行並沒有辦法改變我們的生命，更說不上能為我們的生命創造出什麼雄偉的場景。然而就像這本書最後說的：「生命的意義不在於如何生活，而在於如何設想生活。」也許和Eric下次見面就是他一年後結束打工回國開始悶頭找工作，也許這世界的巨大危機和Eric開始這趟旅行時其實並沒什麼改變，但是，Eric卻因為設想自己的生活而勇敢跨出原來生活圈這件事，已經讓Eric的視野完全不同於一年前的那個新婚竹科工程師。", "戈列格里斯以一趟跨越時空的旅程來展開自己的經驗；Eric以一趟跨越既定的生活驛站來延續自己設計的人生旅程。人的一生中有許多難以言喻的經驗，不管是孤獨、生命、死亡、友誼、愛情與忠誠，我們活在自己的劇本裡，也在尋訪陌生人的生命經驗裡創生屬於自己的時空旅程。明年此時，相信Eric依然需要一份養活自己和家人的工作，但雙手迎接的除了一份嶄新的工作環境，更是一顆堅定生活的信心。"], "15": ["> 他只想一輩子做一個螻蟻，因為他也只配做這種低等生物，一輩子養活自己就好。", "「我其實真的不是個人！」這件事一直困擾著K……", "在別人眼裡，K善解人意，能自己做的事絕不假手他人；有什麼心事大家喜歡找他分享，因為他的意見總是理性而積極，這種正向的力量顯然能激勵身旁一顆顆墜入深淵的藍色心靈。", "然而，K自己一直不願面對年少時一段悲傷的記憶。", "「那是一段多麼痛苦的回憶呀！我根本就是一個殺人兇手！」那天，他告訴我曾經不願再想起的往事。或許是他剛看完王家衛的電影，需要找一個像樹洞的好朋友來宣洩深埋已久的秘密吧。", "「我根本是很虛偽地做一個看起來正常的好人而已，其實只有我自己知道鏡子裡的自己多麼齷齪不堪，那個在我眼前一躍而下的同學，才最清楚我這個人。哈哈，只可惜傻傻的他已經原諒我了，永遠無法證明我根本無視於他這個人，即使當時他的絕望導致他想結束自己的生命，我卻只會眼睜睜的袖手旁觀！」痛苦的線條一條條交織在K的臉上，在我眼前出現禁錮囚犯的牢籠。", "我問Ｋ，為什麼深埋已久的事，選擇今天說了出來，難不成發生什麼事，硬生生撥開了創傷，讓傷口再次暴露在陽光下？Ｋ告訴我，其實這個陰影一直都在，他只想一輩子做一個螻蟻，因為他也只配做這種低等生物，一輩子養活自己就好，他是不夠資格談什麼理想的人生、崇高的人格之類的！沒想到，他遇到一個女孩，這個女孩真真切切的喜歡Ｋ，也把Ｋ當成偶像認真地欣賞他的低調個性。他一直向女孩解釋，他的低調不是謙虛，絕對只是一種逃避競爭的懦弱行為。女孩笑得很開心，她說她真的了解Ｋ的低調和懦弱，她很喜歡，也很羨慕這樣的人格，因為這樣的真實不做作，不汲汲營營，她做不來也學不會，因為從小她就被教導着要追求完美追求卓越，她覺得累了，看到了Ｋ，看到Ｋ無慾無求的認份生活著，她覺得這才是真正值得她追求的人生，她要緊緊跟著Ｋ當個小鐵粉！", "Ｋ說，不管他怎麼解釋自己絕對沒有資格讓她喜歡的理由，那個女孩就是相信自己眼前看到的Ｋ是這麼的真實不虛偽。Ｋ只有苦笑，但也開始懷疑自己是不是真的可以拋開過去，夠資格開始過一個追求理想人生的正常人。「她這麼愛我，懂得我的人生態度，甚至欣賞我螻蟻般的苟且偷生，我開始害怕，害怕有一天她知道我的過去，會不會開始看不起我，甚至害怕我有一天也會殺了她？」Ｋ激動的咆哮着，眼睛佈滿着鮮紅的血絲。", "Ｋ說，那是一個燠熱的夏日午後，為了即將面臨的大學考試，同學們都埋頭努力用功，日子表面上是安靜的，大家卻早已悶到隨時可能爆炸。有位同學緩緩走到他面前，示意希望Ｋ跟在他的身後，他有話想告訴Ｋ，所以Ｋ只好放下書本，隨著他一起走到外面的走廊。Ｋ又跟着他走上三樓，腦子還停留在剛剛課本裡待解的三角函數。沒想到這位同學來到欄杆邊，突然轉過身，用哀戚的眼神看著他，口裡傳出一連串語無倫次的聲音。", "「後來想想，當中一定還隱含了無助和求助！可是我卻沒有認真地去感覺他想告訴我什麼，我只是不停地敷衍他，只是急著趕快脫身回去解我的數學題……」K難過又自責地說。", "Ｋ說，那位同學突然拿出預藏的美工刀，作勢要割腕。K以為他只是開玩笑，心裡還在想著剛才未解的數學題，沒仔細聽他哭訴的內容。", "等Ｋ回過神來想拉他一起回教室，沒想到說時遲那時快，那位同學手上的美工刀已經丟在地上，滿滿沾了血，而且那位同學已經消失在Ｋ的面前，前一秒從三樓跳了下去！雖然同學的命及時救了回來，但K至今依然揮不去那陰影。「那年的班級模範生竟然又選上了我，這是多大的諷刺呀！哈哈，只有我知道自己根本只是個道貌岸然的殺人兇手！」K終於哭了出來。憑什麼他就該被原諒？憑什麼他可以有資格被人愛？Ｋ一直搖著頭，不論我怎麼安慰他。", "那一年Ｋ被選為模範生，又眼睜睜地看著同學選擇結束生命，Ｋ卻自私的只想著自己的數學習題，難道這才是Ｋ最大的陰影？什麼是模範生呢？真的是零缺點、零公害的完人嗎？我告訴K，一定要去看《驚悚大師希區考克：重返驚魂記》（Hitchcock）這部電影。電影裡的希區考克不僅是有名的驚悚電影大導演，他還代表著人類黑暗與光明並存、矛盾且精采的內心世界。他會在拍片現場的女更衣室偷偷挖洞，滿足窺視的慾望；他會在心裡拿起刀，殘忍地殺了他的妻子和第三者；他會暗戀電影裡的金髮美女，一個人做著不可思議的春夢。疑神疑鬼四處探查，抽絲剝繭的探求可能的線索，懷疑妻子的不忠讓他把妒火宣洩在片場，也讓他的創作靈感大爆發，驚悚懸疑效果不亞於他的真實人生，更讓他在指導演員時自然呈現驚悚的真實效果。直到他妻子發現外遇對象也背著她偷吃年輕美眉的豆腐時，才決定回到丈夫的懷抱，一起為事業打拼。", "而這些不堪，到後來都成了他創作電影的源頭。", "人生本來就有許多驚悚的黑暗，我告訴Ｋ，他覺得告訴我這些深藏已久的秘密純粹是因為我是個完美可靠的人嗎？這世間有零缺點零公害的模範生嗎？選模範生，純粹只是因為大家想看那個選中的模範生生活得戰戰兢兢，假仙又做作啦。沒想到Ｋ這個模範生完全沒中計，活得比我們還低調，還真實。想想我們真的無須感到醜陋、恐懼，也不必假裝看不見。何不正視鏡子，與那個不完美的自己、不完美的世界，和平共存呢！如此才能勇敢去愛人與被愛，才能擁有著公平追求理想人生的真正機會！"], "16": ["> 不是因為『最好』所以我們眷念不已，而是倒過來，是因為永遠失落了，我們只能用懷念召喚它們，所以才成為『最好』。", "Ｈ是我的高中同學。我一直喜歡他充滿創意的頭腦，只要聽他說話就會覺得有一匹又一匹「天馬」不停地繞著我腦子飛呀飛。我的耳朵快應接不暇，而他不但滔滔不絕地說著，還信手拈來將計畫也逐步擬定出來。", "他似乎永遠停不下來，生活多彩多姿的他總是跟隨自己的創意追尋各種實踐的可能，因為他認為「美好人生是創造出來的」，他的人生意義是：想像更美好的可能，然後，一一實踐它們。", "於是工作之餘他完成了單車環島和環法旅行，他出了一本又一本書，他為員工安排偏鄉地區的志工服務，他正在準備參加鐵人三項……但是，妻子卻極度不理解他。", "「一整個世界的豐富美好，和打開家門的荒涼冷漠，根本就是兩個星球的旅行。」Ｈ無奈的說。", "「可是明明這個家的原形也是來自我的想像，怎麼全走了樣呢？進門的玄關，明亮的落地窗，還有一人一間完全獨立的書房和衛浴設備，我的世界有你，你的世界有我，但是，需要一個人盡情放鬆的時候，彼此也有獨立的空間，這有什麼不好？你告訴我！」Ｈ不解為什麼他的理想世界裡，走進一個依理想娶進家門的女人，加起來，卻完全看不見本來創造的理想世界呢？Ｈ說，怎麼愈是期待就愈是失望呢？那還有什麼世界是可以期待的呢？", "H還是依然喜歡從懷疑中尋找創意，即使一連串的問號讓我陷進深深的漩渦，看見Ｈ熱切動腦筋搜奇的模樣，我知道他並沒有放棄尋找另一條路徑通向夢想。", "依往例，我期待著聽到他破雲而出的美好答案，也許是修正家裡的裝潢，也許是改善自己的作息方式好配合妻子。沒想到他居然說了一段侯孝賢導演的「最好的時光」理論。", "Ｈ說他最近受到侯孝賢這句話的影響，讓他耽於緬懷過往的青春年華和美麗戀情：「我覺得侯導說得真好，真是說中了我們『哀樂中年』的處境。他說，不是因為『最好』所以我們眷念不已，而是倒過來，是因為永遠失落了，我們只能用懷念召喚它們，所以才成為『最好』。」Ｈ說，他開始學習修正自己，不是修正自己的作息或習慣，而是逐漸接受臨來生命裡的一件一件事情，未來不可期，畢竟連美好的自己都在逐漸縮小變形，如何能期待他人能夠完美到配合自己的理想未來呢？乾脆懷念已逝的過去，那才是最好的時光。這樣他也不會試圖要求自己的妻子做到自己理想的模樣了。", "我無法對Ｈ說什麼，尤其是說這個世界究竟是否值得期待它更好，還是只能眼睜睜看著它更糟，接受它，或者，根本活在自己可以接受的歡愉裡，即便是這些歡愉只是自己創造出來的想像。", "看得到的世界本來就隱藏著看不到的另一個世界，現實的世界不全然就是我們賴以生存的地方。「是呀，還有想像的世界，那裡終究存有超越時空的條件。」Ｈ對我說。Ｈ真是說中我們接近中年的心情，青春的肉體、純淨的靈魂或是整個大社會的變遷，不都是愈來愈走向混濁複雜和必然的衰敗嗎？圖個快樂，不靠想像，如何戰勝愈漸衰敗的現實生命？", "他說什麼都不願意相信「最好的時光」其實還在不遠的遠方。甚至連他驚人的想像力與對美好人生的實踐能力，都開始顯得有氣無力了，他以為自己終於懂得江河日下的自然定律。", "有天我們找來了B，他是我們三個同學之中發展最好的一個，不是因為他最成功或是賺的錢最多，而是他一直說自己是我們三個人發展的最好的一個。Ｂ說自己從小就是班上最後一名，為了幫我和Ｈ墊底，他可是非常認份的完成他的天賦使命。後來各自念了不同的高中、大學，出了社會努力打拼，Ｂ說，他還是發展得比我們好，因為，他說，他從來也不曾夢想未來會更好，什麼要贏過什麼人，也無所謂服膺什麼成功格言，每天起床第一件事，就是折好自己的被子，等著晚上就寢，入眠。", "B說起了《大亨小傳》（The Great Gatsby）這部改編自美國小說家費茲傑羅同名著作的電影，以一種既華麗又殘忍的方式描繪時代與人性。B說，我們都被自己美好的幻象給騙了。這一場場騙局騙得真好，但他就是不想被騙。", "Ｂ的這句話真的深深重擊了我，我不知Ｈ怎麼想，難道對美好的想像不也是身而為人的天賦使命嗎？難道美好的人生只是幻象嗎？那麼Ｂ說的發展，只是因為他不追求更美好的可能，只求安穩入眠過完每一天，所以Ｂ才可以大剌剌地說，他的發展一天比一天好，也比我們哀怨的過每一天都好嗎？", "《大亨小傳》其實是一部令我哀傷到谷底的電影，然而這樣的谷底風景，硬是給自己一次正面迎向冷冽現實的機會，讓我不要只選擇七彩絢麗的雲霓，而是雙腳紮實地踏穩現實的荊棘。不論是看到了小說或是電影場景的最後一刻，那男主角Gatsby還是一如以往的這麼快樂，只有我們這些旁觀者，以上帝全知觀點的視角，眼睜睜的看着他活在自欺欺人的美好與偏執裡，直到生命的最後一刻。那其實是多麼的幸福的人生，我在心裡這樣對Gatsby說。", "費茲傑羅曾這麼形容：「這部小說的重心放在『幻象的消滅』之上，正是這種幻象，才使得這個世界那麼鮮豔。你根本無須理會事情的真跟假，只要它們沾上了那份魔術般的光彩就行了。」", "真的嗎？我問Ｂ，也問Ｈ。我們都可以是那個為生命灑上魔術般光彩的魔術師嗎？我們可以像Gatsby那樣容許自己永遠活在生命的幻象裡，不要像學生時期那樣，為了追求答案的對錯或事實的真假，而努力的追索叩問嗎？翻開了答案的那一面，或是戳破了泡泡的表象，然後，現實就真的不堪一擊嗎？", "或許侯導說得對，失去的或得不到的才是最美好、最珍貴的，或許費茲傑羅揭示的人生真相就是撒上幻象的金粉勝過事實的真假。不過，我問一直在我身邊的好友Ｈ和Ｂ，你們倆是我最摯愛的好友，如果你們兩個都是我撒出來的金粉幻象，那我們一起走過的酸甜苦辣豈不是無任何美好可言？可是，在這同時，我們三個人卻不曾忘記，哀樂中年的此刻，還欣賞降臨在身邊所擁有的「美好時光」呀！"], "17": ["> 這是父母的人生，不是我的，難道走在這同一條路上就算安全的找到了適合我的人生嗎？", "「如果沒有遇到他，我應該不會過得這麼悽慘吧？」可憐的R躺在病床上，兩隻腳上了石膏動彈不得，左手還吊著點滴。", "自從上周她在花蓮出了車禍，我們才知道原來每個月第一個星期六她說去補英文托福準備出國深造其實根本只是個幌子，她其實是回到自己的母校義務教小提琴，而且已經維持了三年。這三年來風雨無阻，直到出了個大車禍，才讓這整件事曝了光。", "這次的車禍傷得可不輕，R的雙腳骨折，右臉因嚴重撞擊地面而有破相之虞，一個面容姣好的二十來歲女生得承受這一連串身心上的苦痛，在病床上的她忍不住放聲大哭了起來。", "R告訴我說是一場演講啟發了她，讓她決定回到自己就讀的小學教小提琴。如果不是那場演講，也許她現在還是個擁有單純目標的職場新鮮人：那個自信滿滿的拿著一張亮眼的Ｔ大研究所畢業證書，一腳踏入社會努力認分的找個穩定工作賺人生的第一桶金；然後結婚生子；然後……", "「我的父母都是這樣經歷他們的人生，我以為為自己規畫一個豐衣足食的生活本是人生天經地義的事，沒想到有個陌生人提醒了我。他說，這是父母的人生，不是我的，難道走在這同一條路上就算安全的找到了適合我的人生嗎？」雖然傷口還在折磨著她，但看得出來R的眼神充滿了自信的光采。", "長大後的R才知道，原來她的爸爸也曾努力地走著和她祖父不一樣的路。出生在離島小漁村的父親，每個同班同學父親欄唯一能填的職業幾乎就是「漁夫」，他的父親也不例外。喜歡胡思亂想的他問國中老師，「漁夫」真的是這座島上男人既定的宿命嗎？他可以逃開這個島上的宿命嗎？", "老師斬釘截鐵的告訴他，「漁夫當然不是宿命。漁夫，只是這個島上男人的選擇之一。」R的爸爸如釋重負，既然不是被詛咒，也不是宿命，他相信一定要把握機會發現更多的可能，然後，選擇一條對自己有意義的路。", "於是R的爸爸選擇離開家鄉到台灣本島就讀高中，剛開始也過得很艱難，不過他一直相信一件事：自己的爸爸當了一輩子的漁夫真的很偉大，但是，他不適合。", "R其實一直沒有懷疑自己受父母栽培延續父母的期許好不好，人生究竟怎麼好，這方面的強烈感受其實她從沒想過。Ｒ說自小根本就是憑著自己的努力才順利升學，每個階段都是挺進前三志願，學業完成順利拿到就業證明，一切似乎就是走在「成功的人生藍圖」上，從來不需要思考人生的意義究竟是什麼。她以為這樣的成功就是人生的意義。直到意外的走進那一場演講的會場。", "這位演講者沒有顯赫的身家背景，也不是什麼社會名流成功人士，朋友拉她來，只是告訴她說，「Ｒ，在妳的生命中從來沒有缺少的東西，其實正是給予他人最好的禮物。」她很好奇，朋友眼中最好的禮物究竟是什麼？這一場演講，是一個陌生人告訴了Ｒ，她生命中最好的禮物是為他人創造，為他人創造實踐理想的機會，因為這個世界不是平等的，尤其是機會。是的，Ｒ發現，她的生命中從不缺少機會，可她一直以為這些順遂本都是她靠自己努力掙得的，其實，有多少是身邊的人默默地在為她犧牲時間，為她創造機會。", "她深受演講者熱情理想的感動，於是她憶起自己許久未回去的母校，那是她十歲以前就讀的國小，位於花蓮的山區，離花蓮市很遠，她去看了老師，老師依然懷抱教學的熱情，相信這裡的教育能為孩子創造成功人生的舞台，帶來更多翻轉命運的機會。", "她想起自己一直沒有荒廢的小提琴，便主動向老師提議是否可以讓她利用每個月的某一周六來為學弟妹們上課。", "於是，三年前Ｒ開始了創造機會的旅程。每個月的這一天是她最感到滿足的時光，搭上第一班自強號，火車穿越山海來到這裡，像一首詩的完成，每個自然的意象都像是為她嶄新的人生詩篇而一一呈現，彷彿是提醒著她：Ｒ，妳正在寫妳自己，就像我這個造物主正在完成一首宇宙的詩篇。", "R說，這幾年下來，她知道自己就是單純的相信要將生命中最不虞匱乏的「機會」創造給偏鄉的學弟妹們，而那場演講，就是為她的生命而準備好的。即使現在的她得接受一連串的辛苦的復健和治療，但是，她還是決定痊癒之後還是會繼續她的「創造之旅」。我看著她承受着受創的身體，心靈的完整依然深深互持著，雖說是那場演講提醒了她，無非也是因著她用心的聆聽，所以也聽到內心深處的聲音，演講者的演講內容才能深深觸動她的生命。直到今天，這場嚴重的車禍雖讓她身體受到折磨，她雖問了我也問了自己一個後設性的問題，終究，她還是不後悔這樣的決定。", "因為她知道，她的生命已經完全不一樣了。", "我彷彿看到義大利電影《郵差》裡為著偉大詩人聶魯達送信的馬立歐今天出現在病床上。同樣的一雙眼睛，馬立歐拿著自己寫的詩，在眾人的簇擁下上台為自己心繫的祖國朗誦自己的作品；而Ｒ那雙看向遠方的眼睛，也正偷偷長出綠色的薜荔，將冰冷的窗玻璃妝點成生意盎然的風景。", "也許離開了醫院踏進公司的旋轉門，R的老闆依然如故的訓斥着員工怎麼不努力達到公司既定的績效，也許隔壁座位的職場大叔依然提醒R這人生本來就是平凡得可以，不要理想只要實際的數字；也許《郵差》裡的馬立歐若沒有遇到智利流亡詩人聶魯達，一輩子像自己的祖父、父親，當個盡責的漁夫生一堆小孩絕對不成問題，也許還可以長命百歲，也許不會死得那麼悽慘。", "但終究馬立歐還是受到聶魯達的詩句啟發，當他對著詩人說：「是否整個世界，海、天空、雲、雨，是另一件事物的暗喻呢？」其實，聶魯達早已在自己的詩裡成功的創造着自己的天賦，但是對一個不曾有機會寫過一句詩的馬立歐來說，不是天賦引領着他認識詩，而是他對這世界最純粹的讚嘆，引領着他進一步勇敢追求着美好的人兒，結婚生子，甚至為了追求更好的社會，義無反顧地犧牲自己的生命。馬立歐對這世界一切的創作，最初是因著聶魯達走進他的生命，爾後是他自己用一雙詩人的眼睛，繼續經驗着，也發現着這世間的美好，並且相信自己可以改變這世間的不完美，只要憑著詩人追求真善美的堅持。", "病床的R不也是嗎？她願意堅持為陌生的孩子創造多一些的機會，憑她的能力，即使這樣的堅持可能得付出更多的代價，但她引領了自己，看見人生最美麗的風景。"], "18": ["> 傷害一個陌生人算什麼，完成自己的野心，滿足一己的慾望比什麼狗屁道德都重要。", "「這些他媽的戰爭根本不可能有停止的一天吧？」M看著電視新聞自言自語的搖搖頭說。", "其實這時候只有我看見M臉上是帶著鄙夷的神情。大家說好來他家聚會聊天說八卦的，沒想到說一說竟說出他這幾天發生的事。", "他有個弟弟，年齡差了十歲，從弟弟出生的那天開始，父母就一直灌輸他「長兄如父」的觀念，所以他對弟弟的照顧總是責備多於包容，「畢竟這樣比較像嚴父吧？」他對我們說。弟弟其實也很爭氣，爸爸的話弟弟也許習慣陽奉陰違，但是M的話他可是從不打折扣的。", "M對弟弟的表現一直很滿意，人前人後總是不忘稱讚他這個優秀的弟弟，直到今天我們才知道弟弟是如何徹底的傷了M的心。", "M的弟弟從大學畢業後就順利進入外商公司上班，隨著弟弟能夠自食其力開始，M以為終於可以放下心中的一塊大石頭，沒想到弟弟有天突然告訴他要到大陸去做生意了，但是因為資金不夠必須向M借一筆不小的金額，弟弟說就算是幫哥哥投資吧，到時候賺了錢一定會按月分紅給M的。", "M當然全數滿足了弟弟需要的資金，還把父母的養老金也分批匯給弟弟，並成為擔保人向銀行貸了一筆錢。第一個月還能收到弟弟的幾張照片，沒想到之後就再也無法順利聯繫到他。現在弟弟滯留大陸，M已經許久沒有他的消息了，父母一直催M趕快連絡上弟弟，無奈M的弟弟像人間蒸發一般完全失去了蹤影，本來M還擔心弟弟是不是在大陸遭到不測，或是混得不好無顏見江東父老，沒想到前幾天有個朋友在深圳看到M的弟弟。", "謎底終於揭曉了。事情就是這麼簡單的令人心碎，M的弟弟成了逾假不歸的士兵，老邁的雙親成了他翱翔萬里的阻礙，所以他早在攜帶巨款前往大陸時就已下定決心不再回到台灣。不假外出是第一步，然而，第一步也是傷害的開始。", "M說他不知道該怎麼告訴雙親，更不知道這世間上還能相信誰。他想當面問弟弟為什麼要這樣對待自己的至親，他們到底是哪裡待他不好！但他又在訂了機票後決定取消，「問不出口呀，就算問了又能怎樣呢？他是我唯一的弟弟！」M黯然的神色依然深深籠罩了原本木然的表情。", "「或許他是在哪邊混得不好了吧！或許，有一天他真的賺了大錢就會回來了！」M望著電視新聞裡漫天的殺戮戰火喃喃自語著。", "我們幾個好朋友試圖說些無關緊要的八卦來安慰他，看得出來他很努力配合我們，卻仍難掩巨大的傷痕。血腥戰爭仍然在人間四處爆發，未曾止歇的恐怖攻擊、血腥政變仍然在在提醒着我們，原來人類絲毫不會因為文明的發達或歷史的教訓而稍有節制，傷害一個陌生人算什麼，完成自己的野心，滿足一己的慾望比什麼狗屁道德都重要。「那傷害自己的家人呢？是不是覺得容易得到無止盡的寬容呢？所以可以這樣肆無忌憚的一層層地刮去親人的血肉嗎？」Ｍ衝去電視機前面，狠狠地踹了鏡頭一腳。", "許多歷史的紀錄，一頁頁都在回應著Ｍ痛苦的吶喊。一個家族的傷痛和一整個民族的屠殺，往往都是人性最陰暗卻也最寫實的一面，只要有競爭，不管是爭土地、爭生存、爭情愛，只要心頭泛起了「為什麼不是我！」的不平之鳴，似乎就無法避免這樣泯滅善良人性的殺戮和冷血。", "《愛在血淚交織時》（In the Land of Blood and Honey）是一部美國知名女星安潔莉娜裘莉擔任導演的處女作，這根本就是一部讓人不忍卒睹的電影，不只寫出了戰爭的極度殘忍，更寫出了我們最不願意面對，卻隨時步步逼近的人生真相。這部電影聚焦於1992至1995年的波士尼亞內戰。南斯拉夫在1991年6月起開始分裂解體，波黑（南斯拉夫6個共和國之一）中的穆斯林、塞爾維亞、克羅埃西亞三個主要民族，對波黑該獨立與否與方向各有定論。由於種族問題、宗教信仰一直意見殊異，進而半島衝突不斷，終於在1992年4月引爆波士尼亞內戰；此戰爭為二次世界大戰結束後，歐洲最大規模的局部戰爭。", "在南斯拉夫聯邦解體過程中，波士尼亞與赫塞哥維納在1992年宣布獨立。當時「波赫」（波士尼亞與赫塞哥維納）全區約430萬人口，民族的組成為33%的塞爾維亞人，17%的克羅埃西亞人和44%的波士尼亞克人。1992年，克羅埃西亞人和波士尼亞克人試圖使波赫從南斯拉夫獨立，而塞爾維亞人堅決反對獨立。1992年4月戰爭爆發，時間長達3年半。戰爭造成約20萬人死亡，200萬人淪為難民。", "《愛在血淚交織時》可以說是以「戰爭」為主角，也可以說是以「人性真相」為描述重點，但絕不僅只是描述一段在驚心動魄戰爭中令人為之糾結的愛情故事。戰爭發生前，一名塞爾維亞男子與一名波斯尼亞穆斯林女子一如一般平凡的男男女女，他們深愛彼此，陷入熱戀，完全無視於宗教或是種族的歧異。當女主角艾拉受到敵方塞爾維亞軍隊俘虜後，那已成為敵方軍官的情人丹尼爾偷偷的在一方斗室內保護著兩人的情感和欲望時，我確實以為真愛絕對可以超越無情戰爭摧殘，以高貴的愛情抵禦着一切殘酷的人性，甚至是可以全力對抗外頭戰事的如火如荼。但故事的最後，其實一如預期，愛情背後的人性，在面對仇恨下的戰火，並非一直如此美好和理想。", "彷彿被命運捉弄一般，兩人在戰前那純粹美好的愛情，在烽火連天的險峻情勢之下，將面臨前所未有的嚴苛考驗與族人的檢視。", "「我想，要徹底了解當時到底發生了什麼，依然是很困難的事。」裘莉拍完電影這麼說。這場血腥殘忍的戰爭一直是她始終無法理解的。「在本質上你根本無法明白，究竟為了什麼，你會去殺害、強暴和你比鄰而居多年的鄰居？」她說。", "我想此刻的M甚至是在場的我們，都無法解釋人性或是戰爭的真實面相吧？只能說，經歷了背叛之後，因此也就讓眼前的迷霧全然的散去。接下來的人生必須看清什麼，或是選擇繼續相信什麼，也只有男主角丹尼爾或是M自己知道吧。"], "19": ["> 兩人不必他人引薦就自然地愛上對方，無須話語的修飾，簡單幾句話，即清楚彼此喜歡如此的相處，不用客套介紹過去的經歷，情感可以如此簡單清晰的了然於心。", "大家都喜歡叫Fred「高帥」，除了因為他姓高之外，他還真長得挺順眼的。我們都忍著不隨便加個「富」字，雖然這個字應該是目前大家最希望成就自己的人生關鍵字，但是我們知道這個字壓得他做牛做馬的，每次看到Fred和我們這幾個朋友出去吃飯，搶著付帳的都不是他，知道他手上的閒錢不但不多，還拮据得很。", "## 跟朋友聚會話少", "其實高帥工作很穩定，也從不曾見他為錢發愁，只是四十幾歲的他並無多餘恆產，一到休假日，就聽他說要帶家人去旅行，錢多就出國，錢少則搭個客運或火車四處逛逛。當我們貸款買房子，存錢繳利息，為錢忙進忙出，搶著分享哪家餐廳的美食有多精緻多獨特時，他倒是瀟灑得很，不買保險也不談生財之道，只和大家分享生活和旅行的心得。", "我們幾個好朋友聚會時高帥的太太偶爾也會出現，她是我們高中時期的小學妹，以前也是校園的風雲人物，許多學長想約她都不得其門而入，只有高帥夠厲害，不但收到小學妹的回信，還一路愛情長跑了十年，終於娶得美人歸。現在的她依然一頭清湯掛麵，脂粉未施的容顏根本就是高中剛畢業的模樣，穿著球鞋隨高帥四處趴趴走。", "高中時期的高帥也是個名聲響亮的人物，校園佈告欄有賞有罰，高帥就有本事同時出現在兩邊，讓老師頭痛的是他能成為同學的精神領袖，常常向學校直陳行政與教學上的疏失，讓老師不得不面對積習已久的沉痾。但勉強學校出面解決問題的同時，也常常順帶處罰一下這個製造問題的學生，可高帥一點也不擔心畢不了業，因為他就有本事考上理想的大學。", "曾幾何時，原本的慘綠少年成了一位清心寡慾的中年人？", "「是呀」、「好的」、「謝謝」是高帥現在最常用的詞彙，「喂，高帥，你怎麼這麼沒有招架能力呀！你還是個男人嗎？」再怎麼逼他，高帥還是笑得像個傻瓜。", "## 和老婆相處話多", "不管我們怎麼激他，他就是簡單而堅定地回答幾句。倒是他老婆和我們聊得很投緣，彷彿她才是我們同窗三年的好友。", "有天趁高帥暫時外出處理事情的空檔，我們忍不住問起高帥這人到底是怎麼了？錢少沒有關係，話省成這樣，是不是有什麼問題呀？他老婆倒是回答得很妙：「是呀，他在公眾場合話是少了，不過我們兩個私下依然有聊不完的話題，這點很重要喔！」", "她一說完，在座的我們不禁莞爾一笑，果然高帥的腦袋還是沒有問題。也真沒錯，高帥的想法也許變了，但是夫妻兩人的生活默契當然比我們這些老同學的交際語言更為重要，他倆的互動方式反而讓我們發現步入中年的此刻所遇到的問題。在外面應酬話說多了，回到家反而話少了，親愛的家人成了陌生人，習慣在外面演成功的劇情慣了，回家後卸下面具，反而因為說多了，也累了，剩下一個空洞的軀殼，可憐的不僅是家人，更是那無趣又陌生的自己。", "## I'm tired of being funny.", "我想起一部看了會令人莞爾一笑的電影《無須多言》（Enough Said），那耐人尋味的故事，多像我們平凡卻充滿啟示的中年生活。按摩師Eva在派對上認識了Albert，一聊起來，發現兩人有諸多共同點，都步入中年，單身且離婚，有一個即將離家上大學的女兒。他們倆一見投緣，決定開始交往。此時Eva遇到一位新客人Marianne，Marianne是位詩人，生活品味不凡，在Eva與Marianne聊感情心得的過程中，居然發現Marianne正是Albert口中的前妻。而Marianne口中的前夫毫無是處，Eva雖然明知不能這樣探聽一個人的過去，還是忍不住想要聽聽Albert的種種過去。", "於是，Eva對自己的新戀情開始有了不同的想法。", "劇裡有段對白是這麼說的，Eva對Albert笑着說：「I'm tired of being funny.」，Albert也會心一笑的回應著：「Me too.」，多麼簡潔有力的措辭，卻道盡活到一定年齡的中年人，方能如此瞭解「不廢話」的精髓。也許他們終於瞭解了這世界的某些面相，或是也知道這世界不需要他們再鋪陳什麼美妙的前言，甚至是粉飾無聊的現實了，對Eva和Albert來說，他們互相吸引的那一刻，就是活在當下現世的那個簡單無聊，卻清晰易辨的生命。", "所以我們的生命智慧足可分辨簡單清晰話語的輕重性嗎？不見得美麗甜蜜或是犀利厚重的言語就是充滿感情的質性。當Eva遇到Marianne後，聽到她訴說Albert的種種不是時，她變得迷惑了，也愛得猶豫了。Albert感受到Eva對他的不信任，兩人的愛自然也受到影響，與愛人漸行漸遠的Albert不知道Eva和他說話的方式為何變得這麼奇怪，Eva也漸漸忘記當初愛上Albert的原因。情人的一句真心話，卻依然不時得抵擋旁人隨時而來的千言萬語。", "## 情感可以如此簡單", "想想我們和男女主角一樣都已步入中年，此時談戀愛，或是和親愛的家人相處，不若年輕人浪漫。當時Eva和Albert剛認識，不需花時間試探彼此，只要簡單陳述自己即可。兩人不必他人引薦就自然地愛上對方，無須話語的修飾，簡單幾句話，即清楚彼此喜歡如此的相處，不用客套介紹過去的經歷，情感可以如此簡單清晰的了然於心。", "就僅是一句話，勝過千言萬語。到底是哪句話？聆聽的人能懂得訴說者的心聲嗎？感情關係的相互維繫，從來就不是因着可以為對方改變多少，或是帶著多少曾經的輝煌，而是珍惜彼此當下的美好。相信高帥的老婆真能懂得箇中真意，那個她愛的男人依然沒變，只是隨著年紀，將最重要的話留給了最親愛的家人。"], "20": ["> 我問Sophie，有沒有在分手前明確告訴Sam分手的原因呢？Sophie卻斬釘截鐵地告訴我，事到如今還需要什麼溝通！", "「終於成為過去了！」Sophie鬆了一口氣。", "今天她終於和男朋友協議分手了。她一再強調，這事情拖得有點久，主要是她自己三心二意，明知道已經不能在一起了，卻一直下不了決心，就這麼拖著。看起來似乎沒什麼問題，其實是因為彼此都在「逃避」。", "## 你有在傾聽我嗎", "Sophie說，她要找一個懂得傾聽、願意了解她的人。", "「難道Sam不是嗎？」我不解地問。他們認識才不過兩年，兩人常常出雙入對，Sam總是將Sophie的手牽得緊緊，Sophie也總是甜甜地看著Sam。身為局外人的我，真看不懂這段喜劇情節，究竟是何時埋下了地雷？究竟哪個生活環節「偷偷」引爆了衝突的高潮點？", "「別看我們是公認的一對好情侶，其實我對他的要求，他都沒有做到！我希望他能懂我的心意，不要每次都是我明確地告訴他該怎麼做。」Sophie很生氣地說。", "Sam究竟是不是一個懂得傾聽、願意了解她的人？問我，我當然不知道，但是斬釘截鐵的Sophie就真的知道嗎？我實在很懷疑。", "她告訴我，有天打電話給他，說自己心情很不好，他居然反問：「是怎麼了嗎？不是昨天還好好的嗎？」「天呀！還要我明說？那我們不是白認識了兩年？可見得他並不是真正了解我的人！」", "我問Sophie，有沒有在分手前明確告訴Sam分手的原因呢？Sophie卻依然斬釘截鐵地告訴我，事到如今還需要什麼溝通！如果都是她主動明示自己的心情，那兩個人的相處和一般朋友有什麼兩樣呢？", "所以她就這麼斷然決定分手，不再繼續兩個人的關係。畢竟我是局外人，聽到Sophie這番話也不便給什麼評論。只是想起，愛情本來就是詭異的辯證過程，兩個分手的人當時真的做了最正確的決定嗎？各自回到孤單一人的世界，也許會馬上遇到比前一個更好相處的人；也許尋尋覓覓了好久，才發現原來自己錯過了最適合的另一半，原來對方曾給自己多麼美好的回憶，當時的自己身在其中卻不自知，一心一意只看見一顆沒有被滿足的心！", "## 你懷抱熱情了嗎", "有時，錯過的何止是美好的關係，更是沒有好好把握的相處時光！", "最近看了一部讓人淚流滿面的電影，在《雲端情人》（Her）的故事中，編導史派克瓊斯觀察到現代社會的人際關係，以不落俗套的觀點詮釋愛情的真諦。", "男主角西奧多說：「我跟一個女孩來往，身邊有個熱情看待世界的人很棒，我有點忘記那種熱情。」當我告訴Sophie，其實電影裡的「Her」這個女孩只是一個沒有溫度的電腦程式時，她不能理解這樣的情節有何意義。「為什麼一個有血有肉的男主角，會讓自己愛上一個電腦程式創造的虛擬角色呢？難道他不能去愛一個正常的女人嗎？」其實我和Sophie一樣，剛開始真是無法接受這種「虛擬愛情」，真實世界裡有多少與我們擦肩而過的緣分，難道就不能遇上一個可以互相傾訴的伴侶嗎？就像在網路上認識網友，雲端聊得開心，不保證日後面對面的朝夕相處也能兩情相悅。這樣的關係，基礎何其薄弱呀！", "我想告訴Sophie的，不是男主角愛上的女主角莎曼珊終究只是一個程式，而是要和她分享「熱情」兩個字。", "愛情，是親密與坦誠的雙向互動，很微妙，也很單純。熱情地看待這個世界的意思，也包含了──願意熱情地與伴侶溝通。", "然而人際關係最具挑戰性的部分，就是真正的坦誠和親密，並讓你所愛的人心意不變。我們一直在變化和成長，在不同階段面臨各式各樣的人生課題，問題來了：隨著歲月前進，如何讓我們自由自在地做自己，同時還能保有對彼此的熱情呢？"], "21": ["> 但那像嗎啡，一旦沈迷，便耽溺在快樂的假象，活在渾然忘我的夢境裡。", "如果為台北寫一篇日記，你問我會從哪裡寫起呢？", "嗯嗯，我會寫下台北美好的一面。", "畢竟這裡是我居住的城市，我可以欣賞他華美絢爛的面具，也可以記錄真實打拼的風霜臉孔，這些都是台北，都有背後不為人知的豐富故事。剝開真實，探究傷痕的第一處裂口，因我無力解決滲血的危機，所以，我選擇面對結痂之後的新生與美麗。", "美麗與醜陋，很難截然劃分。屬於文化傳統的美麗，為了固守，美麗成為人性的枷鎖；醜陋殘酷的工商競爭，為了經濟文明的進程，階級愈見貧富差距，如何肯定打拼的精神，看見基層生活的血汗，鼓勵取代謾罵，城市的模樣可以既醜陋又美麗。", "至今仍很難在深夜裡走進台北的暗巷，不敢看見一隻隻飛奔如貓的大老鼠突然從我腳邊流竄，更無法選擇任教幫派混雜的學校，然後在灰頭土臉前大聲地對媒體吶喊著救救孩子的教育。", "在北投老街遇見一名中年女子和男子沿街議價。（呀，那只是偶遇）", "百年國校老松國小前濃妝豔抹的婦人一排排沿柱調笑討生活。（只是城市某個角落的特例）", "來家裡修水電的師傅感嘆著年輕人一個個忙著吸食安非他命，根本沒人願意向他好好的學習一技之長。", "（我從沒看見有人吸食毒品。至少旅遊德國法蘭克福的公園時還不小心會踩到吸食器或針頭呢）", "假日的228公園聚集從四面八方前來的外籍移工，因為思鄉，他們不約而同聚集在這座城市的中心，只為了欣賞家鄉來的女子偶像團體。", "（人好多，他們不是同胞。不會永久居留在台北的）", "你說：「但那不就是台北最真實的一面嗎？你實在不應該割捨他原本的醜陋和問題。」", "是呀，我懂你的意思，但那畢竟是我寫的台北日記，我選擇我所看到的收藏在日記裡，成為台北生活的某一日，這便是我得以快樂活在這座城市的理由。我可以每天依心情選擇不一樣的街角咖啡店，以網誌或部落格紀錄店家精心設計的新式餐點，也可以記錄每天新開張的高級西點麵包店，靠近捷運站的店舖就直接用google地圖呈現，否則就精心手繪一張可愛地圖，美美的顯示台北這座城市的時尚感。台北永遠在更新，永遠在遺忘，我為什麼要去挖掘這座城市已被刻意忽略或是掩埋的醜老記憶呢？", "我的台北日記。我在其中，所以我選擇美好的一面。", "但那像嗎啡，一旦沈迷，便耽溺在快樂的假象，活在渾然忘我的夢境裡。當我必須享受人生的快樂時，我將座椅轉向城市美好的一面，其它，一律不識。", "在這個世界裡，台北一直想要佔有一席之地，夢想的藍圖就是期許有一天能成為亞洲的大蘋果，世界的金融中心，或是華人的娛樂重鎮，於是我們逐漸學習包裝自己，有時是舊瓶裝新酒，在古蹟裡開一座後現代的義大利餐廳，用五光十色的設計宣示著文化的更新時尚。或是新瓶裝舊酒，將一塊塊的土鳳梨或關渡平原的稻米不停的改換新式的包裝。", "然後在包裝盒裡印上某一位台灣老詩人的鄉土詩。", "其實，我一直很迷惑。", "我總是在街角的咖啡店裡想著自己好像坐在巴黎的街頭，總是因為美好的陽光灑在仁愛路的林蔭大道上，而相信台北其實也很接近義大利的熱情奔放。", "我的台北，因為他像西方的某個城市，所以我愛他？", "今天看了《孟買日記》（Dhobi Ghat），本片為印度天王《三個傻瓜》阿米爾·汗與其妻子基蘭·拉奧首度銀幕處女作。一部沒有寶萊塢歌舞劇情的印度片。一部沒有用浪漫式的綺麗夢想麻醉印度現實的城市日記。", "Dhobi Ghat，印度文的意思是洗衣場的洗衣工。", "導演用世界最大的洗衣廠為背景，寫著四個不同階層的人在世界排名第六的印度孟買城市中，交織串連一段關於種姓階級、心靈感情與理想生活點滴的奇妙風景。", "電影一開始就透過一雙好奇細膩的眼睛來觀察這座城市。這座城市擁有美麗浪漫的沙灘，富豪名流坐擁豪宅美景，也有一群看到車子停下來就拼命擠上前乞討的瘦弱小孩。孟買，擁有美麗文明的西式建築，也有夾雜其間擁擠髒亂的市街屋宇。", "孟買屬於熱帶型氣候，時晴時雨，有錢人在雨裡撐傘拍照，貧窮人在雨裡繼續追打老鼠以求維生。這座城市和所有的文明城市一樣，台北也不例外，總有些人用相機捕捉一輩子都經歷的生活，有些人努力地發掘美好，卻總是事與願違。", "不曾親眼看見的真實，難道就真不存在嗎？", "慕納是一名年輕洗衣工，同時也是捕鼠高手，卻一心一意夢想着當演員；愛好攝影的富裕千金夏伊，剛從美國回鄉正在休假；剛結婚卻面對不忠丈夫的中產階級穆斯林女孩雅思敏，還有不善言談但又期望不斷改變生活，以獲靈感的天才畫家艾朗，他們四人在時晴時雨的孟買天空中，交織出獨一無二的城市情懷。", "全片看似細微淡然，卻不著痕跡道出專屬印度城市的獨特氛圍，以印度種姓制度的賤民洗衣工行業與其它不同身份背景的人因緣際會，交錯著人類共有的喜怒哀樂，屬於孟買這座城市的故事便顯得如此的立體而感人。", "台北的天空也時晴時雨的，奔跑在雨裡的人們呀，情感總是學著揮灑的更快，因為我早已習慣也喜歡着台北的便利迅捷，不想再深入瞭解台北有多少露宿街頭或放著無薪假的男男女女，他們是如何度過朝不保夕的真實生活。我不願在努力賺取生活所需的同時，再穿透真實的假象，以人「生而平等」的問題透視社會的不公不義，不願去想台北的真實故事裡，其實還有好多好多《台北畫報》不曾報導的故事。", "一任雨滴潑灑在大片的窗玻璃上，然後墜落，無感的流洩散去。", "你說，屬於台北的日記。這才是屬於我的第一頁。"], "22": ["> 「不要讓文學作品詮釋你的生命，而是要讓自己的生命重新詮釋文學作品。」歐瑪說。", "小時候家裡唯一的娛樂就是看電影，每當爸爸媽媽說待會兒吃飽飯就走到東園街的復興戲院看新上演的片子時，我的心裡就莫名地開始興奮起來。", "這時腦袋馬上勾勒出一個又一個精彩的畫面，還偷偷假設男主角和女主角可能接吻的100種理由。", "那時的世界非常簡單，真實的世界只有家庭和學校。", "沒有電腦也沒有超級馬力歐，電影成了我和虛幻世界的通聯卡。對愛情的想像，成長的迷惘和未來的恐懼，我總是藉著電影的角色以為借鏡。於是戲院的燈一關，我便走進電影裡選擇一個我喜歡的角色，讓他的生命來詮釋我的人生疑問。有時喜劇，有時悲劇，我的人生也有了100種可能。戲演完了，燈一開，我呆坐觀眾席良久，直到家人頻頻喚我回家。走在路上，依然還在戲裡，我思量着所謂人生應該也可以放棄上一部電影的模式，採用現在這部電影的答案吧。", "打開大門，回到真實的家。媽媽喚我，弟弟拉我，我微笑以對，只是他們從不知道，此刻我的人生又偷偷多了一種可能。", "我喜歡那兩個小時黑暗的時光，真實和虛幻無須截然劃分的模糊地帶。", "有一天在伍迪艾倫的《開羅紫玫瑰》（The Purple Rose of Cairo）裡我發現了一個和我一樣的女孩。", "那是三〇年代經濟大恐慌時期，一個餐廳女服務生（米亞法蘿飾），面對無所事事的老公，「看電影」成了她最快樂的時光，她迷上了「開羅紫玫瑰」這部電影。有一天，片中男主角竟然走出來和她相會，女服務生雖然驚訝不已，但是馬上順利和男主角墜入情網。同時，她又碰上了飾演男主角的男演員，讓她左右為難，不曉得應該情歸何處，並試圖找出真實和夢幻的界線。戲裡的男主角有句名言：「我們才是真實，他們（觀眾）是夢境。」這句話深深打動了我，那時的我就是這麼堅信着，堅信着眼前生活的真實隨時可能崩毀，信念隨時可能成為謊言，但是電影一旦成為影視作品，就永遠不會改變。", "原來，電影院裡關燈的那一刻，就是人生精采的開始。", "這就是電影這般讓我深深著迷的原因。", "於是，年少的我用《安娜卡列尼娜》解釋了婚姻與道德的衝突；在《大魔域》（The Neverending Story）裡學會勇氣和相信可以使人生更神奇；因為《墨水心》（Inkheart）裡的少女美琪（Meggie）和她的父親莫能夠把書中的人事物經由朗讀而使之成真的天賦，而深深受到聲音的吸引。", "電影的情節成了真實人生的預言，曾經的光影，如今試圖努力要走出螢幕，成為我的人生故事。因為喜愛聲音的魅力，真實世界的我走上了講台，成為一個倚靠聲音傳遞知識的老師。我也可以活在電影或文學作品裡，不必走出來嗎？", "最近看了一部電影《終點之城》（The City of Your Final Destination），藉著戲裡的女主角回答了我心裡的聲音。", "男主角歐瑪獲得了一筆獎學金，然而這筆款項、他的博士學位，以及他往後人生所仰賴的教職機會，都取決於他能否獲得烏拉圭作家裘洛斯．關德的傳記授權。", "這位作家在自殺身亡後，遺產由哥哥亞當（安東尼．霍普金斯飾）、妻子卡洛琳（蘿拉．琳妮飾）、情婦雅登（夏洛特．甘絲柏格飾）共同管理，住在附近的還有哥哥的年輕愛侶彼得（真田廣之飾）。收到歐瑪的來信，這幾位遺產管理人拒絕了歐瑪的授權請求。為了挽救自己的人生，歐瑪決定飛到烏拉圭說服他們，原本以為前來的目的就是完成書寫傳記的許可權，沒想到不僅擾亂了他們原本平靜的生活，更改變了所有人的生命。", "一如電影名稱，如果沒有到最後，不會知道哪一座城市會是人生的終點之城。原本只是為了寫他人傳記的歐瑪，來到了這裡，才漸漸發現其實自己正在逐漸扭轉屬於自己的命運。", "裘洛斯．關德的妻子卡洛琳原本堅決反對傳記的授權，還撒了大謊，謊稱裘洛斯．關德曾經在生前告訴她死後絕不寫傳記。直到她終於說出還擁有一份裘洛斯．關德還未完成的小說手稿時，才讓歐瑪終於了解卡洛琳為何不願授權傳記的原因。原來小說寫到卡洛琳試圖在乘坐貢多拉時謀害情婦雅登時，裘洛斯．關德就自殺了。裘洛斯．關德小說裡謀殺情婦的陰影一直籠罩著現實的卡洛琳。", "直到歐瑪說了一句話，讓卡洛琳改變了決定。", "「不要讓文學作品詮釋你的生命，而是要讓自己的生命重新詮釋文學作品。」歐瑪說。", "卡洛琳救起了即將被爐火燒毀的手稿，答應歐瑪撰寫裘洛斯．關德傳記，並離開了居住的莊園重新展開新生活。沒想到歐瑪卻回到了莊園成為莊園的主人，開始屬於他的另一個嶄新人生。另一個耐人尋味的角色就是正值壯年的彼得，在莊園隨亞當生活了二十五年的他，雖然亞當籌錢鼓勵他離開莊園展開新人生，但彼得卻絲毫不覺得自己的人生走到這裡還需要改變什麼。", "電影情節也許成功揭示了人生的某種面相，卻無法代替真實人生的主角完成接下來的劇情。", "因為光是一部電影裡面就有太多的人生選項，兩小時左右的片長必須維持一個清楚簡單的故事架構。如果人生也可以簡單到用兩小時的電影詮釋自己的人生，甚至可以用一部電影的結局代替自己真實的可能冒險，老實說，是那觀眾自己走進了電影裡，人生也因此被困在白色虛幻的布幕中了。"], "23": ["> 難怪有數不盡的智慧大師，有說不完的人生哲理，只為了我們都是平凡人，卻都想要通透人生是怎麼一回事。", "從小讀了一堆佳句警言，不管是飛鴻雪泥或是譬如朝露，人生到底是什麼，真是古往今來文學家反覆闡述不厭的主題。但為什麼我們總是想要為人生下個標題呢？畢竟每個人生階段記憶點都不相同，每個人所活出的人生又各見精彩，如何一語中的又不落俗套呢？是不是瞎子摸象呢？難怪有數不盡的智慧大師，有說不完的人生哲理，只為了我們都是平凡人，卻都想要通透人生是怎麼一回事。", "也許是人生太長又來去匆匆，明明是出生到死的一段旅程，時間到了就畫下一個大大的句點，卻又處處充滿了那麼多未知的問號與無法計畫的驚嘆號，說這一切不過是南柯樹下一場螞蟻窩的真人版也好，說好一轉眼就該忘了昨天的一切，卻怎麼也無法忘懷那一天巷子口那抹清晰的燦爛笑容呢？", "如果想了半天，也還是無法說清楚人生是怎麼一回事，那何不想想我們自己究竟是怎麼度過，如何安排這獨一無二的人生呢？", "桌前有一張孩提時的黑白照片，照片裡小女孩的笑容好清晰好明朗，那天是因為媽媽第一次帶我和弟弟去動物園，還清楚記得一早起來就準備好零食包包，等著出門看動物的雀躍心情。反而是昨天的心情，竟如此輕易的被今天的心情覆蓋過去，問我昨天經歷了什麼？感受是什麼？我已無法靠近，更無從掌握。", "那是一種奇異的心境，時時充斥在真實的人生中，昨天才經歷的人生，今天想起，有時像漂浮在鏡子裡般的無法捉摸，有時又像被釘在牆壁上的一隻蜜蜂般清晰透徹，唯事情經歷過了，內心的感受卻又漸漸不著心上。人過了大半生，難道只為了讓真實的感受與深切的情懷都逐漸放下？", "只為過一個隨日子推移的人生？是輕盈自如，還是無垢亦無情？那個釘在板子上的蜜蜂，其實還有呼吸，牠到底需不需要掙扎？如果放棄掙扎，蜜蜂就鐵定會成為明天驕陽下的標本。如果繼續試試看，掙扎，掙扎，會不會那惱人的釘子就應聲落了下來呢？", "每天一早醒來，就是夢醒，必須面對的真實人生依然等著，然而誰是主宰這一切的鑰匙呢？有時會大聲的說當然是我，有時又知道，那無所不在的造物主其實正在看盡這一切。", "溫熱手中掌握的，究竟是流沙，還是一盤正在擺將的棋子？用生命長度換取的，究竟是哲理的答案，還是生物圈的不變規則呢？看了李安的《少年Pi的奇幻漂流》，我還想再看一遍。那一幕幕的畫面震撼遠遠大過原著的文字想像。", "閱讀《少年Pi的奇幻漂流》（Life of Pi）也是一次充滿奇幻與真實的過程。", "再怎麼令人不可置信地安排了如此超現實的故事場景，這仍然可以確定的說是一部用奇幻手法寫成的寫實小說。作者為加拿大作家楊·馬泰爾（Yann Martel），以一名印度男孩「Pi」在太平洋上與孟加拉虎同船撐過227天為題材的小說。2012年由李安所執導的同名電影全球上映。", "皮辛·墨利多·帕帖爾是個印度男孩，他對生命充滿好奇，同時信仰基督教、印度教及回教。家裡開了一間動物園，有一對愛他的父母和一個哥哥拉維。有天趁爸爸不注意的時候，皮辛·墨利多·帕帖爾跑去老虎閘前和老虎四目相對。正當他被老虎溫和的眼神打動，而自然的欲伸手穿過閘門時，爸爸突然喝斥了他，並用一隻羔羊的犧牲，來為他揭示弱肉強食的真實世界。從此以後Pi的世界就不再如此的有趣天真。1976年二月，印度的泰米爾納德邦政府解體，Pi的爸爸認為這是甘地夫人踏上極權專制之路的最後一擊，於是決定舉家遷移到加拿大。", "在前往加拿大的過程中，皮辛·墨利多·帕帖爾一家人以及動物園的動物所搭乘的輪船「齊桑號」因為不明原因意外沉沒汪洋。在一陣混亂之中，皮辛被水手丟上一艘載滿動物的救生艇，上面有一隻鬣狗、一隻斑馬、一隻紅毛猩猩，以及一隻孟加拉虎。皮辛運用他的知識與戰鬥力，和老虎維持和平共存的微妙關係，靠著與大海競爭和自己搏鬥的堅定意志，在太平洋上撐過了227天。直到漂到了一座沙灘，老虎頭也不回地走進了森林，皮辛·墨利多·帕帖爾放聲大哭。", "一場過往的記憶刻骨銘心，沒想到時間流逝，一轉眼什麼也不留，來去無一絲痕跡。", "看完了電影，其實內心分外的感傷，但也被徹底洗滌般的清爽。", "不管我們再怎麼頌讚人生的美好與獨特，這種美好與獨特其實都是來自於一艘小小的船！", "小船盪呀盪的，從出生到死亡，我們駕馭著它，因它而得以航行在廣袤的大海欣賞著人生的日出日落；同時也孤獨地倚靠著這艘小船漂浮著也思考著。從頭到尾，不管我們在人生中看到多少美麗的風景，經歷如飛魚般的壯盛之姿，月光與星光交織下的造物主神蹟，或是巧遇一整座島嶼的可愛狐獴，到頭來，我們仍然是孤獨的一艘船，必須理性的決定留在一座食人島或是快快駛離它。", "電影的最後Pi說了兩個不同的版本，保險公司還是寧願採用了Pi和老虎共同生活的奇幻故事，寧願相信一個超寫實的故事，因為那是最最接近人類心靈的情節。若沒有心中的那隻老虎與Pi共存，那他如何能孤獨地度過這227天呢？那是一種內在激起的鬥志，激發著連自己都看不到的潛能。與其說是和外在的環境或命運賭上一把，還不如說是自己和自己賭上一把的看誰能活得久活得漂亮的意志力。", "老虎最終是不回頭的走了，而我們在海上的小舟呢，還在陪伴著自己航向下一個旅程。"], "24": ["> 一切人際關係，就這麼自然地保持著淡淡優雅，適度的拘謹和微妙的現實與感性，這樣的英式涼蔭風，挺適合在即將破表的夏日午後，一個人宅宅地享受著。", "溽夏一到，確定當個稱職道地的自閉宅女就是夏日最有FU的抉擇。", "一年四季，就屬夏季最想無所事事躲在室內吃冰吹冷氣，看小說或租個DVD看電影都好。如果當了夏日宅女還盡看些熱血衝浪又陽光刺眼的故事，那就像是嘴巴雖說不吃麻辣火鍋卻仍挑湖南老虎醬拌火鍋一樣，肚子還是一樣照拉，消暑的宅女怎能找地方避了暑，卻還在室內熱血沸騰又坐立難安呢？", "所以夏日飆高溫的日子一到，珍‧奧斯汀迷的我就選擇躲在家裡，看朋友推薦的書《當宅男遇見珍‧奧斯汀》。其實同時還抱了一本村上春樹的《村上春樹雜文集》，但前者的消暑程度讓我彷彿置身英國鄉間陰涼的樹林深處，不必吹電扇，自然涼風徐上心頭。後者倒像是來到三千公尺的山上，吹涼風前先得受爬坡的過程流一身臭汗的洗禮。", "《當宅男遇見珍‧奧斯汀》的作者威廉‧德雷西維茲（William Deresiewicz）以珍‧奧斯汀的六本小說串起自身成長的歷程，這些小說裡的人物一直教會他愛、友誼、成長與生命真正重要的事情。跟著宅男作者的介紹，不管是《傲慢與偏見》嚴肅傲慢的達西先生，《艾瑪》裡一廂情願要幫人作媒的艾瑪，或是《諾桑覺寺》喜歡閱讀哥德式小說的凱薩琳，一整個夏日有他們陪伴，感覺情感的步調也緩慢節制了起來，說起話來也不自覺有點英國式的優雅有禮。", "看著看著居然迷上了這樣的氛圍，於是一連看了六部與珍‧奧斯汀有關的電影：《珍愛來臨》、《珍奧斯汀的戀愛教室》、《傲慢與偏見》、《艾瑪》、《諾桑覺寺》、《窈窕野淑女》。看完之後更加確定，珍‧奧斯汀還真是一劑消暑良方呢。", "意猶未盡地看完這六部電影後，出門，在38度的高溫下行走，街上一盤盤快被烤焦或融化如奶油的人群，刺眼的現世街景如蜃樓般的不真實，真想鑽回珍‧奧斯汀的世界裡，撐著一把小洋傘散步林間小徑，或邀三五好友喝杯英式下午茶，聊些芝麻綠豆大的鄰家無聊事都好。", "我想，其實珍‧奧斯汀的世界極具效果的消暑功效應該是來自「人際關係」這件事。珍‧奧斯汀的小說擅長處理「人際關係」的不溫不火，在英式禮儀的熏陶下，面對的不是人最深的感情，反而是專注於每一句話語應對禮儀的適宜度。小時候看珍‧奧斯汀，覺得她很搔不到癢處，安排的人物對話也令我無感，搞不懂這樣的應對進退究竟是真正體會了人情還是悖逆世故。", "直到年歲漸增，才逐漸理解，這樣的感情並非不真實，亦非矯情，每一段話語的節制禮數來自「人際關係」的雲淡風清，像樹梢吹過的風，雖然離我們很遠，但是，我們依然感受着，也受惠着，還能彼此自由著。困在那些過於黏膩依傍的話語裡，像置身在濕溽易生黴菌的季節，其實頗讓人身心感到不耐。", "其中尤以珍‧奧斯汀的生平與六部小說為創作源頭的《珍愛來臨》，將珍‧奧斯汀的感情描寫得更不溫不火又餘韻無窮。", "《珍愛來臨》這部電影是後人根據珍奧斯丁和姐姐間的書信往來和一些手稿留存小說等，旁敲側擊出珍奧斯丁的戀愛故事。珍奧斯丁和姊姊一生未婚，在41歲時便因病去世，而在和姊姊往返最多的書信中很多也被銷毀了。有人說珍奧斯丁和勒佛里先生就是《傲慢與偏見》裡伊莉莎白和達西先生的原型。喜歡《傲慢與偏見》的人一定也會喜歡《珍愛來臨》，因為兩者故事的脈絡似乎有些相似，不同的只是現實永遠不如想像世界的美麗圓滿。", "珍是一個愛好寫作的女孩，她的父親是地方上的一位牧師，家境並不是非常富裕，珍和姊姊卡珊德拉是彼此最好的知己朋友，在電影的前半部幾乎和《傲慢與偏見》有一些雷同，譬如說珍的母親幾乎就是班納特太太的翻版，希望自己的女兒嫁給有錢人家的紳士，地方望族的格雷善夫人也可以對應到尖酸刻薄的狄堡夫人，她希望珍嫁給自己的姪子兼繼承人──衛斯理先生，珍嚮往的是自由戀愛、而她母親則是認為為了愛情放棄麵包是愚不可及的行為，他們之間有一段對話很讓我印象深刻。", "在珍拒絕了衛斯理先生的求婚之後，她的母親非常憤怒，男主角勒佛里先生是珍隔壁鄰居家的姪子，他在倫敦求學接受訓練，準備成為一名合格的律師，勒佛里家境貧困又擁有眾多的兄弟姊妹，他仰賴大法官舅舅的經濟支援來完成學業，在倫敦衣食無虞的勒佛里在五光十色的環境下變得有些荒誕不羈，而被大法官舅舅懲罰性的送到鄉下親戚家，珍和勒佛里的相遇一開始並不是那麼美好，在珍為大家朗誦她的作品時，勒佛里第一次闖入了她的生命裡。", "他無理的一臉厭倦不耐，甚至在結束後批評了幾句恰巧被珍聽到了，這激怒了愛好寫作的珍，一個和傲慢與偏見很相似的情節，在勒佛里眼裡這只是一個登不上大雅之堂的鄉下小地方，他心心念念的是倫敦精彩的生活，兩人從一開始的針鋒相對到後來漸漸被對方吸引，勒佛里似乎就是珍嚮往的愛情。", "然後就是大家料想得到的劇情，這部電影和珍奧斯丁的每本小說一樣，沒有什麼大奸大惡之人，有的只有因為在不同立場所發展出來如命運捉弄般的行為，一位男士寄了一封毀謗珍的信給勒佛里的舅舅，因為他愛慕珍，勒佛里的舅舅冷酷的阻止勒佛里求婚，因為他認為珍是個攀龍附鳳、愛慕虛榮的女人，他們各有各的出發點，但又讓人難以責備，正途走不下去的兩人意圖私奔。", "但終歸還是意圖，在半路上，珍發現了第二封徹底改變他們命運的信。", "一封勒佛里母親寫來感謝勒佛里經濟援助的信，珍無法自私，在她知道勒佛里的家人多需要他之後，她無法用私奔來毀了他的一生，在休息的驛站，她丟下了勒佛里上了返鄉的馬車，兩人自此分道揚鑣。", "《珍愛來臨》編劇讓珍‧奧斯汀面臨感情與貧窮的兩難時，終究拒絕了和男主角私奔，選擇了不讓貧窮剝奪自身的幸福。說是理性勝於感性，無法說盡這部電影的情感指向，因為最後一幕當兩人都近中年時不期而遇，男主角喚他小女兒的名字為「珍」的時候，當年華逝去依然未婚的珍‧奧斯汀為她朗誦一段《傲慢與偏見》，那盡在不言中的人生況味，一如夏日爽口的雪花冰，再美好的事物都有「必須懂得享受當下」的智慧，美好出現了，就該珍惜當下，否則就只會眼睜睜看生命如雪花冰消融在眼前。", "《珍奧斯汀的戀愛教室》裡的男男女女雖然活在21世紀，他們的愛情際遇活生生就像21世紀版的珍奧斯汀小說，片中眾多角色之間的錯綜關係比對珍‧奧斯汀筆下的芸芸眾生，衍生出許多閱讀和觀賞的樂趣。這裡有個以珍奧斯汀小說為研讀藍本的讀書會，彼此之間的關係相應於珍‧奧斯汀小說裡的人物是複雜了許多，即便其中有為愛心碎的拉子、新婚憂鬱的法文女教師和結了數次婚的獨立女性，但對於感情與人際關係的處理態度，還是保有珍‧奧斯汀式的夏日午後樹下涼蔭風。", "相信我，看完這部片，再看其他四部改編自珍‧奧斯汀小說的電影（《傲慢與偏見》、《艾瑪》、《諾桑覺寺》、《窈窕野淑女》），現世婚姻不再那麼黏膩難耐，曖昧不明的感情關係也不會讓人急著揮去眼前的迷霧，一切人際關係，就這麼自然地保持著淡淡優雅，適度的拘謹和微妙的現實與感性，這樣的英式涼蔭風，挺適合在即將破表的夏日午後，一個人宅宅地享受著。", "然後，不知不覺秋天的落葉開始飄逝，人際關係的得與失，黏膩與疏離，似乎也沾上那麼一點點的珍奧斯汀風了。"], "25": ["> 畢竟這不是研究文學作品的嚴肅論文，看電影的我們都有詮釋故事的權利，我們說：這兩個人能讓我們懂得什麼，我們的生命經驗就學到什麼喔！", "那天你拿了一封信給我，信裡內容簡直可以報名參加校園文學獎了，優美典雅的文字，引經據典的意象，還有欲言又止的情感，學文學的我看得可是津津有味呢。沒想到你一臉怒氣對我大叫，「什麼嘛，她昨天傳簡訊說要和我分手，今天就託人送了一封信給我，說是『分手信』，可是我整篇從頭到尾看了好幾遍，還是看不懂她為什麼要和我分手！」想到你前幾天才在週記裡分享這段青梅竹馬的戀情，十幾年的情誼，你說怎麼才幾天全變了卦，連我也很想知道故事的轉捩點，導演到底選擇發生在劇情的幾分幾秒呢？", "我也像你一樣，試圖從分手書信的隻字片語裡發現任何蛛絲馬跡。在你日前的週記裡還提到甫升上高三的暑假頭幾天，你們還長談了好久，女孩子說，因應非常時期，暫時由每周見面改成一個月見一次面。你的目標是醫學院，她的目標是法律系，為了考進同一所Ｔ大，攜手共創美好未來，你決定尊重她的決定。「不是才上個月的事嗎？沒想到還沒每一個月，一切都變卦了？」看著你由怒氣瞬間轉換成一張哭喪的臉，我也不禁狐疑了起來。難道十幾年青梅竹馬的愛情，終究還是抵不過一場考試嗎？", "女孩寫的信裡提到張愛玲的〈傾城之戀〉，提到無法一起看月亮的每個晚上讓她心慌。我忍不住笑了出來，你一臉不解地看著我，問我怎麼不能體諒你的痛苦，還有心情發笑呢？我收起了笑容，趁機告訴你昨天才帶大家讀完的〈傾城之戀〉這篇小說和這部電影，原來女孩也在讀着呢！剛上完的課，相信你還記憶猶新，是范柳原先打電話給白流蘇，在得不到白流蘇對愛情的直白肯定後，范柳原在電話彼端心平氣和地問起了一句耐人尋味的話：「流蘇，你的窗子裏看得見月亮麽？」這裡范柳原提到的月光，和女孩寫給你的月光，到底有什麼可能的關聯呢？", "「老師老師，你這是在考學測題嗎？張愛玲寫的可是小說呀，我過的才是真實的人生呢，小說裡的情節怎麼可以拿來比擬真實人生呢？」你還是不解這「月光」到底是怎麼從張愛玲的文字直接穿透到你「悲慘」的分手信。也許，我們可以試著給自己詮釋的機會，進一步瞭解愛情的不同面貌呀，我說。", "許多的重要考試都會提到張愛玲，許多的「張愛玲考題」都喜歡拿〈傾城之戀〉的片段來作為閱讀能力的評鑑。張愛玲是一個早早將人情世事看透的蒼涼之人，當然這多少來自於她的大家族背景和父母婚姻關係的破裂，要怎麼在青春正盛的初熟階段看待張愛玲文學作品中所詮釋的「豔異」人生呢？希望你在看完〈傾城之戀〉這篇小說和這部電影之後，除了能夠了解張愛玲作品中的精髓，更能真正擁有屬於自己人生的詮釋。", "「你覺得女孩在信中提到無法一起看月亮的每個晚上讓她心慌，那會是什麼意思呢？」我想起電影裡並沒有為小說裡三番兩次盡力著筆的「月光」多加描述時，忍不住還是以老師的教授角度，為你的「月光」分手信引發一點你個人可能的詮釋。你抓了抓頭，問的不是「月光」的可能性，反而是對小說裡的男女主角頗有微詞，「都老大不小的兩個人了，還對愛情的表白這麼模稜兩可，愛還是不愛，不是就一翻兩瞪眼嗎？為什麼還月光不月光的，還外加跑淺水灣說什麼傾城不傾城的！唉，愛情怎麼變得這麼現實這麼難懂呢？」我說，你不就正在詮釋屬於你的愛情觀了嗎？", "「只是女孩開始也有了自己的愛情觀，你要懂得詮釋她的想法，找機會當面說給她聽。」我笑了笑。", "張愛玲果然厲害。一篇小說寫盡愛情的進程。", "邵氏電影公司在1984年發行〈傾城之戀〉電影版，由許鞍華導演，風流倜儻的周潤發飾演范柳原、古典現代兼具的繆騫人飾演白流蘇。文學電影總給人文謅謅又隔靴搔癢的感覺，這部電影也難脫這樣的缺點，導演沒有拍出張愛玲作品中的「蒼涼」。", "但卻也鼓勵了我們尋找看待張愛玲的另一種角度。", "人在大環境中生存，很難赤裸裸的表現出真實的自我，總是為了明哲保身而顯現出過度掩飾的模樣。其實人很矛盾呀，又想貫徹絕對的個人主義，不想讓自己吃鱉吃虧，但是愈是想徹底堅持自己的是非對錯，反而是愈看不清現實的是非對錯。在范柳原與白流蘇初相識的這段時間，彼此不願面對自己的情感，都想要算計著找到對自己最有利的感情狀態。因著兩個都是「精刮的人」而不願好好的「戀愛」一場，只願「談戀愛」，看看對方能不能先向自己投降，就可以不須為愛情負上全責。", "你問我，「這樣的戀愛哪算是戀愛呀？根本就是一場爾虞我詐的交易行為嘛！老師，你讓我們看這樣的愛情，是要我們在成長的過程中學會用交易的態度來論愛情市場的斤兩嗎？」", "我想這世間傳頌不已的文學作品往往不是那麼偶像劇，不會只懂創造浪漫唯美的愛情，卻可以容許我們在不同的年齡有不同的詮釋。", "現在的你因為課本裡出現了張愛玲，而有緣閱讀了文學版和電影版的〈傾城之戀〉，一個是張愛玲的原創，一個卻是許鞍華導演的解讀！雖然原創和電影的最後，都是由於一場幾近傾城的戰爭，讓男女主角決定互許終身。但是你會發現，電影裡的兩個人還是彼此愛戀的成分居多，是戰爭激發了原本缺少的勇氣和信心，彌補了人性最脆弱的一面。", "畢竟這不是研究文學作品的嚴肅論文，看電影的我們都有詮釋故事的權利，我們說：這兩個人能讓我們懂得什麼，我們的生命經驗就學到什麼喔！"], "26": ["> 在他的愛情地球裡，他相信自己的選擇和經驗值，這個生存法則不會造成他和愛人滅絕。", "打從1999年《世界末日》開啟了電影的末日話題，一連串《彗星撞地球》《世界大戰》《明天過後》《2012》《末日預言》《末日之戰》《惡靈古堡》《我是傳奇》《破天慌》《當地球停止轉動》《瓦力》《環太平洋》……地球已經不知死了多少次，而人類也不知被迫遷徙了幾回。", "不過，病毒、傳染病、環境汙染、地球暖化……許多問題都是地球上實際面臨的難題，而這些末日情節誰都不敢說只是電影特效。它們更像是我們內心的投射，生活在無法掌握未來的日子裡，卻還放任自己繼續傷害眼前僅剩的幸福、安定。", "Cliff的女友決定出國念書三年，希望他同行，理由很簡單，在身邊才能確保感情不變質。", "Cliff其實不太擔心和女友未來的感情，他說，他的前半生過得很辛苦，結束了第一次的婚姻，苦苦尋覓自己的真愛。Cliff請女友相信他的判斷，遇到她之後Cliff才知道自己終於不必再尋尋覓覓了。「為什麼還需要尋覓、需要改變呢？是因為還沒找到答案，如果眼前的她已經是此生最適合的人了，就沒必要再挑揀更大的貝殼！」Cliff對自己說。", "Cliff也這樣對我們說。「七年之癢」或是「相愛容易相處難」之類的恐嚇字眼，對他來說都只是他人世界裡的末日預言。在他的愛情地球裡，他相信自己的選擇和經驗值，這個生存法則不會造成他和愛人滅絕。", "Cliff的女友終於還是一個人負笈異鄉。", "Cliff說三年的時間相當於一個小孩學習語句表達的初始階段，其實和一個人的一生相比真的很短。倒是身處異鄉的女友，會不會尋尋覓覓，最終發現Cliff並不是她的最愛呢？我們發現，如今變成Cliff開始擔心他的女友了。", "2012年12月21日，傳說中的地球末日終於到來了，沒想到第二天醒來大家還是好好地活在地球上。世界末日其實沒有降臨，人還是得生活在毀滅前夕的恐慌之中。所以一部又一部的末日電影以老梗（哏）情節繼續強力放送，而我們繼續花錢讓它們賣座，無非是希望世界的末日情節只發生在光影交錯的電影院裡。", "就在那一天，Cliff的女友離開台灣。", "讓地球毀滅的理由，隨著人類文明的進展而更加豐富，也更加不可預測。有人說：「我們的恐懼愈多，地球毀滅的理由也愈多！」這似乎挺有道理，有時確實是因心生莫名的恐懼，才讓我們不明所以的開始習慣擔心未來。沒有安全感的心情就像是破了一個大洞的布袋，即使裝進再多的東西，也覺得隨時會失去擁有的一切，恐懼終究會撐破小小的心靈。", "而慾望卻愈來愈不能滿足，也愈來愈患得患失。", "彷彿，當我們雙腳離地表愈來愈遠，飛向未知的星球，再建造另一座城市，我們才會脫離無底的恐懼，那兒才是真正救贖我們的天堂。有趣的是，電影裡的末日預言讓我們都成為洞悉古今的預言家，當順著劇情一幕幕向未來推移探究時，螢光幕前每一個驚心動魄的地球現況，緊緊掐住我們的咽喉，代替我們吶喊，提醒我們內心的驚恐，一次次證明那些平日的恐懼都不是莫名，只是這些恐懼成了創作最好的題材，與其恐懼，不如讓我們一起成就彼此，成為螢光幕前掌握一分證據說一分話的科學家。", "電影《瓦力》（WALL-E）的導演安德魯·史丹頓早在完成《玩具總動員》不久，就開始構思一連串新的動畫劇本：《蟲蟲危機》、《怪獸電力公司》、《海底總動員》，包括《瓦力》。故事靈感起源來自於史丹頓曾提到的一句話：「假若人類未來必須離開地球，且忘記關閉最後一個機器人呢？」我想起Cliff和女友的遠距離愛情，想到這樣的相處模式雖然遠不如地球毀滅來得驚心動魄，但也不免為他捏一把汗，看著他每日下班哪兒也不去，只想著衝回家帶着女友留下來的狗狗去公園散步，就覺得那隻狗，會不會即將是世界末日前忘記帶走的那隻機器人呢？", "皮克斯工作室在2008年推出了動畫作品《瓦力》（WALL-E），故事透過瓦力和伊芙（EVE）這兩個機器人的愛情故事，訴說一段地球毀滅後的異質時空。這部電影對話很少，畫面其實也充滿着毀滅後的荒涼，雖然內容充滿着嚴肅深沈的人性、環保等議題，但是，距離的遙遠，其實更讓人心生憂慮。毀滅前的地球和毀滅後另起家園的星球，一樣都在拉開人與人的距離，沒有解決的問題依然加劇，衍生的問題隨著人類的冷漠更加嚴重。瓦力和伊芙（EVE）這兩個機器人靠著過往廢棄的零件彼此修復，機器性的語言已不是冷漠的問題，永不放棄的是對彼此的疼惜，在僅有的自身處境裡找到修復彼此的條件，讓彼此能夠不被外在處境的現實所打敗。", "這是人類當前的處境，不也是Cliff和女友，甚至是我們自身面對未知的真實處境，不是嗎？我們已少有紙本的溫度，體溫的觸碰也逐漸被鍵盤取代，兩人世界真的會被模擬機器人取代嗎？與其焦慮不已，不如一起努力找到尚堪使用的零件，重新打造一個足以面對未來的舊身軀。", "就像Cliff那樣，他繼續經營在台灣的事業，每天和他的女友視訊聊天，把自己和女友的狗狗照顧得體面又有自信。於是，我們幾個朋友也不再追問他什麼時候要到美國查勤兼求婚？畢竟Cliff已經找到他在地球的生存法則了。"], "27": ["> 他就是知道，湮滅了一切，那將不會是記憶的淨空，那會是一個洞，一個心靈掏空的荒蕪。", "W有個老古厝，因為家族成員決定接受政府都更計畫，拆除迫在眉睫。他非常難過，連騎單車環島的計畫都因而中斷。同學們找他一起爬爬山，他也意興闌珊。我知道這個古厝已經幾十年沒有住人了，但是並不知道Ｗ這個家族為了這個空屋也吵了幾十年。", "W小時候是一家雜貨店的小老闆，他總喜歡和我們炫耀他想吃的零食都不要錢，從來都只喝鮮奶止渴。W的媽媽燒了一手好菜，每當我們幾個同學去他家玩，她會特別多滷些牛腩給我們解解饞。我們很喜歡去他家玩，但W曾說過自己並不喜歡他們這家「春安商店」。", "自他有記憶開始，W的媽媽就非常忙碌，現在回憶起童年的時光，W說媽媽的臉其實永遠只是一張背影。為了多攢一點錢，春安商店什麼都賣，除了一般雜貨店必備的零食飲料、南北雜貨外，W的媽媽還利用商店打烊的夜晚滷上一鍋鍋熱食，為隔日的小吃店生意做準備。每當中午休息或晚上下工時分，附近工業區的作業員最喜歡來吃Ｗ媽媽的滷味。吃完好吃的牛肉麵配小菜之後，還能到二樓隔間休息區租錄影帶看，隔音效果當然非常不好，因為都是W媽媽買甘蔗板親手一片片裝釘上去的。我們幾個同學總喜歡在店裡跑上跑下，不但有免費的漫畫看、零食吃，還可以有喝不完的可口可樂，W根本就是住在一家百貨商城嘛！小時候的我們是多麼羨慕他。", "W媽媽在這個人世間忙碌五十餘年，過世時只留下這家店給W他們兄弟三人。只是春安商店早在W媽媽過世，Ｗ到南部念大學時就已歇業，四個紅色大字的招牌和偌大的工業區現在早已不知去向，那印著小美冰淇淋的黃白貼紙至今還安靜地貼在家門口的玻璃窗上，陪著一盞盞昏黃幽冥的路燈忽明忽滅。", "W一直不知道母親口中唯一沒被好賭父親抵押的這塊地，其實只擁有一個戶政單位許可的門號，原來他們在沒有土地所有權狀的房子裡度過了年少青春。母親立了遺囑留給三兄弟，當都更負責人找上他時，他才知道兩位哥哥已經簽了契約，賣了土地，只等著他蓋章後，這個充滿記憶的家園，就順理成章的永遠消失。", "這裡曾是他遮風避雨的家，是他向我們炫耀的全能百貨店。在這裡，他逃過母親的叮嚀，偷看工人給的Ａ片，開啟身體的密碼，也迎來送葬公司，送走了父親和母親，最親也是最陌生的兩個家人。夜深人靜，窗外山間的風吹着竹子畢剝畢剝的響，他不再希望好賭的父親能不要長年在外躲債，也不再等待辛苦的母親能坐下來陪他們三兄弟一起好好吃頓飯。他不再怨懟命運，不再遺憾這些願望從沒實現過，他想忘記這個家，想隨著這個古厝的消失而讓記憶徹底瀟灑淨空，但是，他就是知道，湮滅了一切，那將不會是記憶的淨空，那會是一個洞，一個心靈掏空的荒蕪，他仍然無法忘記這個家，畢竟這裡是曾經陪他送走父親和母親最後一段人生旅程的家。", "如今家屋就要永遠消失，W說以前的他還能不時回去古厝看看母親烹煮滷味的地方，如今他真的連回味憑弔的地方都沒有了，他的孤單已經不能夠靠不斷旅行來沖淡了，因為他只要一想到旅行之後已不能再回到這個古厝向母親稟報時，他問自己，自己還能去哪裡呢？W哀傷地說，原來人呀，到頭來終究是孤單一個人。", "當W說起這樣的感慨時，電影《童年往事》裡一幕畫面在腦中浮現：一張張浸泡過水的郵票從信封上悄悄分離，小男生將濕漉漉的郵票貼在窗玻璃上，時間彷彿也隨著小水滴默默滑落……", "《童年往事》是導演侯孝賢的半自傳電影，也是男主角阿孝咕的童年時光。電影一開始帶著觀眾走進眷村裡的木造日式平房，層層的拉門將家庭的空間與觀者現世的處境冷冷的隔開來，仿佛開啓了一層層時間裡的回憶。而身為觀者的我們只能被動地等著導演如神般的鏡頭，將我們帶進一個尚未成型的家。", "爾後，導演的口白緩緩說出：「這是我對童年的一些回憶，尤其是父親……」，此時，在鏡頭前景的父親坐在書桌前，側面的光影有些模糊，背景則是母親的背影，正在廚房裡做菜。空間彷彿只是承載著這些人物的過客，直到身體孱弱的父親在阿孝咕考上中學後突然病逝，死亡的降臨，讓家族的成員開始感受到這個屬於家的空間也會失去些什麼，或是足以承載悲傷的所在。始終陪伴在成長記憶中的雖然一直是母親、長姐如母的大姐、以及阿婆，而所謂無憂無慮的童年往事也終結在阿婆的逝世，成長的苦楚與現實的壓力就在家族的生老病死裡迫在眉睫。", "一家三代曾經生活在一個屋檐下，說著客語的祖母總是叨念著要阿孝咕陪她回大陸老家，小時候的阿孝咕只顧著和小朋友玩耍，完全無法理解祖母生命裡另一個無法忘懷的故鄉。身體狀況欠佳的父親則是想著隨時可能返回大陸，家裡的東西都是暫時的添購，直到父親生病去世，這個家也不再只是暫時的落腳，隨著死亡潛進這個空間，這個家族的興亡史仿佛在這個空間裡鮮明又立體了起來。", "Ｗ說，他知道這種感覺，本來父親不在，母親忙碌，家裡總是黑暗，總是空，即使來來往往的客人多。沒想到父親走了母親也走了，空間卻因為有了死亡走過而豐富了起來。電影裡的古厝也是，父親離開人世，留下一家老小七口，一切都變得沈重，家人卻因為死亡而聚集在一起。", "家，記錄了家族的生老病死，即使導演以藝術手法淡然地面對往事，仍讓我們看到一個家庭的成員是如何面對生命裡一一逝去的身影。當我們看著導演冷靜地記錄着家族成員的成長與逝去，我們終於明瞭，家庭的存在不僅是擁有溫暖的共享，甚至也可能是陪伴摯愛的人走完人生的最後一程，乃至於親愛的家人各自開花結果，看似離散，卻也隨著新生的枝芽一一冒出綠意，家庭的意義也就不只是一張Google地圖上找得到的門牌號碼了。", "W當然還能夠背起行囊繼續他的旅行，因為當這一切都將夷為平地時，一切的故事也要從這裡啟程。"], "28": ["> 有時也不免想：Michael到底是個怎樣的人？我所看到的，合群、愛朋友、擁有「好人個性」的她，是真的她嗎？", "現在向眾人介紹朋友Michael的台詞，已經換作「她是個藝術家」。", "最近常常看見Michael泰然自若的活絡於文藝現場，但她身邊的朋友只知道她最喜歡的是──睡覺和寡言，對於她從教學的講台上走向藝術界只覺得難以相信。", "Michael對我說，她其實內心一直充滿着恐懼，很怕和大部分的人不一樣。她在人群中早習慣隱藏自己，呈現和環境一樣的保護色，拼命學習說著大家都聽得懂的語言。這樣可以降低不少恐懼感，她依然靦腆的笑笑說。", "## 在人群中隱藏自己", "她不多言，在人群中是個容易被忽略的人，當大家聊到渾然忘我時，Michael總是安靜在一旁聽著大家說話。好不容易有人問起她意見時，脫口而出的話總讓大家頓時搭不上腔，不知是頻率不對，還是雞同鴨講，彷彿她說的是另一個世界的詞彙語言。", "我自認算是了解她的人，也聽過她分享自己的秘密私事，有時也不免想：Michael到底是個怎樣的人？我所看到的，合群、愛朋友、擁有「好人個性」的她，是真的她嗎？", "我們從小就認識，不愛說話的Michael人緣一直很好，班上有什麼活動她都盡力配合，從不搞小圈圈，從不喜歡強調自己天生善感的特質。雖然很有藝術天分，常為班上拿下壁報比賽冠軍，作文常被老師貼在教室布告欄表揚，但每當老師誇獎時，她總是低着頭，微笑不語。", "下課時，大家要是忘記找她出去玩，或是拉她一起到餐廳吃飯，她就一個人安靜地躲在窗邊畫畫，直到肚子餓了，再趁人不注意時拿著餐具，泰然自若地走進餐廳。有時我會找她聊天，因為她是個很稱職的聽眾，除非我問她，否則她不會急著回應。", "我喜歡她的安靜、自得其樂、自成一個世界，坐在旁邊看著她，很舒服，像在欣賞一幅畫。", "長大後我們不常見面，只知道她當了老師。直到最近Michael的畫作開始受到藝評家的注意，出現在媒體的頻率增多，我才想起小時候的她送給我的卡片都是自己做的。這突然而來的注目開始困擾她，一波波迎面而來的受訪、邀約，逼著她必須公開袒露自己，天生與人不同的反骨個性不能只隱藏在畫作裡。她問我：再也無須隱藏自己了嗎？她害怕傷了別人，又傷了自己。", "Michael對我說，她其實很怕和大部分的人不一樣。躲在窗角畫畫，又清閒安靜，又與世無爭，現世安穩，她得自由。袒露了自己，成了異類，無處躲藏的下場，只有遁入無盡的孤獨裡，與高山共存。", "Michael爸爸是個異議分子，從她三歲時就人間蒸發了，是失蹤還是死亡，她很想知道，但是媽媽不准她問。她學會在人群中隱藏自己，隨時呈現和環境一樣的保護色，學習說著大家都聽得懂的語言。其實只有她自己知道，繪畫和文字構築的世界才是她內心最真實的聲音。", "## 接受自己與眾不同", "「因為父親的特立獨行，我失去了他，我不能再因為自己思想怪異，而失去周圍的朋友。」Michael寧願掩飾自己獨特的感受，讓藝術天賦掩埋在平庸的表面下，以至於她的繪畫成績一直到幾近中年才慢慢展現出來。", "四十歲的Michael成了新銳畫家，而她的青春歲月卻在平淡無奇的窗邊與講臺度過。藝評家問她，為何遲至中年才逐漸顯露自己的才華？Michael知道對方需要她說話給個答案，只好脫口而出：「我害怕和父親一樣，因為和別人不同而成為箭靶！」", "但與眾不同真的不好嗎？我沒有問Michael，但是看到她現在過得非常快活，沉浸於繪畫的世界讓她自在滿足，用獨特嘹亮的語言發聲，不疾不徐如窗邊流瀉的陽光，讓人無法忽視，卻又不刺眼難耐，我知道，這依然還是那個真實、完整，內心又有點恐懼的Michael！", "其實，許多人都曾因為害怕顯露真我而壓抑自己，寧願被眾人的目光及言論拘束，選擇無言妥協，放棄聆聽內在的聲音。在電影《冰雪奇緣》中，漢斯對艾莎所說的一句台詞令我印象深刻：「不要成為他們口中的怪物！」，我想起Michael，當她放心對我說出內心的秘密時，總是悲傷地看著我，要我不要視她為「怪物」而瞧不起她。", "因為自己的天賦，艾莎曾經不小心傷了親愛的妹妹安娜，為了不再傷害無辜的人，艾莎決定將自己徹底封閉起來，不讓任何人靠近，也不讓任何人瞭解她的苦楚。然而在無可避免的人際接觸中，艾莎還是不得不面對自己的恐懼，走出封閉的自我，卻依然還是不自覺地傷害了親愛的人。於是她只好收拾起出手成冰霜的超酷天賦，逃到遙遠的山頂，築起高高的冰宮，以獨特的創造力徹底解放自己，放手吧，Let it go！", "雖然這一切讓艾莎的處境孤絕而高不可攀，無法成為紅塵俗世的一部分，但她已不在乎過去的自己究竟是什麼模樣，也不在乎別人是否能靠近自己，因為艾莎不再恐懼。她知道如果一味地壓抑自己的天賦，為了無害而無我，失去的不僅僅是自我，更會不自覺的推拒所愛的人，那層保護色愈上愈熟練，站在任何地方，掩飾得這麼好，只會讓人聽不見回音，觸不到真實的溫度。艾莎雖然是因着天賦而升起了一座巍峨的冰山，但是至少讓自己被清楚看見，也將恐懼推得遠遠的。想靠近的人，自會翻過一層一層的冰峰，因為他們看得到真正的艾莎不在窗邊，而就在不遠的遠方。", "當艾莎坦然接受自我，她終於能在人我共存的世界中取得平衡，展現天賦，也讓眾人知道「我是誰」，也知道「特別」並不等同於「怪異」。", "我想，如今的Michael再也不必用無聲的自我和孤獨的睡眠來逃避自己了。若沒有一個又一個獨特的靈魂，一座又一座奇險孤絕的冰山，又如何成就繽紛多彩的神奇世界呢？"], "29": ["> 到底是誰先犯下的錯？是誰未做到警示自己心靈的責任，埋怨自己的世界受到他人的摧殘而崩毀？", "我的好閨蜜S前幾天參加了小學同學會，她在臉書貼了一張團體照，每個人都舉起V的手勢，可惜照相的人顯然技術不太好，距離太遠不說，影像又模糊不清，導致看不出來每個人的臉上究竟做了什麼表情。Ｓ笑笑說，還好影像自動模糊，不然她那笑僵的嘴角可能會洩露了什麼！", "最近真是同學會的旺季，舉凡小學國中高中大學的同學會都不約而同地辦了起來，也許該謝謝臉書的功勞吧，原本在地球早已毀屍滅跡的朋友，居然一一地都在臉書上浮了出來。S說，她不得不接連與失散多年的同學們相認，也因為這樣，她開始在過往模糊的記憶盒子裡翻出幾張泛黃的照片，然後一一在臉書上舉辦認名大會，好證明自己真的和這些陌生人曾經一起同窗數載。", "「不過到了同學會現場還是生疏得很，看著大家這麼的熱絡，猛喝飲料吃點心的，自己真恨現在還是這麼的不喜歡說話，更不擅於交談。」S拿了一堆名片展示給我看，其中不乏上市上櫃公司高階主管，律師、醫生、鄉民代表等頭銜，看得我眼花撩亂的，彷彿S的身分一下子從小公司會計晉升為上流社會的名媛。Ｓ笑着說，撐了兩個小時，比看一部無聊的電影還難受。", "「看來老同學們都混得很不錯，同學會現場就談成了好幾筆生意呢！還好大家熱絡的談生意，我還是安靜吃我的點心，兩小時後全身而退呢！」S看起來還頗沾沾自喜，不過聲音聽起來有幾分忌妒幾分落寞。", "S是個活潑率真的女子，我們常喜歡利用上班空檔溜出去喝個下午茶聊聊是非，即使是一個鐘頭也好，說完之後好像噴洩了一肚子烏煙瘴氣，總覺得回去上班的精神又振奮不少。", "今天她似乎若有所思，不再那麼想說什麼就說什麼。我說起自己的芝麻綠豆小事，她只是有一搭沒一搭的應和著，我當然看得出來她有心事。突然她含著淚說自己怎麼過得這麼糟，怎麼來參加同學會的同學都可以那麼的風光，那麼的人面廣、資歷非凡，只有她，一來沒結婚二來連個像樣的頭銜也沒有，穿著五分埔殺價的平底鞋，脖子上繞的圍巾也是三九九元買的，「下一次的同學會，」S斬釘截鐵的說，「我絕對不會再去了！」", "去個同學會回來，怎麼S對自己過往的人生都翻了牌呢？自認生活觸底的感覺，從不曾出自她的口裡，怎麼此刻強烈地否定自己的人生，甚至覺得自己手中握的不過是一堆爛牌，都是身邊的環境拖垮了她，不然，去同學會的她絕對不輸給這些陌生人！當Ｓ說起這些灰色人生時，多像我前幾天看的這部《伴娘我最大》（Bridesmaids），女主角Annie的生活正巧觸了深深的谷底，蛋糕店因為經營不善而倒閉、無法脫離小姑獨處的處境、車子的後車燈壞了卻沒餘錢修理，而從小到大的好朋友Lillian又準備步入幸福的禮堂，找她當伴娘，而Lillian又結交了一個有錢的豪門太太Helen，Helen所擁有的一切，在Annie看起來又正都是她最欠缺的條件。", "這是部披著喜劇外衣，內裡其實卻是很酷很真的一部電影。我很喜歡這部電影，許多生活片段都寫出了真實人生的問題，譬如說，剛好我的右車燈也是壞的，因為疏於修理，以至右後方來車不知道我即將右轉。當別人的車從後面撞上來時，我該一味的怪罪他人嗎？還是該檢討自己沒有在該好好修理缺失的時機好好修補自己？當對方的言行使你感到受傷時，我們除了怪罪他人的傷害，還是先守護好自己平穩的情緒，避免逕自衝動的怪罪對方？到底是誰先犯下的錯？是誰未做到警示自己心靈的責任，埋怨自己的世界受到他人的摧殘而崩毀？", "本來S的知足善良是我最欣賞的特質，她的生命本也擁有自己獨特的光彩，蘭心蕙質的她總是自然而然的為他人帶來暖意，但此刻我說起她的這些優點時，她只是一逕搖頭，然後，低頭不語。是不是其他人的優渥條件常讓我們暫時將自己輕易的看扁，因而忽略了真正使我們自己跌入生命谷底的真正原因呢？", "Annie埋怨的說，她的人生也不是不努力，只是努力沒能得到外在相對回報罷了，她覺得人生對她不公平，但又覺得自己也不曾喜歡過那些光鮮亮麗的生活。參加同學會的每個人是不是真的擁有光鮮亮麗的人生，S和我其實也不是一定要知道的。自己夠不夠勇敢，夠不夠積極，能不能在後車燈壞掉時就馬上找到車廠修好，能不能讓自己正視生命的獨一無二，然後在每次的同學會時能珍惜彼此在一起的福分，如果以上答案是肯定的，那就足夠了。", "我告訴Ｓ，我喜歡的這部電影最精彩的就是在Annie大爆發之後，Melissa McCarthy飾演的Megan（伴娘團成員之一）在聽她抱怨後，對她說的一段話：「I don't think you want any help, you just want to have a little pity party. You're an asshole Annie, you're an asshole. I'm life, is life bothering you Annie? Fight back for your life. You better learn to fight for your life. I'm life, Annie, and I'm biting you in the ass!」我們不也是嗎？常常喜歡將自己和厲害的人相比，然後自怨自艾，這樣就可以順理成章的侷限自己的努力。", "電影中Annie表現意志消沉，其實並不是因為她經歷了什麼難過的事，而是她想要有人跟她說「你真的好可憐」，這樣她就可以正大光明的說，因為她會變成現在這樣都是這些鳥事害的，以「自己真的無能為力」為藉口繼續過著擺爛人生。而Megan直截了當地點出了這個點，「You better learn to fight for your life」，並且一邊反擊着Annie，一邊大叫著：「我就是你的生活，我正在困擾著你，你要試圖反擊，你要學會對抗你的生活」，企圖以反擊的方式重新點燃Annie的人生鬥志，不要只是一味的困住自己，而是找到契機，去做出一些舉動來面對人生，改變現況。", "還有是，我告訴自己，也告訴Ｓ，當我們很寂寞很哀傷時，面對自己多年好友根本不必刻意以笑容掩飾內心的真相，更不用倔強地拒絕表現內心的忌妒與落寞。人生畢竟不是同學會，同學會也不會天天舉辦的。"], "30": ["> 每個人在心中或多或少都有些難言之隱，不管是情感上的無法釋懷或是生死永隔的遺憾，能對人說得出來也就暫時自我釋放。", "雖然看過小津安二郎的《東京物語》，但在年輕記憶裡幾乎是一片空白。當時大學的我和你一起來到公館「影廬」，因為它是文藝知青必看的名片，帶著滿滿的期待，正在熱戀中的我們在幽暗的小房間，肩並着肩，認真地等著偉大電影的開始。故事很簡單，畫面的氛圍很平靜，極其平凡的家庭成員之間的心理矛盾幾乎看不到心情的起伏，也是因為以平靜的畫面處理親子之間微妙的感情，二十歲的我不知道從何感動。還記得我們看完後相對無語，黑白的畫面在戶外燦爛的艷陽下頓時退得好遠好遠，我無法向你說出內心一段又一段窒息的父母關係，只能對你笑笑說，「太深奧了吧，這個小津！」", "然後，年輕的我們依然無法分享生活裡細微的瑣事，談得口沫橫飛的無非都是主義與詩，直到我們分手的前一天。", "如果當時看了是枝裕和導演的《橫山家之味》，恐怕也是極度懷疑他那平淡無奇的故事情節，究竟要從哪裡感動或是震撼到值得分享呢？", "這故事不過就是描寫了兩天一夜的家庭聚會而已。", "這個平凡不過的家庭，為了長子的忌日，每年才會相約聚在一起。次子是一個帶著新婚的妻子和妻子的兒子，滿心不願的回老家參加哥哥忌日的中年男子。哥哥當年為了救一名落水男孩而慘遭滅頂，身為次子的他未能依從父願作醫生，當了古畫修復師卻又面臨失業的危機，加上娶個帶著拖油瓶的寡婦，更讓他在回老家的路上一直想找不必住一晚的理由。反倒是善體人意的妻子堅持住上一夜。", "妻子的通情達理乍看令人窩心，總是面帶微笑的她在新家庭的聚會中也充分展現大方合宜的氣質，但當鏡頭轉進在飯後的她一個人躲在客房生悶氣的時候，就忍不住笑了出來。", "原來她也和我一樣，仍然會為了婆婆只為丈夫準備睡衣卻沒有為自己的孩子準備時而心生怨懟，多親切呀，箇中原因說穿了，她的善體人意難免脫離不了禮數，但這不就是像我這樣的平凡人嗎？往往太過在意表面的大和諧，而壓抑自己內心的小波瀾，捫心自問真的可以不在乎嗎？", "其實只有自己知道自己根本在乎得很。", "這些看似雞毛蒜皮的事，大格局的電影往往是不屑處理的，但《橫山家之味》卻以這些小事生動體現了人際關係的微妙與難解。", "淡淡的遺憾如母親做的玉米餅般，看似平凡卻耐人尋味。", "每個人在心中或多或少都有些難言之隱，不管是情感上的無法釋懷或是生死永隔的遺憾，能對人說得出來也就暫時自我釋放。母親看似平靜的為家人忙碌的準備一份又一份的餐點，但是當她平靜的說著每年請那個被長子救起的年輕人來家裡的原因，其實就是想要讓至今還一事無成的他知道，就是他害死了自己的孩子，要讓他一年一年的痛苦自責，一次一次的難堪不已！", "原來，母親的傷痛並沒有因為長子過世已久而真的平靜，歷經歲月的累積，所謂成熟有智慧的人，其實是壓抑隱忍訓練而成的美好情操，與深沉圓融的情感妥協完成的。", "生命中被感動的往往不是偉大的壯舉或情操，反而是一些無法言喻的卑微或卑劣的愛恨情仇。", "電影裡處處可見生活的瑣事，如今看來都感到分外親切。浴室的磁磚已經剝落了好久，女婿信誓旦旦的說待會兒一定會負責修好，吃飽睡了一大覺醒來就告別的他，根本忘了這件事。母親突然若無其事地拿出一張老唱片交給兒子，淡淡說著父親很喜歡唱其中的一首演歌時，聽著「藍燈橫濱」（Blue Light Yokohama）的父親，突然悶着頭一逕地扒食手裡的鰻魚便當，同桌的家人們不解的看著平凡的母親，居然浪漫忘我地唱著其中一段歌詞：「歩いても 歩いても」（一直走，一直走），襯托着整個餐桌的詭異無言。這其中的無言，已代替了千言萬語。在一個屋檐下，相處一輩子的老夫妻，竟讓無情無感的時間默默地撐起這個家，各自隱忍着內心深沈的情感。直到父親隔著浴室的砂玻璃，問起太太為何知道這首演歌時，平靜依然的她說起三十年前背着兒子跟蹤他來到情人的家，聽到他為她唱著歡愉的歌聲。電影的日文名字「歩いても 歩いても」呼之欲出，原來源自母親口裡若無其事唱出的一段歌詞，是一生痛苦的記憶，卻也是支撐自己「一直走，一直走」的人生主題曲。", "究竟什麼才是遺憾的滋味？", "像司馬遷寫項羽受困漢軍，四面楚歌時般風雲變色、血脈僨張嗎？還是像電影裡母親為家人烹煮的一片片玉米餅般家常，卻充滿着為了飽足而歡喜咀嚼的平凡滋味？", "遺憾，究竟是一種主觀情感上的感受，還是自陷內心窟窿無法自拔的牢籠呢？對一個追求生活幸福無憂的人而言，生命少有遺憾似乎是理想。年輕時的你我仿佛都能輕易將時間掌握，作息時間穩定，每天按表操課，眼界遼闊，放眼未來，卻只看得到大敘事的壯闊，不屑一見《東京物語》裡日常應對的禮貌問候，對於《橫山家之味》裡那幽微無語的憾恨，曾經因為青春太過聒噪喧嘩而無法體會，今日時間終於不疾不徐的為我們帶來了恰恰好的禮物。", "生命無言的遺憾，一如電影裡黃蝴蝶飛進了家裡，母親一直追隨著牠，口裡喃喃念著也許是長子回來了。蝴蝶恰恰好停在死者遺照上，恰恰好的美好與哀傷，下一刻又展開翅膀，翩然而逝。錯失機會後的遺憾，也莫名的留下了如攀爬山坡階梯般無限延昇的心痛與想像。", "我們總是習慣用評論的角度看待生命發生的事情，也許是道德的批判，也許是理性的剖析，冷靜的思維使我們如旁觀者，卻很少將內心真實的情感如實的呈現出來，以為如此就能昇華或淨化內心，一切都將船過水無痕。殊不知，遺憾其實也是一個好大的窟窿，不去正視它，它永遠都在，而且一直侵蝕著自己，直到不得不正視它、跨越它，才能一直走，一直走下去。", "這座城市充滿着通暢無阻的光纖網路，隨時打開電子產品，想看的影音節目目不暇給，如果當時的我們選擇的不是《東京物語》，而是《哈利波特》，我們的戀情會一直走一直走，然後走到海枯石爛嗎？"]};
+const ACCENT = {1:"var(--a1)",2:"var(--a2)",3:"var(--a3)"};
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function photoBg(p, i){
+  const [a,b,c] = p;
+  return [
+    `radial-gradient(circle at 30% 30%, ${c} 0%, ${b} 45%, ${a} 100%)`,
+    `linear-gradient(150deg, ${c} 0%, ${b} 55%, ${a} 100%)`,
+    `radial-gradient(circle at 72% 70%, ${c} 0%, ${b} 40%, ${a} 100%)`
+  ][i];
+}
+
+function article(n){
+  const paras = FULL[n] || [];
+  return paras.map(p => {
+    if (p.startsWith("> ")) return `<p class="lead">${esc(p.slice(2))}</p>`;
+    if (p.startsWith("## ")) return `<h4>${esc(p.slice(3))}</h4>`;
+    return `<p>${esc(p)}</p>`;
+  }).join("") + `<p class="fin-mark">✦ ✦ ✦</p>`;
+}
+
+const film = document.getElementById("film");
+let html = "", idx = 0;
+ACTS.forEach(act => {
+  const scenes = S.filter(s => s.act === act.id);
+  const first = idx + 1, last = idx + scenes.length;
+  html += `<section class="act" id="act-${act.id}" style="--acc:${ACCENT[act.id]}">
+    <div class="big">${["I","II","III"][act.id-1]}</div>
+    <div class="no">${act.no}</div>
+    <h2>${esc(act.title)}</h2>
+    <div class="range">SCENE ${String(first).padStart(2,"0")} — ${String(last).padStart(2,"0")}</div></section>`;
+  scenes.forEach(s => {
+    idx++;
+    const n = String(idx).padStart(2,"0");
+    const meta = [s.en ? `<span class="en">${esc(s.en)}</span>` : "", s.year, s.dir ? `<span style="white-space:nowrap">${esc(s.dir)}</span>` : ""].filter(Boolean).join("　·　");
+    const photos = s.frames.map((w,i) => `<div class="frame" style="background:${photoBg(s.pal,i)}"><span>${esc(w)}</span><em>${n}${"ABC"[i]}</em></div>`).join("");
+    const score = s.music ? `<div class="score"><span class="note">♪</span><span>${esc(s.music)}</span>${
+      s.q ? `<a href="https://www.youtube.com/results?search_query=${encodeURIComponent(s.q)}" target="_blank" rel="noopener">聆聽 ↗</a>` : ""}</div>` : "";
+    const chars = (FULL[n]||[]).join("").replace(/^> /,"").length;
+    html += `<article class="scene" id="scene-${n}" style="--acc:${ACCENT[act.id]}"><div class="card">
+      <div class="tape"></div>
+      <div class="slate"><span class="num">SCENE ${n}</span></div>
+      <div class="head"><div>
+        <div class="film-title">《${esc(s.zh)}》</div>
+        ${meta ? `<div class="film-meta">${meta}</div>` : ""}
+      </div><div class="strip">${photos}</div></div>
+      <h3 class="lesson-title">${esc(s.lesson)}</h3>
+      <div class="body">
+        <div><p class="epigraph">${esc(s.epi)}</p>${score}</div>
+        <div>
+          <div class="beat"><div class="lab">人生 · 這一幕</div><p>${esc(s.story)}</p></div>
+          <div class="beat"><div class="lab">電影 · 那一幕</div><p>${esc(s.film)}</p></div>
+          <div class="lesson"><div class="lab">電影教我的事</div><p>${esc(s.take)}</p></div>
+        </div>
+      </div>
+      <details class="full">
+        <summary><span class="arr">▶</span> 閱讀全文〈${esc(s.lesson)}〉</summary><span class="closed-hint">約 ${Math.round(chars/100)/10} 千字</span>
+        <div class="article">${article(n)}</div>
+        <button class="backup" type="button">收合全文 ↑</button>
+      </details>
+    </div></article>`;
+  });
+});
+film.innerHTML = html;
+
+document.querySelectorAll(".backup").forEach(b => b.addEventListener("click", () => {
+  const d = b.closest("details"); d.open = false;
+  d.closest(".scene").scrollIntoView({behavior:"smooth", block:"start"});
+}));
+
+let roll = "", k = 0;
+ACTS.forEach(act => {
+  roll += `<div class="grp" style="color:${ACCENT[act.id]}">${act.no} · ${esc(act.title)}</div>`;
+  S.filter(s => s.act === act.id).forEach(s => {
+    k++; const n = String(k).padStart(2,"0");
+    roll += `<a class="row" href="#scene-${n}"><span>${esc(s.lesson)}</span><span>·</span><span>《${esc(s.zh)}》</span></a>`;
+  });
+});
+document.getElementById("roll").innerHTML = roll;
+
+const audio=document.getElementById("score");
+const toggleBtn=document.querySelector("[data-play-toggle]");
+function setUI(){const on=!audio.paused;toggleBtn.classList.toggle("on",on);toggleBtn.querySelector(".pi").textContent=on?"❚❚":"▶";}
+async function play(){try{await audio.play();}catch(e){} setUI();}
+toggleBtn.addEventListener("click",()=>{ if(audio.paused) play(); else {audio.pause(); setUI();} });
+document.querySelector("[data-play-start]").addEventListener("click",()=>{ play(); document.getElementById("prelude").scrollIntoView({behavior:"smooth"}); });
+audio.addEventListener("pause",setUI); audio.addEventListener("play",setUI);
+const itEl=document.getElementById("prelude");
+if("IntersectionObserver" in window){new IntersectionObserver((es,o)=>{es.forEach(e=>{if(e.isIntersecting){itEl.classList.add("play");o.disconnect();}})},{threshold:.45}).observe(itEl);}else itEl.classList.add("play");
+const io = "IntersectionObserver" in window ? new IntersectionObserver(es => {
+  es.forEach(e => { if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+}, {threshold:.04}) : null;
+document.querySelectorAll(".scene").forEach(el => io ? io.observe(el) : el.classList.add("in"));
+
+const links = [...document.querySelectorAll("nav a")];
+const marks = ["act-1","act-2","act-3","credits"].map(id => document.getElementById(id));
+addEventListener("scroll", () => {
+  let cur = -1; const y = scrollY + 120;
+  marks.forEach((m,i) => { if (m.offsetTop <= y) cur = i; });
+  links.forEach((a,i) => a.classList.toggle("on", i === cur));
+}, {passive:true});
+</script>
+</body>
+</html>
