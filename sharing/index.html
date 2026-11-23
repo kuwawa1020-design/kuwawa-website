@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>一步一風景，一日一遇見｜葡萄牙之路朝聖分享會</title>
+<meta name="description" content="葡萄牙之路十九天，一天一段：行程、旅拍、當天的筆記、風土民情與地圖導覽。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="一步一風景，一日一遇見｜葡萄牙之路朝聖分享會">
+<meta property="og:description" content="葡萄牙之路十九天，一天一段：行程、旅拍、當天的筆記、風土民情與地圖導覽。">
+<meta property="og:url" content="https://kuwawa1020-design.github.io/kuwawa-website/sharing/">
+<meta property="og:image" content="https://kuwawa1020-design.github.io/kuwawa-website/sharing/img/85ea47.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#22201c">
+<link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="作品集">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f5efe4; --paper2:#ebe2d2; --ink:#22201c; --mute:#6c645a; --line:rgba(34,32,28,.14);
+  --yellow:#f2b632; --yellow-d:#c8901a; --sea:#9cc3d3; --sea-d:#2f6b86; --land:#efe6d2; --land-d:#d9ccb0;
+  --night:#14222b; --red:#b8442e; --green:#4f7a3a;
+  --mapw:44vw;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC",system-ui,sans-serif;font-size:17px;line-height:1.9;letter-spacing:.02em;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+.serif{font-family:"Noto Serif TC",serif}
+a{color:var(--sea-d)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100vh;min-height:100svh;color:#fff;display:flex;align-items:flex-end;overflow:hidden;background:#1b1712}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%;transform:scale(1.04);animation:drift 30s ease-in-out infinite alternate}
+@keyframes drift{to{transform:scale(1.12) translateY(-1.5%)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,12,8,.15) 0%,rgba(15,12,8,.1) 40%,rgba(15,12,8,.78) 100%)}
+.hero-in{position:relative;z-index:1;padding:0 6vw 9vh;max-width:1100px}
+.kicker{font-size:13px;letter-spacing:.42em;margin:0 0 18px;opacity:.9}
+.hero h1{font-family:"Noto Serif TC",serif;font-weight:900;font-size:clamp(40px,7.4vw,96px);line-height:1.18;margin:0;letter-spacing:.06em}
+.hero .sub{font-family:"Noto Serif TC",serif;font-size:clamp(18px,2.2vw,24px);margin:22px 0 0;opacity:.95}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.hero .meta span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border-radius:999px;padding:6px 16px;font-size:14px}
+.hero .go{display:inline-flex;align-items:center;gap:10px;margin-top:40px;background:var(--yellow);color:#2a1d05;text-decoration:none;font-weight:700;border-radius:999px;padding:12px 26px;min-height:48px;letter-spacing:.1em}
+.hero .go:hover{background:#ffc84a}
+.arrow{display:inline-block;width:22px;height:14px;background:currentColor;clip-path:polygon(0 35%,62% 35%,62% 0,100% 50%,62% 100%,62% 65%,0 65%)}
+
+/* ---------- intro ---------- */
+.intro{max-width:760px;margin:0 auto;padding:110px 24px 60px}
+.label{font-size:13px;letter-spacing:.34em;color:var(--yellow-d);font-weight:700;margin:0 0 14px;display:flex;align-items:center;gap:12px}
+.label::before{content:"";width:28px;height:3px;background:var(--yellow);border-radius:2px}
+.intro h2{font-family:"Noto Serif TC",serif;font-size:clamp(28px,3.8vw,42px);line-height:1.45;margin:0 0 28px}
+.intro p{margin:0 0 1.2em}
+.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:34px 0 0;padding:0;list-style:none}
+.legend li{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:15px;line-height:1.6}
+.legend b{display:block;font-size:16px;margin-bottom:2px}
+.sw{display:inline-block;width:28px;height:0;border-top:4px solid var(--red);vertical-align:middle;margin-right:8px}
+.sw.boat{border-top:3px dashed var(--sea-d)} .sw.bus{border-top:3px dotted #7d776d}
+
+/* ---------- journey layout ---------- */
+.journey{display:grid;grid-template-columns:minmax(0,1fr) var(--mapw);align-items:start;border-top:1px solid var(--line)}
+.story{min-width:0;grid-column:1;grid-row:1}
+.mapwrap{grid-column:2;grid-row:1;position:sticky;top:0;height:100vh;height:100svh;background:var(--sea);border-left:1px solid var(--line);overflow:hidden}
+#map{width:100%;height:100%;display:block}
+#map .land{fill:var(--land);stroke:#b9a986;stroke-width:var(--sw1)}
+#map .river{fill:none;stroke:#7fb2c9;stroke-width:var(--sw1);stroke-linecap:round}
+#map .border{fill:none;stroke:#8d7b5a;stroke-width:var(--sw1);stroke-dasharray:var(--dash)}
+#map .seg{fill:none;stroke-linecap:round;stroke-linejoin:round;transition:stroke .5s,opacity .5s}
+#map .seg.walk{stroke:var(--red);stroke-width:var(--sw3)}
+#map .seg.boat{stroke:var(--sea-d);stroke-width:var(--sw2);stroke-dasharray:var(--dash2)}
+#map .seg.bus{stroke:#6f695f;stroke-width:var(--sw2);stroke-dasharray:var(--dot)}
+#map .seg.todo{opacity:.22}
+#map .seg.done{opacity:.75}
+#map .seg.now{opacity:1;filter:drop-shadow(0 0 var(--glow) rgba(242,182,50,.95))}
+#map .seg.walk.now{stroke:#d9472c}
+#map .stop circle{fill:#fff;stroke:var(--ink);stroke-width:var(--sw1);transition:r .4s}
+#map .stop.done circle{fill:var(--yellow)}
+#map .stop.now circle{fill:var(--yellow);stroke:#000}
+#map .stop text{font-family:"Noto Sans TC",sans-serif;fill:var(--ink);paint-order:stroke;stroke:rgba(255,250,240,.92);stroke-linejoin:round;font-weight:500}
+#map .stop.todo text{fill:#6c645a}
+#map .stop.now text{font-weight:700;fill:#000}
+#map .sea-label{font-family:"Noto Serif TC",serif;fill:#2f6b86;opacity:.75;letter-spacing:.3em;font-style:italic}
+#map .country{font-family:"Noto Serif TC",serif;fill:#8d7b5a;letter-spacing:.4em;opacity:.8}
+#map .pin{fill:var(--yellow);stroke:#000;stroke-width:var(--sw1)}
+.mapcard{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(255,252,245,.94);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:16px;padding:14px 18px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.mapcard .d{font-size:12px;letter-spacing:.25em;color:var(--yellow-d);font-weight:700}
+.mapcard .t{font-family:"Noto Serif TC",serif;font-size:19px;font-weight:600;line-height:1.5}
+.prog{height:6px;background:var(--paper2);border-radius:6px;margin-top:10px;overflow:hidden}
+.prog i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--yellow),var(--red));border-radius:6px;transition:width .6s}
+.mapcard .k{display:flex;justify-content:space-between;font-size:12.5px;color:var(--mute);margin-top:6px}
+.mapnote{position:absolute;top:12px;right:14px;font-size:11px;color:#2f5566;background:rgba(255,255,255,.6);padding:2px 8px;border-radius:6px}
+.maptitle{position:absolute;top:12px;left:16px;font-size:12px;letter-spacing:.25em;color:#2f5566;font-weight:700}
+
+/* ---------- day ---------- */
+.day{padding:96px clamp(20px,5vw,72px) 110px;border-bottom:1px solid var(--line);position:relative}
+.day.alt{background:#faf6ee}
+.day.night{background:var(--night);color:#e9e4da}
+.day.night .note{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)}
+.day.night .culture{background:rgba(242,182,50,.08);border-color:rgba(242,182,50,.35)}
+.day.night figcaption{color:#cfc6b5}
+.day.night .stats span{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.14);color:#e9e4da}
+.day-head{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+.dnum{font-family:"Noto Serif TC",serif;font-weight:900;font-size:clamp(54px,7vw,88px);line-height:1;color:var(--yellow);-webkit-text-stroke:1px rgba(0,0,0,.08)}
+.ddate{font-size:14px;letter-spacing:.2em;color:var(--mute)}
+.day.night .ddate{color:#b7ae9e}
+.day h3{font-family:"Noto Serif TC",serif;font-size:clamp(26px,3.2vw,36px);line-height:1.45;margin:10px 0 6px;letter-spacing:.04em}
+.route{font-size:16px;color:var(--mute);margin:0 0 18px}
+.day.night .route{color:#c9c0b0}
+.route b{color:inherit;font-weight:700}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px;padding:0;list-style:none}
+.stats span{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:14px}
+.note{position:relative;background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 28px 22px;margin:0 0 30px;font-family:"Noto Serif TC",serif;font-size:18px;line-height:2.05}
+.note::before{content:"我的筆記";position:absolute;top:-12px;left:22px;background:var(--yellow);color:#2a1d05;font-family:"Noto Sans TC",sans-serif;font-size:12px;font-weight:700;letter-spacing:.2em;padding:2px 12px;border-radius:999px}
+.note p{margin:0 0 .9em}.note p:last-child{margin:0}
+.poem{font-family:"Noto Serif TC",serif;font-size:19px;line-height:2.2;margin:0 0 30px;padding-left:22px;border-left:3px solid var(--yellow)}
+.poem small{display:block;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:var(--mute);letter-spacing:.15em;margin-top:6px}
+.culture{background:#fff8e6;border:1px solid #efd9a2;border-radius:18px;padding:22px 26px;margin:30px 0 0;font-size:16px;line-height:1.95}
+.culture h4{margin:0 0 8px;font-size:14px;letter-spacing:.22em;color:var(--yellow-d);display:flex;align-items:center;gap:8px}
+.culture h4::before{content:"";width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 50% 70%,#fff 0 30%,transparent 31%),conic-gradient(from 200deg,var(--yellow) 0 100%);box-shadow:inset 0 0 0 2px var(--yellow-d)}
+.culture p{margin:0 0 .8em}.culture p:last-child{margin:0}
+.culture b{font-weight:700}
+
+.photos{display:grid;gap:14px;margin:0 0 6px}
+.photos>figure{min-width:0}
+.photos.one{grid-template-columns:1fr}
+.photos.two{grid-template-columns:1fr 1fr}
+.photos.three{grid-template-columns:1.3fr 1fr}
+.photos.three figure:first-child{grid-row:span 2}
+figure{margin:0}
+.ph{overflow:hidden;border-radius:14px;background:#ddd;cursor:zoom-in;position:relative}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease}
+.ph:hover img{transform:scale(1.04)}
+.photos.one .ph{aspect-ratio:4/3}
+.photos.one.tall .ph{aspect-ratio:3/4;max-width:520px}
+.photos.two .ph{aspect-ratio:3/4}
+.photos.two.wide .ph{aspect-ratio:4/3}
+.photos.three .ph{height:100%;min-height:180px}
+figcaption{font-family:"Noto Serif TC",serif;font-size:15.5px;line-height:1.85;color:#4c463e;margin:10px 2px 14px}
+.nophoto{border:1px dashed var(--land-d);border-radius:14px;padding:22px 24px;color:var(--mute);font-family:"Noto Serif TC",serif;font-size:16px;margin:0 0 6px;background:repeating-linear-gradient(135deg,transparent 0 12px,rgba(217,204,176,.18) 12px 24px)}
+
+/* chapter dividers */
+.chapter{padding:120px clamp(20px,5vw,72px) 100px;background:var(--ink);color:#f0e9dc;position:relative;overflow:hidden}
+.chapter .label{color:var(--yellow)}
+.chapter h2{font-family:"Noto Serif TC",serif;font-size:clamp(32px,4.6vw,56px);line-height:1.3;margin:0 0 18px}
+.chapter p{max-width:640px;color:#d6cebf;margin:0}
+.chapter.boat{background:#1f4b5e}
+.chapter.end{background:#2a1c14}
+
+/* epilogue */
+.epi{padding:110px clamp(20px,5vw,72px);background:var(--paper)}
+.epi blockquote{margin:0 0 34px;font-family:"Noto Serif TC",serif;font-size:clamp(21px,2.6vw,28px);line-height:2;font-weight:600}
+.totals{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:40px 0}
+.totals div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.totals b{display:block;font-family:"Noto Serif TC",serif;font-size:32px;font-weight:900;color:var(--red);line-height:1.3}
+.totals span{font-size:14px;color:var(--mute)}
+.harvest{margin:40px 0 0;background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 28px 10px}
+.harvest h3{margin:0 0 16px;font-size:26px;letter-spacing:.08em}
+.harvest .hv>div{border-top:1px solid var(--line);padding:14px 0}
+.harvest .hv b{display:block;color:var(--yellow-d);font-size:14px;letter-spacing:.2em;margin-bottom:4px}
+.harvest .hv p{margin:0;font-family:"Noto Serif TC",serif;font-size:17px;line-height:1.95}
+footer{background:var(--ink);color:#bdb4a4;padding:50px 24px;text-align:center;font-size:14px;line-height:2}
+footer b{display:block;color:#fff;font-family:"Noto Serif TC",serif;font-size:22px;letter-spacing:.2em;margin-bottom:6px}
+
+/* controls */
+.ctrl{position:fixed;left:16px;bottom:16px;z-index:30;display:flex;gap:8px;flex-wrap:wrap}
+.ctrl button{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px 8px 10px;border:0;border-radius:999px;background:rgba(34,32,28,.9);color:#fff;font:500 14px/1 "Noto Sans TC",sans-serif;letter-spacing:.08em;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.ctrl button:hover{background:#000}
+.ctrl button:focus-visible{outline:2px solid var(--yellow);outline-offset:3px}
+.ctrl .ic{width:26px;height:26px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;color:#2a1d05;font-size:12px}
+.ctrl button[aria-pressed="true"] .ic{background:var(--red);color:#fff}
+.daynav{position:fixed;right:calc(var(--mapw) + 14px);top:50%;transform:translateY(-50%);z-index:20;display:flex;flex-direction:column;gap:5px}
+.daynav a{display:block;width:10px;height:10px;border-radius:50%;background:rgba(34,32,28,.2);transition:all .3s}
+.daynav a.on{background:var(--yellow);transform:scale(1.5);box-shadow:0 0 0 2px rgba(0,0,0,.15)}
+.daynav a:focus-visible{outline:2px solid var(--yellow);outline-offset:2px}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:60;background:rgba(10,9,8,.95);display:none;align-items:center;justify-content:center;padding:4vh 4vw 12vh;cursor:zoom-out}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:82vh;object-fit:contain;border-radius:6px}
+.lb p{position:absolute;left:8vw;right:8vw;bottom:3vh;margin:0;text-align:center;color:#e6dfd2;font-family:"Noto Serif TC",serif;font-size:16px;line-height:1.8}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.hero img{animation:none}html{scroll-behavior:auto}}
+
+@media (max-width:900px){
+  :root{--mapw:100vw}
+  .journey{display:block}
+  .mapwrap{position:sticky;top:0;z-index:15;height:38vh;height:38svh;border-left:0;border-bottom:1px solid var(--line);box-shadow:0 6px 16px rgba(0,0,0,.12)}
+  .mapcard{left:10px;right:10px;bottom:10px;padding:8px 12px;border-radius:12px}
+  .mapcard .t{font-size:15px}
+  .mapcard .k,.mapnote{display:none}
+  .prog{margin-top:6px;height:4px}
+  .daynav{display:none}
+  .day{padding:64px 20px 56px}
+  .chapter{padding:80px 20px 70px}
+  .note{padding:24px 20px 18px;font-size:17px}
+  .photos.three{grid-template-columns:1fr 1fr}
+  .photos.three figure:first-child{grid-row:auto;grid-column:span 2}
+  .photos.three figure:first-child .ph{aspect-ratio:4/3}
+  .photos.three .ph{aspect-ratio:3/4;min-height:0;height:auto}
+}
+@media (max-width:520px){
+  .photos.two{grid-template-columns:1fr}
+  .photos.two .ph,.photos.two.wide .ph{aspect-ratio:4/3}
+  .ctrl .lbl{display:none}
+  .ctrl button{padding:8px}
+}
+.home{position:fixed;left:16px;top:16px;z-index:40;display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:8px 16px 8px 12px;border-radius:999px;text-decoration:none;background:rgba(34,32,28,.82);color:#fff;font:500 14px/1 "Noto Sans TC",sans-serif;letter-spacing:.12em;box-shadow:0 6px 18px rgba(0,0,0,.25);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.home:hover{background:#000}.home:focus-visible{outline:2px solid var(--yellow);outline-offset:3px}
+.home svg{width:14px;height:14px;fill:none;stroke:#fff;stroke-width:2}
+@media (max-width:900px){.home{top:auto;bottom:16px;left:auto;right:16px}}
+</style>
+</head>
+<body>
+
+<a class="home" href="../"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M9 2 4 7l5 5"/></svg>作品集</a>
+
+<header class="hero">
+  <img src="img/85ea47.jpg" alt="Fisterra 懸崖上的銅靴雕塑，面向大西洋的夕陽">
+  <div class="hero-in">
+    <p class="kicker">CAMINO PORTUGUÉS · 中央線 → 靈性線 · 2026</p>
+    <h1>一步一風景，<br>一日一遇見</h1>
+    <p class="sub">葡萄牙之路朝聖分享會——請背上你的背包，跟我走一趟</p>
+    <div class="meta"><span>9/10 – 9/28 · 十九天</span><span>約 230 公里步行</span><span>28 公里船行</span><span>約 38 萬步</span></div>
+    <a class="go" href="#intro">出發 <span class="arrow" aria-hidden="true"></span></a>
+  </div>
+</header>
+
+<section class="intro rv" id="intro">
+  <p class="label">開場</p>
+  <h2>一句話二十年，<br>換一雙腳走十九天。</h2>
+  <p>N 年前，我在書封寫下「好想再去西班牙」。一句話二十年，換今天飛行加轉機二十小時，終於回到西班牙。</p>
+  <p>這一頁，就是那趟路。接下來請你往下捲，每捲過一天，右邊的地圖就陪你往北走一段：紅色實線是用腳走的，藍色虛線是搭船，灰色點線是坐車。每一天都有當天寫下的筆記、路上的照片，還有這個地方的風土與故事。</p>
+  <p>也可以按左下角的「自動導覽」，讓它帶著你一天一天走；或開「配樂」，聽原創曲〈黃箭頭〉。</p>
+  <ul class="legend">
+    <li><b><span class="sw"></span>步行</b>從波多一路走到聖地牙哥</li>
+    <li><b><span class="sw boat"></span>船行</b>沿著傳說中聖雅各的水路</li>
+    <li><b><span class="sw bus"></span>坐車</b>地鐵、公車與火車接駁</li>
+  </ul>
+</section>
+
+<div class="journey">
+<aside class="mapwrap" aria-label="路線地圖導覽">
+  <svg id="map" role="img" aria-label="從波多到聖地牙哥、菲斯特雷與穆希亞的路線地圖"></svg>
+  <div class="maptitle">路線導覽</div>
+  <div class="mapnote">海岸線：Natural Earth</div>
+  <div class="mapcard" aria-live="polite">
+    <div class="d" id="mcD">DAY 00</div>
+    <div class="t" id="mcT">波多，再次相逢</div>
+    <div class="prog"><i id="mcP"></i></div>
+    <div class="k"><span id="mcK">累計步行 0 km</span><span>全程約 230 km</span></div>
+  </div>
+</aside>
+<div class="story" id="story">
+
+<!-- ===== Porto ===== -->
+<section class="day" data-day="0" id="d0">
+  <div class="day-head"><span class="dnum">00</span><span class="ddate">9/8 – 9/9 · 啟程前夜</span></div>
+  <h3>波多，再次相逢</h3>
+  <p class="route">馬德里、里斯本之後，來到出發點 <b>波多 Porto</b></p>
+  <div class="photos three rv">
+    <figure><div class="ph"><img loading="lazy" src="img/5e3bf3.jpg" alt="杜羅河上的路易一世大橋"></div><figcaption>杜羅河還在午後的光裡打盹。明天起，我們要從這裡，用雙腳一步一步往北。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/349135.jpg" alt="台灣黑熊娃娃站在葡萄牙書籍前"></div><figcaption>熊娃替我在書架間先找到了葡萄牙。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/6b89e5.jpg" alt="熊娃坐在扇貝與黃箭頭的朝聖路標上"></div><figcaption>第一枚扇貝、第一個黃箭頭。從此以後，路會自己說話。</figcaption></figure>
+  </div>
+  <div class="note rv">
+    <p>波多的藍天配上屋宇典雅冷靜的藍白瓷磚，走在灰藍杜羅河畔，巡遊古老的街道，好像時空回到葡萄牙最輝煌的時期——大航海時代。</p>
+    <p>萊羅書店絡繹不絕的人潮裡，我還是找到了佩索亞的詩集。在主教座堂領取朝聖護照，蓋下第一個朝聖章，回覆眾親友們的聲音：「蛤，你們還沒開走喔⋯⋯！」</p>
+    <p>明天早上，就是說，黃道吉日準備開步起來囉！Buen Camino！</p>
+  </div>
+  <div class="poem rv">第七夜，仍在等待時間，跨越西太平洋<br>靜下來<br>悄悄<br>來到你的窗前<small>——〈第七夜〉2026/9/9</small></div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p><b>阿茲勒赫瓷磚（Azulejo）</b>是葡萄牙的城市表情。聖本篤車站的大廳貼了兩萬多片藍白瓷磚，畫的是葡萄牙歷史；地鐵 Bolhão 站旁的聖靈教堂，外牆幾乎整面都是藍瓷。</p>
+    <p>葡萄牙之路的中央線，傳統上從<b>波多主教座堂（Sé do Porto）</b>出發。朝聖者在這裡買下朝聖護照（Credencial），沿路每到一處就蓋一個章，最後憑著蓋滿的護照，在聖地牙哥領取朝聖證書。</p>
+  </div>
+</section>
+
+<section class="chapter rv">
+  <p class="label">第一章</p>
+  <h2>葡萄牙中央線</h2>
+  <p>從大西洋岸的波瓦-迪瓦爾津轉入內陸，穿過米尼奧地區的葡萄園、尤加利樹林與石板古道，一路走到西葡邊界的米尼奧河。</p>
+</section>
+
+<!-- ===== Day 1 ===== -->
+<section class="day" data-day="1" id="d1">
+  <div class="day-head"><span class="dnum">01</span><span class="ddate">9/10（四）</span></div>
+  <h3>偷吃步，也是一種開始</h3>
+  <p class="route"><b>波多</b> →（地鐵 B 線三十站）→ <b>波瓦-迪瓦爾津 Póvoa de Varzim</b> → <b>São Pedro de Rates</b></p>
+  <ul class="stats"><li><span>步行 15.7 km</span></li><li><span>25,000 步</span></li><li><span>住 Casa Tomé de Sousa</span></li></ul>
+  <div class="note rv">
+    <p>從 Porto 偷吃步，三十站，晃到地鐵 B 線最末站：波瓦-迪瓦爾津。</p>
+    <p>喝杯咖啡，再開始走路。</p>
+  </div>
+  <div class="photos one tall rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day01-1.jpg" alt="揹著背包、穿螢光綠鞋走在波多人行道上的背影"></div><figcaption>出發的早晨。背包、帽子、螢光綠的鞋，全部家當都在身上——第一步，就從波多的人行道開始。</figcaption></figure>
+  </div>
+  <div class="photos one rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day01-2.jpg" alt="從地鐵車窗望出去的古老石造水道橋"></div><figcaption>地鐵窗外，古老的水道橋一拱接一拱掠過。三十站的偷吃步，也有風景。</figcaption></figure>
+  </div>
+  <div class="photos two rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day01-3.jpg" alt="兩側石牆夾著的卵石小徑，通往石拱下"></div><figcaption>石牆夾著的卵石小徑，彎進拱門底下。從這裡開始，路變窄，也變安靜了。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/day01-4.jpg" alt="石牆上生鏽的扇貝箭頭鐵牌，旁邊是熊娃與登山杖"></div><figcaption>生鏽的鐵牌上刻著扇貝與箭頭。熊娃替我先摸了摸：方向對了。</figcaption></figure>
+  </div>
+  <div class="photos two wide rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day01-5.jpg" alt="Rates 鎮上刻著 Caminho Português de Santiago、Caminho Central 的石碑與登山杖"></div><figcaption>石碑上刻著接下來要走的名字：Rates、Barcelos、Ponte de Lima、Rubiães、Valença。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/day01-6.jpg" alt="藍天下的拉蒂什聖彼得教堂羅曼式半圓後殿"></div><figcaption>拉蒂什聖彼得教堂。十二世紀的羅曼式石頭，在藍天下安安靜靜地等了八百多年。</figcaption></figure>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p>今晚的落腳處 <b>拉蒂什（São Pedro de Rates）</b>，是葡萄牙北部一座充滿中世紀風情、非常安靜的古老村鎮，隸屬波多區的波瓦-迪瓦爾津市。它位在葡萄牙之路的中央線上，鎮上設有專門的朝聖者庇護所，是許多徒步朝聖者必經的落腳點。</p>
+    <p>這裡曾是獨立的自治市鎮，歷史可以追溯到羅馬時期或更早，1993 年正式恢復「榮譽鎮」（Vila）的地位。鎮上最著名的是建於 12 世紀的<b>拉蒂什聖彼得教堂（Igreja de São Pedro de Rates）</b>，葡萄牙現存最重要、保存最完好的羅曼式建築之一，已列為國家古蹟。傳說教堂供奉的聖佩德羅·德·拉特斯，是聖雅各親自任命的第一位主教。</p>
+    <p>旅舍名字裡的 <b>Tomé de Sousa</b>，是 16 世紀巴西第一任總督，他就出生在這個小村。</p>
+  </div>
+</section>
+
+<!-- ===== Day 2 ===== -->
+<section class="day alt" data-day="2" id="d2">
+  <div class="day-head"><span class="dnum">02</span><span class="ddate">9/11（五）</span></div>
+  <h3>和腳趾培養感情</h3>
+  <p class="route"><b>São Pedro de Rates</b> → <b>巴塞盧什 Barcelos</b></p>
+  <ul class="stats"><li><span>16 km</span></li><li><span>26,000 步</span></li><li><span>沿山起伏</span></li></ul>
+  <div class="note rv">
+    <p>慢慢調整背包（6 kg 左右吧），和腳趾之間的感情。有吃的東西儘力吃，一到兩小時之間休息、拉筋伸展，大約一天走走停停六小時。</p>
+    <p>沿途風景心曠神怡，和神隊友聊聊人生、聊聊親友，特別開心。</p>
+  </div>
+  <div class="photos two wide rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day02-1.jpg" alt="民宿主人在廚房裡一邊吃一邊比讚，桌上擺滿火腿、起司、炒蛋、草莓與咖啡"></div><figcaption>民宿主人一邊嚐一邊比讚：火腿、起司、炒蛋、草莓和一大杯咖啡，都是她為我們準備的。有吃的東西儘力吃——這是走路的第一課。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/day02-2.jpg" alt="揹著背包走在玉米田與松林間紅土小徑上的朝聖者"></div><figcaption>紅土小徑穿過玉米田與松林，前面的朝聖者愈走愈小，我們也慢慢跟上。</figcaption></figure>
+  </div>
+  <div class="photos two rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day02-3.jpg" alt="路邊栗子樹上結滿黃綠色的刺球"></div><figcaption>路邊的栗子樹結滿刺球。九月的葡萄牙，秋天已經在枝頭等著。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/day02-4.jpg" alt="樹下一隻彩繪的巨大巴塞盧什公雞，底座寫著 Bem-vindo a Barcelinhos"></div><figcaption>一隻比人還高的公雞說：歡迎來到 Barcelinhos。傳說裡救了朝聖者的那隻雞，在這裡活得好好的。</figcaption></figure>
+  </div>
+  <div class="photos two wide rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day02-5.jpg" alt="卡瓦多河上的中世紀石橋與對岸的巴塞盧什老城"></div><figcaption>卡瓦多河上的中世紀石橋，對岸就是巴塞盧什。走了十六公里，今晚的床就在橋的那一頭。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/day02-6.jpg" alt="藍天下巴塞盧什的城市導覽地圖看板"></div><figcaption>城市地圖上畫滿教堂與廣場。腳很痠，眼睛卻還想多看一眼。</figcaption></figure>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p><b>巴塞盧什公雞</b>是全葡萄牙最有名的紀念品，故事就發生在這條朝聖路上：傳說一位前往聖地牙哥的朝聖者在巴塞盧什被誣指偷竊、判處絞刑。他指著法官餐桌上的烤公雞說：「如果我是無辜的，這隻雞會站起來啼叫。」行刑時，烤雞真的站起來啼叫，朝聖者因此獲救。</p>
+    <p>從此，紅冠黑身的公雞成了葡萄牙的國家象徵，代表正義、信任與好運。</p>
+  </div>
+</section>
+
+<!-- ===== Day 3 ===== -->
+<section class="day" data-day="3" id="d3">
+  <div class="day-head"><span class="dnum">03</span><span class="ddate">9/12（六）</span></div>
+  <h3>老實地，跟著黃箭頭</h3>
+  <p class="route"><b>巴塞盧什</b> → <b>巴盧加恩斯 Balugães</b></p>
+  <ul class="stats"><li><span>18 km</span></li><li><span>30,000 步</span></li><li><span>鄉村小徑・尤加利樹林・石板路</span></li></ul>
+  <div class="photos one tall rv">
+    <figure><div class="ph"><img loading="lazy" src="img/168230.jpg" alt="熊娃在刻著 BOM CAMINHO 與扇貝的石碑上"></div><figcaption>石頭上刻著 BOM CAMINHO。原來祝福也可以這麼沉，沉到能陪一個人走好幾百年。</figcaption></figure>
+  </div>
+  <div class="note rv">
+    <p>今天沒有跟著 Google Maps 走，而是老實地循著黃箭頭走朝聖之路。沿途多為鄉村小徑、泥土路、尤加利樹林與石板路，伴隨著幾處徐緩的上下坡，是一段充滿田園風光的路線。</p>
+    <p>我們都喜歡這樣的路徑，雖然真的很想要回到 Google Maps 的懷抱。</p>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p><b>黃箭頭（Seta Amarela）</b>是朝聖之路最溫柔的發明。1980 年代，加利西亞的一位神父 Elías Valiña 用剩下的黃色道路油漆，在法國之路沿線畫上箭頭，從此黃箭頭成了所有朝聖路的共同語言：畫在牆角、電線桿、石頭上，只要跟著它，就不會迷路。</p>
+    <p>終點 Balugães 有一座阿帕雷西達聖母朝聖地（Santuário de Nossa Senhora da Aparecida），是當地人自己的朝聖所在。</p>
+  </div>
+</section>
+
+<!-- ===== Day 4 ===== -->
+<section class="day alt" data-day="4" id="d4">
+  <div class="day-head"><span class="dnum">04</span><span class="ddate">9/13（日）</span></div>
+  <h3>水泡，和甜美的笑容</h3>
+  <p class="route"><b>巴盧加恩斯</b> → <b>蓬蒂-迪利馬 Ponte de Lima</b></p>
+  <ul class="stats"><li><span>21 km</span></li><li><span>34,000 步</span></li><li><span>8:45 – 17:00</span></li></ul>
+  <div class="note rv">
+    <p>一早花了很值得的時間來謝謝店老闆，早餐之外，他願意多給我們兩大塊麵包！寫了 Google 評論謝謝他。</p>
+    <p>一路上開心地踏進泥濘的小水塘裡，無事欣賞一顆金剛櫟滾來我腳邊，然後發現沒開門的教堂，旁邊的廁所居然開大門迎接我們！</p>
+    <p>Keep going with my 左大腳拇指的水泡。第一天穿涼鞋走在石板路，還能夠保持笑容的甜美！</p>
+  </div>
+  <div class="photos two rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day04-1.jpg" alt="早上七點的手機地圖，畫出從 Balugães 到 Ponte de Lima 的路線"></div><figcaption>早上七點，手機地圖畫出今天的路：從 Balugães 到 Ponte de Lima，說要走四個多小時。結果，我們走到了下午五點。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/day04-2.jpg" alt="熊娃在紅瓦白牆、石板地的中庭前"></div><figcaption>出發前的早晨，熊娃在石板中庭留影。光把紅瓦屋頂照得暖暖的，像在說：慢慢走，不急。</figcaption></figure>
+  </div>
+  <div class="photos one rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day04-3.jpg" alt="熊娃趴在花崗岩上，頭頂是掛滿黑葡萄的葡萄藤棚"></div><figcaption>葡萄藤下的石頭上，熊娃先躺一下。九月的米尼奧，藤上已經掛滿一串串黑葡萄——這裡是綠酒（Vinho Verde）的故鄉。</figcaption></figure>
+  </div>
+  <div class="photos one tall rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day04-4.jpg" alt="橡樹與尤加利樹之間的泥土小徑，路旁一根長滿青苔的石柱"></div><figcaption>橡樹與尤加利樹夾著泥土路。路邊那根長滿青苔的石柱，不知道站了多少年，看過多少朝聖者走過。</figcaption></figure>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p><b>蓬蒂-迪利馬</b>是葡萄牙最古老的小鎮之一，1125 年由特雷莎女王頒發特許狀建鎮。鎮名意思就是「利馬河上的橋」——那座長長的石橋，有羅馬時代的基礎與中世紀的拱。</p>
+    <p>傳說西元前 137 年，羅馬軍隊走到利馬河邊不敢渡河，因為他們以為這就是希臘神話中的<b>遺忘之河 Lethe</b>，喝了河水就會忘記故鄉。將軍獨自涉水過河，在對岸一個一個呼喊士兵的名字，證明自己什麼都沒忘，軍隊才跟著過河。</p>
+  </div>
+</section>
+
+<!-- ===== Day 5 ===== -->
+<section class="day" data-day="5" id="d5">
+  <div class="day-head"><span class="dnum">05</span><span class="ddate">9/14（一）· 停留</span></div>
+  <h3>遇見兩百歲的慶典</h3>
+  <p class="route">留在 <b>蓬蒂-迪利馬</b>，混一天</p>
+  <ul class="stats"><li><span>休息日</span></li><li><span>新集市節最後一天</span></li></ul>
+  <div class="photos one tall rv">
+    <figure><div class="ph"><img loading="lazy" src="img/3f394d.jpg" alt="新集市節歷史大巡遊中，身穿古裝的女子展開寫著居民請願的卷軸"></div><figcaption>一卷泛黃的請願書，寫著 1825 年小鎮居民的心願。兩百年後，整座小鎮仍在為它歡慶。</figcaption></figure>
+  </div>
+  <div class="note rv">
+    <p>此時此刻，在葡萄牙最古老的小鎮，正在發生盛大的景況！當地年度最大慶典「新集市節」（Feiras Novas），最後一天下午舉行「痛苦聖母榮譽大遊行」。</p>
+    <p>抬神轎的男子們，是當地重機俱樂部的騎士，他們身穿綴滿徽章的皮革背心，合力為教區扛起這座沉重的主神轎。</p>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p>2026 年的<b>新集市節</b>正逢 <b>200 週年</b>（1826–2026）。它源自 1826 年的一道皇家法令，現已列為葡萄牙國家非物質文化遺產，被譽為葡萄牙「最大型的民間文化活博物館」。</p>
+    <p>慶典期間，上百位手風琴手在 Largo de Camões 廣場與老街隨興聚集彈奏，歌手用即興的諷刺歌詞互相對唱（Cantares ao Desafio）；巨大的紙紮巨偶與大頭娃娃，隨著隆隆鼓聲在街頭轉圈跳舞。</p>
+  </div>
+</section>
+
+<!-- ===== Day 6 ===== -->
+<section class="day alt" data-day="6" id="d6">
+  <div class="day-head"><span class="dnum">06</span><span class="ddate">9/15（二）</span></div>
+  <h3>Up–up–up，回到台灣小百岳</h3>
+  <p class="route"><b>蓬蒂-迪利馬</b> → 翻越 Labruja 山 → <b>魯比亞埃斯 Rubiães</b></p>
+  <ul class="stats"><li><span>18 km</span></li><li><span>32,000 步</span></li><li><span>爬升約 400 m</span></li></ul>
+  <div class="photos one rv">
+    <figure><div class="ph"><img loading="lazy" src="img/e70c8b.jpg" alt="和各國朝聖者的大合照自拍"></div><figcaption>一個人出發，一群人相遇。萍水相逢的笑容，是路上最好的補給。</figcaption></figure>
+  </div>
+  <div class="note rv">
+    <p>其實你來就知道，對歐美人而言，走朝聖路像 vacation，幾乎都是結伴同行、呼朋引伴，玩耍的感覺大於靈魂拷問自己。各種人都有，一個人，一群人。</p>
+    <p>今天遇到一位快七十歲的加拿大人，他已經分段走了十七次朝聖，第一次來走葡萄牙之路。他說非常喜歡這條路：有山可爬，有水可玩，安靜的石板路，純樸的小村落。還遇到一位日本大叔，他說日本人都不來走朝聖。</p>
+    <p>今天這條路爬升 400 公尺，感覺自己又回到喜歡的台灣小百岳——如果不是沿途轉折處有肅穆的石頭十字架、清楚的黃箭頭與大大的扇貝，還有一路前進的朝聖腳步。</p>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p>今天翻越的 <b>Labruja 山</b>，是葡萄牙段最高的一段，山口有一座<b>「受傷者的十字架」（Cruz dos Franceses）</b>，朝聖者習慣從家鄉帶一顆小石頭放在十字架下，象徵放下心裡的重擔。</p>
+    <p>落腳的 Rubiães 有一座羅馬古橋，橋下是古羅馬「第十九號大道」（Via XIX）的路線——兩千年前從布拉加通往阿斯托加的軍道，今天換朝聖者在走。</p>
+  </div>
+</section>
+
+<!-- ===== Day 7 ===== -->
+<section class="day" data-day="7" id="d7">
+  <div class="day-head"><span class="dnum">07</span><span class="ddate">9/16（三）</span></div>
+  <h3>時間，在這裡迷失方向</h3>
+  <p class="route"><b>魯比亞埃斯</b> → 沿羅馬古道 → <b>瓦倫薩 Valença</b></p>
+  <ul class="stats"><li><span>21.3 km</span></li><li><span>36,000 步</span></li><li><span>7:30 – 13:40</span></li></ul>
+  <div class="note rv">
+    <p>我們終於一路沿著羅馬古道，走到西葡邊界的 Valença，順利住進中世紀古城區。</p>
+    <p>左手的小米手錶顯示葡萄牙時間，但是右手的手機卻閃爍西班牙時間。</p>
+    <p>時間在這裡，也迷失方向了。</p>
+  </div>
+  <div class="photos two rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day07-1.jpg" alt="背包掛著扇貝的朝聖者走在森林小徑上"></div><figcaption>早上七點半出發。背包上掛著扇貝，一步一步走進葡萄牙最後一段森林。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/day07-2.jpg" alt="籬笆邊的飲水台，牌子上畫著扇貝，寫著 Drinking Water / Água Potável"></div><figcaption>籬笆邊一座小小的飲水台，牌子上畫著扇貝。有人在這裡，為路過的朝聖者留一口水。</figcaption></figure>
+  </div>
+  <div class="photos one rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day07-3.jpg" alt="石牆上畫著黃箭頭，旁邊是落葉鋪成的土路"></div><figcaption>石牆、黃箭頭、落葉鋪成的土路——這條羅馬古道，兩千年來都朝著同一個方向。</figcaption></figure>
+  </div>
+  <div class="photos one rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day07-4.jpg" alt="Fontoura 村廣場上的里程石、十字柱與教堂"></div><figcaption>Fontoura 村的小廣場，里程石上有兩個箭頭：黃色往聖地牙哥，還有 132.55 公里；藍色往反方向的法蒂瑪，368.24 公里。</figcaption></figure>
+  </div>
+  <div class="photos two wide rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day07-5.jpg" alt="瓦倫薩路邊的巨大太陽雕塑與中世紀市集看板"></div><figcaption>抵達瓦倫薩。巨大的太陽雕塑旁，看板上還留著九月初中世紀市集的熱鬧。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/day07-6.jpg" alt="瓦倫薩要塞城牆上掛著七大新奇蹟票選旗幟，旁邊是拱門"></div><figcaption>要塞城牆上掛著旗幟：瓦倫薩正在角逐「葡萄牙七大新奇蹟」的城堡類。走過這道拱門，就住進中世紀了。</figcaption></figure>
+  </div>
+  <div class="photos one tall rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day07-7.jpg" alt="瓦倫薩要塞內的石造拱頂隧道，盡頭透著光"></div><figcaption>穿過要塞的石造隧道，盡頭是一片亮光。今晚，我們住在城牆裡面。</figcaption></figure>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p><b>瓦倫薩要塞</b>是一座星形稜堡城，17、18 世紀為了防禦對岸的西班牙而築，城牆以法國軍事工程師沃邦（Vauban）的設計為範本，兩層星形城牆至今完整，城內仍住著人、開著小店。</p>
+    <p>站在城牆上往北看，米尼奧河對岸就是西班牙的圖伊大教堂。兩座城隔河對望了好幾百年，曾經是敵人，現在是鄰居。</p>
+  </div>
+</section>
+
+<!-- ===== Day 8 ===== -->
+<section class="day alt" data-day="8" id="d8">
+  <div class="day-head"><span class="dnum">08</span><span class="ddate">9/17（四）</span></div>
+  <h3>一條河，一座橋，沒有邊界的國度</h3>
+  <p class="route"><b>瓦倫薩（葡萄牙）</b> → 跨越米尼奧河 → <b>圖伊 Tui（西班牙）</b></p>
+  <ul class="stats"><li><span>7 km</span></li><li><span>12,000 步</span></li><li><span>時鐘撥快 1 小時</span></li></ul>
+  <div class="photos two rv">
+    <figure><div class="ph"><img loading="lazy" src="img/4b31bd.jpg" alt="國際鐵橋葡萄牙這一側的石造橋墩"></div><figcaption>葡萄牙這一側。鐵橋的影子落在石牆上，像在跟我道別。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/305b78.jpg" alt="橋面上畫著葡萄牙與西班牙國界線，兩雙腳分站兩邊"></div><figcaption>一隻腳在葡萄牙，一隻腳在西班牙。腳下的線那麼細，時間卻在這裡差了一個小時。</figcaption></figure>
+  </div>
+  <div class="photos one rv">
+    <figure><div class="ph"><img loading="lazy" src="img/683285.jpg" alt="過橋後西班牙加利西亞的藍色路牌"></div><figcaption>西班牙到了！加利西亞的藍色路牌在陽光裡發亮。倒數，最後的 118 公里。</figcaption></figure>
+  </div>
+  <div class="note rv">
+    <p>跨過米尼奧河便是加利西亞，從古老的要塞大教堂啟程，倒數最後的 118 公里。</p>
+    <p>行走在圖伊-瓦倫薩國際大橋，內心也有著些悸動。就是這樣的自然，只有一條河，一條橋，沒有邊界的國度，只需克服一小時的時差，一點點語言差異。</p>
+    <p>我們又更接近 Santiago 囉！</p>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p><b>圖伊-瓦倫薩國際大橋</b>1886 年完工，是一座雙層金屬桁架橋：上層通火車，下層走汽車與行人。從瓦倫薩古城走到圖伊市區只要三公里。</p>
+    <p><b>圖伊主教座堂</b>建於 12 世紀，外觀像一座城堡，有雉堞、有塔樓——它同時是教堂，也是守衛邊境的要塞。從這裡到聖地牙哥約 118 公里，超過了領取朝聖證書所需的「最後 100 公里」，所以很多人從圖伊開始走。</p>
+  </div>
+</section>
+
+<section class="chapter rv">
+  <p class="label">第二章</p>
+  <h2>西班牙加利西亞</h2>
+  <p>語言換了，時間快了一小時，路牌變成藍底黃扇貝。森林更深，海灣更近，石頭十字架一座接一座。</p>
+</section>
+
+<!-- ===== Day 9 ===== -->
+<section class="day night" data-day="9" id="d9">
+  <div class="day-head"><span class="dnum">09</span><span class="ddate">9/18（五）</span></div>
+  <h3>滿天星斗下出發</h3>
+  <p class="route"><b>圖伊</b> → 步行至 <b>O Porriño</b> →（公車＋火車）→ <b>雷東德拉 Redondela</b></p>
+  <ul class="stats"><li><span>步行約 18 km</span></li><li><span>32,000 步</span></li><li><span>7:20 出發</span></li></ul>
+  <div class="note rv">
+    <p>一早 5:30 不情願地起床，在私立庇護所完成出發前的所有儀式。7:20 從 Tui 出發，天空仍是滿天晶鑽般的星斗，寶藍的天空下是白牆紅瓦的夢。</p>
+    <p>背包的手電筒在闇黑的森林裡果然就是帥，一路都是 Buen Camino! 的招呼聲，還遇到開民防車的義警特別為我們蓋章。</p>
+    <p>11:20 走到 O Porriño，約 18 公里。然後前往 Redondela 的火車居然停駛，坐上不按行車時間的 Monbus，順利到 Vigo，再等 Renfe 一站到 Redondela！</p>
+  </div>
+  <div class="photos two rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day09-1.jpg" alt="天還沒亮的圖伊石屋街道，路燈亮著"></div><figcaption>七點二十分，圖伊還在睡。寶藍的天空下，路燈把石牆照成金色——「白牆紅瓦的夢」還沒醒，我們已經上路。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/day09-2.jpg" alt="粉紅色晨曦下，藍底朝聖者與扇貝的路牌指向右方"></div><figcaption>天空慢慢染成粉紅。藍色路牌上的朝聖者拄著杖，扇貝和箭頭說：往這裡走。</figcaption></figure>
+  </div>
+  <div class="photos two rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day09-3.jpg" alt="一群揹背包的朝聖者沿著林間公路邊前進"></div><figcaption>清晨的公路邊，朝聖者一個接一個。互道一聲 Buen Camino，就是一整天的力氣。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/day09-4.jpg" alt="森林小徑旁兩位加利西亞風笛手在演奏"></div><figcaption>森林裡忽然響起風笛。兩位加利西亞樂手站在路邊，用凱爾特的聲音，為走過的每一個人送行。</figcaption></figure>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p><b>雷東德拉</b>是葡萄牙之路中央線與海岸線的匯合點，從這裡開始，兩條路上的朝聖者走在一起，路上一下子熱鬧起來。</p>
+    <p>小鎮被兩座 19 世紀的巨大鐵路高架橋橫跨，被稱為「高架橋之鎮」。鎮旁就是維哥灣（Ría de Vigo）最深處，聖西蒙島就在不遠的海面上。</p>
+  </div>
+</section>
+
+<!-- ===== Day 10 ===== -->
+<section class="day" data-day="10" id="d10">
+  <div class="day-head"><span class="dnum">10</span><span class="ddate">9/19（六）</span></div>
+  <h3>仆街，與陌生人的溫柔</h3>
+  <p class="route"><b>雷東德拉</b> → Arcade → 蓬特桑帕約古橋 → <b>龐特韋德拉 Pontevedra</b></p>
+  <ul class="stats"><li><span>24.3 km</span></li><li><span>40,000 步</span></li><li><span>7:25 – 14:25</span></li><li><span>爬升約 450 m</span></li></ul>
+  <div class="photos one tall rv">
+    <figure><div class="ph"><img loading="lazy" src="img/3650ec.jpg" alt="Arcade 的 Lameiriñas 庇護所入口"></div><figcaption>路過 Arcade 的庇護所。門上寫著 26 個床位——每一張床，都曾接住一個走累的人。</figcaption></figure>
+  </div>
+  <div class="note rv">
+    <p>沿途依然不時入密林、臨溪澗，有山有河有古橋，還有大大小小泥塘，上上下下幾乎都是卵石古道，今天還沿著美麗晶藍色的維哥灣爬升 400！</p>
+    <p>中途休息時，我想剩下的是一路微平坦的卵石路，換上了涼鞋。沒想到，突然一個踉蹌，我仆了街。還好前有小包、小肚、護膝保護，立馬四周圍來幾位朝聖者熱切地關心，還為我撲去塵埃，卻也害我的神隊友急哭了，深怕我受傷。</p>
+    <p>還好沒事，不然的話，我的神隊友就要背我下山啦！</p>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p><b>蓬特桑帕約橋</b>橫跨維杜戈河，是中世紀的石橋。1809 年拿破崙戰爭時，加利西亞的民兵就在這座橋上擊退了法軍，當地至今仍以這場戰役為榮。</p>
+    <p>終點<b>龐特韋德拉</b>的老城，有一座外形像扇貝的教堂——<b>朝聖聖母堂（Santuario da Virxe Peregrina）</b>，供奉穿著朝聖者斗篷的聖母，是整個省的守護者。這天晚上，老城廣場正好在辦「Somos Música」街頭音樂節，舞台上一頭巨大的乳牛，是加利西亞最受歡迎的兒童樂團吉祥物。</p>
+  </div>
+</section>
+
+<section class="chapter rv">
+  <p class="label">第三章</p>
+  <h2>靈性線：轉一個彎，路變陡，心變靜</h2>
+  <p>從龐特韋德拉離開主線，向西轉進山林、修道院與海灣。這條路被稱為「大魔王」，也被稱為最美的一段。</p>
+</section>
+
+<!-- ===== Day 11 ===== -->
+<section class="day alt" data-day="11" id="d11">
+  <div class="day-head"><span class="dnum">11</span><span class="ddate">9/20（日）</span></div>
+  <h3>緊緊抱著自己的意志</h3>
+  <p class="route"><b>龐特韋德拉</b> → 海邊小鎮 <b>Combarro</b> → 山頂 → <b>阿爾門泰拉 Armenteira</b></p>
+  <ul class="stats"><li><span>18.1 km</span></li><li><span>32,100 步</span></li><li><span>海拔約 300 m 的修道院山城</span></li></ul>
+  <div class="photos one rv">
+    <figure><div class="ph"><img loading="lazy" src="img/294108.jpg" alt="寫著 VARIANTE ESPIRITUAL 的靈性線路標，上面坐著熊娃"></div><figcaption>VARIANTE ESPIRITUAL。從這裡轉彎，路變陡，心卻慢慢靜下來。</figcaption></figure>
+  </div>
+  <div class="note rv">
+    <p>自從昨天上演仆街，神隊友一直安慰我說可以在 Combarro 中繼小鎮叫 taxi，不然之後就只能一路爬到山頂，再陡降 Armenteira。但是我內心的 echo 仍與左膝內側不停打架。</p>
+    <p>「我只有緊緊抱著自己的意志，並與疼痛並存，才能繼續走下去。」</p>
+    <p>接下來的路程就是一直上升然後轉彎，然後 again、again，只好繼續告訴自己：今天只有一個山頂，up–up，撐過就好了！只要回頭，就能俯瞰整個波光粼粼的龐特韋德拉灣。</p>
+    <p>山裡不時聞到一股非常迷人、清香的氣味，是漫山遍野的尤加利樹。清晨有露水、或剛下過微雨時，空氣中會瀰漫著一股濃郁的森林精油味。</p>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p><b>Combarro</b> 的海邊，排著一整排古老的石造高腳糧倉<b>Hórreo</b>：用石柱架高、四周留著通風石縫，是為了對付加利西亞潮濕的氣候和老鼠。屋頂兩端常立著小十字架，祈求收成平安。</p>
+    <p><b>阿爾門泰拉修道院</b>建於 12 世紀。傳說創建者聖埃羅（San Ero）有一天在林中聽一隻鳥唱歌，聽得出神，回到修道院時才發現已經過了三百年——天堂的一刻，就是人間的三百年。</p>
+  </div>
+</section>
+
+<!-- ===== Day 12 ===== -->
+<section class="day" data-day="12" id="d12">
+  <div class="day-head"><span class="dnum">12</span><span class="ddate">9/21（一）</span></div>
+  <h3>石與水，彎彎曲曲的人生</h3>
+  <p class="route"><b>阿爾門泰拉</b> → 石與水之路 → 烏米亞河谷 → <b>維拉諾瓦德阿魯薩 Vilanova de Arousa</b></p>
+  <ul class="stats"><li><span>25.1 km</span></li><li><span>41,000 步</span></li><li><span>先下坡、後平緩、再起伏</span></li></ul>
+  <div class="note rv">
+    <p>這段路雖說爬升度不高，但是今天實在是太誇張的累累累。明明 Google Maps 直接切好正確方向，靈性線的路就是非常坎坷曲折地帶著你往反方向轉，轉到你厭世！</p>
+    <p>靈性線的核心精神，就是要不停感受蜿蜒曲折的人生，在一條河流的沿岸與石頭堆疊的時間長廊裡考驗自己。這就是你必須走下去、無法放棄的人生！</p>
+    <p>所以明天，原地踏步，休息一天囉！</p>
+  </div>
+  <div class="photos two rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day12-1.jpg" alt="熊娃坐在 Variante Espiritual 路標柱上，黃箭頭指向森林小徑"></div><figcaption>天剛亮，熊娃坐上靈性線的路標。黃箭頭指著前方：今天的路，彎彎曲曲。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/day12-2.jpg" alt="尤加利樹與蕨類夾道的碎石林道"></div><figcaption>尤加利樹高高地站著，蕨類擠滿路邊。清晨的林道，安靜得只聽見自己的腳步。</figcaption></figure>
+  </div>
+  <div class="photos two wide rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day12-3.jpg" alt="石與水之路的地圖看板，沿著阿爾門泰拉河標出 33 座水磨坊"></div><figcaption>看板上的阿爾門泰拉河，沿岸標了 33 座水磨坊。原來，我們要一座一座走過去。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/day12-4.jpg" alt="Molinos de Agua 解說看板，說明水磨坊的運作方式"></div><figcaption>水從河裡引來，推動石磨，把穀物磨成麵粉。從前山裡人家的日子，就靠這一圈一圈的轉動。</figcaption></figure>
+  </div>
+  <div class="photos one rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day12-5.jpg" alt="蕨類與長滿青苔的樹之間流過的山溪，遠處朝聖者走過水磨坊"></div><figcaption>溪水在石頭間輕輕唱，青苔爬滿樹幹。遠處的朝聖者經過水磨坊——這就是「石與水之路」。</figcaption></figure>
+  </div>
+  <div class="photos two rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day12-6.jpg" alt="朝聖者們走過石造水磨坊前的林間小徑"></div><figcaption>大家拄著登山杖，從老磨坊前走過。石頭屋子不說話，只是看著一代又一代的人經過。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/day12-7.jpg" alt="被藤蔓與蕨類覆蓋的老水磨坊，前方是解說牌"></div><figcaption>被藤蔓蓋住的老磨坊，屋頂長出了綠色。時間在這裡，也慢慢長出了青苔。</figcaption></figure>
+  </div>
+  <div class="photos one rv">
+    <figure><div class="ph"><img loading="lazy" src="img/day12-8.jpg" alt="路邊的石造高腳糧倉 Hórreo，屋頂立著十字架，旁邊是長長的木欄影子"></div><figcaption>走出森林，回到人間。路邊的石造糧倉頂著十字架，影子拉得好長——快到海邊了，也快走不動了。</figcaption></figure>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p><b>石與水之路（Ruta da Pedra e da Auga）</b>沿著阿爾門泰拉河往下走，沿途佈滿被青苔與蕨類覆蓋的古老石造水磨坊（Muíños）。從前山裡的人家就靠這些水磨坊把玉米、黑麥磨成粉，做加利西亞人每天吃的大麵包。</p>
+    <p>出了森林就是<b>烏米亞河谷</b>，一片接一片的葡萄園，這裡是加利西亞白酒 <b>Albariño</b> 的核心產區，屬於「下海灣」（Rías Baixas）產區。</p>
+  </div>
+</section>
+
+<!-- ===== Day 13 ===== -->
+<section class="day alt" data-day="13" id="d13">
+  <div class="day-head"><span class="dnum">13</span><span class="ddate">9/22（二）· 停留</span></div>
+  <h3>出來玩，就是要長知識</h3>
+  <p class="route">留在 <b>維拉諾瓦德阿魯薩</b>，原地踏步</p>
+  <ul class="stats"><li><span>3.2 km</span></li><li><span>6,000 步</span></li></ul>
+  <div class="photos one wide rv">
+    <figure><div class="ph"><img loading="lazy" src="img/7b9ad8.jpg" alt="私立住宿的雙人房，床上放著朝聖背包"></div><figcaption>停下來的一天。背包終於可以躺著，我也是。</figcaption></figure>
+  </div>
+  <div class="note rv">
+    <p>終於吃到安恆老師課堂分享的海鮮盛品——竹蟶（navajas）！一盤時價 12 顆 20 歐元，真的鮮美多汁，吮指回味樂無窮！</p>
+    <p>就在住處不遠，有座西班牙文學家的故居，下午開放時間居然是 17:30–21:00。</p>
+    <p>今天還在 Froiz 超市買了另類的「朝聖者聖品」：助消化茶包。甘菊、茴香和薄荷，真的好喝！</p>
+    <p>明天，將要踏上靈性之路的水路，朝聖旅程也將接近尾聲了。</p>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p>維拉諾瓦是<b>巴列-因克蘭（Ramón del Valle-Inclán，1866–1936）</b>的出生地。他是西班牙「98 世代」的代表作家——1898 年西班牙在美西戰爭失去最後的海外殖民地，這一代作家對國家的歷史與前途做了深刻的集體反思。</p>
+    <p>他的故居博物館又叫 Casa do Cuadrante，是一座傳統的加利西亞石造莊園；門前的街名「Luces de Bohemia」，正是致敬他的劇本《波希米亞之光》——一位盲眼詩人在馬德里黑夜裡的漫遊，像哈哈鏡一樣照出社會的荒謬。</p>
+  </div>
+</section>
+
+<section class="chapter boat rv">
+  <p class="label">第四章</p>
+  <h2>水路：跟著聖雅各的船</h2>
+  <p>傳說聖雅各殉道後，門徒用一艘石船載著他的遺體，從耶路撒冷漂過地中海、繞過伊比利半島，駛進阿羅薩灣、溯烏拉河而上。我們搭的，就是這條水路。</p>
+</section>
+
+<!-- ===== Day 14 ===== -->
+<section class="day" data-day="14" id="d14">
+  <div class="day-head"><span class="dnum">14</span><span class="ddate">9/23（三）</span></div>
+  <h3>海上十字架之路</h3>
+  <p class="route"><b>維拉諾瓦德阿魯薩</b> →（Traslatio 船行）→ <b>Pontecesures</b> → <b>帕德龍 Padrón</b></p>
+  <ul class="stats"><li><span>船行 28 km</span></li><li><span>步行 11 km</span></li><li><span>18,400 步</span></li><li><span>10:00 開船</span></li></ul>
+  <div class="photos one rv">
+    <figure><div class="ph"><img loading="lazy" src="img/2c5072.jpg" alt="Traslatio 小船航行在平靜的阿羅薩灣"></div><figcaption>清晨的阿羅薩灣靜得像一面鏡子。小船載著我們，滑過傳說中聖雅各遺骨走過的水路。</figcaption></figure>
+  </div>
+  <div class="note rv">
+    <p>今天 10:00 搭乘靈性線的水上航線（Traslatio），一小時多的航程，沿途看到海上的貽貝浮筏，與著名的水上石十字架。</p>
+    <p>在 Pontecesures 碼頭下船，沿著烏拉河朝羅馬大橋的方向走，過橋就立刻重新看到熟悉的黃色箭頭與貝殼標誌，再順著薩爾河走進 Padrón 的舊城。</p>
+    <p>抵達 Padrón 後，前往聖雅各教堂，看祭壇下傳說中當年繫船的那塊石頭！</p>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p>這條船程被稱為世界上唯一的<b>「海上與河上的十字架之路」</b>：沿著阿羅薩灣到烏拉河，岸邊與水中豎立著一座座石十字架，標記聖雅各遺體上岸前走過的路。</p>
+    <p><b>帕德龍</b>的名字來自聖雅各教堂祭壇下那塊石頭<b>「Pedrón」</b>，傳說當年載著聖雅各遺體的船，就繫在這塊石頭上。這裡也是加利西亞最偉大的女詩人<b>羅莎莉婭·德·卡斯特羅（Rosalía de Castro）</b>度過晚年的地方，她的故居就在鎮上。</p>
+    <p>還有一道小菜：<b>帕德龍小青椒</b>，油煎撒鹽，大部分不辣，偶爾一根很辣——當地人說：「有的辣，有的不辣。」</p>
+  </div>
+</section>
+
+<!-- ===== Day 15 ===== -->
+<section class="day alt" data-day="15" id="d15">
+  <div class="day-head"><span class="dnum">15</span><span class="ddate">9/24（四）</span></div>
+  <h3>什麼，才是真正的終點呢？</h3>
+  <p class="route"><b>帕德龍</b>（聖雅各來到西班牙的入口）→ <b>聖地牙哥 Santiago de Compostela</b>（聖雅各安息的聖殿）</p>
+  <ul class="stats"><li><span>11 km</span></li><li><span>19,000 步</span></li><li><span>抵達</span></li></ul>
+  <div class="photos one rv">
+    <figure><div class="ph"><img loading="lazy" src="img/9ec351.jpg" alt="聖地牙哥大教堂與 Obradoiro 廣場，陽光在塔尖上"></div><figcaption>Obradoiro 廣場上，陽光正好落在大教堂的塔尖。走了十五天，原來終點是這樣明亮。</figcaption></figure>
+  </div>
+  <div class="note rv">
+    <p>離開 Padrón 的前一晚和今天早上，天空居然灑落如星子般細微晶亮的甘霖，如此溫柔，我很驚喜。</p>
+    <p>在即將抵達旅程的終點前，上帝賜予我清涼的甘露，也是要我平常心面對我們對最後一天朝聖之路的選擇。這不是一趟爭勝、爭完成的旅程，這是一趟面對自己身心畢竟有限的試煉。</p>
+    <p>什麼才是真正的終點呢？</p>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p>加利西亞有一句古老諺語：「去聖地牙哥朝聖而不去帕德龍，等於只拜訪了僕人，卻忽略了主人。」（Quen vai a Santiago e non vai a Padrón, ou vai de romeiro ou non.）</p>
+    <p>在<b>聖地牙哥大教堂</b>的地下墓室，安放著聖雅各的遺骨。走完最後 100 公里、護照蓋滿章的朝聖者，可以在朝聖者辦公室領取拉丁文的朝聖證書 <b>Compostela</b>。大教堂的巨型香爐 <b>Botafumeiro</b> 在特定彌撒中由八個人拉動，在中殿上方劃出巨大的弧線。</p>
+  </div>
+</section>
+
+<!-- ===== Day 16 ===== -->
+<section class="day" data-day="16" id="d16">
+  <div class="day-head"><span class="dnum">16</span><span class="ddate">9/25（五）· 中秋</span></div>
+  <h3>四個人，終於會合</h3>
+  <p class="route">在 <b>聖地牙哥</b>，和先走海岸線的 A 組重逢</p>
+  <ul class="stats"><li><span>四人重逢</span></li><li><span>大教堂屋頂</span></li><li><span>中秋節</span></li></ul>
+  <div class="photos one tall rv">
+    <figure><div class="ph"><img loading="lazy" src="img/473443.jpg" alt="攤開的朝聖護照，蓋滿一路上各地的印章"></div><figcaption>一格一格的印章，是一天一天的腳印。翻開護照，這條路又重新走了一遍。</figcaption></figure>
+  </div>
+  <div class="note rv">
+    <p>四個人從同學開始認識，每週一次的課程結束後，就會到薩莉亞複習加吃飯。去年開始計劃，今年八月底，兩人 A 組先行出發，走葡萄牙之路海岸線；九月二日，我們兩人 B 組再跟著前進馬德里。相約九月二十四日，聖地牙哥大教堂見！</p>
+    <p>每天透過雲端視訊，四個人彷彿一起走過艱辛和美好的步行時光。今天，四人終於一起遊歷大教堂。10:00 的「塔頂」參觀，居然是拾級而上，走在大教堂最頂層外斜斜的石造屋頂上！</p>
+    <p>今天是中秋佳節，我們買了圓圓的「朝聖者派」一起慶祝，也一起相約：9/30，Salamanca 見。</p>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p>大教堂裡的<b>榮耀之門（Pórtico da Gloria）</b>由馬特奧大師在 12 世紀主持創作，三座石拱門刻滿兩百多尊聖經人物與末日審判群像，被譽為羅曼式雕刻的最高傑作。</p>
+    <p>「朝聖者派」其實是<b>聖雅各蛋糕（Tarta de Santiago）</b>：杏仁粉、蛋和糖做的紮實蛋糕，表面用糖粉印出聖雅各十字。相傳中世紀的朝聖者抵達終點後，會得到一塊這樣的蛋糕補充體力——就像我們的月餅，圓圓的，象徵圓滿。</p>
+  </div>
+</section>
+
+<section class="chapter end rv">
+  <p class="label">終章</p>
+  <h2>死亡海岸：走到世界的盡頭</h2>
+  <p>聖地牙哥不是最後一站。中世紀的朝聖者會繼續往西，走到陸地的盡頭，看太陽沉進大海。</p>
+</section>
+
+<!-- ===== Day 17 ===== -->
+<section class="day night" data-day="17" id="d17">
+  <div class="day-head"><span class="dnum">17</span><span class="ddate">9/26（六）</span></div>
+  <h3>目送夕陽向大海死去</h3>
+  <p class="route"><b>聖地牙哥</b> →（Monbus 沿海岸線 2 小時）→ <b>菲斯特雷 Fisterra</b> → 燈塔 0 km</p>
+  <ul class="stats"><li><span>公車 2 小時</span></li><li><span>步行約 3 km 到燈塔</span></li><li><span>日落約 20:20</span></li></ul>
+  <div class="photos two rv">
+    <figure><div class="ph"><img loading="lazy" src="img/85ea47.jpg" alt="Fisterra 懸崖上的銅靴雕塑與夕陽"></div><figcaption>懸崖上的銅靴，替所有走累的腳望著大海。太陽在這裡死去，也在這裡被記得。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/c5b67f.jpg" alt="海邊木桿上掛滿朝聖者留下的鞋子"></div><figcaption>朝聖者把舊鞋留在這裡。讓舊的我留下，新的我回家。</figcaption></figure>
+  </div>
+  <div class="photos two wide rv">
+    <figure><div class="ph"><img loading="lazy" src="img/851d8f.jpg" alt="開往 Fisterra 的 Monbus 公車"></div><figcaption>車頭寫著 Fisterra。神話裡的地方，原來兩小時就到。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/42fce9.jpg" alt="沙灘上攤開的朝聖護照與扇貝"></div><figcaption>在世界盡頭的沙灘上，攤開護照與扇貝。零公里，原來不是結束。</figcaption></figure>
+  </div>
+  <div class="note rv">
+    <p>今天前往的地方，是讀神話傳說時極為神往的地方。從港口出發，閒步三公里左右便到達 Faro de Fisterra，是世界的盡頭，也是朝聖之路真正的 0K 之處！</p>
+    <p>站在世界盡頭層疊的岩石上，北大西洋一覽無遺，目送夕陽西落向大海死去。甫目送死去的夕陽，不到一分鐘，不遠處一輪明月高掛天空，海面波光粼粼。</p>
+    <p>時間的輪迴，就是如此自然簡單。</p>
+    <p>靈魂的重生，也可以如此日落月昇嗎？</p>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p><b>Fisterra</b> 來自拉丁文 Finis Terrae，「大地的盡頭」。古羅馬人把眼前這片海叫作<b>黑暗之海（Mare Tenebrosum）</b>；凱爾特人相信，人死後靈魂會順著夕陽一路向西，從這裡的懸崖出發，渡海前往西方的永生之島。</p>
+    <p>傳說費霍山（Monte Facho）頂曾有一座太陽神壇 <b>Ara Solis</b>。基督教傳入後，這個異教的「世界盡頭」被編進朝聖的故事：朝聖者在海邊焚燒舊衣與舊鞋，讓舊我死去，迎向新生。燈塔旁那塊 <b>0,000 km</b> 的里程碑，就是朝聖之路最後一個數字。</p>
+  </div>
+</section>
+
+<!-- ===== Day 18 ===== -->
+<section class="day alt" data-day="18" id="d18">
+  <div class="day-head"><span class="dnum">18</span><span class="ddate">9/27（日）</span></div>
+  <h3>Muxía，一個完美的分號</h3>
+  <p class="route"><b>菲斯特雷</b> →（Monbus）→ <b>穆希亞 Muxía</b> → 回菲斯特雷</p>
+  <ul class="stats"><li><span>公車往返</span></li><li><span>雨・霧・冷冽</span></li></ul>
+  <div class="photos one tall rv">
+    <figure><div class="ph"><img loading="lazy" src="img/7ea5b3.jpg" alt="雨霧中 Muxía 巨石上的海濱聖母聖殿"></div><figcaption>雨中的 Muxía。聖殿蹲在巨石上，像一位守著海的母親，不說話，只是等。</figcaption></figure>
+  </div>
+  <div class="note rv">
+    <p>來到 Muxía，雨微微地飄著，朝聖之路上無所畏懼的陽光不知去了哪裡？</p>
+    <p>從三兩停泊小船的港邊，我鑽進小鎮窄窄又曲折的巷弄，不久之後看到了不停打在巨石上的海浪，沿高峻山勢而上，有一座素樸的修道院。這裡也是海角，我想起了蘇格蘭高地，好冷冽而孤絕的小鎮。</p>
+    <p>如果把 Fisterra 比作一場盛大旅程的驚嘆號，熱烈、壯闊、面向大眾，那麼 Muxía，就是一個完美的分號——貼近自然與內心的最深處，冷冽、安靜而神祕。</p>
+    <p>雨有些冷，躲進餐廳吃了一盤布拉塔起司番茄沙拉。此刻正是西班牙人的午餐，卻是我的下午茶。真的是人間美味！</p>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p><b>海濱聖母聖殿（Santuario da Virxe da Barca）</b>的名字來自一則傳說：聖母曾乘著一艘石船來到這片海岸，鼓勵在此傳教受挫的聖雅各。聖殿周圍的巨石，被當地人視為石船的遺蹟——傳說只有心靈純潔的人站上去，<b>Abalar 搖晃石</b>才會晃動；從<b>Cadrís 石</b>下方爬過，能治好筋骨痠痛。</p>
+    <p>Muxía 所在的海岸叫<b>死亡海岸（Costa da Morte）</b>，暗礁與濃霧讓無數船隻在此沉沒。2002 年威望號油輪在外海斷裂，原油重創海岸；岸邊那座從中裂開的巨石雕塑<b>《傷口》（A Ferida）</b>，就是為了記住這場浩劫。</p>
+  </div>
+</section>
+
+<!-- ===== Day 19 ===== -->
+<section class="day" data-day="19" id="d19">
+  <div class="day-head"><span class="dnum">19</span><span class="ddate">9/28（一）</span></div>
+  <h3>Buen Camino，妳還在路上哦</h3>
+  <p class="route">在 <b>菲斯特雷</b>，葡萄牙之路的最後一晚</p>
+  <ul class="stats"><li><span>閒步海邊</span></li><li><span>陣風 6–7 級警報</span></li></ul>
+  <div class="photos one rv">
+    <figure><div class="ph"><img loading="lazy" src="img/584948.jpg" alt="海灘上低飛的海鷗與遠方的山"></div><figcaption>海鷗低低地飛，手機傳來明天陣風 6–7 級的警報。一個季節悄悄離去，多雨的秋天來了。</figcaption></figure>
+  </div>
+  <div class="photos three rv">
+    <figure><div class="ph"><img loading="lazy" src="img/e3a80e.jpg" alt="木盤上的加利西亞章魚，和一整盤扇貝"></div><figcaption>章魚撒上紅椒粉，扇貝躺在扇貝形的盤子裡。一口下去，朝聖者被打回紅塵，幸福得剛剛好。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/b8185f.jpg" alt="港邊的鐵線人像雕塑與詩句"></div><figcaption>港邊的鐵線人像，望著海。加利西亞人一個個走了，愛留在港口。</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/6e6f19.jpg" alt="印著扇貝、黃箭頭、腳印與三螺旋圖案的帽 T"></div><figcaption>扇貝、箭頭、腳印、三螺旋——我把這條路，穿在身上帶回家。</figcaption></figure>
+  </div>
+  <div class="note rv">
+    <p>日子像哥倫布發現新大陸，新的地圖裡有自己的新發現和新領悟。其實，日子不管活在哪片土地上，地圖裡的自己仍可以擁有 Buen Camino 的祝福，只要仍然告訴自己：「我還記得背包背上的悸動和勇氣！」</p>
+    <p>雖然閒步一日的 Fisterra，但是身邊經過的，仍是風塵僕僕在路上的旅人，彷彿提醒著自己：「Buen Camino！妳還在路上哦！」</p>
+  </div>
+  <div class="culture rv">
+    <h4>風土民情</h4>
+    <p>一路上不時出現的<b>石十字架（Cruceiro）</b>，兩面雕的不一樣：面向內陸的一面是受難的基督，面向大海的一面是慈悲安慰的聖母。一面是苦難，一面是撫慰，讓出海的人和走路的人，不管往哪個方向，都能得到祝福。</p>
+    <p>加利西亞多山多雨，歷史上「無人不遠行」，無數人渡海去古巴、阿根廷討生活。羅莎莉婭·德·卡斯特羅寫下：「這個走了，那個也走了，全部、全部都走了。」——這份離鄉的思念，加利西亞語叫 <b>Saudade</b>。</p>
+    <p>到處可見的<b>三螺旋（Triskele）</b>是凱爾特符號，三個相連的漩渦代表過去、現在與未來，也提醒著：加利西亞和蘇格蘭、愛爾蘭一樣，有凱爾特的根，也一樣吹風笛。</p>
+  </div>
+</section>
+
+</div><!-- /story -->
+
+
+</div><!-- /journey -->
+
+<section class="epi">
+  <div style="max-width:780px;margin:0 auto">
+    <p class="label">尾聲</p>
+    <blockquote class="rv">「這不是一趟爭勝、爭完成的旅程，<br>這是一趟面對自己身心畢竟有限的試煉。」</blockquote>
+    <div class="photos two wide rv">
+      <figure><div class="ph"><img loading="lazy" src="img/885c76.jpg" alt="擠滿旅客的聖地牙哥火車站大廳"></div><figcaption>9/29，回馬德里。車站擠滿了人，每個人都背著自己的路。</figcaption></figure>
+      <figure><div class="ph"><img loading="lazy" src="img/cdc3ca.jpg" alt="聖地牙哥火車站月台上的修女與朝聖者"></div><figcaption>修女、朝聖者和行李，在月台上各自踏上下一段路。</figcaption></figure>
+    </div>
+    <div class="note rv" style="margin-top:30px">
+      <p>Camino de Santiago 是一段值得紀念的旅程。第一次如此長途、長時間的徒步旅行，約 7 公斤背包，沒有寄送行李（有偷吃步坐車從 O Porriño 到 Redondela，以及 Padrón 到 Santiago）。</p>
+      <p>一路平安。每天的日子只想著吃、睡、走、洗、曬衣服，聽到的都是朝聖者互道的祝福：Buen Camino！</p>
+    </div>
+    <div class="harvest rv">
+      <h3 class="serif">我的收穫</h3>
+      <div class="hv">
+        <div><b>出發前，我以為</b><p>這會是一趟靈魂拷問、一定要走完全程的苦行。</p></div>
+        <div><b>路上，我學會</b><p>「這不是一趟爭勝爭完成的旅程，這是一趟面對自己身心畢竟有限的試鍊。」</p></div>
+        <div><b>人與人之間</b><p>跌倒時圍上來的陌生人、急哭的神隊友、多給兩塊麵包的老闆、森林裡吹風笛的樂手——一路都是 Buen Camino。</p></div>
+        <div><b>意外的禮物</b><p>兩百歲的慶典、佩索亞的詩集、聖地牙哥的中秋、世界盡頭的日落與月昇。</p></div>
+        <div><b>回來之後</b><p>「日子不管活在哪片土地上，地圖裡的自己仍可以擁有 Buen Camino 的祝福，只要仍然告訴自己：我還記得背包背上的悸動和勇氣！」</p></div>
+      </div>
+    </div>
+    <div class="totals rv">
+      <div><b>19</b><span>天（9/10–9/28）</span></div>
+      <div><b>約 230</b><span>公里步行</span></div>
+      <div><b>28</b><span>公里船行</span></div>
+      <div><b>約 38 萬</b><span>步</span></div>
+      <div><b>2</b><span>個國家，1 小時時差</span></div>
+    </div>
+    <p class="serif" style="font-size:20px;line-height:2">謝謝你陪我走完這一趟。<br>不同的風景，同一條心的方向——Buen Camino！</p>
+  </div>
+</section>
+
+<footer>
+  <b>一步一風景，一日一遇見</b>
+  葡萄牙之路朝聖分享會・顧蕙倩<br>
+  文字摘自作者朝聖筆記《0902 啟程兩牙及葡萄牙之路》・配樂：原創曲〈黃箭頭〉<br>
+  地圖海岸線與國界：Natural Earth（公有領域）・路線為示意<br>
+  <a href="../" style="color:#f2b632">← 回作品集首頁</a>
+</footer>
+
+<nav class="daynav" id="daynav" aria-label="跳到某一天"></nav>
+
+<div class="ctrl">
+  <button type="button" id="tour" aria-pressed="false"><span class="ic" aria-hidden="true">▶</span><span class="lbl">自動導覽</span></button>
+  <button type="button" id="bgm" aria-pressed="false"><span class="ic" aria-hidden="true">♪</span><span class="lbl">配樂〈黃箭頭〉</span></button>
+</div>
+<audio id="bgmAudio" loop preload="none">
+  <source src="../camino/media/2fd285135f3e7fdaa27f1cde69448e2b.mp4" type="audio/mp4">
+  <source src="../camino/media/40ac67a61caac65f0258f71810726ef9.webm" type="audio/webm">
+</audio>
+
+<div class="lb" id="lb" role="dialog" aria-label="照片"><img alt=""><p></p></div>
+
+<script>
+const GEO = {"bbox":[-9.75,40.85,-7.55,43.25],"land":[[[[-7.55,43.25],[-7.55,40.85],[-8.6955,40.85],[-8.6551,40.9938],[-8.6553,41.0305],[-8.6671,41.0976],[-8.6661,41.1328],[-8.6483,41.1466],[-8.6483,41.1528],[-8.6858,41.1595],[-8.7052,41.1869],[-8.7184,41.2215],[-8.7372,41.2497],[-8.7323,41.2629],[-8.7346,41.2741],[-8.7401,41.285],[-8.7446,41.2974],[-8.7445,41.3281],[-8.7491,41.3378],[-8.7561,41.3405],[-8.764,41.3613],[-8.7781,41.3793],[-8.7838,41.3939],[-8.7838,41.4061],[-8.7856,41.4349],[-8.7748,41.4683],[-8.7865,41.4911],[-8.7883,41.5118],[-8.7927,41.5258],[-8.7954,41.5426],[-8.8083,41.5729],[-8.8129,41.5954],[-8.8195,41.6119],[-8.8204,41.6301],[-8.8286,41.6482],[-8.8305,41.6716],[-8.8271,41.6828],[-8.8047,41.6893],[-8.7433,41.697],[-8.7259,41.7031],[-8.71,41.7119],[-8.6962,41.722],[-8.8069,41.697],[-8.83,41.6946],[-8.8429,41.6958],[-8.8611,41.7044],[-8.8803,41.7369],[-8.8803,41.7655],[-8.872,41.8106],[-8.8789,41.839],[-8.8747,41.8496],[-8.8675,41.8591],[-8.7966,41.9033],[-8.7628,41.932],[-8.7508,41.969],[-8.762,41.9526],[-8.7771,41.9372],[-8.7954,41.9257],[-8.816,41.9212],[-8.8328,41.914],[-8.8488,41.8995],[-8.8647,41.8889],[-8.8813,41.8933],[-8.8787,41.9071],[-8.8986,42.1018],[-8.8955,42.1191],[-8.8846,42.126],[-8.845,42.1266],[-8.8265,42.1305],[-8.8191,42.1397],[-8.8237,42.1476],[-8.8428,42.1544],[-8.847,42.1608],[-8.842,42.1643],[-8.816,42.1745],[-8.8135,42.1787],[-8.811,42.1881],[-8.8058,42.1975],[-8.7952,42.2017],[-8.7906,42.2045],[-8.772,42.2222],[-8.7196,42.2523],[-8.7065,42.2564],[-8.7019,42.2585],[-8.6699,42.2809],[-8.652,42.2863],[-8.6317,42.2968],[-8.6252,42.3019],[-8.6217,42.3102],[-8.6217,42.3408],[-8.6227,42.3475],[-8.6265,42.3483],[-8.6348,42.3464],[-8.6499,42.3356],[-8.6608,42.3168],[-8.6748,42.299],[-8.6996,42.2912],[-8.7198,42.2876],[-8.7739,42.269],[-8.785,42.2601],[-8.7958,42.2582],[-8.8483,42.261],[-8.8675,42.2564],[-8.8636,42.269],[-8.8534,42.2911],[-8.8533,42.3048],[-8.847,42.3048],[-8.833,42.2891],[-8.8272,42.2967],[-8.8265,42.329],[-8.8285,42.3372],[-8.8307,42.3416],[-8.8273,42.3441],[-8.8129,42.3464],[-8.7769,42.3402],[-8.772,42.3427],[-8.7646,42.3557],[-8.7269,42.3887],[-8.7098,42.4004],[-8.6769,42.4164],[-8.6625,42.4269],[-8.6553,42.4414],[-8.6644,42.438],[-8.6725,42.4384],[-8.6825,42.4414],[-8.6913,42.4406],[-8.6945,42.4396],[-8.6968,42.438],[-8.7188,42.428],[-8.7436,42.4132],[-8.7576,42.4072],[-8.7794,42.4029],[-8.811,42.4007],[-8.8436,42.4037],[-8.8675,42.4147],[-8.8757,42.426],[-8.8802,42.445],[-8.888,42.4556],[-8.9009,42.461],[-8.9355,42.4654],[-8.9426,42.4693],[-8.935,42.4791],[-8.9167,42.4876],[-8.896,42.4939],[-8.8813,42.4966],[-8.869,42.4934],[-8.8608,42.485],[-8.8612,42.4756],[-8.8743,42.4693],[-8.8655,42.465],[-8.8516,42.4608],[-8.837,42.4589],[-8.8265,42.4619],[-8.8225,42.4724],[-8.8252,42.4841],[-8.8251,42.4949],[-8.8129,42.5028],[-8.8252,42.5374],[-8.8265,42.5546],[-8.823,42.5695],[-8.8138,42.5814],[-8.8016,42.5893],[-8.7884,42.5922],[-8.7755,42.6047],[-8.7388,42.6661],[-8.7309,42.6884],[-8.7372,42.6884],[-8.744,42.6724],[-8.7539,42.6569],[-8.7673,42.6452],[-8.785,42.6406],[-8.8038,42.6459],[-8.816,42.6585],[-8.8262,42.6741],[-8.8395,42.6824],[-8.8546,42.6616],[-8.857,42.6491],[-8.847,42.6406],[-8.8688,42.6175],[-8.8805,42.6118],[-8.8948,42.6201],[-8.8895,42.6306],[-8.9034,42.6255],[-8.9364,42.6064],[-8.9222,42.5937],[-8.934,42.5868],[-8.9699,42.5792],[-8.9728,42.5739],[-8.9808,42.5512],[-8.9892,42.5489],[-8.9971,42.5434],[-9.0115,42.5307],[-9.0264,42.5431],[-9.0286,42.5615],[-9.0334,42.5781],[-9.0558,42.5854],[-9.0709,42.5961],[-9.0657,42.6203],[-9.0514,42.6459],[-9.0388,42.6611],[-9.0395,42.673],[-9.0363,42.6879],[-9.0301,42.7077],[-9.0188,42.7198],[-9.014,42.7268],[-9.0063,42.7338],[-8.9945,42.737],[-8.992,42.7391],[-8.9631,42.7513],[-8.9374,42.7778],[-8.9222,42.7881],[-8.8983,42.7923],[-8.8913,42.7993],[-8.8849,42.815],[-8.8877,42.8311],[-8.9084,42.8395],[-8.9126,42.8166],[-8.9281,42.8025],[-8.951,42.7951],[-8.9774,42.7923],[-9.0282,42.7979],[-9.0489,42.7947],[-9.0456,42.778],[-9.0687,42.7597],[-9.0813,42.7548],[-9.1002,42.7575],[-9.1134,42.7661],[-9.1201,42.779],[-9.1255,42.795],[-9.135,42.8128],[-9.1225,42.8126],[-9.1132,42.8164],[-9.1062,42.8233],[-9.1002,42.8333],[-9.1084,42.8448],[-9.1222,42.8518],[-9.1412,42.8574],[-9.1423,42.8653],[-9.1475,42.8786],[-9.1487,42.8845],[-9.1466,42.8884],[-9.1375,42.8961],[-9.135,42.9022],[-9.1337,42.9112],[-9.1345,42.9175],[-9.1414,42.9214],[-9.1586,42.9226],[-9.1679,42.9268],[-9.1835,42.9453],[-9.1959,42.9493],[-9.1959,42.9431],[-9.19,42.9324],[-9.1958,42.9266],[-9.2052,42.9248],[-9.2101,42.9257],[-9.2143,42.939],[-9.2242,42.9402],[-9.2356,42.9349],[-9.2443,42.9288],[-9.2517,42.9202],[-9.2617,42.9002],[-9.2684,42.8913],[-9.2731,42.8933],[-9.2829,42.9166],[-9.292,42.9226],[-9.292,42.9288],[-9.2854,42.9383],[-9.2648,42.9803],[-9.264,42.9865],[-9.2618,42.9945],[-9.2587,43.0024],[-9.2548,43.008],[-9.251,43.0168],[-9.2573,43.0233],[-9.2721,43.0313],[-9.2795,43.055],[-9.2711,43.0605],[-9.2579,43.0609],[-9.2511,43.0698],[-9.2457,43.088],[-9.234,43.0965],[-9.2223,43.1027],[-9.2176,43.1144],[-9.203,43.105],[-9.1898,43.1023],[-9.1768,43.1056],[-9.1623,43.1144],[-9.1569,43.1197],[-9.1542,43.1247],[-9.1503,43.1296],[-9.1412,43.1349],[-9.1331,43.138],[-9.1258,43.1396],[-9.1077,43.1411],[-9.1077,43.1485],[-9.1247,43.1425],[-9.1471,43.1387],[-9.1633,43.1398],[-9.1623,43.1485],[-9.1942,43.1365],[-9.2084,43.1379],[-9.2176,43.1553],[-9.1701,43.1887],[-9.1379,43.2015],[-9.1004,43.1895],[-9.0832,43.1898],[-9.0652,43.1923],[-9.0524,43.1964],[-9.0398,43.2045],[-9.027,43.2102],[-9.0168,43.2239],[-9.0115,43.2388],[-9.0041,43.2388],[-8.9857,43.2269],[-8.959,43.2275],[-8.9325,43.2353],[-8.9153,43.245],[-8.9364,43.2441],[-8.9482,43.25],[-7.55,43.25]]]],"border":[{"n":"","c":[[-8.1913,42.0621],[-8.204,42.0696],[-8.2074,42.0858],[-8.2043,42.1288],[-8.2134,42.144],[-8.2224,42.1536]]},{"n":"","c":[[-8.2224,42.1536],[-8.2523,42.1376],[-8.2707,42.132],[-8.2878,42.1314],[-8.2954,42.1301],[-8.3043,42.1258],[-8.33,42.1084],[-8.3467,42.1017],[-8.5012,42.0831],[-8.52,42.0777],[-8.5544,42.0601],[-8.5728,42.0544],[-8.6094,42.0537],[-8.6269,42.051],[-8.6439,42.0415],[-8.6526,42.0314],[-8.6632,42.0099],[-8.6708,41.9998],[-8.6913,41.9896],[-8.717,41.9838],[-8.7396,41.9751],[-8.7508,41.969]]},{"n":"","c":[[-8.0935,41.8067],[-8.1796,41.8107],[-8.1754,41.8366],[-8.177,41.8498],[-8.1846,41.8577],[-8.2204,41.8682],[-8.2317,41.886],[-8.2302,41.9047],[-8.2207,41.9227],[-8.1821,41.9654],[-8.153,41.9868],[-8.1239,42.0009],[-8.108,42.0109],[-8.0974,42.0235],[-8.0951,42.0409],[-8.1032,42.0558],[-8.1184,42.0669],[-8.1376,42.0729]]},{"n":"","c":[[-8.1376,42.0729],[-8.1584,42.0714],[-8.1762,42.0653],[-8.1913,42.0621]]},{"n":"","c":[[-7.8648,41.8579],[-7.8966,41.8579],[-7.9034,41.8868],[-7.9061,41.9139]]},{"n":"","c":[[-7.9061,41.9139],[-7.9258,41.9082],[-7.9305,41.8967],[-7.9354,41.88],[-7.9448,41.867],[-7.9634,41.8666]]},{"n":"","c":[[-7.5884,41.8242],[-7.6061,41.8255],[-7.6222,41.8323],[-7.6228,41.8417],[-7.6074,41.8732],[-7.6612,41.8749],[-7.6787,41.8813],[-7.7064,41.8963],[-7.722,41.8993]]},{"n":"","c":[[-7.722,41.8993],[-7.7501,41.8884],[-7.8122,41.8771]]},{"n":"","c":[[-7.8122,41.8771],[-7.8392,41.8784]]},{"n":"","c":[[-7.8392,41.8784],[-7.8497,41.8758],[-7.8544,41.8703],[-7.8579,41.8638],[-7.8648,41.8579]]},{"n":"","c":[[-7.9634,41.8666],[-7.9794,41.8686]]},{"n":"","c":[[-7.9794,41.8686],[-7.9936,41.8637],[-8.0059,41.854],[-8.0157,41.8419],[-8.0486,41.8164],[-8.0935,41.8067]]},{"n":"","c":[[-7.5671,41.8266],[-7.5884,41.8242]]}],"rivers":[{"n":"Mio","c":[[-7.5928,43.1433],[-7.6075,43.1271],[-7.6234,43.0866],[-7.617,43.0555],[-7.5947,43.0286]]},{"n":"Mio","c":[[-7.5687,42.8441],[-7.5745,42.8392],[-7.587,42.8306],[-7.5981,42.8207],[-7.6365,42.7742],[-7.6444,42.762],[-7.6536,42.7508],[-7.6658,42.7422],[-7.6792,42.7359],[-7.6807,42.7319],[-7.6822,42.7161],[-7.6849,42.7109],[-7.6899,42.7068],[-7.6981,42.7027],[-7.7188,42.6953],[-7.7235,42.691],[-7.7247,42.6861],[-7.7249,42.6658],[-7.7204,42.6547],[-7.7127,42.6456],[-7.7066,42.6363],[-7.7065,42.6248],[-7.7051,42.6147],[-7.7142,42.6011],[-7.7185,42.5877],[-7.7166,42.5742],[-7.707,42.5609],[-7.7034,42.5591],[-7.6997,42.5589],[-7.6963,42.5576],[-7.6936,42.5527],[-7.6933,42.5476],[-7.6951,42.5436],[-7.7003,42.5361],[-7.7032,42.5266],[-7.7059,42.5075],[-7.7086,42.498],[-7.7127,42.4909],[-7.8302,42.3721],[-7.8524,42.3587],[-7.8795,42.3511],[-7.9097,42.3474],[-8.0081,42.35],[-8.0277,42.3465],[-8.046,42.3393],[-8.0542,42.3334],[-8.0718,42.3124],[-8.0825,42.3049],[-8.1208,42.2868],[-8.1409,42.2695],[-8.1709,42.2251],[-8.189,42.2061],[-8.1832,42.2018],[-8.1689,42.1944],[-8.1641,42.1892],[-8.1629,42.1754],[-8.173,42.1668],[-8.1881,42.1621]]},{"n":"Minho","c":[[-8.1881,42.1621],[-8.2017,42.1603],[-8.2193,42.1558],[-8.253,42.1378],[-8.2713,42.1323],[-8.2884,42.1317],[-8.296,42.1303],[-8.3049,42.126],[-8.3306,42.1087],[-8.3474,42.102],[-8.5018,42.0833],[-8.5206,42.078],[-8.555,42.0603],[-8.5735,42.0547],[-8.6101,42.0539],[-8.6275,42.0513],[-8.6445,42.0417],[-8.6531,42.0317],[-8.6639,42.0101],[-8.6715,42.0001],[-8.6919,41.9898],[-8.7176,41.984],[-8.7402,41.9754],[-8.7508,41.969]]},{"n":"Duero","c":[[-7.5503,41.1827],[-7.5969,41.1778],[-7.639,41.1812]]},{"n":"Duero","c":[[-7.6512,41.1812],[-7.6415,41.1812],[-7.6588,41.18],[-7.6734,41.1743],[-7.7022,41.1593],[-7.7191,41.1547],[-7.738,41.1525],[-7.7572,41.1531],[-7.7742,41.157],[-7.7867,41.1641],[-7.8099,41.1817],[-7.8236,41.1863],[-7.8435,41.1844],[-7.9403,41.1379],[-8.0622,41.1058],[-8.0906,41.1037],[-8.1904,41.1091],[-8.2232,41.1034],[-8.2999,41.0804],[-8.3449,41.0729],[-8.3699,41.0657],[-8.3928,41.0662],[-8.4082,41.0852],[-8.415,41.0852],[-8.4227,41.0688],[-8.4293,41.0621],[-8.4392,41.0633],[-8.5093,41.0908],[-8.5174,41.1019],[-8.525,41.1164],[-8.5583,41.1344],[-8.5658,41.1435],[-8.6479,41.1491]]},{"n":"Sil","c":[[-7.5574,42.4035],[-7.5771,42.4077],[-7.5967,42.4035],[-7.6173,42.4021],[-7.6396,42.413],[-7.6614,42.4278],[-7.6985,42.4416],[-7.7154,42.4512],[-7.7511,42.4521]]}]};
+
+/* ---------- route data (lon, lat) ---------- */
+const P = {
+  porto:[-8.6111,41.1433,'波多','Porto'], povoa:[-8.7605,41.3826,'波瓦-迪瓦爾津','Póvoa de Varzim'], rates:[-8.6425,41.4283,'São Pedro de Rates',''],
+  barcelos:[-8.6151,41.5315,'巴塞盧什','Barcelos'], balugaes:[-8.6050,41.6098,'巴盧加恩斯','Balugães'], lima:[-8.5847,41.7687,'蓬蒂-迪利馬','Ponte de Lima'],
+  rubiaes:[-8.5872,41.8933,'魯比亞埃斯','Rubiães'], valenca:[-8.6444,42.0319,'瓦倫薩','Valença'], tui:[-8.6447,42.0475,'圖伊','Tui'],
+  porrino:[-8.6200,42.1617,'O Porriño',''], vigo:[-8.7226,42.2314,'維哥','Vigo'], redondela:[-8.6094,42.2842,'雷東德拉','Redondela'],
+  arcade:[-8.6118,42.3411,'Arcade',''], pontevedra:[-8.6447,42.4310,'龐特韋德拉','Pontevedra'], combarro:[-8.7061,42.4303,'Combarro',''],
+  armenteira:[-8.7483,42.4925,'阿爾門泰拉','Armenteira'], vilanova:[-8.8273,42.5633,'維拉諾瓦德阿魯薩','Vilanova de Arousa'],
+  cesures:[-8.6536,42.7237,'Pontecesures',''], padron:[-8.6606,42.7383,'帕德龍','Padrón'], santiago:[-8.5446,42.8806,'聖地牙哥','Santiago de Compostela'],
+  fisterra:[-9.2636,42.9076,'菲斯特雷','Fisterra'], faro:[-9.2722,42.8826,'0 km 燈塔',''], muxia:[-9.2170,43.1043,'穆希亞','Muxía']
+};
+const SEG = [
+  {d:1,t:'bus',p:[P.porto,[-8.66,41.25],[-8.73,41.33],P.povoa]},
+  {d:1,t:'walk',p:[P.povoa,[-8.70,41.41],P.rates]},
+  {d:2,t:'walk',p:[P.rates,[-8.632,41.48],P.barcelos]},
+  {d:3,t:'walk',p:[P.barcelos,[-8.612,41.575],P.balugaes]},
+  {d:4,t:'walk',p:[P.balugaes,[-8.60,41.68],[-8.592,41.73],P.lima]},
+  {d:6,t:'walk',p:[P.lima,[-8.58,41.83],[-8.585,41.865],P.rubiaes]},
+  {d:7,t:'walk',p:[P.rubiaes,[-8.60,41.94],[-8.625,41.99],P.valenca]},
+  {d:8,t:'walk',p:[P.valenca,P.tui]},
+  {d:9,t:'walk',p:[P.tui,[-8.63,42.10],P.porrino]},
+  {d:9,t:'bus',p:[P.porrino,[-8.68,42.20],P.vigo,[-8.66,42.26],P.redondela]},
+  {d:10,t:'walk',p:[P.redondela,P.arcade,[-8.6275,42.3530],[-8.635,42.39],P.pontevedra]},
+  {d:11,t:'walk',p:[P.pontevedra,[-8.675,42.425],P.combarro,[-8.72,42.465],P.armenteira]},
+  {d:12,t:'walk',p:[P.armenteira,[-8.758,42.515],[-8.77,42.535],[-8.80,42.55],P.vilanova]},
+  {d:13,t:'walk',p:[P.vilanova,[-8.835,42.575],P.vilanova]},
+  {d:14,t:'boat',p:[[-8.8314,42.5623],[-8.815,42.595],[-8.78,42.62],[-8.745,42.645],[-8.72,42.665],[-8.69,42.69],[-8.665,42.71],P.cesures]},
+  {d:14,t:'walk',p:[P.cesures,P.padron]},
+  {d:15,t:'walk',p:[P.padron,[-8.63,42.78],[-8.59,42.83],P.santiago]},
+  {d:17,t:'bus',p:[P.santiago,[-8.75,42.86],[-8.98,42.90],[-9.188,42.955],[-9.24,42.93],P.fisterra]},
+  {d:17,t:'walk',p:[P.fisterra,[-9.268,42.895],P.faro]},
+  {d:18,t:'bus',p:[P.fisterra,[-9.20,42.96],[-9.16,43.03],[-9.19,43.08],P.muxia]}
+];
+const DAYS = {
+  0:{t:'波多，再次相逢',f:[P.porto],km:0},
+  1:{t:'波多 → 波瓦-迪瓦爾津 → Rates',km:15.7},
+  2:{t:'Rates → 巴塞盧什',km:16},
+  3:{t:'巴塞盧什 → 巴盧加恩斯',km:18},
+  4:{t:'巴盧加恩斯 → 蓬蒂-迪利馬',km:21},
+  5:{t:'停留蓬蒂-迪利馬・新集市節',f:[P.lima],km:0},
+  6:{t:'蓬蒂-迪利馬 → 魯比亞埃斯',km:18},
+  7:{t:'魯比亞埃斯 → 瓦倫薩',km:21.3},
+  8:{t:'瓦倫薩 → 圖伊・跨越國界',km:7,zoomPad:.06},
+  9:{t:'圖伊 → O Porriño → 雷東德拉',km:20},
+  10:{t:'雷東德拉 → 龐特韋德拉',km:24.3},
+  11:{t:'龐特韋德拉 → 阿爾門泰拉',km:18.1},
+  12:{t:'阿爾門泰拉 → 維拉諾瓦德阿魯薩',km:25.1},
+  13:{t:'停留維拉諾瓦德阿魯薩',km:3.2},
+  14:{t:'船行阿羅薩灣 → 帕德龍',km:11},
+  15:{t:'帕德龍 → 聖地牙哥',km:11},
+  16:{t:'聖地牙哥・四人重逢',f:[P.santiago],km:0},
+  17:{t:'聖地牙哥 → 菲斯特雷・世界盡頭',km:0},
+  18:{t:'菲斯特雷 ⇄ 穆希亞',km:0},
+  19:{t:'菲斯特雷・最後一晚',f:[P.fisterra,P.faro],km:0}
+};
+const STOPS = [['porto',0],['povoa',1],['rates',1],['barcelos',2],['balugaes',3],['lima',4],['rubiaes',6],['valenca',7],['tui',8],['porrino',9],['redondela',9],['pontevedra',10],['combarro',11],['armenteira',11],['vilanova',12],['cesures',14],['padron',14],['santiago',15],['fisterra',17],['faro',17],['muxia',18]];
+
+/* ---------- projection ---------- */
+const K = 1000, C = Math.cos(42*Math.PI/180), X0 = -9.75, Y1 = 43.25;
+const px = (lon,lat) => [ (lon - X0)*C*K, (Y1 - lat)*K ];
+const pathOf = (pts, close) => pts.map((p,i)=>{const [x,y]=px(p[0],p[1]);return (i?'L':'M')+x.toFixed(1)+' '+y.toFixed(1)}).join('')+(close?'Z':'');
+const NS='http://www.w3.org/2000/svg';
+const svg=document.getElementById('map');
+const el=(n,a,parent)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);(parent||svg).appendChild(e);return e;};
+
+function drawBase(){
+  const [w,h]=px(-7.55,40.85);
+  el('rect',{x:-500,y:-500,width:w+1000,height:h+1000,fill:'#9cc3d3'});
+  if(GEO){
+    const g=el('g',{});
+    GEO.land.forEach(poly=>{ el('path',{d:poly.map(r=>pathOf(r,true)).join(''),class:'land','fill-rule':'evenodd'},g); });
+    GEO.rivers.forEach(r=>el('path',{d:pathOf(r.c),class:'river'},g));
+    GEO.border.forEach(b=>el('path',{d:pathOf(b.c),class:'border'},g));
+  }
+  const lab=(t,lon,lat,cls,size)=>{const [x,y]=px(lon,lat);const e=el('text',{x,y,class:cls,'font-size':size,'text-anchor':'middle'});e.textContent=t;return e;};
+  lab('大 西 洋',-9.42,41.6,'sea-label',28); lab('PORTUGAL',-8.1,41.35,'country',24); lab('GALICIA · ESPAÑA',-8.05,42.62,'country',22);
+}
+const segEls=[], stopEls=[];
+function drawRoute(){
+  const g=el('g',{});
+  SEG.forEach(s=>{ const e=el('path',{d:pathOf(s.p),class:'seg '+s.t+' todo'},g); e.dataset.d=s.d; segEls.push(e); });
+  const gs=el('g',{});
+  STOPS.forEach(([k,d])=>{ const p=P[k]; const [x,y]=px(p[0],p[1]); const s=el('g',{class:'stop todo'},gs);
+    const c=el('circle',{cx:x,cy:y,r:5},s); const t=el('text',{x:x+9,y:y+4},s); t.textContent=p[2];
+    if(['vilanova','combarro','fisterra','faro','muxia','povoa','vigo'].includes(k)){t.setAttribute('text-anchor','end');t.setAttribute('x',x-9);}
+    stopEls.push({g:s,c,t,d,k}); });
+}
+drawBase(); drawRoute();
+
+/* ---------- viewBox animation ---------- */
+let vb=null, anim=null;
+function setVB(v){vb=v;svg.setAttribute('viewBox',v.map(n=>n.toFixed(1)).join(' '));
+  const s=v[2]/600; const r=svg.style;
+  r.setProperty('--sw1',(1.1*s).toFixed(2)); r.setProperty('--sw2',(2.6*s).toFixed(2)); r.setProperty('--sw3',(3.6*s).toFixed(2));
+  r.setProperty('--dash',`${6*s} ${4*s}`); r.setProperty('--dash2',`${7*s} ${5*s}`); r.setProperty('--dot',`${1*s} ${5*s}`); r.setProperty('--glow',(3*s).toFixed(2)+'px');
+  stopEls.forEach(o=>{o.c.setAttribute('r',(o.g.classList.contains('now')?7:4.5)*s); o.t.setAttribute('font-size',(o.g.classList.contains('now')?16:12.5)*s); o.t.setAttribute('stroke-width',3*s);
+    const x=+o.c.getAttribute('cx'); o.t.setAttribute('x', o.t.getAttribute('text-anchor')==='end'? x-9*s : x+9*s); o.t.setAttribute('y',+o.c.getAttribute('cy')+4.5*s);});
+  svg.querySelectorAll('.sea-label,.country').forEach(t=>{ if(!t.dataset.fs)t.dataset.fs=t.getAttribute('font-size'); t.setAttribute('font-size',t.dataset.fs*s/1.6);});
+}
+function animateVB(to,ms=1100){
+  if(!vb){setVB(to);return;}
+  const from=vb.slice(), t0=performance.now(); cancelAnimationFrame(anim);
+  const ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
+  const step=now=>{const t=Math.min(1,(now-t0)/ms),e=ease(t); setVB(from.map((f,i)=>f+(to[i]-f)*e)); if(t<1)anim=requestAnimationFrame(step);};
+  anim=requestAnimationFrame(step);
+}
+function fit(pts,pad){
+  const xy=pts.map(p=>px(p[0],p[1])); let x0=Math.min(...xy.map(p=>p[0])),x1=Math.max(...xy.map(p=>p[0])),y0=Math.min(...xy.map(p=>p[1])),y1=Math.max(...xy.map(p=>p[1]));
+  const box=svg.getBoundingClientRect(); const ar=(box.width||600)/(box.height||800);
+  let w=Math.max(x1-x0,1),h=Math.max(y1-y0,1); const m=pad*K;
+  w+=2*m; h+=2*m; x0-=m; y0-=m;
+  const lx=Math.max(w*.28,55); x0-=lx; w+=2*lx; // room for place labels
+  if(w/h>ar){const nh=w/ar; y0-=(nh-h)/2; h=nh;} else {const nw=h*ar; x0-=(nw-w)/2; w=nw;}
+  const cardH=Math.min(140,(box.height||800)*.3)/(box.height||800)*h; h+=cardH; // leave room for card
+  return [x0,y0,w,h];
+}
+function dayPts(d){
+  const s=SEG.filter(x=>x.d==d).flatMap(x=>x.p); const f=(DAYS[d].f||[]);
+  const pts=s.concat(f); return pts.length?pts:[P.porto];
+}
+const cum={}; {let c=0; for(let d=0;d<=19;d++){c+=DAYS[d].km||0; cum[d]=c;}}
+const TOTAL=cum[19];
+let active=-1;
+function setDay(d){
+  if(d===active) return; active=d;
+  segEls.forEach(e=>{const sd=+e.dataset.d; e.classList.remove('todo','done','now'); e.classList.add(sd<d?'done':sd==d?'now':'todo');});
+  stopEls.forEach(o=>{const nowSet=new Set(dayPts(d).map(p=>p[2])); const p=P[o.k]; o.g.classList.remove('todo','done','now');
+    o.g.classList.add(nowSet.has(p[2])&&(o.d<=d)?'now':o.d<d?'done':o.d==d?'now':'todo');});
+  const pad=DAYS[d].zoomPad|| (d==0||d==16||d==5?.16: d==19?.07 : .035);
+  animateVB(fit(dayPts(d),pad));
+  document.getElementById('mcD').textContent='DAY '+String(d).padStart(2,'0');
+  document.getElementById('mcT').textContent=DAYS[d].t;
+  document.getElementById('mcP').style.width=(cum[d]/TOTAL*100).toFixed(1)+'%';
+  document.getElementById('mcK').textContent='累計步行 '+(Math.round(cum[d]*10)/10)+' km';
+  document.querySelectorAll('#daynav a').forEach(a=>a.classList.toggle('on',+a.dataset.d===d));
+}
+function overview(){ animateVB(fit(Object.values(P),.08),1); }
+
+/* ---------- scroll tracking ---------- */
+const days=[...document.querySelectorAll('.day')];
+const nav=document.getElementById('daynav');
+days.forEach(s=>{const a=document.createElement('a'); a.href='#'+s.id; a.dataset.d=s.dataset.day; a.setAttribute('aria-label','Day '+s.dataset.day); nav.appendChild(a);});
+function onScroll(){
+  const mid=window.innerHeight*(window.innerWidth<=900?.55:.45); let cur=null;
+  for(const s of days){const r=s.getBoundingClientRect(); if(r.top<=mid) cur=s;}
+  if(cur) setDay(+cur.dataset.day); else if(active!==-2){active=-2; overview(); segEls.forEach(e=>{e.classList.remove('todo','now');e.classList.add('done');}); stopEls.forEach(o=>{o.g.classList.remove('todo','now');o.g.classList.add('done');});}
+}
+let ticking=false; addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(()=>{onScroll();ticking=false;});}},{passive:true});
+addEventListener('resize',()=>{const a=active; active=-9; if(a>=0) setDay(a); else onScroll();});
+overview(); requestAnimationFrame(onScroll);
+
+/* ---------- reveal ---------- */
+const io='IntersectionObserver' in window? new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12}):null;
+document.querySelectorAll('.rv').forEach(x=>io?io.observe(x):x.classList.add('in'));
+
+/* ---------- auto tour ---------- */
+const tourBtn=document.getElementById('tour'); let tourT=null;
+const stopTour=()=>{clearTimeout(tourT);tourT=null;tourBtn.setAttribute('aria-pressed','false');tourBtn.querySelector('.ic').textContent='▶';tourBtn.querySelector('.lbl').textContent='自動導覽';};
+function tourNext(){
+  const i=Math.max(0,days.findIndex(s=>+s.dataset.day===active));
+  const next=active<0?days[0]:days[i+1];
+  if(!next){stopTour();document.querySelector('.epi').scrollIntoView({behavior:'smooth'});return;}
+  next.scrollIntoView({behavior:'smooth',block:'start'}); tourT=setTimeout(tourNext,14000);
+}
+tourBtn.addEventListener('click',()=>{ if(tourT){stopTour();return;} tourBtn.setAttribute('aria-pressed','true'); tourBtn.querySelector('.ic').textContent='❚❚'; tourBtn.querySelector('.lbl').textContent='暫停導覽'; tourNext(); });
+['wheel','touchstart','keydown'].forEach(ev=>addEventListener(ev,e=>{ if(tourT && !(e.target.closest&&e.target.closest('.ctrl'))) stopTour(); },{passive:true}));
+
+/* ---------- music ---------- */
+const bgm=document.getElementById('bgm'), au=document.getElementById('bgmAudio'); au.volume=.55;
+bgm.addEventListener('click',()=>{ if(au.paused){ au.play().catch(()=>{}); } else au.pause(); });
+au.addEventListener('play',()=>bgm.setAttribute('aria-pressed','true'));
+au.addEventListener('pause',()=>bgm.setAttribute('aria-pressed','false'));
+
+/* ---------- lightbox ---------- */
+const lb=document.getElementById('lb'), li=lb.querySelector('img'), lp=lb.querySelector('p');
+document.querySelectorAll('.ph img').forEach(img=>img.parentElement.addEventListener('click',()=>{
+  li.src=img.src; li.alt=img.alt; const cap=img.closest('figure').querySelector('figcaption'); lp.textContent=cap?cap.textContent:''; lb.classList.add('on');}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on');});
+</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../sw.js',{scope:'../'}).catch(function(){});});}</script>
+</body>
+</html>
