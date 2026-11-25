@@ -163,6 +163,14 @@ figcaption{font-family:"Noto Serif TC",serif;font-size:15.5px;line-height:1.85;c
 .harvest .hv>div{border-top:1px solid var(--line);padding:14px 0}
 .harvest .hv b{display:block;color:var(--yellow-d);font-size:14px;letter-spacing:.2em;margin-bottom:4px}
 .harvest .hv p{margin:0;font-family:"Noto Serif TC",serif;font-size:17px;line-height:1.95}
+.papermap{background:#2a211a;color:#f3ead9;padding:110px 24px 100px}
+.pm-in{max-width:1100px;margin:0 auto}
+.papermap h2{font-size:clamp(28px,3.8vw,42px);line-height:1.45;margin:0 0 18px;color:#fff}
+.pm-lead{max-width:760px;color:#d9cfbe;margin:0 0 36px}
+.pm-video video{width:100%;display:block;border-radius:14px;background:#000;box-shadow:0 18px 50px rgba(0,0,0,.45)}
+.pm-poster{max-width:620px;margin:56px auto 0}
+.pm-poster .ph{aspect-ratio:3/4;border-radius:14px;box-shadow:0 18px 50px rgba(0,0,0,.45)}
+.papermap figcaption{color:#cfc4b2;text-align:center}
 footer{background:var(--ink);color:#bdb4a4;padding:50px 24px;text-align:center;font-size:14px;line-height:2}
 footer b{display:block;color:#fff;font-family:"Noto Serif TC",serif;font-size:22px;letter-spacing:.2em;margin-bottom:6px}
 
@@ -173,7 +181,7 @@ footer b{display:block;color:#fff;font-family:"Noto Serif TC",serif;font-size:22
 .ctrl button:focus-visible{outline:2px solid var(--yellow);outline-offset:3px}
 .ctrl .ic{width:26px;height:26px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;color:#2a1d05;font-size:12px}
 .ctrl button[aria-pressed="true"] .ic{background:var(--red);color:#fff}
-.daynav{position:fixed;right:calc(var(--mapw) + 14px);top:50%;transform:translateY(-50%);z-index:20;display:flex;flex-direction:column;gap:5px}
+.daynav{transition:opacity .3s;opacity:0;position:fixed;right:calc(var(--mapw) + 14px);top:50%;transform:translateY(-50%);z-index:20;display:flex;flex-direction:column;gap:5px}
 .daynav a{display:block;width:10px;height:10px;border-radius:50%;background:rgba(34,32,28,.2);transition:all .3s}
 .daynav a.on{background:var(--yellow);transform:scale(1.5);box-shadow:0 0 0 2px rgba(0,0,0,.15)}
 .daynav a:focus-visible{outline:2px solid var(--yellow);outline-offset:2px}
@@ -244,6 +252,18 @@ footer b{display:block;color:#fff;font-family:"Noto Serif TC",serif;font-size:22
     <li><b><span class="sw boat"></span>船行</b>沿著傳說中聖雅各的水路</li>
     <li><b><span class="sw bus"></span>坐車</b>地鐵、公車與火車接駁</li>
   </ul>
+</section>
+
+<section class="papermap" id="papermap">
+  <div class="pm-in">
+    <p class="label">立體紙雕地圖</p>
+    <h2 class="serif">先看一遍整條路</h2>
+    <p class="pm-lead">從波多出發，沿著中央線一路往北，轉進靈性線、坐船經過海上的石十字架，走到聖地牙哥大教堂，最後抵達世界的盡頭——菲斯特雷與穆希亞。</p>
+    <figure class="pm-video rv"><video controls playsinline preload="none" poster="img/papermap-cover.jpg"><source src="img/papermap.mp4" type="video/mp4"></video>
+      <figcaption>動畫：一鏡到底跟著路線走完全程（57 秒，配樂〈黃箭頭〉）</figcaption></figure>
+    <figure class="pm-poster rv"><div class="ph"><img loading="lazy" src="img/papermap-poster.jpg" alt="葡萄牙之路立體紙雕地圖，標出從波多到聖地牙哥、菲斯特雷與穆希亞的路線與地標"></div>
+      <figcaption>靜態紙雕地圖：整條路線與沿途地標，點圖可放大。</figcaption></figure>
+  </div>
 </section>
 
 <div class="journey">
@@ -996,6 +1016,7 @@ days.forEach(s=>{const a=document.createElement('a'); a.href='#'+s.id; a.dataset
 function onScroll(){
   const mid=window.innerHeight*(window.innerWidth<=900?.55:.45); let cur=null;
   for(const s of days){const r=s.getBoundingClientRect(); if(r.top<=mid) cur=s;}
+  const jr=document.querySelector('.journey').getBoundingClientRect();nav.style.opacity=(jr.top<mid&&jr.bottom>mid)?1:0;nav.style.pointerEvents=(jr.top<mid&&jr.bottom>mid)?'auto':'none';
   if(cur) setDay(+cur.dataset.day); else if(active!==-2){active=-2; overview(); segEls.forEach(e=>{e.classList.remove('todo','now');e.classList.add('done');}); stopEls.forEach(o=>{o.g.classList.remove('todo','now');o.g.classList.add('done');});}
 }
 let ticking=false; addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(()=>{onScroll();ticking=false;});}},{passive:true});
