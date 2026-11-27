@@ -2,7 +2,7 @@
 // 網頁：先連網取最新版，連不上時用上次存下的版本。
 // 照片與圖示：看過一次就存起來，之後直接從手機讀取。
 // 音樂與影片：不經過這裡，直接連網播放（避免影響拖曳播放進度）。
-const VERSION = 'v7';
+const VERSION = 'v8';
 const PAGES = 'pages-' + VERSION;
 const MEDIA = 'media-' + VERSION;
 const SHELL = [
@@ -41,7 +41,7 @@ self.addEventListener('fetch', (e) => {
 
   if (req.mode === 'navigate' || req.destination === 'document') {
     e.respondWith(
-      fetch(req)
+      fetch(req.url, { cache: 'no-cache', credentials: 'same-origin' })
         .then((res) => {
           const copy = res.clone();
           caches.open(PAGES).then((c) => c.put(req, copy));
