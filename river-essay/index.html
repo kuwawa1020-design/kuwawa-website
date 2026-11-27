@@ -41,9 +41,9 @@ a{color:inherit}
 .ttl .sub{font-family:"LXGW WenKai TC",serif;font-size:clamp(19px,2.2vw,23px);color:var(--soft);margin:0 0 1.4em}
 .ttl .by{font-size:15px;color:var(--leaf);letter-spacing:.15em;margin:0 0 1.6em}
 .ttl .open{font-family:"LXGW WenKai TC",serif;font-size:clamp(19px,2vw,22px);line-height:1.8;border-inline-start:2px solid var(--leaf);padding-inline-start:1em;margin:0;max-width:22em}
-.sheet{justify-self:center;width:min(100%,420px);aspect-ratio:3/4;filter:drop-shadow(0 18px 30px rgba(20,40,30,.18))}
-.sheet svg{width:100%;height:100%;display:block}
-.cap{grid-column:2;justify-self:center;font-size:13px;color:var(--soft);margin-top:-8px}
+.sheet{justify-self:center;width:min(100%,420px);margin:0}
+.sheet img{width:100%;height:auto;display:block;border-radius:3px;box-shadow:0 18px 40px rgba(20,40,30,.22)}
+.cap{grid-column:2;justify-self:center;font-size:13px;color:var(--soft);margin:-8px 0 0;text-align:center;line-height:1.7}
 /* rail */
 .rail{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
 .rail nav{max-width:720px;margin:0 auto;display:flex;align-items:center;gap:6px;padding:6px max(4vw,14px);overflow-x:auto}
@@ -90,9 +90,9 @@ footer{text-align:center;color:var(--soft);font-size:14px;padding:30px 16px 56px
  .ttl{order:1}
 }
 @media(max-width:600px){body{font-size:16.5px;line-height:1.95}.note{grid-template-columns:repeat(2,minmax(0,1fr))}.names div{grid-template-columns:minmax(0,1fr);gap:2px}}
-.sway{transform-origin:150px 330px;animation:sway 7s ease-in-out infinite alternate}
+.unused-sway{transform-origin:150px 330px;animation:sway 7s ease-in-out infinite alternate}
 @keyframes sway{from{transform:rotate(-1.2deg)}to{transform:rotate(1.2deg)}}
-@media(prefers-reduced-motion:reduce){.sway{animation:none}}
+@media(prefers-reduced-motion:reduce){.unused-sway{animation:none}}
 </style>
 </head>
 <body>
@@ -105,57 +105,8 @@ footer{text-align:center;color:var(--soft);font-size:14px;padding:30px 16px 56px
   <p class="by">作者／攝影　顧蕙倩</p>
   <p class="open">如水般流著，如水般逝去，生而為人，這就是人，你說。</p>
  </div>
- <div class="sheet">
-  <svg viewBox="0 0 300 400" role="img" aria-label="五角金魚藻標本台紙示意繪圖">
-   <rect x="0" y="0" width="300" height="400" fill="var(--paper)"/>
-   <rect x="10" y="10" width="280" height="380" fill="none" stroke="var(--line)"/>
-   <defs>
-    <g id="wh">
-     <path d="M0 0 C6 -6 10 -14 12 -24 M12 -24 C12 -30 10 -34 8 -38 M12 -24 C16 -29 19 -31 22 -34" fill="none" stroke="var(--leaf)" stroke-width="1.3" stroke-linecap="round"/>
-     <circle cx="12.5" cy="-24" r="1" fill="var(--leaf)"/>
-    </g>
-    <g id="whorl">
-     <use href="#wh"/><use href="#wh" transform="scale(-1,1)"/>
-     <use href="#wh" transform="rotate(55)"/><use href="#wh" transform="rotate(-55)"/>
-     <use href="#wh" transform="rotate(110) scale(.85)"/><use href="#wh" transform="rotate(-110) scale(.85)"/>
-     <use href="#wh" transform="rotate(160) scale(.7)"/><use href="#wh" transform="rotate(-160) scale(.7)"/>
-    </g>
-   </defs>
-   <g class="sway">
-    <path d="M150 330 C148 280 156 230 150 180 C146 140 152 100 148 60" fill="none" stroke="var(--leaf)" stroke-width="1.8"/>
-    <path d="M150 250 C170 225 190 205 205 170 C214 150 212 130 220 112" fill="none" stroke="var(--leaf)" stroke-width="1.4"/>
-    <path d="M151 200 C132 182 112 168 100 140 C94 126 96 112 90 98" fill="none" stroke="var(--leaf)" stroke-width="1.4"/>
-    <g transform="translate(150,315)"><use href="#whorl"/></g>
-    <g transform="translate(149,285) scale(.95)"><use href="#whorl"/></g>
-    <g transform="translate(152,255) scale(.95)"><use href="#whorl"/></g>
-    <g transform="translate(150,225) scale(.9)"><use href="#whorl"/></g>
-    <g transform="translate(149,190) scale(.88)"><use href="#whorl"/></g>
-    <g transform="translate(150,155) scale(.82)"><use href="#whorl"/></g>
-    <g transform="translate(149,122) scale(.75)"><use href="#whorl"/></g>
-    <g transform="translate(148,92) scale(.65)"><use href="#whorl"/></g>
-    <g transform="translate(148,66) scale(.5)"><use href="#whorl"/></g>
-    <g transform="translate(180,215) scale(.7)"><use href="#whorl"/></g>
-    <g transform="translate(203,175) scale(.65)"><use href="#whorl"/></g>
-    <g transform="translate(217,125) scale(.5)"><use href="#whorl"/></g>
-    <g transform="translate(122,176) scale(.68)"><use href="#whorl"/></g>
-    <g transform="translate(101,142) scale(.6)"><use href="#whorl"/></g>
-    <g transform="translate(91,104) scale(.48)"><use href="#whorl"/></g>
-   </g>
-   <g stroke="var(--soft)" stroke-width="1.2" opacity=".7"><path d="M138 300 h24 M136 240 h28 M139 160 h22"/></g>
-   <rect x="142" y="318" width="140" height="60" fill="var(--bg)" stroke="var(--line)"/>
-   <g font-family="LXGW WenKai TC,serif" fill="var(--ink)">
-    <text x="149" y="336" font-size="8.6" font-style="italic">Ceratophyllum oryzetorum</text>
-    <text x="149" y="352" font-size="12">五角金魚藻</text>
-    <text x="149" y="369" font-size="9" fill="var(--soft)">臺北盆地・牧野富太郎</text>
-   </g>
-   <g transform="translate(64,350) rotate(-12)">
-    <circle r="26" fill="none" stroke="var(--stamp)" stroke-width="1.6"/>
-    <circle r="21" fill="none" stroke="var(--stamp)" stroke-width=".8"/>
-    <text y="6" text-anchor="middle" font-size="16" font-family="LXGW WenKai TC,serif" fill="var(--stamp)" font-weight="700">1896</text>
-   </g>
-  </svg>
- </div>
- <p class="cap">五角金魚藻標本台紙（示意繪圖）</p>
+ <figure class="sheet"><img src="img/specimen-sheet.jpg" alt="五角金魚藻模式標本台紙，1896 年牧野富太郎採於臺北" width="1110" height="1500"></figure>
+ <p class="cap">五角金魚藻模式標本・1896 年牧野富太郎採於臺北<br>林業試驗所植物標本館典藏</p>
 </header>
 
 <div class="rail"><nav aria-label="章節">
@@ -173,6 +124,7 @@ footer{text-align:center;color:var(--soft);font-size:14px;padding:30px 16px 56px
 <p>但是，生而為人，我想得很多，不解的很多，迷茫得更多。我需要隨著這條河，一次次地追索，找回我，也找回它，那些最初的模樣。</p>
 <p>拼湊出我生而為人，這就是我的模樣。</p>
 <p>第一次走訪五分港溪，是2023年。</p>
+<figure class="ph tall"><img src="img/boardwalk.jpg" alt="綠蔭覆蓋的溪畔木棧道" loading="lazy"><figcaption>溪畔綠蔭下的木棧道</figcaption></figure>
 <p class="lone">那是天與地唯一的連結。</p>
 <figure class="ph tall"><img src="../river/img/IMG_7287.jpg" alt="五分港溪，兩岸綠樹倒映水面" loading="lazy"><figcaption>五分港溪</figcaption></figure>
 <p>原始河岸與綠意無心的野性風景，恣意生長的水草，在一望無際的水文間恣意流動著，完全無視身處台北盆地該有的規律與節制。傾身靠近，卻又令人無法相信，臭氣污濁的河水也是它的生命。</p>
@@ -216,6 +168,7 @@ footer{text-align:center;color:var(--soft);font-size:14px;padding:30px 16px 56px
 </div>
 <p>1896年的牧野富太郎雙眼看到了什麼，我不得而知。但是從他悉心留下來的植物標本，我彷彿能拼湊出一些1896年的大地紋理，那些來自他採集到的標本。</p>
 <p>尤其是採自臺北盆地的五角金魚藻（Ceratophyllum oryzetorum）標本，是林業試驗所植物標本館典藏採自臺灣地區最古老的植物模式標本。</p>
+<figure class="ph pair"><div><img src="img/specimen-detail.jpg" alt="壓製於台紙上的五角金魚藻" loading="lazy"><img src="img/specimen-label.jpg" alt="標本標籤：產地臺北，採集者牧野富太郎" loading="lazy"></div><figcaption>壓製的水草，與寫著「產地　臺北」「採集者　牧野富太郎」的標籤</figcaption></figure>
 <p class="lone">但現今台北盆地已不見這種水草的蹤跡。</p>
 <p>在生物分類學上，植物必須有拉丁文學名才能獲得國際認可。牧野富太郎為許多台灣在地植物取得了國際身分，其中最著名的有兩個：</p>
 <div class="names">
